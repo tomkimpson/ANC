@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.3)  20 SEP 2023 08:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.3)  20 SEP 2023 08:22
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -943,14 +943,8 @@ Class revtex4-2 Warning: Environment acknowledgements is obsolete;
 Use acknowledgments instead.
 
 [12] (./main-lines.aux)
-
-Package rerunfilecheck Warning: File `main-lines.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main-lines.out':
-(rerunfilecheck)             Before: C6E60D9E463A6178FAA7471F6305BD3B;3671
-(rerunfilecheck)             After:  9C325C3179290CB1AFE2CE52D0E93605;3676.
+Package rerunfilecheck Info: File `main-lines.out' has not changed.
+(rerunfilecheck)             Checksum: 9C325C3179290CB1AFE2CE52D0E93605;3676.
  ) 
 Here is how much of TeX's memory you used:
  14502 strings out of 478268
@@ -989,7 +983,7 @@ e1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1
 /public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2022/texmf-dist/fonts/t
 ype1/public/amsfonts/symbols/msam7.pfb></usr/local/texlive/2022/texmf-dist/font
 s/type1/public/cm-super/sfrm1000.pfb>
-Output written on main-lines.pdf (12 pages, 3991374 bytes).
+Output written on main-lines.pdf (12 pages, 3991417 bytes).
 PDF statistics:
  702 PDF objects out of 1000 (max. 8388607)
  574 compressed objects within 6 object streams
