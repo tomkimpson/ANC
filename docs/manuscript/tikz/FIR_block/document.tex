@@ -1,0 +1,59 @@
+\documentclass[tikz]{standalone}
+
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows}
+\begin{document}
+	
+	\tikzstyle{block} = [draw, fill=white, rectangle, 
+	minimum height=2em, minimum width=9em]
+	\tikzstyle{sum} = [draw, fill=white, circle, node distance=1cm]
+	\tikzstyle{input} = [coordinate]
+	\tikzstyle{output} = [coordinate]
+	\tikzstyle{pinstyle} = [pin edge={to-,thin,black}]
+	
+
+	\begin{tikzpicture}[auto, node distance=2cm,>=latex']
+		
+		
+	\coordinate (origin) at (0,0);
+	\coordinate (blockstart) at (2,0);
+	\coordinate (bottomrow) at (1,-2);
+	
+	\draw [draw,->] (origin) -- node{$r(t)$} ++ (blockstart);
+	\draw [draw,->] (1,0) -- node{} ++ (0,-2);
+	\draw [draw,->] (1,-2) -- node{} ++ (1,0);
+
+	\node[block] at (3.57,-2)   (topblock) {Update weights};
+	
+	\draw [draw,->] (6.2,-2) -- node[above]{$e(t)$} ++ (-1,0);
+	\node[draw,circle](nameofnode) at (6.61,-2) {$\sum$};
+	
+
+		\draw [draw,->] (5.2,0) -- node{$\hat{c}(t)$} ++ (1.4,0);
+		\draw [draw,->] (6.6,0) -- node[pos=0.90,right]{$-$} ++ (0,-1.60);
+		
+   \draw [draw,->] (6.6,-3.9) -- node[pos=0.0,below]{$x(t)$} node[pos=0.90,right]{$+$} ++ (0,+1.5);
+	
+	
+	\draw [draw,->] (2.5,-1.63) -- node{$\mathbf{w}$} ++ (0,0.5);
+    \draw [draw,->] (2.5,-1.13) -- node{} ++ (2,2);
+	
+	
+		\node[block] at (3.57,0)   (topblock) {FIR Filter};
+	
+	
+%	\node [input, name=input] {};
+%	\node [right of=input] (sum) {};
+%	\node[name=summation] {6.0-3}
+%	
+%	\draw [draw,->] (input) -- node {$r(t)$} (sum);
+%	\node[block] at (3,0)   (a) {FIR Filter};
+%	\draw [draw,->] (4.08,0) -- (6.0,0) ;
+%	\draw [draw,->]  (6.0,0) --  (6.0,-3) ;
+%
+%	
+
+
+
+\end{tikzpicture}
+\end{document}
