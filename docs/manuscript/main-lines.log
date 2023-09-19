@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.3)  14 SEP 2023 11:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.3)  20 SEP 2023 08:20
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -580,7 +580,18 @@ Package caption Info: End \AtBeginDocument code.
 Class revtex4-2 Info: Taking \maketitle back from hyperref on input line 74.
 \openout3 = `main-linesNotes.bib'.
 
+LaTeX Font Info:    Trying to load font information for U+msa on input line 88.
 
+
+(/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 88.
+
+
+(/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
 
 Class revtex4-2 Warning: Assuming \noaffiliation for authors.
 
@@ -619,17 +630,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 103--104
 
  []
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 105
-.
-(/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 105
-.
 
-(/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
 Underfull \hbox (badness 1168) in paragraph at lines 105--105
   [][][]\OT1/cmr/m/n/8 A reg-u-larly up-dated log of nar-row-band in-stru-men-t
 al lines
@@ -710,13 +711,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 178--178
 
  []
 
-<images/stacked_coherence_plot.png, id=206, 626.8218pt x 1067.4279pt>
+<images/stacked_coherence_plot.png, id=203, 626.8218pt x 1067.4279pt>
 File: images/stacked_coherence_plot.png Graphic file (type png)
 <use images/stacked_coherence_plot.png>
 Package pdftex.def Info: images/stacked_coherence_plot.png  used on input line 
 181.
 (pdftex.def)             Requested size: 246.0pt x 418.91751pt.
-<images/coherence_spectrogram.png, id=207, 793.7655pt x 378.6948pt>
+<images/coherence_spectrogram.png, id=204, 793.7655pt x 378.6948pt>
 File: images/coherence_spectrogram.png Graphic file (type png)
 <use images/coherence_spectrogram.png>
 Package pdftex.def Info: images/coherence_spectrogram.png  used on input line 1
@@ -739,14 +740,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.226 \subsection
-                 {Adaptive Recursive Least Squares Method} <./images/stacked_co
-herence_plot.png>]
+l.221 \end{eqnarray}
+                     <./images/stacked_coherence_plot.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 252--253
 
  []
 
-<images/FIR_block.pdf, id=260, 202.63203pt x 152.7848pt>
+<images/FIR_block.pdf, id=259, 202.63203pt x 152.7848pt>
 File: images/FIR_block.pdf Graphic file (type pdf)
 <use images/FIR_block.pdf>
 Package pdftex.def Info: images/FIR_block.pdf  used on input line 258.
@@ -772,18 +772,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 286--288
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 301--303
-
- []
-
 [6
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.303 
-       <./images/FIR_block.pdf>]
+l.301 \end{eqnarray}
+                     <./images/FIR_block.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 301--303
+
+ []
+
 <images/spectrum.png, id=347, 725.8317pt x 716.6775pt>
 File: images/spectrum.png Graphic file (type png)
 <use images/spectrum.png>
@@ -834,22 +833,22 @@ File: images/4C_roccurve_multi_ref.png Graphic file (type png)
 Package pdftex.def Info: images/4C_roccurve_multi_ref.png  used on input line 3
 79.
 (pdftex.def)             Requested size: 246.0pt x 242.5593pt.
-<images/taps_vs_error.png, id=373, 732.336pt x 714.5094pt>
-File: images/taps_vs_error.png Graphic file (type png)
-<use images/taps_vs_error.png>
-Package pdftex.def Info: images/taps_vs_error.png  used on input line 404.
-(pdftex.def)             Requested size: 246.0pt x 240.0081pt.
  [8
 pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.412 \begin{enumerate}
-                        <./images/viterbi_tracking_canonical.png>]
+l.401 
+       <./images/viterbi_tracking_canonical.png>]
 
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 412.
+ on input line 401.
 
+<images/taps_vs_error.png, id=381, 732.336pt x 714.5094pt>
+File: images/taps_vs_error.png Graphic file (type png)
+<use images/taps_vs_error.png>
+Package pdftex.def Info: images/taps_vs_error.png  used on input line 404.
+(pdftex.def)             Requested size: 246.0pt x 240.0081pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 417--418
 
@@ -944,13 +943,19 @@ Class revtex4-2 Warning: Environment acknowledgements is obsolete;
 Use acknowledgments instead.
 
 [12] (./main-lines.aux)
-Package rerunfilecheck Info: File `main-lines.out' has not changed.
-(rerunfilecheck)             Checksum: C6E60D9E463A6178FAA7471F6305BD3B;3671.
+
+Package rerunfilecheck Warning: File `main-lines.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main-lines.out':
+(rerunfilecheck)             Before: C6E60D9E463A6178FAA7471F6305BD3B;3671
+(rerunfilecheck)             After:  9C325C3179290CB1AFE2CE52D0E93605;3676.
  ) 
 Here is how much of TeX's memory you used:
  14502 strings out of 478268
- 227280 string characters out of 5846348
- 566532 words of memory out of 5000000
+ 227282 string characters out of 5846348
+ 565533 words of memory out of 5000000
  32356 multiletter control sequences out of 15000+600000
  483264 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -984,7 +989,7 @@ e1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1
 /public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2022/texmf-dist/fonts/t
 ype1/public/amsfonts/symbols/msam7.pfb></usr/local/texlive/2022/texmf-dist/font
 s/type1/public/cm-super/sfrm1000.pfb>
-Output written on main-lines.pdf (12 pages, 3991145 bytes).
+Output written on main-lines.pdf (12 pages, 3991374 bytes).
 PDF statistics:
  702 PDF objects out of 1000 (max. 8388607)
  574 compressed objects within 6 object streams
