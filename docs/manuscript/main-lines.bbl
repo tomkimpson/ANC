@@ -276,9 +276,9 @@
 \bibitem [{\citenamefont {{Wette}}(2023)}]{Wette2023}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
-  {{Wette}}},\ }\href {\doibase 10.48550/arXiv.2305.07106} {\bibfield
-  {journal} {\bibinfo  {journal} {arXiv e-prints}\ ,\ \bibinfo {eid}
-  {arXiv:2305.07106}} (\bibinfo {year} {2023})},\ \Eprint
+  {{Wette}}},\ }\href {\doibase 10.1016/j.astropartphys.2023.102880} {\bibfield
+   {journal} {\bibinfo  {journal} {Astroparticle Physics}\ }\textbf {\bibinfo
+  {volume} {153}},\ \bibinfo {eid} {102880} (\bibinfo {year} {2023})},\ \Eprint
   {http://arxiv.org/abs/2305.07106} {arXiv:2305.07106 [gr-qc]} \BibitemShut
   {NoStop}%
 \bibitem [{\citenamefont {Abbott}\ \emph {et~al.}(2022)\citenamefont {Abbott},

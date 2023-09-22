@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.3)  21 SEP 2023 15:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.3)  22 SEP 2023 14:49
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -683,38 +683,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 119--120
 
  []
 
-<images/sensitivity.png, id=143, 746.0673pt x 495.0495pt>
+<images/sensitivity.png, id=145, 746.0673pt x 495.0495pt>
 File: images/sensitivity.png Graphic file (type png)
 <use images/sensitivity.png>
 Package pdftex.def Info: images/sensitivity.png  used on input line 127.
 (pdftex.def)             Requested size: 246.0pt x 163.23087pt.
+<images/new_cascade_O3_new.png, id=151, 455.301pt x 606.3453pt>
+File: images/new_cascade_O3_new.png Graphic file (type png)
+<use images/new_cascade_O3_new.png>
+Package pdftex.def Info: images/new_cascade_O3_new.png  used on input line 132.
 
-Underfull \hbox (badness 2717) in paragraph at lines 129--129
-[]\OT1/cmr/m/n/9 FIG. 1. []Sensitivity plot for LIGO-Hanford (or-ange)
+(pdftex.def)             Requested size: 246.0pt x 327.60663pt.
+
+Underfull \hbox (badness 4779) in paragraph at lines 133--133
+[]\OT1/cmr/m/n/9 FIG. 2. []Cascade plot show-ing the tem-po-ral evo-
  []
 
 
-Underfull \hbox (badness 1014) in paragraph at lines 129--129
-\OT1/cmr/m/n/9 min-utes []TK - check it IS 10 mins[]) from O3 (chan-nel
- []
-
-<images/powerCascade.pdf, id=149, 288.73984pt x 371.60974pt>
-File: images/powerCascade.pdf Graphic file (type pdf)
-<use images/powerCascade.pdf>
-Package pdftex.def Info: images/powerCascade.pdf  used on input line 132.
-(pdftex.def)             Requested size: 246.0pt x 316.6069pt.
-
-Underfull \hbox (badness 2903) in paragraph at lines 134--134
-[]\OT1/cmr/m/n/9 FIG. 2. []Cascade plot show-ing the tem-po-ral evo-lu-
+Underfull \hbox (badness 10000) in paragraph at lines 133--133
+\OT1/cmr/m/n/9 lu-tion of the am-pli-tude spec-tral den-sity (units:
  []
 
 
-Underfull \hbox (badness 2460) in paragraph at lines 134--134
-\OT1/cmr/m/n/9 tion of the am-pli-tude spec-tral den-sity []What are the
+Underfull \hbox (badness 2922) in paragraph at lines 133--133
+\OT1/cmr/m/n/9 Hz$[]$)of the LIGO-Hanford mains-power PEM mon-i-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 145--146
+Underfull \hbox (badness 10000) in paragraph at lines 156--157
 
  []
 
@@ -723,58 +719,51 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.146 
+l.157 
        <./images/sensitivity.png>]
 
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 146.
+ on input line 157.
 
 
-Underfull \hbox (badness 1990) in paragraph at lines 151--153
+Underfull \hbox (badness 1990) in paragraph at lines 162--164
 \OT1/cmr/m/n/10 sig-nal is quasi-monochromatic, amplitude-modulated
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 151--153
+Underfull \hbox (badness 10000) in paragraph at lines 162--164
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--172
+Underfull \hbox (badness 10000) in paragraph at lines 175--183
 
  []
 
 
-Overfull \hbox (37.40137pt too wide) in alignment at lines 174--177
+Overfull \hbox (37.40137pt too wide) in alignment at lines 185--188
  [][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 177--179
-\OT1/cmr/m/n/10 See [][]$\OT1/cmtt/m/n/10 https : / / app . sparkmailapp . com 
-/ web-[]share /
- []
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 194.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 177--179
-\OT1/cmtt/m/n/10 HVO-[]wLzjAZLAdzToqro _ tulAhrvIKUkc-[]7HOqzst$[][]
- []
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 194.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 177--179
-\OT1/cmr/m/n/10 and also Changron [][]$\OT1/cmtt/m/n/10 https : / / app . spark
-mailapp .
- []
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 194.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 177--179
-\OT1/cmtt/m/n/10 com / web-[]share / cb2wN1LDaPSw9bpSClUKl _
- []
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 194.
 
 
-Underfull \hbox (badness 1460) in paragraph at lines 177--179
-\OT1/cmtt/m/n/10 OSNUfLaEtXcEkIp7rj$[][][] \OT1/cmr/m/n/10 . The am-pli-tude $\
-OML/cmm/m/it/10 A[]$ \OT1/cmr/m/n/10 is dis-
+Underfull \hbox (badness 10000) in paragraph at lines 195--196
+
  []
 
 [3
@@ -782,114 +771,92 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.179 
-       <./images/powerCascade.pdf>]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 183.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 183.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 183.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 183.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 184--185
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 187--187
+l.196 
+       <./images/new_cascade_O3_new.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 198--198
   [][][][][]$\OT1/cmtt/m/n/8 https : / / git . ligo . org / gwosc / tutorials /
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 186--188
+Underfull \hbox (badness 10000) in paragraph at lines 197--199
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 195--196
+Underfull \hbox (badness 10000) in paragraph at lines 206--207
 []\OT1/cmr/m/n/10 between each of the 9 PEM chan-nels and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 195--196
+Underfull \hbox (badness 10000) in paragraph at lines 206--207
 \OT1/cmr/m/n/10 the high la-tency, cal-i-brated strain chan-nel
  []
 
 
-Underfull \hbox (badness 1888) in paragraph at lines 195--196
+Underfull \hbox (badness 1888) in paragraph at lines 206--207
 \OT1/cmtt/m/n/10 L1:DCS-CALIB[]STRAIN[]C01[]AR \OT1/cmr/m/n/10 over a 10 minute
  in-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 195--196
+Underfull \hbox (badness 10000) in paragraph at lines 206--207
 
  []
 
-<images/stacked_coherence_plot.png, id=228, 626.8218pt x 1067.4279pt>
+<images/stacked_coherence_plot.png, id=205, 626.8218pt x 1067.4279pt>
 File: images/stacked_coherence_plot.png Graphic file (type png)
 <use images/stacked_coherence_plot.png>
 Package pdftex.def Info: images/stacked_coherence_plot.png  used on input line 
-201.
+212.
 (pdftex.def)             Requested size: 246.0pt x 418.91751pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 204--204
+Underfull \hbox (badness 10000) in paragraph at lines 215--215
 []\OT1/cmr/m/n/9 FIG. 3. []Coherence $\OML/cmm/m/it/9 C[]$ \OT1/cmr/m/n/9 de-fi
 ned by Equa-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 204--204
+Underfull \hbox (badness 10000) in paragraph at lines 215--215
 [][]\OT1/cmr/m/n/9 5[][] be-tween the LIGO-Livingston strain chan-nel
  []
 
 
-Underfull \hbox (badness 3098) in paragraph at lines 204--204
+Underfull \hbox (badness 3098) in paragraph at lines 215--215
 \OT1/cmtt/m/n/9 L1:DCS-CALIB[]STRAIN[]C01[]AR \OT1/cmr/m/n/9 and the nine mains
 -power
  []
 
-<images/coherence_spectrogram.png, id=231, 793.7655pt x 378.6948pt>
+<images/coherence_spectrogram.png, id=208, 793.7655pt x 378.6948pt>
 File: images/coherence_spectrogram.png Graphic file (type png)
 <use images/coherence_spectrogram.png>
 Package pdftex.def Info: images/coherence_spectrogram.png  used on input line 2
-08.
+19.
 (pdftex.def)             Requested size: 510.0pt x 243.31728pt.
 
-Underfull \hbox (badness 1147) in paragraph at lines 211--211
+Underfull \hbox (badness 1147) in paragraph at lines 222--222
 []\OT1/cmr/m/n/9 FIG. 4. [][] Co-her-ence spec-tro-gram be-tween the strain cha
 n-nel \OT1/cmtt/m/n/9 L1:DCS-CALIB[]STRAIN[]C01[]AR\OT1/cmr/m/n/9 and the PEM c
 han-nel
  []
 
 
-Underfull \hbox (badness 2269) in paragraph at lines 198--213
+Underfull \hbox (badness 2269) in paragraph at lines 209--224
 [][]\OT1/cmr/m/n/10 TK: what is the point of this fig-ure? What
  []
 
 
-Underfull \hbox (badness 1365) in paragraph at lines 198--213
+Underfull \hbox (badness 1365) in paragraph at lines 209--224
 \OT1/cmr/m/n/10 ence spec-tro-gram, i.e. the time-varying co-her-ence
  []
 
 
-Underfull \hbox (badness 1616) in paragraph at lines 198--213
+Underfull \hbox (badness 1616) in paragraph at lines 209--224
 \OT1/cmr/m/n/10 be-tween the strain chan-nel and the PEM chan-nel
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 219--220
+Underfull \hbox (badness 10000) in paragraph at lines 230--231
 
  []
 
@@ -898,25 +865,25 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.220 
+l.231 
        <./images/stacked_coherence_plot.png>] [5
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.251 	\item F
-              or $k=1, \dots, K$: <./images/coherence_spectrogram.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 272--273
+l.274 	\end{eqnarray}
+                      <./images/coherence_spectrogram.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 283--284
 
  []
 
-<images/FIR_block.pdf, id=275, 202.63203pt x 152.7848pt>
+<images/FIR_block.pdf, id=252, 202.63203pt x 152.7848pt>
 File: images/FIR_block.pdf Graphic file (type pdf)
 <use images/FIR_block.pdf>
-Package pdftex.def Info: images/FIR_block.pdf  used on input line 278.
+Package pdftex.def Info: images/FIR_block.pdf  used on input line 289.
 (pdftex.def)             Requested size: 246.0pt x 185.48796pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 288--289
+Underfull \hbox (badness 10000) in paragraph at lines 299--300
 
  []
 
@@ -925,121 +892,124 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.294 \end{equation}
+l.313 \end{eqnarray}
                      <./images/FIR_block.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 306--308
+Underfull \hbox (badness 10000) in paragraph at lines 317--319
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 321--323
+Underfull \hbox (badness 10000) in paragraph at lines 332--334
 
  []
 
-<images/spectrum.png, id=350, 725.8317pt x 716.6775pt>
+<images/spectrum.png, id=324, 725.8317pt x 716.6775pt>
 File: images/spectrum.png Graphic file (type png)
 <use images/spectrum.png>
-Package pdftex.def Info: images/spectrum.png  used on input line 359.
+Package pdftex.def Info: images/spectrum.png  used on input line 370.
 (pdftex.def)             Requested size: 246.0pt x 242.8907pt.
-<images/viterbi_tracking_canonical.png, id=353, 1133.4345pt x 528.0528pt>
+<images/viterbi_tracking_canonical.png, id=327, 1133.4345pt x 528.0528pt>
 File: images/viterbi_tracking_canonical.png Graphic file (type png)
 <use images/viterbi_tracking_canonical.png>
 Package pdftex.def Info: images/viterbi_tracking_canonical.png  used on input l
-ine 366.
+ine 377.
 (pdftex.def)             Requested size: 510.0pt x 237.60545pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 372--373
+Underfull \hbox (badness 10000) in paragraph at lines 383--384
 
  []
 
 
-Underfull \hbox (badness 1132) in paragraph at lines 375--376
+Underfull \hbox (badness 1132) in paragraph at lines 386--387
 []\OT1/cmr/m/n/10 Initially we ver-ify that the ANC fil-ter works as
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 375--376
+Underfull \hbox (badness 10000) in paragraph at lines 386--387
 
  []
 
 [7
-pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has
- been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.378 
-      ]
-
-LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 378.
-
-<images/4C_roccurve.png, id=372, 724.6272pt x 714.5094pt>
-File: images/4C_roccurve.png Graphic file (type png)
-<use images/4C_roccurve.png>
-Package pdftex.def Info: images/4C_roccurve.png  used on input line 386.
-(pdftex.def)             Requested size: 246.0pt x 242.5593pt.
-<images/4C_roccurve_multi_ref.png, id=378, 724.6272pt x 714.5094pt>
-File: images/4C_roccurve_multi_ref.png Graphic file (type png)
-<use images/4C_roccurve_multi_ref.png>
-Package pdftex.def Info: images/4C_roccurve_multi_ref.png  used on input line 3
-99.
-(pdftex.def)             Requested size: 246.0pt x 242.5593pt.
-<images/taps_vs_error.png, id=381, 732.336pt x 714.5094pt>
-File: images/taps_vs_error.png Graphic file (type png)
-<use images/taps_vs_error.png>
-Package pdftex.def Info: images/taps_vs_error.png  used on input line 424.
-(pdftex.def)             Requested size: 246.0pt x 240.0081pt.
-[8
 pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.435 \end{enumerate}
-                      <./images/spectrum.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 437--438
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 445--446
-
- []
-
-[9
+l.387 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has
+ been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.387 
+       <./images/spectrum.png>]
+<images/4C_roccurve.png, id=346, 724.6272pt x 714.5094pt>
+File: images/4C_roccurve.png Graphic file (type png)
+<use images/4C_roccurve.png>
+Package pdftex.def Info: images/4C_roccurve.png  used on input line 397.
+(pdftex.def)             Requested size: 246.0pt x 242.5593pt.
+ [8
 pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.448 
-      
-pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has
- been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.448 
+l.403 
        <./images/viterbi_tracking_canonical.png>]
 
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 448.
+ on input line 403.
 
-[10
+<images/4C_roccurve_multi_ref.png, id=359, 724.6272pt x 714.5094pt>
+File: images/4C_roccurve_multi_ref.png Graphic file (type png)
+<use images/4C_roccurve_multi_ref.png>
+Package pdftex.def Info: images/4C_roccurve_multi_ref.png  used on input line 4
+10.
+(pdftex.def)             Requested size: 246.0pt x 242.5593pt.
+<images/taps_vs_error.png, id=362, 732.336pt x 714.5094pt>
+File: images/taps_vs_error.png Graphic file (type png)
+<use images/taps_vs_error.png>
+Package pdftex.def Info: images/taps_vs_error.png  used on input line 435.
+(pdftex.def)             Requested size: 246.0pt x 240.0081pt.
+[9
 pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.519 
-      
+l.443 \begin{enumerate}
+                       
 pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.519 
-       <./images/4C_roccurve.png> <./images/4C_roccurve_multi_ref.png>]
+l.443 \begin{enumerate}
+                       
+pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has
+ been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.443 \begin{enumerate}
+                        <./images/4C_roccurve.png> <./images/4C_roccurve_multi_
+ref.png>]
 
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 519.
+ on input line 443.
 
-(./main-lines.bbl
+
+Underfull \hbox (badness 10000) in paragraph at lines 448--449
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 456--457
+
+ []
+
+[10
+pdfTeX warning (ext4): destination with the same identifier (name{figure.10}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.461 
+       <./images/taps_vs_error.png>] (./main-lines.bbl
 Underfull \hbox (badness 2828) in paragraph at lines 145--155
  []\OT1/cmr/m/n/9 J. Glanzer, S. Soni, J. Spoon, A. Ef-fler,  and
  []
@@ -1050,19 +1020,13 @@ Underfull \hbox (badness 1102) in paragraph at lines 167--176
 r/m/n/9 , 074001 (2015)[][],
  []
 
-[11
-pdfTeX warning (ext4): destination with the same identifier (name{figure.10}) h
-as been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.343   {et~al.}}]{ligo_lineveto3}
-                                  % <./images/taps_vs_error.png>]
+
 Underfull \hbox (badness 6691) in paragraph at lines 390--397
  []\OT1/cmr/m/n/9 D. Davis and M. Walker, [][]Galax-ies \OT1/cmr/bx/n/9 10 \OT1
 /cmr/m/n/9 (2022),
  []
 
-
+[11]
 Underfull \hbox (badness 2181) in paragraph at lines 573--581
  \OT1/cmr/m/n/9 K. Staats, G. Va-jente,  and D. Williams, [][]arXiv
  []
@@ -1103,13 +1067,13 @@ Package rerunfilecheck Info: File `main-lines.out' has not changed.
 (rerunfilecheck)             Checksum: FAD5CC203B206BABF0C713E3F92AE67A;3600.
  ) 
 Here is how much of TeX's memory you used:
- 14502 strings out of 478268
- 227275 string characters out of 5846348
- 587060 words of memory out of 5000000
- 32356 multiletter control sequences out of 15000+600000
+ 14506 strings out of 478268
+ 227394 string characters out of 5846348
+ 565103 words of memory out of 5000000
+ 32360 multiletter control sequences out of 15000+600000
  483264 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 69i,11n,76p,2337b,538s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 69i,11n,76p,2337b,556s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 }</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 </usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
@@ -1139,10 +1103,10 @@ e1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1
 /public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2022/texmf-dist/fonts/t
 ype1/public/amsfonts/symbols/msam7.pfb></usr/local/texlive/2022/texmf-dist/font
 s/type1/public/cm-super/sfrm1000.pfb>
-Output written on main-lines.pdf (12 pages, 4001148 bytes).
+Output written on main-lines.pdf (12 pages, 5865952 bytes).
 PDF statistics:
- 712 PDF objects out of 1000 (max. 8388607)
- 582 compressed objects within 6 object streams
+ 683 PDF objects out of 1000 (max. 8388607)
+ 573 compressed objects within 6 object streams
  125 named destinations out of 1000 (max. 500000)
  187 words of extra memory for PDF output out of 10000 (max. 10000000)
 

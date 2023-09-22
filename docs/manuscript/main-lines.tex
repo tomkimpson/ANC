@@ -116,25 +116,36 @@ The goal of this paper is to detect a quasi-monochromatic GW signal in a data st
 
 LIGO data contains multiple long-duration narrow lines in addition to the usual Gaussian noise. These lines are shown in Figure \ref{fig:strainSensitivity} where we plot the amplitude spectral density of the GW strain channel \texttt{*:DCS-CALIB\_STRAIN\_C01\_AR} for both LIGO-Hanford (orange curve) and LIGO-Livingston (blue curve). The small amplitude random fluctuations are the result of Gaussian noise whereas the large amplitude spikes are the long-duration lines. The provision of mains power electricity in North America via an alternating current with frequency 60 Hz leads to a line in the power spectral density of the LIGO noise. The mains power couples to the GW strain channel, because the performance of the high-sensitivity electronic components within LIGO varies with respect to the input power voltage. Additionally, the magnetic fields that arise from the AC mains supply couple to magnets on optical components. \newline 
 
-Some spectral lines are static, but the 60 Hz line wanders in time, due to variations in the load in the North American power grid. The wandering is displayed in the cascade plot in Figure \ref{fig:powerCascade}, where the amplitude spectral density of the output signal of the LIGO-Hanford PEM channel \CSOneName is plotted for 210 5-min samples stacked vertically. The peak of the amplitude spectral density varies from $xyz \, {\rm Hz}$ to $zyx \, {\rm Hz}$ across the 210 samples, with an average of $zzyy \, {\rm Hz}$. Its full width half maximum varies from $XYZ \, {\rm Hz}$ to $ZYX \, {\rm Hz}$, with an average of $ZZYY \, {\rm Hz}$. \textcolor{red}{TK: need to verify what these number are.} 	This time variation can further impact the detector sensitivity over a broader range of frequencies. For a full review of LIGO spectral artifacts, including the 60 Hz line, we refer the reader to \cite{CovasEtAl:2018}. \newline 
+Some spectral lines are static, but the 60 Hz line wanders in time, due to variations in the load in the North American power grid. The wandering is displayed in the cascade plot in Figure \ref{fig:powerCascade}, where the amplitude spectral density of the output signal of the LIGO-Hanford PEM channel \CSOneName is plotted for 210 5-min samples stacked vertically. The peak of the amplitude spectral density varies from 59.969 Hz  to 60.053 Hz, across the 210 samples with an average value of 60.004 Hz. Its full width half maximum varies from 5.294 mHz to 29.377 mHz, with an average value of 10.749  mHz. For a full review of LIGO spectral artifacts, including the 60 Hz line, we refer the reader to \cite{CovasEtAl:2018}. \newline 
 
 
-The $60 \, {\rm Hz}$ line occurs in the neighbourhood of plausible astrophysical signals. For example, mass quadrupole radiation from a rotating mountain on the Crab pulsar would be emitted at twice the star's spin frequency, viz. $xyz \, {\rm Hz}$ (quote references of some recent LVK search papers where Crab was looked for - Andres can help - they are the "known pulsar" papers) [quote twice the spin to two decimal places] \textcolor{red}{To add numbers in here}
+The $60 \, {\rm Hz}$ line occurs in the neighbourhood of plausible astrophysical signals. For example, mass quadrupole radiation from a rotating mountain on the Crab pulsar would be emitted at twice the star's spin frequency, viz. $30.2 \, {\rm Hz}$ \citep{Wette2023} \citep{Riles2023}.
 
 
 \begin{figure}
 	\begin{center}
 		\includegraphics[width=\columnwidth]{images/sensitivity}
 	\end{center}
-	\caption{Sensitivity plot for LIGO-Hanford (orange) and LIGO-Livingston (blue) for a snapshot of data ($10.0$ minutes \textcolor{red}{TK - check it IS 10 mins}) from O3 (channel \texttt{*:DCS-CALIB\_STRAIN\_C01\_AR}, see Ref.~\cite{LIGO_O3, GWOSC:online}. The vertical axis plots the amplitude spectral density of the detector noise in units of XYZ, while the horizontal axis plots the observation frequency in units of ABC. \textcolor{red}{Numbers here}.The spectral line at $60\,{\rm Hz}$ is clearly visible as a spike rising three decades, along with multiple other instrumental lines at other frequencies.}\label{fig:strainSensitivity}
+	\caption{Sensitivity plot for LIGO-Hanford (orange) and LIGO-Livingston (blue) for a snapshot of data ($10.0$ minutes) from O3 (channel \texttt{*:DCS-CALIB\_STRAIN\_C01\_AR}, see Ref.~\cite{LIGO_O3, GWOSC:online}. The vertical axis plots the amplitude spectral density of the detector noise in units of Hz $^{-1/2}$, while the horizontal axis plots the observation frequency in units of Hz.The spectral line at $60\,{\rm Hz}$ is clearly visible as a spike rising three decades, along with multiple other instrumental lines at other frequencies.}\label{fig:strainSensitivity}
 \end{figure}
 \begin{figure}
-	\includegraphics[width=\columnwidth]{images/powerCascade}
-	\caption{Cascade plot showing the temporal evolution of the amplitude spectral density \textcolor{red}{What are the units?} of the LIGO-Hanford mains-power PEM monitor \CSOneName~ (corner station, phase 1) as a function of frequency (units: Hz). Each trace corresponds to $320\,{\rm s}$ ($\approx 5\,{\rm min}$) of data ($210$ traces stacked vertically). The peak of the mains power $60 \, {\rm Hz}$ line wanders by $\approx \pm ABC \%$ about its time-averaged frequency.\textcolor{red}{TK need  to insert numbers here}.
-	}\label{fig:powerCascade}
+	\includegraphics[width=\columnwidth]{images/new_cascade_O3_new}
+	\caption{Cascade plot showing the temporal evolution of the amplitude spectral density (units: Hz$^{-1/2}$)of the LIGO-Hanford mains-power PEM monitor \CSOneName~ (corner station, phase 1) as a function of frequency (units: Hz). Each trace corresponds to $320\,{\rm s}$ ($\approx 5\,{\rm min}$) of data ($210$ traces stacked vertically). The peak of the mains power $60 \, {\rm Hz}$ line wanders by $\approx \pm 30$ mHz about its time-averaged frequency.}
+	\label{fig:powerCascade}
 \end{figure}
 % the script for this plot is here on CIT
 %/home/hannah.middleton/repositories/powerlines/powergridlines/plots/asd
+
+
+
+
+%
+
+
+
+
+
+
 
 
 
@@ -175,7 +186,7 @@ Mains power couples into the strain channel in various complicated ways, e.g. th
 	c(t) = A_c(t_n - \tau_{\rm delay}) \cos \left[ 2 \pi f_{\rm ac} (t_n - \tau_{\rm delay}) + \Theta(t_n - \tau_{\rm delay}	)\right] \ ,
 	\label{eq:vclutter}
 \end{eqnarray}
-for $t_n \leq t \leq t_{n+1}$ \textcolor{red}{Check this equation is correct. See \url{https://app.sparkmailapp.com/web-share/HVO-wLzjAZLAdzToqro_tulAhrvIKUkc-7HOqzst} and also Changron \url{https://app.sparkmailapp.com/web-share/cb2wN1LDaPSw9bpSClUKl_OSNUfLaEtXcEkIp7rj}} . The amplitude $A_c$ is distributed as $\mathcal{U}[A_{\rm ac}- \Delta A_{\rm ac} ,A_{\rm ac} + \Delta A_{\rm ac} ]$. For this work we consider $0 \leq \tau_{\rm delay} \leq 10 \Delta t$, but wider or narrower ranges are possible and straightforward to implement. The assumption that $c(t)$ is a scaled replica of $r(t)$ is tested in Section II C.
+for $t_n \leq t \leq t_{n+1}$. The amplitude $A_c$ is distributed as $\mathcal{U}[A_{\rm ac}- \Delta A_{\rm ac} ,A_{\rm ac} + \Delta A_{\rm ac} ]$. For this work we consider $0 \leq \tau_{\rm delay} \leq 10 \Delta t$, but wider or narrower ranges are possible and straightforward to implement. The assumption that $c(t)$ is a scaled replica of $r(t)$ is tested in Section II C.
 
 
 
