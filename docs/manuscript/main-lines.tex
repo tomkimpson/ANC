@@ -191,108 +191,107 @@ for $t_n \leq t \leq t_{n+1}$. The amplitude $A_c$ is distributed as $\mathcal{U
 
 
 
-\subsection{Cross-correlating $x(t)$ and $r(t)$}  \label{sec23}
-A key assumption in Section \ref{sec21} is that the 60 Hz interference recorded in the reference PEM channel is also present in the strain channel. That is, the mains voltage recorded by the PEM is imprinted onto the strain channel up to a proportionality constant and time delay. In order to test this assumption we cross-correlate the strain channel and the PEM channel. \newline 
+\subsection{Coherence between $x(t)$ and $r(t)$}  \label{sec23}
+A key assumption in Section \ref{sec21} is that the 60 Hz interference recorded in the reference PEM channel is also present in the strain channel. That is, the mains voltage recorded by the PEM is imprinted onto the strain channel up to a proportionality constant and time delay. In order to test this assumption we calculate the coherence between the strain channel and the PEM channel. \newline 
 
-We use open source data for the strain and PEM channels from the first part of the third LIGO observing run, O3a \cite{LIGO_O3}. These data are obtained via the Gravitational Wave
-Open Science Center \footnote{\url{https://gwosc.org/}} using the \texttt{GWPy} package \cite{gwpy}. In the auxiliary O3a data there are nine PEM channels at LIGO-Livingston and seven PEM channels at LIGO-Hanford \footnote{\url{https://git.ligo.org/gwosc/tutorials/gwosc-aux-tutorials/-/tree/main/Channels}}. In this paper we consider just the LIGO-Livingston data, as they suffice to make the point.. The strain data are sampled at 16384 Hz and downsampled to 4096 Hz to match the sampling rate of the PEM channels. \newline 
+We use data for the strain and PEM channels from the first part of the third LIGO observing run, O3a \cite{LIGO_O3}. These data are obtained via the LIGO Data Grid  \footnote{\url{https://computing.docs.ligo.org/guide/computing-centres/ldg/}} using the \texttt{GWPy} package \cite{gwpy}. In O3a there are nine independent PEM channels at both LIGO-Livingston and LIGO-Hanford that directly measure the mains voltage \footnote{\url{https://git.ligo.org/detchar/ligo-channel-lists/-/blob/master/O3/L1-O3-pem.ini}}. Specifically, there are 3 PEM mains voltage monitors in the electronics bay in each of the X-arm end station (\texttt{EX}), the Y-arm end station (\texttt{EY}) and the corner station (\texttt{CS}). Each of the three PEMs at each station measures a separate component of three-phase mains power. In this paper we consider just the LIGO-Livingston data, as they suffice to make the point. The strain data are sampled at 16384 Hz and downsampled to 1024 Hz to match the sampling rate of the PEM channels. \newline 
+%https://arxiv.org/pdf/1812.05225.pdf
 
-
-Figure \ref{correlation_2} displays the \textcolor{red}{coherence}
-\begin{equation}
-	C_{xy} = ABC \label{eq:coherence}
+The coherence between two time series $x(t)$ and $r(t)$ is given by 
+ \begin{equation}
+	C_{xr}(f)	= \frac{|P_{xr}(f)|^2}{P_{xx}(f) P_{rr}(f)}  \label{eq:coherence}
 \end{equation}
+where $P_{xr}$ is the (cross) power spectral density and  $ 0 \leq C_{xr}(f) \leq 1$. $C_{xr}(f) = 0$ indicates that the two signals are completely unrelated, whilst $C_{xr}(f) = 1$ indicates that the two signals have an ideal, noiseless, linear relationship i.e. $x(t) = g(t) \ast r(t)$ for impulse response function $g(t)$. Figure \ref{correlation_2} displays the $C_{xr}$ between the high latency, calibrated strain channel \texttt{L1:DCS-CALIB\_STRAIN\_C01\_AR} and each of the nine reference PEM channels over a 10 minute interval. For all channels there is a clear spike in the $C_{xr}$ at 60 Hz, with a mean amplitude $=0.85$ (unitless). \newline 
 
- between each of the 9 PEM channels and the high latency, calibrated strain channel \texttt{L1:DCS-CALIB\_STRAIN\_C01\_AR} over a 10 minute interval. For all channels there is a clear spike feature at 60 Hz. The coherence feature has an amplitude $ \ge0.5$ \textcolor{red}{UNITS}for seven of the nine PEM channels. $C_{xy}$ is weakest for the channels \texttt{L1:PEM-EY\_MIC\_VEA\_PLUSY\_DQ} and \texttt{L1:PEM-CS\_MIC\_LVEA\_INPUTOPTICS\_DQ}. These channels corresponds to microphone PEMs in the LIGO vacuum equipment area and are less sensitive to the 60 Hz noise than e.g. \texttt{L1:PEM-EY\_MAINSMON\_EBAY\_1\_DQ} which directly measures the mains voltage of the power supply to the LIGO central building  \newline 
- 
- 
-\textcolor{red}{TK: what is the point of this figure? What are we trying to show?}Figure \ref{correlation_1} displays the coherence spectrogram, i.e. the time-varying coherence between the strain channel and the PEM channel \PEMChanName.  $C_{xy}$ is calculated in 10-s blocks; that is, every pixel in Figure 4 is 10 s wide horizontally. We observe similar results to Figure \ref{correlation_2}. There is a strong spectral feature at 60 Hz which persists for the full 10 min covered by Figure \ref{correlation_1}. Additional features are seen near 0.2 kHz and 0.3 kHz, corresponding to instrumental lines recorded by the PEM which imprint onto the strain channel and are unrelated to the mains power. Figures  \ref{correlation_2} and  \ref{correlation_1} justify in part the assumptions in Section \ref{sec21}.
+ It is important to note that whilst $C_{xr}(f)$ between $x(t)$ and $r(t)$ is strong, it is also time variable. Figure \ref{correlation_1} displays the coherence spectrogram, i.e. the time-varying coherence, between the strain channel and the PEM channel \PEMChanName (c.f. top panel, Figure \ref{correlation_2}) over a 1 hour time interval (c.f. the 10 minute interval of Figure \ref{correlation_2}). $C_{xy}(f)$ is calculated in 10-s blocks; that is, every pixel in Figure \ref{correlation_1} is 10 s wide horizontally. Similar results are observed to Figure \ref{correlation_2}; there is a strong coherence (mean value =$0.73$) spectral feature at 60 Hz which persists across the full 1 hour time interval. However, whilst the feature is persistent, $C_{xy}(60 \text{Hz})$ is not constant across the entire interval. Instead it varies, with a variance $0.018$. This is evident in the patchiness of the line at 60 Hz. Additional features are seen near 0.2 kHz and 0.3 kHz, corresponding to instrumental lines recorded by the PEM which imprint onto the strain channel and are unrelated to the mains power. Similar results are obtained for the other PEM channels shown in Figure \ref{correlation_2}. \textcolor{red}{TK: important to mention fft window length, overlap etc c.f. Welchs method}. Figures  \ref{correlation_2} and  \ref{correlation_1} justify in part the assumptions in Section \ref{sec21}.
 \begin{figure}
 	\begin{center}
 		\includegraphics[width=\columnwidth]{images/stacked_coherence_plot}
 	\end{center}
 	\label{correlation_2}
-	\caption{Coherence $C_{xy}$ defined by Equation \ref{eq:coherence} between the LIGO-Livingston strain channel  \texttt{L1:DCS-CALIB\_STRAIN\_C01\_AR} and the nine mains-power PEM channels during a 10 minute observation. Clear features at 60 Hz are present in every channel. $C_{xy}$ is lowest in the fourth and seventh panels, which correspond to microphones in the vacuum equipment area, which do not measure the mains voltage directly.}
+	\caption{Coherence $C_{xy}$ defined by Equation \eqref{eq:coherence} between the LIGO-Livingston strain channel  \texttt{L1:DCS-CALIB\_STRAIN\_C01\_AR} and the nine mains-power PEM channels during a 10 minute observation. Clear features at 60 Hz are present in every channel, with amplitudes $ > 0.8$.}
 \end{figure}
 \begin{figure*}
 	\begin{center}
-		\includegraphics[width=\textwidth]{images/coherence_spectrogram}
+		\includegraphics[width=\textwidth]{images/coherence_spectrogram_canonical}
 	\end{center}
 	\caption{\label{correlation_1}
-		Coherence spectrogram between the strain channel \StrainChanName  and the PEM channel \PEMChanName  	over a 10 minute period of O3 data. A strong coherence is observed at 60 Hz due to the main power interference. Additional coherence can also be observed at $\sim$ 200 Hz and 300 Hz due to instrumental lines of a different provenance c.f. Fig \ref{fig:strainSensitivity}.}
+		Coherence spectrogram between the strain channel \StrainChanName  \, and the PEM channel \PEMChanName  	\, covering a 1 hour period of O3 data. The $x$-axis is the time in minutes from the start of O3a, separated into N bins. The $y$-axis is the frequency in Hz, separated into Y bins. The pixel colour denotes the coherence $C_{xy}$, Equation \eqref{eq:coherence}, in that time-frequency bin. A strong coherence is observed at 60 Hz due to the main power interference. Additional coherence features can also be observed at 0.2 kHz and 0.3 kHz due to instrumental lines of a different provenance c.f. Figure \ref{fig:strainSensitivity}.}
 \end{figure*}
 
 
 
-\section{Adaptive Noise Cancellation}\label{sec:method}
+\section{ANC scheme}\label{sec:method}
 
 
-Adaptive Noise Cancellation (ANC) is a method for recovering an estimate of an underlying signal which has been corrupted or obscured by some additive noise interference \cite{Widrow1451965}. In contrast to other common optimal filtering methods (e.g. Wiener, Kalman) ANC requires no a-priori knowledge of either the signal or the noise. Instead, ANC makes use of a reference input which is correlated in some unknown way to the noise in the primary signal. This reference  can then be filtered and subtracted from the primary data series so as to recover the underlying signal. For our purposes, the primary timeseries is the gravitational-wave strain channel $x(t)$ (Equation \eqref{eq:data}) and the reference is a PEM recording voltage data from the power grid $r(t)$ (Equation \eqref{eq:voltage}). The objective of ANC is then to remove the clutter $c(t)$ of Equation \eqref{eq:data} with the aid of $r(t)$ whilst leaving $h(t)$ i.e. the signal of interest, intact. We now describe the ANC implementation used in this work. \newline 
+Adaptive noise cancellation (ANC) is a method for recovering an estimate of an underlying signal corrupted or obscured by some additive noise \cite{Widrow1451965}. In contrast to other common optimal filtering methods (e.g. Wiener, Kalman) ANC requires no \textit{a priori} knowledge of either the signal or the noise. Instead, ANC makes use of a reference input which is correlated in some unknown way with the noise in the primary signal. The reference is filtered and subtracted from the primary data so as to recover the underlying signal. For our purposes, the primary timeseries is the gravitational-wave strain channel, $x(t)$, Equation \eqref{eq:data}, and the reference is a PEM recording a mains voltage, $r(t)$, Equation \eqref{eq:voltage}. The objective of ANC is to remove the clutter $c(t)$ in Equation \eqref{eq:data} with the aid of $r(t)$ whilst leaving $h(t)$ i.e. the signal of interest, intact. \newline 
 
+\subsection{Filter}
 
-The reference  $r(t)$ is used to construct an estimate of the clutter, $\hat{c}(t)$. The clutter estimate can then be subtracted from the primary signal in the time domain, defining a residual $e(t)$:
+The first step in implementing ANC is to convert $r(t)$ into an estimate of the clutter, $\hat{c}(t)$. The clutter estimate is subtracted from the primary signal in the time domain, defining a residual
 \begin{eqnarray}
 	e(t) = x(t) - \hat{c}(t) \ .\label{eq:error_estimate}
 \end{eqnarray}
-As $\hat{c}(t) \to c(t)$, 	$e(t) \to h(t) + n(t)$ and we recover a noise cancelled timeseries. The clutter estimate is modelled by a finite duration impulse response (FIR) filter:
+In the limit $\hat{c}(t) \to c(t)$, one obtains	$e(t) \to h(t) + n(t)$ and recovers a noise cancelled timeseries. The clutter estimate is modelled by a finite duration impulse response (FIR) filter,
 \begin{eqnarray}
 	\hat{c}_k = \mathbf{w}^{\intercal}\mathbf{u}_k \ . \label{clutter_estimate}
 \end{eqnarray}
-where $\hat{c}_k$ is the clutter estimate at a discrete timestep $k$ (i.e. $\hat{c}_k = \hat{c}(t_{n_k})$), $\mathbf{u}_k$ is the tap-input vector composed of $M$ running samples of the reference signal arranged backwards in time:
+In Equation \eqref{clutter_estimate}, ${\hat c}_k = {\hat c}(t_{n_k})$ is the clutter estimate at the $n_k$-th time step , $\mathbf{u}_k$ is the tap-input vector composed of $M$ running samples of the reference signal arranged backwards in time,
  \begin{eqnarray}
  	\mathbf{u}_k &= [r_k, r_{k-1}, \dots, r_{k-M+1}] \ ,
  \end{eqnarray}
-and $\mathbf{w}$ is the tap-weight vector:
+and $\mathbf{w}$ is the tap-weight vector,
  \begin{eqnarray}
 	\mathbf{w} = [w_1, w_{2}, \dots, w_{M}] \ .
 \end{eqnarray}
-We want to determine the optimal tap weights $\mathbf{w}_{\rm opt}$, those which minimise the mean square error cost function:
+
+The goal of ANC is to determine the optimal tap weights $\mathbf{w}_{\rm opt}$, that minimise the mean square error cost function,
 \begin{eqnarray}
-	\mathbf{w}_{\rm opt} = \arg \min \sum_{t=t_1}^{t=t_{N}} |e(t)|^2 \ .
+	\mathbf{w}_{\rm opt} = \arg \min \sum_{k=1}^{K} \lambda^{K-k-1} |e_k|^2 \ , \label{eq:minim}
 \end{eqnarray}
-This minimization problem can be solved by way of an adaptive recursive least squares (ARLS) method which we now describe in Section \ref{sec:ARLS}
+where $0 \leq \lambda \leq 1$ is a ``forgetting factor" which gives exponentially less weight to older samples and can be freely chosen. The choice of $\lambda$ in this paper is discussed in Section \ref{sec:ARLS}. The minimization problem described by Equation \eqref{eq:minim} can be solved in many ways. Here we implement an ARLS algorithm. The algorithm is outlined in Section \ref{sec:ARLS}
 
-
-
-\subsection{Adaptive Recursive Least Squares Method}
+\subsection{ARLS algorithm}
 \label{sec:ARLS}
-We now outline the ARLS method to compute the optimal tap weights and estimate the noise-subtracted signal. 
+
+As its name implies, the ARLS algorithm is adaptive, in the sense that the estimates $\mathbf{\hat{w}}$ are continually updated based on new data. It is also recursive, in the sense that $\mathbf{\hat{w}}$ is updated iteratively as new data arrives, rather than reprocessing all previous data. Abbreviated pseudocode is presented below for the sake of reproducibility and the reader's convenience. The reader is referred to standard signal processing textbooks, e.g. \cite{HaykinAdaptiveFT:2002} for more information. \newline 
+
+
 \begin{enumerate}
-	\item Initialise the tap weights $\mathbf{w} = \mathbf{0}$ and a covariance matrix $\mathbf{P}= \delta^{-1} \mathbf{I}$, for regularisation parameter $0 < \delta \ll 1$  and identity matrix $\mathbf{I}$ of rank $M$.
-	\item For $k=1, \dots, K$:
-	
+	\item Initialise the tap weights $\mathbf{w} = \mathbf{0}$. Initialise a covariance matrix ${\bf P} = \langle {\bf w} {\bf w}^{\rm T} \rangle = \delta^{-1} {\bf I}$ of rank $M$ for regularisation parameter $0 < \delta \ll 1$  and an $M \times M$ identity matrix $\mathbf{I}$ where the superscript $T$ symbolises transposition.
+	\item For $1 \leq k \leq K$:
 	\begin{enumerate}
-		\item Estimate the clutter $\hat{c}_k$ by Equation \ref{clutter_estimate}
-		\item Calculate the residual $e_k$ by Equation \ref{eq:error_estimate}
+		\item Estimate the clutter $\hat{c}_k$ from Equation \eqref{clutter_estimate}
+		\item Calculate the residual $e_k$ from Equation \eqref{eq:error_estimate}
 		\item Calculate the gain vector
 		\begin{eqnarray}
 			\mathbf{g}_k = \frac{\mathbf{P} \mathbf{u}_k}{\lambda + \mathbf{u}_k^{\intercal}\mathbf{P} \mathbf{u}_k}
 		\end{eqnarray}
 	\item Update the tap weights
 			\begin{eqnarray}
-		\mathbf{w} \mathrel{+}=  e_k \mathbf{g} 
+		\mathbf{w}_k = \mathbf{w}_{k-1} +  e_k \mathbf{g}_k 
 	\end{eqnarray}
 	\item Update the covariance matrix
 \begin{eqnarray}
-	\mathbf{P} \mathrel{+}= \lambda^{-1} \mathbf{P} - \mathbf{g} \lambda^{-1} \mathbf{P} \mathbf{u}_k^{\intercal} 
+	\mathbf{P}_k =  \mathbf{P}_{k-1}  \lambda^{-1}  - \mathbf{g}_k \mathbf{u}_k^{\intercal}  \lambda^{-1} \mathbf{P}_{k-1} 
 \end{eqnarray}
 
 	\end{enumerate}
 
 \end{enumerate}
-The algorithm is also illustrated in Figure \ref{fig:arlsBlock} via a block diagram. \newline 
+The pseudocode is also illustrated in Figure \ref{fig:arlsBlock} via a block diagram. At time $t$ the filter receives the reference signal $r(t)$ and produces an estimate of the clutter $\hat{c}(t)$, given the current tap weights $\mathbf{w}$. By comparing $\hat{c}(t)$ with the strain data $x(t)$ a residual is calculated $e(t)$. The residual is then used in conjunction with $r(t)$ to update the weights and the algorithm continues iteratively. \newline 
 
 
-ARLS has two free parameters: the order parameter $M$ and the ``forgetting factor" $\lambda$, which is chosen so as to give exponentially less weight to older samples. The choice of $M$ influences the latency of the FIR filter, the computational overhead and the filter accuracy. In Sec.~\ref{sec:results} we trial a selection of $M$ values for synthetic GW data. The forgetting factor $\lambda$ ranges between 0 and 1, with $\lambda=1$ corresponding to infinite memory, causing the filter becomes an ordinary least squares method. In this work we use $\lambda=0.9999$. We refer the reader to Chapter 9 of Ref.~\cite{HaykinAdaptiveFT:2002} for a full review of adaptive least squares estimation in the context of linear filtering. 
+ARLS has three free parameters: the order parameter $M$, the forgetting factor" $\lambda$, and the regularisation parameter $\delta$. The choice of $M$ is essential for the accuracy of ARLS. Larger values of $M$ corresponds to an increased model complexity. Whilst this generally increases the accuracy of the resulting estimates, it also increases the computational overhead and hence the latency between receiving the input data and updating the weights. In Sec.~\ref{sec:results} we trial a selection of $M$ values for synthetic GW data. Regarding the forgetting factor,  $\lambda=1$ corresponds to infinite memory, causing the filter becomes an ordinary least squares method. In this work we use $\lambda=0.9999$.  The regularisation parameter $\delta$ must be ``suitable chosen" \citep{ljung1999system,1989system}. However general guidelines for choosing $\delta$ are not available. Instead $\delta$ is typically empirically selected for the particular problem. A large $\delta$ leads to rapid convergence of the ARLS algorithm, but the correspondingly larger variance in the parameter estimates before convergence. Conversely, a smaller $\delta$ leads to slower convergence and smaller variance in the parameter estimates. In this work we found $\delta = X$ to be good...\textcolor{red}{TK: to confirm with Sofia}. We refer the reader to Chapter 9 of Ref.~\cite{HaykinAdaptiveFT:2002} for a full review of adaptive least squares estimation in the context of linear filtering. 
 \begin{figure}
 	\begin{center}
 		\includegraphics[width=\columnwidth]{images/FIR_block.pdf}
 	\end{center}
-	\caption{Block diagram of the adaptive recursive least squares method described in Section \ref{sec:ARLS}. The reference signal $r(t)$ is passed to an FIR filter to construct an estimate of the signal clutter $\hat{c}(t)$. Subtracting the clutter estimate from the primary signal $x(t)$ provides a residual $e(t)$ which can then be used to update the weights $\mathbf{w}$ of the FIR filter and the method proceeds iteratively.}
+	\caption{Block diagram of the adaptive recursive least squares method described in Section \ref{sec:ARLS}. The reference signal $r(t)$ is passed to an FIR filter to construct an estimate of the signal clutter $\hat{c}(t)$. Subtracting the clutter estimate from the primary signal $x(t)$ provides a residual $e(t)$ which can then be used to update the weights $\mathbf{w}$ of the FIR filter and the method proceeds iteratively. The diagonal line across the FIR filter block denotes that the parameters of the block (i.e. $\mathbf{w}$) are being updated, without becoming part of the signal processed by the block}
 	\label{fig:arlsBlock}
 \end{figure}
 
-\section{HMM Validation tests} \label{sec:results}
+\section{Validation tests with an HMM} \label{sec:results}
 We want to test the ANC method described in the preceding section by trying to search for a continuous wave signal which has an initial frequency $f_{\rm GW}(t=0) = 60 $Hz, coincident with the instrumental line from the mains power grid. We search for the CW signal using a HMM scheme based on the Viterbi algorithm \cite{Viterbi1,viterbi2}. Specifically, we use the method introduced by \citet{Suvorova2016PhRv}, which has been thoroughly tested through multiple LVK searches \cite{Piccinni2022,Riles2023,Wette2023}. We do not cover any details of the HMM scheme in this work and refer the reader to \citet{Suvorova2016PhRv} for further information. The GW signal is obscured in the data by the presence of the mains power instrumental line. The challenge is to try to recover the signal by first passing the data $x(t)$ through the ANC filter before using the HMM tracker on this filtered dataset to try to recover the signal. In Section \ref{sec:creating_data} we describe how we create a synthetic dataset $x(t)$. In Section \ref{sec:representative_example} we introduce a representative example, illustrating the frequency tracking before and after ANC. In Section \ref{sec:roc1} we explore the performance of the ANC filter in response to different characteristics of the interference signal, e.g. variations in the central frequency $f_{\rm ac}$ relative to the initial GW frequency. In Section \ref{sec:roc2} we investigate the performance of the filter in response to different filter settings; the order of the filter $M$ (i.e. the number of taps) and the number of reference channel inputs.
 
 \subsection{Creating simulated data} \label{sec:creating_data}

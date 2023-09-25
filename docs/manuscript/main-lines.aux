@@ -53,58 +53,63 @@
 \newlabel{eq:voltage}{{2}{3}{}{equation.2.2}{}}
 \newlabel{eq:voltage_theta}{{3}{3}{}{equation.2.3}{}}
 \newlabel{eq:vclutter}{{4}{3}{}{equation.2.4}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {C}Cross-correlating $x(t)$ and $r(t)$}{3}{section*.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {C}Coherence between $x(t)$ and $r(t)$}{3}{section*.7}\protected@file@percent }
 \newlabel{sec23}{{II\,C}{3}{}{section*.7}{}}
 \citation{LIGO_O3}
 \citation{gwpy}
 \citation{Widrow1451965}
 \newlabel{eq:coherence}{{5}{4}{}{equation.2.5}{}}
 \newlabel{correlation_2}{{II\,C}{4}{}{equation.2.5}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Coherence $C_{xy}$ defined by Equation \ref  {eq:coherence} between the LIGO-Livingston strain channel \texttt  {L1:DCS-CALIB\_STRAIN\_C01\_AR} and the nine mains-power PEM channels during a 10 minute observation. Clear features at 60 Hz are present in every channel. $C_{xy}$ is lowest in the fourth and seventh panels, which correspond to microphones in the vacuum equipment area, which do not measure the mains voltage directly.}}{4}{figure.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {III}Adaptive Noise Cancellation}{4}{section*.8}\protected@file@percent }
-\newlabel{sec:method}{{III}{4}{}{section*.8}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces  Coherence spectrogram between the strain channel \texttt  {L1:DCS-CALIB\_STRAIN\_C01\_AR}and the PEM channel \texttt  {L1:PEM-CS\_MAINSMON\_EBAY\_1\_DQ}over a 10 minute period of O3 data. A strong coherence is observed at 60 Hz due to the main power interference. Additional coherence can also be observed at $\sim $ 200 Hz and 300 Hz due to instrumental lines of a different provenance c.f. Fig \ref  {fig:strainSensitivity}.}}{5}{figure.4}\protected@file@percent }
-\newlabel{correlation_1}{{4}{5}{Coherence spectrogram between the strain channel \StrainChanName and the PEM channel \PEMChanName over a 10 minute period of O3 data. A strong coherence is observed at 60 Hz due to the main power interference. Additional coherence can also be observed at $\sim $ 200 Hz and 300 Hz due to instrumental lines of a different provenance c.f. Fig \ref {fig:strainSensitivity}}{figure.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Coherence $C_{xy}$ defined by Equation \textup  {\hbox {\mathsurround \z@ \normalfont  (\ignorespaces \ref  {eq:coherence}\unskip \@@italiccorr )}} between the LIGO-Livingston strain channel \texttt  {L1:DCS-CALIB\_STRAIN\_C01\_AR} and the nine mains-power PEM channels during a 10 minute observation. Clear features at 60 Hz are present in every channel, with amplitudes $ > 0.8$.}}{4}{figure.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces  Coherence spectrogram between the strain channel \texttt  {L1:DCS-CALIB\_STRAIN\_C01\_AR}\, and the PEM channel \texttt  {L1:PEM-CS\_MAINSMON\_EBAY\_1\_DQ}\, covering a 1 hour period of O3 data. The $x$-axis is the time in minutes from the start of O3a, separated into N bins. The $y$-axis is the frequency in Hz, separated into Y bins. The pixel colour denotes the coherence $C_{xy}$, Equation \textup  {\hbox {\mathsurround \z@ \normalfont  (\ignorespaces \ref  {eq:coherence}\unskip \@@italiccorr )}}, in that time-frequency bin. A strong coherence is observed at 60 Hz due to the main power interference. Additional coherence features can also be observed at 0.2 kHz and 0.3 kHz due to instrumental lines of a different provenance c.f. Figure \ref  {fig:strainSensitivity}.}}{5}{figure.4}\protected@file@percent }
+\newlabel{correlation_1}{{4}{5}{Coherence spectrogram between the strain channel \StrainChanName \, and the PEM channel \PEMChanName \, covering a 1 hour period of O3 data. The $x$-axis is the time in minutes from the start of O3a, separated into N bins. The $y$-axis is the frequency in Hz, separated into Y bins. The pixel colour denotes the coherence $C_{xy}$, Equation \eqref {eq:coherence}, in that time-frequency bin. A strong coherence is observed at 60 Hz due to the main power interference. Additional coherence features can also be observed at 0.2 kHz and 0.3 kHz due to instrumental lines of a different provenance c.f. Figure \ref {fig:strainSensitivity}}{figure.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {III}ANC scheme}{5}{section*.8}\protected@file@percent }
+\newlabel{sec:method}{{III}{5}{}{section*.8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {A}Filter}{5}{section*.9}\protected@file@percent }
 \newlabel{eq:error_estimate}{{6}{5}{}{equation.3.6}{}}
 \newlabel{clutter_estimate}{{7}{5}{}{equation.3.7}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {A}Adaptive Recursive Least Squares Method}{5}{section*.9}\protected@file@percent }
-\newlabel{sec:ARLS}{{III\,A}{5}{}{section*.9}{}}
+\newlabel{eq:minim}{{10}{5}{}{equation.3.10}{}}
+\citation{HaykinAdaptiveFT:2002}
+\citation{ljung1999system,1989system}
 \citation{HaykinAdaptiveFT:2002}
 \citation{Viterbi1,viterbi2}
 \citation{Suvorova2016PhRv}
 \citation{Piccinni2022,Riles2023,Wette2023}
 \citation{Suvorova2016PhRv}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Block diagram of the adaptive recursive least squares method described in Section \ref  {sec:ARLS}. The reference signal $r(t)$ is passed to an FIR filter to construct an estimate of the signal clutter $\hat  {c}(t)$. Subtracting the clutter estimate from the primary signal $x(t)$ provides a residual $e(t)$ which can then be used to update the weights $\mathbf  {w}$ of the FIR filter and the method proceeds iteratively.}}{6}{figure.5}\protected@file@percent }
-\newlabel{fig:arlsBlock}{{5}{6}{Block diagram of the adaptive recursive least squares method described in Section \ref {sec:ARLS}. The reference signal $r(t)$ is passed to an FIR filter to construct an estimate of the signal clutter $\hat {c}(t)$. Subtracting the clutter estimate from the primary signal $x(t)$ provides a residual $e(t)$ which can then be used to update the weights $\mathbf {w}$ of the FIR filter and the method proceeds iteratively}{figure.5}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {IV}HMM Validation tests}{6}{section*.10}\protected@file@percent }
-\newlabel{sec:results}{{IV}{6}{}{section*.10}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {A}Creating simulated data}{6}{section*.11}\protected@file@percent }
-\newlabel{sec:creating_data}{{IV\,A}{6}{}{section*.11}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {B}ARLS algorithm}{6}{section*.10}\protected@file@percent }
+\newlabel{sec:ARLS}{{III\,B}{6}{}{section*.10}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Block diagram of the adaptive recursive least squares method described in Section \ref  {sec:ARLS}. The reference signal $r(t)$ is passed to an FIR filter to construct an estimate of the signal clutter $\hat  {c}(t)$. Subtracting the clutter estimate from the primary signal $x(t)$ provides a residual $e(t)$ which can then be used to update the weights $\mathbf  {w}$ of the FIR filter and the method proceeds iteratively. The diagonal line across the FIR filter block denotes that the parameters of the block (i.e. $\mathbf  {w}$) are being updated, without becoming part of the signal processed by the block}}{6}{figure.5}\protected@file@percent }
+\newlabel{fig:arlsBlock}{{5}{6}{Block diagram of the adaptive recursive least squares method described in Section \ref {sec:ARLS}. The reference signal $r(t)$ is passed to an FIR filter to construct an estimate of the signal clutter $\hat {c}(t)$. Subtracting the clutter estimate from the primary signal $x(t)$ provides a residual $e(t)$ which can then be used to update the weights $\mathbf {w}$ of the FIR filter and the method proceeds iteratively. The diagonal line across the FIR filter block denotes that the parameters of the block (i.e. $\mathbf {w}$) are being updated, without becoming part of the signal processed by the block}{figure.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {IV}Validation tests with an HMM}{6}{section*.11}\protected@file@percent }
+\newlabel{sec:results}{{IV}{6}{}{section*.11}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {A}Creating simulated data}{7}{section*.12}\protected@file@percent }
+\newlabel{sec:creating_data}{{IV\,A}{7}{}{section*.12}{}}
 \newlabel{eq:gwfreqnoise}{{17}{7}{}{equation.4.17}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Fourier response of the data $x(t)$ (orange), the GW signal $h(t)$ (green) and the ANC filtered data $x(t) - \hat  {c}(t)$ (blue) for a system with parameters described in Table \ref  {tab:parameterdescription2}. ANC filters out the excess power that results from the interference signal about the central 60 Hz frequency.}}{7}{figure.6}\protected@file@percent }
-\newlabel{fig:spectrum}{{6}{7}{Fourier response of the data $x(t)$ (orange), the GW signal $h(t)$ (green) and the ANC filtered data $x(t) - \hat {c}(t)$ (blue) for a system with parameters described in Table \ref {tab:parameterdescription2}. ANC filters out the excess power that results from the interference signal about the central 60 Hz frequency}{figure.6}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {B}Representative example}{7}{section*.12}\protected@file@percent }
-\newlabel{sec:representative_example}{{IV\,B}{7}{}{section*.12}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {I}{\ignorespaces Summary of parameters used to create synthetic data for testing the ANC method in Section \ref  {sec:results}, their physical meaning, and the injected values used throughout this work.}}{7}{table.1}\protected@file@percent }
-\newlabel{tab:parameterdescription2}{{I}{7}{Summary of parameters used to create synthetic data for testing the ANC method in Section \ref {sec:results}, their physical meaning, and the injected values used throughout this work}{table.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces  Fourier amplitude spectrogram and tracking of the frequency evolution of a continuous GW with $h = 0.025$ and $\sigma _f^2 = \{0.01, 0.1\}$ Hz $s^{-1/2}$ (orange and green lines respectively) using a HMM Viterbi algorithm. \textit  {Left panel:} before applying ANC filtering to remove the interference signal centred at 60 Hz, \textit  {Right panel:} after applying ANC. The Viterbi estimates of the spin wandering are noted by the dashed coloured lines. Before ANC, the Viterbi algorithm is unable to track the spin wandering. After ANC the Viterbi algorithm is able to track the GW frequency accurately for both the high and low noise cases.}}{8}{figure.7}\protected@file@percent }
-\newlabel{frequency tracking before and after1}{{7}{8}{Fourier amplitude spectrogram and tracking of the frequency evolution of a continuous GW with $h = 0.025$ and $\sigma _f^2 = \{0.01, 0.1\}$ Hz $s^{-1/2}$ (orange and green lines respectively) using a HMM Viterbi algorithm. \textit {Left panel:} before applying ANC filtering to remove the interference signal centred at 60 Hz, \textit {Right panel:} after applying ANC. The Viterbi estimates of the spin wandering are noted by the dashed coloured lines. Before ANC, the Viterbi algorithm is unable to track the spin wandering. After ANC the Viterbi algorithm is able to track the GW frequency accurately for both the high and low noise cases}{figure.7}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {C}ROC curves versus power line parameters}{8}{section*.13}\protected@file@percent }
-\newlabel{sec:roc1}{{IV\,C}{8}{}{section*.13}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces ROC curve over multiple noise realisations for different power line parameters. All other parameters are as specified in Table \ref  {tab:parameterdescription2}. There is an evident high false alarm rate for all parameters, with a low AUC value of 0.55 for $\Delta f =0.0$, $\gamma =0.1$, and a high AUC value of 0.68 for $\Delta f =0.0$, $\gamma =0.001$. The high false alarm rate is a result of the interference not being completely removed by the ANC filter.}}{9}{figure.8}\protected@file@percent }
-\newlabel{fig:roc1}{{8}{9}{ROC curve over multiple noise realisations for different power line parameters. All other parameters are as specified in Table \ref {tab:parameterdescription2}. There is an evident high false alarm rate for all parameters, with a low AUC value of 0.55 for $\Delta f =0.0$, $\gamma =0.1$, and a high AUC value of 0.68 for $\Delta f =0.0$, $\gamma =0.001$. The high false alarm rate is a result of the interference not being completely removed by the ANC filter}{figure.8}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces ROC curve for 3 different systems: System A with $\{ \gamma = 0.001, \Delta f = 0.0\}$, System B with $\{ \gamma = 0.01, \Delta f = 0.0\}$ and System C with $\{ \gamma = 0.01, \Delta f = 0.5\}$ (dotted, dashed, solid lines respectively). The orange lines denote the Viterbi search run with 2 reference channels, the blue lines using 1 reference channel. The green dotted line is the detection performance in the absence of ANC filtering. The grey dashed line is the performance of a random classifier. Detection using ANC filtering consistently outperforms that without ANC filtering. ANC filtering using 2 reference channels generally outperforms that using a single reference channel.}}{9}{figure.9}\protected@file@percent }
-\newlabel{fig:4C_roccurve_multi_ref}{{9}{9}{ROC curve for 3 different systems: System A with $\{ \gamma = 0.001, \Delta f = 0.0\}$, System B with $\{ \gamma = 0.01, \Delta f = 0.0\}$ and System C with $\{ \gamma = 0.01, \Delta f = 0.5\}$ (dotted, dashed, solid lines respectively). The orange lines denote the Viterbi search run with 2 reference channels, the blue lines using 1 reference channel. The green dotted line is the detection performance in the absence of ANC filtering. The grey dashed line is the performance of a random classifier. Detection using ANC filtering consistently outperforms that without ANC filtering. ANC filtering using 2 reference channels generally outperforms that using a single reference channel}{figure.9}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {II}{\ignorespaces Summary of AUC values for each of the ROC curves presented in Figure \ref  {fig:4C_roccurve_multi_ref}. Adding an extra PEM reference generally improves the detection performance, with the exception of system B. The AUC value for the zero PEM reference case (i.e. no ANC filtering) is $\text  {AUC} = 0.55$.}}{9}{table.2}\protected@file@percent }
-\newlabel{tab:AUC}{{II}{9}{Summary of AUC values for each of the ROC curves presented in Figure \ref {fig:4C_roccurve_multi_ref}. Adding an extra PEM reference generally improves the detection performance, with the exception of system B. The AUC value for the zero PEM reference case (i.e. no ANC filtering) is $\text {AUC} = 0.55$}{table.2}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {D}ROC curves vs. filter parameters}{9}{section*.14}\protected@file@percent }
-\newlabel{sec:roc2}{{IV\,D}{9}{}{section*.14}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {B}Representative example}{7}{section*.13}\protected@file@percent }
+\newlabel{sec:representative_example}{{IV\,B}{7}{}{section*.13}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Fourier response of the data $x(t)$ (orange), the GW signal $h(t)$ (green) and the ANC filtered data $x(t) - \hat  {c}(t)$ (blue) for a system with parameters described in Table \ref  {tab:parameterdescription2}. ANC filters out the excess power that results from the interference signal about the central 60 Hz frequency.}}{8}{figure.6}\protected@file@percent }
+\newlabel{fig:spectrum}{{6}{8}{Fourier response of the data $x(t)$ (orange), the GW signal $h(t)$ (green) and the ANC filtered data $x(t) - \hat {c}(t)$ (blue) for a system with parameters described in Table \ref {tab:parameterdescription2}. ANC filters out the excess power that results from the interference signal about the central 60 Hz frequency}{figure.6}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {I}{\ignorespaces Summary of parameters used to create synthetic data for testing the ANC method in Section \ref  {sec:results}, their physical meaning, and the injected values used throughout this work.}}{8}{table.1}\protected@file@percent }
+\newlabel{tab:parameterdescription2}{{I}{8}{Summary of parameters used to create synthetic data for testing the ANC method in Section \ref {sec:results}, their physical meaning, and the injected values used throughout this work}{table.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {C}ROC curves versus power line parameters}{8}{section*.14}\protected@file@percent }
+\newlabel{sec:roc1}{{IV\,C}{8}{}{section*.14}{}}
 \citation{10.1121/1.5109394}
 \citation{KUO1996669,doi:10.1177/1084713812456906}
 \citation{7755741}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces  Fourier amplitude spectrogram and tracking of the frequency evolution of a continuous GW with $h = 0.025$ and $\sigma _f^2 = \{0.01, 0.1\}$ Hz $s^{-1/2}$ (orange and green lines respectively) using a HMM Viterbi algorithm. \textit  {Left panel:} before applying ANC filtering to remove the interference signal centred at 60 Hz, \textit  {Right panel:} after applying ANC. The Viterbi estimates of the spin wandering are noted by the dashed coloured lines. Before ANC, the Viterbi algorithm is unable to track the spin wandering. After ANC the Viterbi algorithm is able to track the GW frequency accurately for both the high and low noise cases.}}{9}{figure.7}\protected@file@percent }
+\newlabel{frequency tracking before and after1}{{7}{9}{Fourier amplitude spectrogram and tracking of the frequency evolution of a continuous GW with $h = 0.025$ and $\sigma _f^2 = \{0.01, 0.1\}$ Hz $s^{-1/2}$ (orange and green lines respectively) using a HMM Viterbi algorithm. \textit {Left panel:} before applying ANC filtering to remove the interference signal centred at 60 Hz, \textit {Right panel:} after applying ANC. The Viterbi estimates of the spin wandering are noted by the dashed coloured lines. Before ANC, the Viterbi algorithm is unable to track the spin wandering. After ANC the Viterbi algorithm is able to track the GW frequency accurately for both the high and low noise cases}{figure.7}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {II}{\ignorespaces Summary of AUC values for each of the ROC curves presented in Figure \ref  {fig:4C_roccurve_multi_ref}. Adding an extra PEM reference generally improves the detection performance, with the exception of system B. The AUC value for the zero PEM reference case (i.e. no ANC filtering) is $\text  {AUC} = 0.55$.}}{9}{table.2}\protected@file@percent }
+\newlabel{tab:AUC}{{II}{9}{Summary of AUC values for each of the ROC curves presented in Figure \ref {fig:4C_roccurve_multi_ref}. Adding an extra PEM reference generally improves the detection performance, with the exception of system B. The AUC value for the zero PEM reference case (i.e. no ANC filtering) is $\text {AUC} = 0.55$}{table.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {D}ROC curves vs. filter parameters}{9}{section*.15}\protected@file@percent }
+\newlabel{sec:roc2}{{IV\,D}{9}{}{section*.15}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces ROC curve over multiple noise realisations for different power line parameters. All other parameters are as specified in Table \ref  {tab:parameterdescription2}. There is an evident high false alarm rate for all parameters, with a low AUC value of 0.55 for $\Delta f =0.0$, $\gamma =0.1$, and a high AUC value of 0.68 for $\Delta f =0.0$, $\gamma =0.001$. The high false alarm rate is a result of the interference not being completely removed by the ANC filter.}}{10}{figure.8}\protected@file@percent }
+\newlabel{fig:roc1}{{8}{10}{ROC curve over multiple noise realisations for different power line parameters. All other parameters are as specified in Table \ref {tab:parameterdescription2}. There is an evident high false alarm rate for all parameters, with a low AUC value of 0.55 for $\Delta f =0.0$, $\gamma =0.1$, and a high AUC value of 0.68 for $\Delta f =0.0$, $\gamma =0.001$. The high false alarm rate is a result of the interference not being completely removed by the ANC filter}{figure.8}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces ROC curve for 3 different systems: System A with $\{ \gamma = 0.001, \Delta f = 0.0\}$, System B with $\{ \gamma = 0.01, \Delta f = 0.0\}$ and System C with $\{ \gamma = 0.01, \Delta f = 0.5\}$ (dotted, dashed, solid lines respectively). The orange lines denote the Viterbi search run with 2 reference channels, the blue lines using 1 reference channel. The green dotted line is the detection performance in the absence of ANC filtering. The grey dashed line is the performance of a random classifier. Detection using ANC filtering consistently outperforms that without ANC filtering. ANC filtering using 2 reference channels generally outperforms that using a single reference channel.}}{10}{figure.9}\protected@file@percent }
+\newlabel{fig:4C_roccurve_multi_ref}{{9}{10}{ROC curve for 3 different systems: System A with $\{ \gamma = 0.001, \Delta f = 0.0\}$, System B with $\{ \gamma = 0.01, \Delta f = 0.0\}$ and System C with $\{ \gamma = 0.01, \Delta f = 0.5\}$ (dotted, dashed, solid lines respectively). The orange lines denote the Viterbi search run with 2 reference channels, the blue lines using 1 reference channel. The green dotted line is the detection performance in the absence of ANC filtering. The grey dashed line is the performance of a random classifier. Detection using ANC filtering consistently outperforms that without ANC filtering. ANC filtering using 2 reference channels generally outperforms that using a single reference channel}{figure.9}{}}
 \citation{1326385,KAR2017422,KAR2020107043}
-\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Mean square error (MSE) in the Viterbi estimates of the GW wandering spin frequency for a system with $h=0.025$ and $\Delta f =0.0$ relative to the number of taps used in the FIR filter. Up to three PEM reference channels are used. The solution for the case with zero interference clutter is also shown.}}{10}{figure.10}\protected@file@percent }
-\newlabel{fig:filterorder2}{{10}{10}{Mean square error (MSE) in the Viterbi estimates of the GW wandering spin frequency for a system with $h=0.025$ and $\Delta f =0.0$ relative to the number of taps used in the FIR filter. Up to three PEM reference channels are used. The solution for the case with zero interference clutter is also shown}{figure.10}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Mean square error (MSE) in the Viterbi estimates of the GW wandering spin frequency for a system with $h=0.025$ and $\Delta f =0.0$ relative to the number of taps used in the FIR filter. Up to three PEM reference channels are used. The solution for the case with zero interference clutter is also shown.}}{11}{figure.10}\protected@file@percent }
+\newlabel{fig:filterorder2}{{10}{11}{Mean square error (MSE) in the Viterbi estimates of the GW wandering spin frequency for a system with $h=0.025$ and $\Delta f =0.0$ relative to the number of taps used in the FIR filter. Up to three PEM reference channels are used. The solution for the case with zero interference clutter is also shown}{figure.10}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {V}Conclusions}{11}{section*.16}\protected@file@percent }
 \bibdata{main-linesNotes,bibLinesPaper}
 \bibcite{Blackburn2008}{{1}{2008}{{{Blackburn}\ \emph  {et~al.}}}{{{Blackburn}, {Cadonati}, {Caride}, {Caudill}, {Chatterji}, {Christensen}, {Dalrymple}, {Desai}, {Di Credico}, {Ely} \emph  {et~al.}}}}
 \bibcite{Aasi2012}{{2}{2012}{{{Aasi}\ \emph  {et~al.}}}{{{Aasi}, {Abadie}, {Abbott}, {Abbott}, {Abbott}, {Abernathy}, {Accadia}, {Acernese}, {Adams} \emph  {et~al.}}}}
@@ -131,8 +136,6 @@
 \bibcite{Driggers2012RScI}{{23}{2012}{{{Driggers}\ \emph  {et~al.}}}{{{Driggers}, {Evans}, {Pepper},\ and\ {Adhikari}}}}
 \bibcite{Tiwari2015}{{24}{2015}{{{Tiwari}\ \emph  {et~al.}}}{{{Tiwari}, {Drago}, {Frolov}, {Klimenko}, {Mitselmakher}, {Necula}, {Prodi}, {Re}, {Salemi}, {Vedovato},\ and\ {Yakushin}}}}
 \bibcite{Davis2019}{{25}{2019}{{{Davis}\ \emph  {et~al.}}}{{{Davis}, {Massinger}, {Lundgren}, {Driggers}, {Urban},\ and\ {Nuttall}}}}
-\@writefile{toc}{\contentsline {section}{\numberline {V}Conclusions}{11}{section*.15}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {}References}{11}{section*.16}\protected@file@percent }
 \bibcite{Driggers2019}{{26}{2019}{{{Driggers}\ \emph  {et~al.}}}{{{Driggers}, {Vitale}, {Lundgren}, {Evans}, {Kawabe}, {Dwyer}, {Izumi}, {Schofield}, {Effler}, {Sigg}, {Fritschel}, {Drago} \emph  {et~al.}}}}
 \bibcite{Jung2022PRD}{{27}{2022}{{Jung\ \emph  {et~al.}}}{{Jung, Oh, Kim, Son, Yokozawa, Washimi,\ and\ Oh}}}
 \bibcite{marin1997}{{28}{}{{Marin\ \emph  {et~al.}}}{{Marin, Shoemaker,\ and\ Weiss}}}
@@ -143,23 +146,26 @@
 \bibcite{Zhu2017PhRvD}{{33}{2017}{{{Zhu}\ \emph  {et~al.}}}{{{Zhu}, {Papa},\ and\ {Walsh}}}}
 \bibcite{JonesPhysRevD.106.123011}{{34}{2022}{{Jones\ \emph  {et~al.}}}{{Jones, Sun, Carlin, Dunn, Millhouse, Middleton, Meyers, Clearwater, Beniwal, Strang, Vargas,\ and\ Melatos}}}
 \bibcite{Suvorova2016PhRv}{{35}{2016}{{{Suvorova}\ \emph  {et~al.}}}{{{Suvorova}, {Sun}, {Melatos}, {Moran},\ and\ {Evans}}}}
+\@writefile{toc}{\contentsline {section}{\numberline {}References}{12}{section*.17}\protected@file@percent }
 \bibcite{LIGO_O3}{{36}{2021}{{{The LIGO Scientific Collaboration}\ \emph  {et~al.}}}{{{The LIGO Scientific Collaboration}, {the Virgo Collaboration}, {the KAGRA Collaboration}, {Abbott}, {Abbott}, {Acernese}, {Ackley}, {Adams}, {Adhikari}, {Adhikari} \emph  {et~al.}}}}
 \bibcite{GWOSC:online}{{37}{}{{GWO}}{{}}}
 \bibcite{Jaranowski1998}{{38}{1998}{{{Jaranowski}\ \emph  {et~al.}}}{{{Jaranowski}, {Kr{\'o}lak},\ and\ {Schutz}}}}
 \bibcite{gwpy}{{39}{2021}{{{Macleod}\ \emph  {et~al.}}}{{{Macleod}, {Areeda}, {Coughlin}, {Massinger},\ and\ {Urban}}}}
 \bibcite{Widrow1451965}{{40}{1975}{{Widrow\ \emph  {et~al.}}}{{Widrow, Glover, McCool, Kaunitz, Williams, Hearn, Zeidler, Eugene~Dong,\ and\ Goodlin}}}
 \bibcite{HaykinAdaptiveFT:2002}{{41}{2002}{{Haykin}}{{}}}
-\bibcite{Viterbi1}{{42}{1967}{{Viterbi}}{{}}}
-\bibcite{viterbi2}{{43}{2001}{{Quinn\ and\ Hannan}}{{}}}
-\bibcite{10.1121/1.5109394}{{44}{2019}{{Cheer\ \emph  {et~al.}}}{{Cheer, Patel,\ and\ Fontana}}}
-\bibcite{KUO1996669}{{45}{1996}{{Kuo\ and\ Kunduru}}{{}}}
-\bibcite{doi:10.1177/1084713812456906}{{46}{2012}{{Kokkinakis\ \emph  {et~al.}}}{{Kokkinakis, Azimi, Hu,\ and\ Friedland}}}
-\bibcite{7755741}{{47}{2018}{{Chowdhury\ \emph  {et~al.}}}{{Chowdhury, Hyder, Hafiz,\ and\ Haque}}}
-\bibcite{1326385}{{48}{2004}{{Gong\ and\ Cowan}}{{}}}
-\bibcite{KAR2017422}{{49}{2017}{{Kar\ and\ Swamy}}{{}}}
-\bibcite{KAR2020107043}{{50}{2020}{{Kar\ \emph  {et~al.}}}{{Kar, Anand,\ and\ Swamy}}}
+\bibcite{ljung1999system}{{42}{1999}{{Ljung}}{{}}}
+\bibcite{1989system}{{43}{1989}{{S{\"o}derstr{\"o}m\ and\ Stoica}}{{}}}
+\bibcite{Viterbi1}{{44}{1967}{{Viterbi}}{{}}}
+\bibcite{viterbi2}{{45}{2001}{{Quinn\ and\ Hannan}}{{}}}
+\bibcite{10.1121/1.5109394}{{46}{2019}{{Cheer\ \emph  {et~al.}}}{{Cheer, Patel,\ and\ Fontana}}}
+\bibcite{KUO1996669}{{47}{1996}{{Kuo\ and\ Kunduru}}{{}}}
+\bibcite{doi:10.1177/1084713812456906}{{48}{2012}{{Kokkinakis\ \emph  {et~al.}}}{{Kokkinakis, Azimi, Hu,\ and\ Friedland}}}
+\bibcite{7755741}{{49}{2018}{{Chowdhury\ \emph  {et~al.}}}{{Chowdhury, Hyder, Hafiz,\ and\ Haque}}}
+\bibcite{1326385}{{50}{2004}{{Gong\ and\ Cowan}}{{}}}
+\bibcite{KAR2017422}{{51}{2017}{{Kar\ and\ Swamy}}{{}}}
+\bibcite{KAR2020107043}{{52}{2020}{{Kar\ \emph  {et~al.}}}{{Kar, Anand,\ and\ Swamy}}}
 \bibstyle{apsrev4-1}
-\newlabel{LastBibItem}{{50}{12}{}{section*.16}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {}Acknowledgments}{12}{section*.17}\protected@file@percent }
-\newlabel{LastPage}{{}{12}{}{}{}}
-\gdef \@abspage@last{12}
+\newlabel{LastBibItem}{{52}{13}{}{section*.17}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {}Acknowledgments}{13}{section*.18}\protected@file@percent }
+\newlabel{LastPage}{{}{13}{}{}{}}
+\gdef \@abspage@last{13}
