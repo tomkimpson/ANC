@@ -17,38 +17,38 @@ Reallocated ex_buf (elt_size=1) to 40000 items from 20000.
 Reallocated out_buf (elt_size=1) to 40000 items from 20000.
 Reallocated name_tok (elt_size=4) to 40000 items from 20000.
 Reallocated name_sep_char (elt_size=1) to 40000 items from 20000.
-I was expecting a `,' or a `}'---line 1073 of file bibLinesPaper.bib
+I was expecting a `,' or a `}'---line 1093 of file bibLinesPaper.bib
  :  
  :  author = {{Fiori}, Irene and {Paoletti}, Federico and {Tringali}, Maria Concetta and {Janssens}, Kamiel and {Karathanasis}, Christos and {Men{\'e}ndez-V{\'a}zquez}, Alexis and {Romero-Rodr{\'\i}guez}, Alba and {Sugimoto}, Ryosuke and {Washimi}, Tatsuki and {Boschi}, Valerio and {Chiummo}, Antonino and {Cie{\'s}lar}, Marek and {De Rosa}, Rosario and {De Rossi}, Camilla and {Di Renzo}, Francesco and {Nardecchia}, Ilaria and {Pasqualetti}, Antonio and {Patricelli}, Barbara and {Ruggi}, Paolo and {Singh}, Neha},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Repeated entry---line 1249 of file bibLinesPaper.bib
+Repeated entry---line 1269 of file bibLinesPaper.bib
  : @article{Riles2023
  :                   ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1268 of file bibLinesPaper.bib
+Repeated entry---line 1288 of file bibLinesPaper.bib
  : @article{Wette2023
  :                   ,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 1742 of file bibLinesPaper.bib
+I was expecting a `,' or a `}'---line 1762 of file bibLinesPaper.bib
  :  
  :  author = {{Abdikamalov}, Ernazar and {Pagliaroli}, Giulia and {Radice}, David},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Repeated entry---line 1954 of file bibLinesPaper.bib
+Repeated entry---line 1974 of file bibLinesPaper.bib
  : @article{Riles2023
  :                   ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2049 of file bibLinesPaper.bib
+Repeated entry---line 2069 of file bibLinesPaper.bib
  : @article{LIGO_O3
  :                 ,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 2095 of file bibLinesPaper.bib
+I was expecting a `,' or a `}'---line 2115 of file bibLinesPaper.bib
  :  
  :  year={1997}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 2224 of file bibLinesPaper.bib
+I was expecting a `,' or a `}'---line 2244 of file bibLinesPaper.bib
  : 
  : @book{anderson2012optimal,
 (Error may have been on previous line)
@@ -77,45 +77,45 @@ Name 1 in "LIGO Scientific Collaboration, Virgo Collaboration, and KAGRA Collabo
 while executing---line 3444 of file apsrev4-1.bst
 Name 1 in "LIGO Scientific Collaboration, Virgo Collaboration, and KAGRA Collaboration" has a comma at the end for entry LIGOMarkov22
 while executing---line 3444 of file apsrev4-1.bst
-You've used 62 entries,
+You've used 64 entries,
             5847 wiz_defined-function locations,
-            2093 strings with 32448 characters,
-and the built_in function-call counts, 79043 in all, are:
-= -- 4096
-> -- 2892
-< -- 526
-+ -- 890
-- -- 756
-* -- 14030
-:= -- 7110
-add.period$ -- 64
-call.type$ -- 62
-change.case$ -- 256
-chr.to.int$ -- 68
-cite$ -- 71
-duplicate$ -- 7314
-empty$ -- 5676
-format.name$ -- 1700
-if$ -- 15666
+            2104 strings with 32696 characters,
+and the built_in function-call counts, 80719 in all, are:
+= -- 4208
+> -- 2925
+< -- 537
++ -- 900
+- -- 762
+* -- 14261
+:= -- 7294
+add.period$ -- 66
+call.type$ -- 64
+change.case$ -- 268
+chr.to.int$ -- 82
+cite$ -- 73
+duplicate$ -- 7485
+empty$ -- 5823
+format.name$ -- 1718
+if$ -- 16000
 int.to.chr$ -- 1
-int.to.str$ -- 70
-missing$ -- 915
-newline$ -- 238
-num.names$ -- 180
-pop$ -- 2688
+int.to.str$ -- 72
+missing$ -- 932
+newline$ -- 244
+num.names$ -- 186
+pop$ -- 2763
 preamble$ -- 1
-purify$ -- 307
+purify$ -- 317
 quote$ -- 0
-skip$ -- 2490
+skip$ -- 2550
 stack$ -- 0
-substring$ -- 1203
-swap$ -- 7621
-text.length$ -- 362
+substring$ -- 1237
+swap$ -- 7750
+text.length$ -- 365
 text.prefix$ -- 0
 top$ -- 8
-type$ -- 1057
+type$ -- 1080
 warning$ -- 5
-while$ -- 149
+while$ -- 155
 width$ -- 0
-write$ -- 571
+write$ -- 587
 (There were 13 error messages)
