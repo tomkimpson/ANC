@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{50}%
+\begin{thebibliography}{64}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -276,9 +276,9 @@
 \bibitem [{\citenamefont {{Wette}}(2023)}]{Wette2023}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
-  {{Wette}}},\ }\href {\doibase 10.48550/arXiv.2305.07106} {\bibfield
-  {journal} {\bibinfo  {journal} {arXiv e-prints}\ ,\ \bibinfo {eid}
-  {arXiv:2305.07106}} (\bibinfo {year} {2023})},\ \Eprint
+  {{Wette}}},\ }\href {\doibase 10.1016/j.astropartphys.2023.102880} {\bibfield
+   {journal} {\bibinfo  {journal} {Astroparticle Physics}\ }\textbf {\bibinfo
+  {volume} {153}},\ \bibinfo {eid} {102880} (\bibinfo {year} {2023})},\ \Eprint
   {http://arxiv.org/abs/2305.07106} {arXiv:2305.07106 [gr-qc]} \BibitemShut
   {NoStop}%
 \bibitem [{\citenamefont {Abbott}\ \emph {et~al.}(2022)\citenamefont {Abbott},
@@ -712,6 +712,13 @@
   {journal} {\bibinfo  {journal} {SoftwareX}\ }\textbf {\bibinfo {volume}
   {13}},\ \bibinfo {pages} {100657} (\bibinfo {year} {2021})}\BibitemShut
   {NoStop}%
+\bibitem [{\citenamefont {Welch}(1967)}]{Welch1161901}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
+  {Welch}},\ }\href {\doibase 10.1109/TAU.1967.1161901} {\bibfield  {journal}
+  {\bibinfo  {journal} {IEEE Transactions on Audio and Electroacoustics}\
+  }\textbf {\bibinfo {volume} {15}},\ \bibinfo {pages} {70} (\bibinfo {year}
+  {1967})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Widrow}\ \emph {et~al.}(1975)\citenamefont {Widrow},
   \citenamefont {Glover}, \citenamefont {McCool}, \citenamefont {Kaunitz},
   \citenamefont {Williams}, \citenamefont {Hearn}, \citenamefont {Zeidler},
@@ -736,22 +743,102 @@
   Theory}}},\ \bibinfo {edition} {4th}\ ed.\ (\bibinfo  {publisher} {Prentice
   Hall},\ \bibinfo {address} {Upper Saddle River, New Jersey, 07458},\ \bibinfo
   {year} {2002})\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Viterbi}(1967)}]{Viterbi1}%
+\bibitem [{\citenamefont {Hayes}(1996)}]{10.5555/547203}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
-  {Viterbi}},\ }\href {\doibase 10.1109/TIT.1967.1054010} {\bibfield  {journal}
-  {\bibinfo  {journal} {IEEE Transactions on Information Theory}\ }\textbf
-  {\bibinfo {volume} {13}},\ \bibinfo {pages} {260} (\bibinfo {year}
-  {1967})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Quinn}\ and\ \citenamefont
-  {Hannan}(2001)}]{viterbi2}%
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.~H.}\ \bibnamefont
+  {Hayes}},\ }\href@noop {} {\emph {\bibinfo {title} {Statistical Digital
+  Signal Processing and Modeling}}},\ \bibinfo {edition} {1st}\ ed.\ (\bibinfo
+  {publisher} {John Wiley \& Sons, Inc.},\ \bibinfo {address} {USA},\ \bibinfo
+  {year} {1996})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Ifeachor}\ and\ \citenamefont
+  {Jervis}(2002)}]{10.5555/560138}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.~G.}\ \bibnamefont
-  {Quinn}}\ and\ \bibinfo {author} {\bibfnamefont {E.~J.}\ \bibnamefont
-  {Hannan}},\ }\href {\doibase 10.1017/CBO9780511609602} {\emph {\bibinfo
-  {title} {The Estimation and Tracking of Frequency}}},\ Cambridge Series in
-  Statistical and Probabilistic Mathematics\ (\bibinfo  {publisher} {Cambridge
-  University Press},\ \bibinfo {year} {2001})\BibitemShut {NoStop}%
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {E.~C.}\ \bibnamefont
+  {Ifeachor}}\ and\ \bibinfo {author} {\bibfnamefont {B.~W.}\ \bibnamefont
+  {Jervis}},\ }\href@noop {} {\emph {\bibinfo {title} {Digital Signal
+  Processing: A Practical Approach}}},\ \bibinfo {edition} {2nd}\ ed.\
+  (\bibinfo  {publisher} {Pearson Education},\ \bibinfo {year}
+  {2002})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Ljung}(1999)}]{ljung1999system}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
+  {Ljung}},\ }\href {https://books.google.com.au/books?id=nHFoQgAACAAJ} {\emph
+  {\bibinfo {title} {System Identification: Theory for the User}}},\ Prentice
+  Hall information and system sciences series\ (\bibinfo  {publisher} {Prentice
+  Hall PTR},\ \bibinfo {year} {1999})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {S{\"o}derstr{\"o}m}\ and\ \citenamefont
+  {Stoica}(1989)}]{1989system}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
+  {S{\"o}derstr{\"o}m}}\ and\ \bibinfo {author} {\bibfnamefont
+  {P.}~\bibnamefont {Stoica}},\ }\href
+  {https://books.google.com.au/books?id=X_xQAAAAMAAJ} {\emph {\bibinfo {title}
+  {System Identification}}},\ Prentice-Hall Software Series\ (\bibinfo
+  {publisher} {Prentice Hall},\ \bibinfo {year} {1989})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Collaboration}\ and\ \citenamefont
+  {Collaboration}(2017)}]{LIGOMarkov17}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.~S.}\ \bibnamefont
+  {Collaboration}}\ and\ \bibinfo {author} {\bibfnamefont {V.}~\bibnamefont
+  {Collaboration}} (\bibinfo {collaboration} {LIGO Scientific Collaboration and
+  Virgo Collaboration}),\ }\href {\doibase 10.1103/PhysRevD.95.122003}
+  {\bibfield  {journal} {\bibinfo  {journal} {Phys. Rev. D}\ }\textbf {\bibinfo
+  {volume} {95}},\ \bibinfo {pages} {122003} (\bibinfo {year}
+  {2017})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Collaboration}\ and\ \citenamefont
+  {Collaboration}(2019)}]{LIGOMarkov19}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.~S.}\ \bibnamefont
+  {Collaboration}}\ and\ \bibinfo {author} {\bibfnamefont {V.}~\bibnamefont
+  {Collaboration}} (\bibinfo {collaboration} {LIGO Scientific Collaboration and
+  Virgo Collaboration}),\ }\href {\doibase 10.1103/PhysRevD.100.122002}
+  {\bibfield  {journal} {\bibinfo  {journal} {Phys. Rev. D}\ }\textbf {\bibinfo
+  {volume} {100}},\ \bibinfo {pages} {122002} (\bibinfo {year}
+  {2019})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Isi}\ \emph {et~al.}(2019)\citenamefont {Isi},
+  \citenamefont {Sun}, \citenamefont {Brito},\ and\ \citenamefont
+  {Melatos}}]{PhysRevD.99.084042}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Isi}}, \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont {Sun}}, \bibinfo
+  {author} {\bibfnamefont {R.}~\bibnamefont {Brito}}, \ and\ \bibinfo {author}
+  {\bibfnamefont {A.}~\bibnamefont {Melatos}},\ }\href {\doibase
+  10.1103/PhysRevD.99.084042} {\bibfield  {journal} {\bibinfo  {journal} {Phys.
+  Rev. D}\ }\textbf {\bibinfo {volume} {99}},\ \bibinfo {pages} {084042}
+  (\bibinfo {year} {2019})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{Sun}}\ \emph {et~al.}(2018)\citenamefont {{Sun}},
+  \citenamefont {{Melatos}}, \citenamefont {{Suvorova}}, \citenamefont
+  {{Moran}},\ and\ \citenamefont {{Evans}}}]{2018PhRvD..97d3013S}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
+  {{Sun}}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {{Melatos}}},
+  \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {{Suvorova}}}, \bibinfo
+  {author} {\bibfnamefont {W.}~\bibnamefont {{Moran}}}, \ and\ \bibinfo
+  {author} {\bibfnamefont {R.~J.}\ \bibnamefont {{Evans}}},\ }\href {\doibase
+  10.1103/PhysRevD.97.043013} {\bibfield  {journal} {\bibinfo  {journal}
+  {\prd}\ }\textbf {\bibinfo {volume} {97}},\ \bibinfo {eid} {043013} (\bibinfo
+  {year} {2018})},\ \Eprint {http://arxiv.org/abs/1710.00460} {arXiv:1710.00460
+  [astro-ph.IM]} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {LIGO Scientific~Collaboration}\ and\ \citenamefont
+  {Collaboration}(2022)}]{LIGOMarkov22}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {V.~C.}\ \bibnamefont
+  {LIGO Scientific~Collaboration}}\ and\ \bibinfo {author} {\bibfnamefont
+  {K.}~\bibnamefont {Collaboration}} (\bibinfo {collaboration} {LIGO Scientific
+  Collaboration, Virgo Collaboration, and KAGRA Collaboration}),\ }\href
+  {\doibase 10.1103/PhysRevD.106.062002} {\bibfield  {journal} {\bibinfo
+  {journal} {Phys. Rev. D}\ }\textbf {\bibinfo {volume} {106}},\ \bibinfo
+  {pages} {062002} (\bibinfo {year} {2022})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{Vargas}}\ and\ \citenamefont
+  {{Melatos}}(2023)}]{2023PhRvD.107f4062V}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.~F.}\ \bibnamefont
+  {{Vargas}}}\ and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {{Melatos}}},\ }\href {\doibase 10.1103/PhysRevD.107.064062} {\bibfield
+  {journal} {\bibinfo  {journal} {\prd}\ }\textbf {\bibinfo {volume} {107}},\
+  \bibinfo {eid} {064062} (\bibinfo {year} {2023})},\ \Eprint
+  {http://arxiv.org/abs/2208.03932} {arXiv:2208.03932 [gr-qc]} \BibitemShut
+  {NoStop}%
 \bibitem [{\citenamefont {Cheer}\ \emph {et~al.}(2019)\citenamefont {Cheer},
   \citenamefont {Patel},\ and\ \citenamefont {Fontana}}]{10.1121/1.5109394}%
   \BibitemOpen
@@ -824,4 +911,56 @@
   {journal} {\bibinfo  {journal} {Applied Acoustics}\ }\textbf {\bibinfo
   {volume} {158}},\ \bibinfo {pages} {107043} (\bibinfo {year}
   {2020})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Ciochina}\ \emph {et~al.}(2009)\citenamefont
+  {Ciochina}, \citenamefont {Paleologu}, \citenamefont {Benesty},\ and\
+  \citenamefont {Enescu}}]{Ciochina5206117}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Ciochina}}, \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {Paleologu}},
+  \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Benesty}}, \ and\
+  \bibinfo {author} {\bibfnamefont {A.~A.}\ \bibnamefont {Enescu}},\ }in\ \href
+  {\doibase 10.1109/ISSCS.2009.5206117} {\emph {\bibinfo {booktitle} {2009
+  International Symposium on Signals, Circuits and Systems}}}\ (\bibinfo {year}
+  {2009})\ pp.\ \bibinfo {pages} {1--4}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Mahadi}\ \emph {et~al.}(2022)\citenamefont {Mahadi},
+  \citenamefont {Ballal}, \citenamefont {Moinuddin},\ and\ \citenamefont
+  {Al-Saggaf}}]{app12042077}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Mahadi}}, \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont {Ballal}},
+  \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Moinuddin}}, \ and\
+  \bibinfo {author} {\bibfnamefont {U.~M.}\ \bibnamefont {Al-Saggaf}},\ }\href
+  {\doibase 10.3390/app12042077} {\bibfield  {journal} {\bibinfo  {journal}
+  {Applied Sciences}\ }\textbf {\bibinfo {volume} {12}} (\bibinfo {year}
+  {2022}),\ 10.3390/app12042077}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Leung}\ and\ \citenamefont {So}(2005)}]{1468506}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.-H.}\ \bibnamefont
+  {Leung}}\ and\ \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {So}},\
+  }\href {\doibase 10.1109/TSP.2005.851110} {\bibfield  {journal} {\bibinfo
+  {journal} {IEEE Transactions on Signal Processing}\ }\textbf {\bibinfo
+  {volume} {53}},\ \bibinfo {pages} {3141} (\bibinfo {year}
+  {2005})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Paleologu}\ \emph {et~al.}(2008)\citenamefont
+  {Paleologu}, \citenamefont {Benesty},\ and\ \citenamefont
+  {Ciochina}}]{4639569}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Paleologu}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Benesty}},
+  \ and\ \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Ciochina}},\
+  }\href {\doibase 10.1109/LSP.2008.2001559} {\bibfield  {journal} {\bibinfo
+  {journal} {IEEE Signal Processing Letters}\ }\textbf {\bibinfo {volume}
+  {15}},\ \bibinfo {pages} {597} (\bibinfo {year} {2008})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Van~Vaerenbergh}\ \emph {et~al.}(2012)\citenamefont
+  {Van~Vaerenbergh}, \citenamefont {Santamaría},\ and\ \citenamefont
+  {Lázaro-Gredilla}}]{6349749}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Van~Vaerenbergh}}, \bibinfo {author} {\bibfnamefont {I.}~\bibnamefont
+  {Santamaría}}, \ and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Lázaro-Gredilla}},\ }in\ \href {\doibase 10.1109/MLSP.2012.6349749} {\emph
+  {\bibinfo {booktitle} {2012 IEEE International Workshop on Machine Learning
+  for Signal Processing}}}\ (\bibinfo {year} {2012})\ pp.\ \bibinfo {pages}
+  {1--6}\BibitemShut {NoStop}%
 \end{thebibliography}%
