@@ -401,162 +401,44 @@ In this section, we quantify the performance of the HMM tracker, when it analyze
 
 \begin{figure}
 	\begin{center}
-		\includegraphics[width=\columnwidth]{images/roc_curve_mains_power_params}
+		\includegraphics[width=\columnwidth]{images/roc_curve_mains_power_params_log}
 	\end{center}
-	\caption{Detection probability $p_{\rm d}$ as a function of false alarm probability $p_{\rm fa}$ (i.e. ROC curve) for HMM tracking of a CW signal ($h_0 / \sigma_n = 0.022$) in conjunction with the ANC scheme, for different mains power interference parameters. The top, middle and bottom panels display different values of $\Delta f_{\rm ac}$, $\sigma_{\Theta}^2$, and $P$ respectively. The diagonal grey dashed line in all panels corresponds to the performance of a random classifier. In all panels the curves overlap approximately, illustrating that the performance of the HMM and ANC scheme is insensitive to the mains power parameters. At $p_{\rm fa} = 0.05$, the mean $p_{d}$ across the 3 curves is 0.52 (top panel), 0.48 (middle panel) and 0.58 (bottom panel).}
+	\caption{Detection probability $p_{\rm d}$ as a function of false alarm probability $p_{\rm fa}$ (i.e. ROC curve) for HMM tracking of a CW signal ($h_0 / \sigma_n = 0.022$) in conjunction with the ANC scheme, for different mains power interference parameters. The top, middle and bottom panels display different values of $\Delta f_{\rm ac}$, $\sigma_{\Theta}^2$, and $P$ respectively. The grey dashed curve in all panels corresponds to the performance of a random classifier. In all panels the curves overlap approximately, illustrating that the performance of the HMM and ANC scheme is insensitive to the mains power parameters. At $p_{\rm fa} = 0.05$, the mean $p_{d}$ across the 3 curves is 0.52 (top panel), 0.48 (middle panel) and 0.58 (bottom panel).}
 	\label{fig:roc1}
 \end{figure}
 In this section we test how the ANC scheme and HMM tracker perform together as a function of the mains power parameters $\Delta f_{\rm ac}$, $\sigma_\Theta^2$ and $P$. To this end, we calculate the probability of detecting the CW signal, $p_{\rm d}$, as a function of the false alarm probability, $p_{\rm fa}$, i.e. the ROC curve $p_{\rm d} (p_{\rm fa})$. We consider three numerical experiments. In the first experiment we vary $\Delta f_{\rm ac} =  \{0.5, 1.0, 1.5\}$ Hz whilst holding constant $\sigma_{\Theta}^2 = 10^{-2}$ and $P = 100 $ s. In the second experiment we vary $\sigma_{\Theta}^2 =  \{ 10^{-3}, 10^{-2}, 10^{-1}\}$ whilst holding constant $\Delta f_{\rm ac} = 1.0$ Hz and $P = 100 $ s. In the third experiment we vary $P=  \{ 10, 10^2, 10^3\}$ s whilst holding constant $\Delta f_{\rm ac} = 1.0$ Hz and $\sigma_{\Theta}^2 = 10^{-2}$. For all experiments we fix $h_0 / \sigma_n = 0.022$, $f_{\rm gw}(t=0) = 59.9$ Hz, and $N \Delta t = 800$ s. Despite expecting $\Delta f_{\rm ac} < 0.5$ in practice, as discussed in Section \ref{sec21}, we trial larger values of $\Delta f_{\rm ac}$ in order to set a more difficult test for the ANC scheme and HMM tracker. All injected parameters are specified in Table \ref{tab:parameterdescription1}. \newline 
 
 
-Figure \ref{fig:roc1} displays the ROC curves resulting from the three numerical experiments above. In the top panel the results of the first experiment are plotted, where we set  $\Delta f_{\rm ac} = \{0.5, 1.0, 1.5\}$ Hz (blue, green and orange curves respectively). Also plotted for comparison is the performance of a random classifier (grey dashed diagonal line). The performance across different $\Delta f_{\rm ac}$ values is broadly comparable, with the ROC curves generally overlaid. For all values of $\Delta f_{\rm ac}$ the ANC scheme and HMM tracker outperform a random classifier (i.e. each of the ROC curves lies above the grey dashed line). We take $p_{d}(p_{\rm fa} =0.05)$ as a scalar metric to quantify the performance of the HMM-ANC combination. For the top panel $p_{\rm d}(0.05$) = $(0.5, 0.5, 0.57)$ for $\Delta f_{\rm ac} =  \{0.5, 1.0, 1.5\}$ Hz respectively. In the middle panel the results of the second experiment are plotted, where we set  $\sigma_{\Theta}^2 =  \{ 10^{-3}, 10^{-2}, 10^{-1}\}$  (blue, green and orange curves respectively). Again the ANC scheme and HMM tracker outperform a random classifier, and the results are broadly consistent across different parameter values, with $p_{\rm d}(0.05$) = $(0.44,0.50,0.49)$ for $\sigma_{\Theta}^2 =  \{ 10^{-3}, 10^{-2}, 10^{-1}\}$ respectively. In the bottom panel the results of the third experiment are plotted where we set $P=  \{ 10, 10^2, 10^3\}$ s (blue, green and orange curves respectively). Once again the scheme outperforms a random classifier and is robust to different parameter values, with $p_{\rm d}(0.05) = (0.7,0.49,0.54)$ for $P=  \{ 10, 10^2, 10^3\}$ s respectively.
+Figure \ref{fig:roc1} displays the ROC curves resulting from the three numerical experiments above in the top, middle and bottom panels respectively. For example in the top panel the results of the first experiment are plotted, where we set  $\Delta f_{\rm ac} = \{0.5, 1.0, 1.5\}$ Hz (blue, green and orange curves respectively). Also plotted for comparison is the performance of a random classifier (grey dashed curve). The performance across different $\Delta f_{\rm ac}$, $\sigma_\Theta$, and $P$ values is broadly comparable, with the ROC curves overlapping approximately and outperforming a random classifier (i.e. each of the ROC curves lies above the grey dashed line). \newline 
 
 
-\subsection{Filter parameters} \label{sec:roc2}
+We take $p_{d}(p_{\rm fa} =0.05)$ as a scalar metric to quantify the typical performance of the HMM-ANC combination in practical applications. In the top panel we obtain $p_{\rm d}(0.05$) = $ \{0.50, 0.50, 0.57 \}$ for $\Delta f_{\rm ac} =  \{0.5, 1.0, 1.5\}$ Hz respectively. In the middle panel we obtain $p_{\rm d}(0.05$) = $ \{0.44,0.50,0.49 \}$ for $\sigma_{\Theta}^2 =  \{ 10^{-3}, 10^{-2}, 10^{-1}\}$ respectively. In the bottom panel we obtain $p_{\rm d}(0.05) = (0.7,0.49,0.54)$ for $P=  \{ 10, 10^2, 10^3\}$ s respectively.
+
+
+\subsection{ANC filter parameters} \label{sec:roc2}
 \begin{figure}
 	\begin{center}
-		\includegraphics[width=\columnwidth]{images/roc_curve_filter_params}
+		\includegraphics[width=\columnwidth]{images/roc_curve_filter_params_log}
 	\end{center}
-	\caption{ROC curves $p_{\rm d} (p_{\rm fa})$ for the HMM/ANC tracking of a CW signal for different ANC filter parameters. The top panel displays the ROC curves for different number of PEM reference channels, $N_{\rm ref}$, the middle panel different values of $M$ and the bottom panel different values of $\lambda$. All panels additionally include the ROC curve for a random classifier (i.e. the lower performance limit, diagonal grey dashed line) and the ROC curve for the case where there is zero interference (i.e. the upper performance limit, grey dotted line).}
+	\caption{As Figure \ref{fig:roc1} but for different ANC filter parameters. The top, middle and bottom panels display the ROC curves for different numbers of PEM reference channels, $N_{\rm ref}$, tap weights $M$, and forgetting factors $\lambda$ respectively. All panels additionally include the ROC curve for a random classifier (i.e. the lower performance limit, grey dashed line) and the zero interference ROC curve (i.e. the upper performance limit, grey dotted curve).}
 	\label{fig:roc2}
 \end{figure}
-We have shown in Section \ref{sec:roc1} how the ANC scheme and HMM tracker are robust to different parameters of the mains power interference. In this section we investigate different parameters of the ANC scheme itself. Specifically, we investigate three important questions:
+We verified in Section \ref{sec:roc1} that the ANC scheme and HMM tracker are insensitive to the mains power interference parameters. In this section we investigate the performance as a function of the control parameters of the ANC filter itself. Specifically, we investigate three important questions:
 \begin{enumerate}
 	\item How does ANC benefit from multiple independent references?
 	\item What order ANC filter ($M$) is required to achieve good interference cancellation? 
 	\item How does ANC performance depend on $\lambda$?
 \end{enumerate} 
-Regarding the first question, the preceding validation tests on synthetic data all assumed that we have a single PEM reference voltage measurement. However, as discussed in Section \ref{sec23} in practice there are multiple PEM channels measuring power line interference for LIGO (c.f. Figure \ref{coherenceplot_1}). Specifically, for O3 there are 9 PEM channels which directly measure the mains voltage at each of the LIGO-Livingston and LIGO-Hanford sites. Multiple PEM channels provided additional independent measurements of the reference voltage; it seems reasonable to suspect that these additional channels may aid the performance of the ANC filter. Indeed, ANC is commonly used with multiple reference signals in other electrical engineering applications such as noise cancelling headphones \citep{10.1121/1.5109394}, communication intelligibility \citep{KUO1996669,doi:10.1177/1084713812456906} and cardiac monitoring \citep{7755741}. For the second question, the order of the filter, i.e. the number of taps, is a parameter that can be freely chosen in ARLS. Generally an increased number of taps is expected to improve the performance of the filter due to the increased model complexity. However, this comes at an increased computational cost and also an increased latency. For real time applications tracking the wandering of the GW frequency it is important to minimize both of these variables. In this work we explicitly specify the number of taps; we note that adaptive tap length methods are also available \citep[e.g.][]{1326385,KAR2017422,KAR2020107043}. Regarding the third question, the use of the forgetting factor $\lambda$ allows ARLS to handle non-stationary systems, neglecting older data in favour of more recent data. This is useful for cases where the model parameters are time-varying, enabling more rapid convergence and effective tracking. In the case when $\lambda = 1$, ARLS has infinite memory and so exhibits good stability and low misadjustment. However the tracking capability can be reduced for non-stationary systems. Conversely, $\lambda < 1$ improves the tracking at the expense of reduced stability and increased misadjustment \citep{Ciochina5206117}. In this paper we run ARLS using a specific value for $\lambda$, but note that adaptive $\lambda$ algorithms are also available \citep{app12042077,1468506,4639569}. \newline 
 
 
-
-Figure \ref{fig:roc2} displays the ROC curves for different values of the number of PEM references ($N_{\rm ref}$, top panel), $M$ (middle panel) and $\lambda$ (bottom panel). All mains power interference parameters are as specified in Table \ref{tab:parameterdescription1}. Also plotted for comparison in every panel is the ROC curve of a random classifier (grey dashed diagonal line) and the ROC curve when $c(t) = 0$ (grey dotted line). The zero interference case is included to provide a reference on the performance upper limit. \newline 
-
-The top panel plots the ROC curves for $N_{\rm ref} = \{ 1,2,9 \}$ (blue, green and orange curves respectively). The detection probability $p_{\rm pd} (0.05) = \{ 0.38,0.52,0.55 \}$ for each of the respective $N_{\rm ref}$. For comparison, in the zero interference case $p_{\rm pd}(0.05) = 0.85$. It is evident that $N_{\rm ref} > 1$ are generally an improvement over $N_{\rm ref} = 1$. However, the improvement of $N_{\rm ref} =9$ over $N_{\rm ref} =2$ is more modest. This suggests that the inclusion of additional reference PEM channels quickly reaches a point of diminishing returns where the interference is well-captured by a few reference channels, and adding more references beyond this point does not improve the effectiveness of the filter. The middle panel plots $M = \{10,15,30\}$ (blue, green, and orange curves respectively). The detection probability $p_{\rm pd} (0.05) = \{0.37, 0.57, 0.58\}$ for each respective $M$. Analogous to the top panel, increasing $M$ generally increases the detection probability, but the performance quickly saturates such that the ROC curves for $M=15$ and $M=30$ are highly comparable. In the bottom panel we plot $\lambda = \{1,2,9\}$ (blue, green, orange curves respectively), which have respective $p_{\rm pd} (0.05) = \{0.38, 0.52, 0.55\}$. A clear hierarchy is evident whereby larger values of $\lambda$ increase the detection probability. For the synthetic data in this paper $\lambda=1$ is advantageous for detection since the interference is quasi-stationary (c.f. Equation \ref{eq:clutterequation}). Consequently, discounting older data with $\lambda < 1$ inhibits the ability of the ANC scheme to filter out the interference. We defer investigation of non-stationary interference (c.f. Equation \ref{eq:vclutter}) to a future work. For application to real astrophysical data $\lambda$ will need to be selected optimally e.g. \citep{6349749}. 
+Figure \ref{fig:roc2} displays the ROC curves for different values of the number of PEM references ($N_{\rm ref}$, top panel), $M$ (middle panel) and $\lambda$ (bottom panel). All mains power interference parameters are as specified in Table \ref{tab:parameterdescription1}. Also plotted for comparison in every panel is the ROC curve of a random classifier (grey dashed diagonal line) and the ROC curve for $c(t) = 0$ (grey dotted line). The zero interference case is included as a performance upper bound. The validation tests in Sections \ref{sec:representative_example} and \ref{sec:roc1} assume a single PEM reference voltage. In practice, as discussed in Section \ref{sec23}, there are multiple PEM channels measuring power line interference for LIGO (c.f. Figure \ref{coherenceplot_1}). Specifically, for O3 there are nine PEM channels which directly measure the three-phase voltages at each of the LIGO-Livingston and LIGO-Hanford sites. Multiple PEM channels provided additional independent references, which should improve the performance of the ANC filter. Indeed, ANC is commonly used with multiple reference signals in other electrical engineering applications such as noise cancelling headphones \citep{10.1121/1.5109394}, communication intelligibility \citep{KUO1996669,doi:10.1177/1084713812456906} and cardiac monitoring \citep{7755741}. Indeed an improvement of this kind is visible in the top pane of Figure \ref{fig:roc2} which plots the ROC curves for $N_{\rm ref} = \{ 1,2,9 \}$ (blue, green and orange curves respectively). The detection probability $p_{\rm pd} (0.05) = \{ 0.38,0.52,0.55 \}$ for each of the respective $N_{\rm ref}$. For comparison, in the zero interference case $p_{\rm pd}(0.05) = 0.85$. It is evident that $N_{\rm ref} > 1$ are generally an improvement over $N_{\rm ref} = 1$. However, the improvement of $N_{\rm ref} =9$ over $N_{\rm ref} =2$ is more modest. This suggests that the inclusion of additional reference PEM channels reaches a point of diminishing returns. \newline 
 
 
-%\begin{figure}
-%	\begin{center}
-%		\includegraphics[width=\columnwidth]{images/taps_vs_error}
-%	\end{center}
-%	\caption{Mean square error (MSE) in the Viterbi estimates of the GW wandering spin frequency for a system with $h=0.025$ and $\Delta f =0.0$ relative to the number of taps used in the FIR filter. Up to three PEM reference channels are used. The solution for the case with zero interference clutter is also shown.}
-%	\label{fig:filterorder2}
-%\end{figure}
+With respect to the second question concerning the order of the filter, more taps should improve the performance of the filter due to the increased model complexity. Indeed, this trend is observed in the middle panel of Figure \ref{fig:roc2}  which plots ROC curves for $M = \{10,15,30\}$ (blue, green, and orange curves respectively). The detection probability $p_{\rm pd} (0.05) = \{0.37, 0.57, 0.58\}$ for each respective $M$. Analogous to the top panel, increasing $M$ generally increases the detection probability, but the performance saturates; the ROC curves for $M=15$ and $M=30$ are comparable. More taps increases the computational costs and latency (i.e. the delay in the signal processing pipeline due to the filter). In this work we explicitly specify the number of taps, while noting that adaptive tap length methods are also available \citep[e.g.][]{1326385,KAR2017422,KAR2020107043}. \newline 
 
 
-%We have shown that the ANC filter used in conjunction with the Viterbi algorithm is effective at tracking the wandering GW spin frequency, but suffers from a high false alarm rate for the particular parameters of the ANC filter that we have been using. 
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%The results are presented in Figure \ref{fig:roc2}
-%
-%
-%
-%
-%
-%
+With respect to the third question concerning the forgetting factor $\lambda$, we find that $p_{\rm d}$ is a strong function of $\lambda$ at fixed $p_{\rm fa}$. In the bottom panel of Figure \ref{fig:roc2}, we plot ROC curves for $\lambda = \{1,2,9\}$ (blue, green, orange curves respectively), which have $p_{\rm pd} (0.05) = \{0.38, 0.52, 0.55\}$ respectively. A clear hierarchy is evident whereby larger values of $\lambda$ increase the detection probability. For the synthetic data in this paper $\lambda=1$ is advantageous for detection since the interference is quasi-stationary (c.f. Equation \ref{eq:clutterequation}). Consequently, discounting older data with $\lambda < 1$ inhibits the ability of the ANC scheme to filter out the interference. We defer investigation of non-stationary interference (c.f. Equation \ref{eq:vclutter}) to future work. When analysing real astrophysical data $\lambda$ should be selected optimally. Algorithms exist to achieve this, as in Ref. \citep{6349749}. In general one reduces $\lambda=1$, neglecting older data in favour of more recent data, to handle non-stationary systems. This is useful for cases where the model parameters are time-varying, enabling more rapid convergence and effective tracking. For $\lambda = 1$, ARLS has infinite memory and so exhibits good stability (i.e. insensitivity to numerical perturbations) and low misadjustment (i.e. $\mathbf{w}$ is not erroneously updated away from its optimal value $\mathbf{w}_{\rm opt}$). Conversely, $\lambda < 1$ improves the tracking at the expense of reduced stability and increased misadjustment \citep{Ciochina5206117}. In this paper we run ARLS using a specific value for $\lambda$, but note that adaptive $\lambda$ algorithms are also available \citep{app12042077,1468506,4639569}. \newline 
 
-
-
-
-
-
-
-
-
-
-%In Figure \ref{fig:4C_roccurve_multi_ref} we present the ROC curves for 3 different example systems:
-%\begin{itemize}
-%	\item \textbf{System A}. $\gamma = 10^{-3} \, , \Delta f = 0.0$. Dashed lines in the figure.
-%	\item \textbf{System B}. $\gamma = 10^{-2} \, , \Delta f = 0.0$. Dash-dotted in the figure
-%	\item \textbf{System C}. $\gamma = 10^{-2} \, , \Delta f = 0.5$. Solid lines in the figure
-%\end{itemize}
-%For each system we compute the ROC curve over \textbf{multiple noise realisations} for both one and two reference channels (blue, and orange lines respectively). This gives us six total ROC curve solutions. For comparison we also plot the case where we run the Viterbi search for one of the example systems, but with zero PEM references (dotted green line). The specific AUC values for each ROC curve are reported in Table \ref{tab:AUC}. \newline 
-
-%We can see that for all example systems the detection probability is high with respect to the false alarm probability. The detection probability using ANC filtering is greater than without ANC filtering for all systems (i.e. the orange and blue lines are exclusively above the green dotted line). Specifically the for the zero filtering case AUC$=0.54$, whilst all cases which use ANC filtering have AUC$\ge 0.82$ and as high as AUC$=0.99$. The inclusion of an additional reference channel improves the detection probability for Systems A and C, with the AUC values rising from 0.975 to 0.990 for System A and from $0.987$ to $0.999$ for System B. No improvement is observed for System B, with AUC$=0.827$ for $N_{\rm ref} =1$ and AUC$=0.822$ for $N_{\rm ref} =2$. The lack of improvement for System B when using two PEM references suggests that for these parameters a single reference is sufficient to capture the dynamics of the interference clutter. \newline  \footnote{\tiny \textcolor{red}{TK: Why are these results so different to Figure 8? Has the strain amplitude changed? Need to check with Sofia}\normalsize}
-
-
-
-
-%
-%Figure  \ref{fig:filterorder2} we plot the mean squared error (MSE) in the GW frequency estimated by Viterbi compared to the true spin-wandering frequency, averaged over \textbf{multiple noise realisations}. We set the system to have $h=0.025$ and $\Delta f =0.0$ and consider up to three PEM reference channels. As a reference we also plot the error in the Viterbi estimates for the case where there is no interference clutter and so no ANC is required. We can see that generally the accuracy improves with an increased number of taps. When $M$ is small the $N_{\rm ref} =1$ solution generally outperforms the high $N_{\rm ref}$ solutions; in this regime the number of taps is sufficiently small to not be able to take advantage of the increased information provided by the additional reference channels. Conversely as the number of taps increases, the $N_{\rm ref} =3$ becomes the best performing solution. 
-%
-
-
-
-
-
-
-
-
-%\begin{equation}
-%	{\rm MSE}=E_{\rm emp} \left [(\sum_{i=0}^{KN}e_i^2)/(KN+1) \right ]
-%\end{equation}
-%where we use $E_{\rm emp} [X]$ to denote the empirical mean of a quantity $X$ over 500 simulations. \textcolor{red}{TK: confirm this equations is correct and what are K/N in the updated notation?}. The MSE as a function of the number of taps $M$ is shown in Fig \ref{mse vs tap} for a system with $|H(w)|=3$ and $\rm{SNR}_{\rm in}=0.02$. We can see that initially as the number of taps increases from the MSE deceases, finidng a minimum at around $M=64$. This is due to the narrower bandwidth enabling a sharper filter to remove more of the interference. Beyond this point the MSE starts to increase. Now the increased sharpness of the filter is hampered by the time delay from using too many taps and the filter is not able to track the frequency with a sufficiently small latency. 
-
-%With the performance of the ANC and Viterbi approach established for a single example, it is of interest to explore how the algorithm performs for different power line parameters. In this section we vary $\Delta f$ and $\gamma$ to test the ANC and Viterbi performance for multiple noise realisations. To this end we calculate the detection probability compared to the false alarm probability, i.e. the receiver operating characteristic (ROC), for the Viterbi search after ANC. 
-%
-%
-%In this paper we address two important questions 
-%
-%
-%We investigate this by computing the 
-%mean square difference between the signal after applying the ANC with the signal without interference as function of the order. 
-
-
-%\begin{figure}
-%	\begin{center}
-%		\includegraphics[width=\columnwidth]{images/filter_order.png}
-%	\end{center}
-%	\caption{\textcolor{red}{TK: filter order. From filter\_order\_experiments.mat. Maybe we should update this for an MSE after Viterbi?}}
-%	\label{fig:filterorder}
-%\end{figure}
-
-
-
-
-
-
-
-
-
-
-
-
-
-%\begin{figure}
-%	\begin{center}
-%		\includegraphics[width=\columnwidth]{images/roc_final_stacked.png}
-%	\end{center}
-%	\caption{ROC curve for 3 different systems $\{ \gamma = 0.001, \Delta f = 0.0\}$, $\{ \gamma = 0.01, \Delta f = 0.0\}$ , $\{ \gamma = 0.01, \Delta f = 0.5\}$ (dotted, dashed, solid respectively). The green lines denote the Viterbi search run without any ANC filtering, the blue lines with ANC filtering with 1 reference channel and the orange line with 2 reference channels. ANC filtering using 2 reference channels consistently outperforms that using a single reference channel.}
-%	\label{fig:roc3}
-%\end{figure}
-
-
-
-%As discussed the ARLS filter has 2 parameters that can be freely chosen, the forgetting factor $\lambda$ and the model order (i.e. the number of taps in the FIR filter), $M$. For this work we have set $\lambda$ to a fixed value of $\lambda = 0.9999$. 
-
-
-
-
-%
-%
-%
-
-%\textcolor{red}{Changrong:} If we simply add more reference signals without normalizing the amplitude, it will definitely result in better performance (this is like we increase $|H(w)|$). But if we normalize the amplitude $a_r$ by $a_r/L$ with $L$ the number of references, we will not see obvious improvement.
-%
-%It might be the overfitting problem Rob mentioned previously, where with the number of taps chosen sufficiently large, it might already be enough to capture the dynamics of the interference signal without adding new interferences.
-%
-%But if we have multiple independent interference sources, with each reference correlated to each interference, then I suppose we should add more references.
-%
-%
 
 
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.3)  16 OCT 2023 12:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.3)  16 OCT 2023 13:59
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -947,12 +947,12 @@ s been already used, duplicate ignored
                                                   \__shipout_drop_firstpage_...
 l.390 
        <./images/spectrum.png>]
-<images/roc_curve_mains_power_params.png, id=397, 724.6272pt x 714.5094pt>
-File: images/roc_curve_mains_power_params.png Graphic file (type png)
-<use images/roc_curve_mains_power_params.png>
-Package pdftex.def Info: images/roc_curve_mains_power_params.png  used on input
- line 404.
-(pdftex.def)             Requested size: 246.0pt x 242.5593pt.
+<images/roc_curve_mains_power_params_log.png, id=397, 732.336pt x 714.5094pt>
+File: images/roc_curve_mains_power_params_log.png Graphic file (type png)
+<use images/roc_curve_mains_power_params_log.png>
+Package pdftex.def Info: images/roc_curve_mains_power_params_log.png  used on i
+nput line 404.
+(pdftex.def)             Requested size: 246.0pt x 240.0081pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 409--410
 
@@ -975,32 +975,48 @@ l.410
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
  on input line 410.
 
-<images/roc_curve_filter_params.png, id=406, 724.6272pt x 714.5094pt>
-File: images/roc_curve_filter_params.png Graphic file (type png)
-<use images/roc_curve_filter_params.png>
-Package pdftex.def Info: images/roc_curve_filter_params.png  used on input line
- 418.
-(pdftex.def)             Requested size: 246.0pt x 242.5593pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 412--413
+
+ []
+
+<images/roc_curve_filter_params_log.png, id=406, 732.336pt x 714.5094pt>
+File: images/roc_curve_filter_params_log.png Graphic file (type png)
+<use images/roc_curve_filter_params_log.png>
+Package pdftex.def Info: images/roc_curve_filter_params_log.png  used on input 
+line 421.
+(pdftex.def)             Requested size: 246.0pt x 240.0081pt.
 [10
 pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.424 \begin{enumerate}
-                       
+l.430 	\item H
+              ow does ANC performance depend on $\lambda$?
 pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.424 \begin{enumerate}
-                        <./images/roc_curve_mains_power_params.png> <./images/r
-oc_curve_filter_params.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 429--430
+l.430 	\item H
+              ow does ANC performance depend on $\lambda$? <./images/roc_curve_
+mains_power_params_log.png> <./images/roc_curve_filter_params_log.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 434--435
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 433--434
+Underfull \hbox (badness 10000) in paragraph at lines 437--438
+
+ []
+
+
+Underfull \hbox (badness 1019) in paragraph at lines 440--441
+\OT1/cmr/m/n/10 mis-ad-just-ment (i.e. $\OT1/cmr/bx/n/10 w$ \OT1/cmr/m/n/10 is 
+not er-ro-neously up-dated
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 440--441
 
  []
 
@@ -1070,16 +1086,16 @@ Use acknowledgments instead.
 
 [13] (./main-lines.aux)
 Package rerunfilecheck Info: File `main-lines.out' has not changed.
-(rerunfilecheck)             Checksum: 382BC81021EE389A1502EF1FAADDAED5;3512.
+(rerunfilecheck)             Checksum: CFFD631A5FD8FBF52CC1111A70761741;3535.
  ) 
 Here is how much of TeX's memory you used:
- 14695 strings out of 478268
- 231025 string characters out of 5846348
- 575818 words of memory out of 5000000
- 32527 multiletter control sequences out of 15000+600000
+ 14696 strings out of 478268
+ 231123 string characters out of 5846348
+ 575630 words of memory out of 5000000
+ 32528 multiletter control sequences out of 15000+600000
  483035 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 69i,12n,76p,2414b,582s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 69i,12n,76p,2070b,582s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></
@@ -1106,10 +1122,10 @@ ts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2022/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2022/texmf-dist/fonts/t
 ype1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2022/texmf-dist/fon
 ts/type1/public/amsfonts/symbols/msam7.pfb>
-Output written on main-lines.pdf (13 pages, 6050216 bytes).
+Output written on main-lines.pdf (13 pages, 6033446 bytes).
 PDF statistics:
- 758 PDF objects out of 1000 (max. 8388607)
- 652 compressed objects within 7 object streams
+ 765 PDF objects out of 1000 (max. 8388607)
+ 658 compressed objects within 7 object streams
  140 named destinations out of 1000 (max. 500000)
  198 words of extra memory for PDF output out of 10000 (max. 10000000)
 
