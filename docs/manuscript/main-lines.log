@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.3)  16 OCT 2023 11:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.3)  16 OCT 2023 12:15
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -896,35 +896,47 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.331 \end{align}
+l.328 \end{align}
                   <./images/fir_block_2.pdf>]
-Underfull \hbox (badness 1694) in paragraph at lines 331--333
+Underfull \hbox (badness 1694) in paragraph at lines 328--330
 \OT1/cmr/m/n/10 The syn-thetic ref-er-ence and clut-ter data are fully
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--333
+Underfull \hbox (badness 10000) in paragraph at lines 328--330
 
  []
 
-<images/spectrum.png, id=376, 727.9998pt x 716.6775pt>
+<images/spectrum.png, id=375, 727.9998pt x 716.6775pt>
 File: images/spectrum.png Graphic file (type png)
 <use images/spectrum.png>
-Package pdftex.def Info: images/spectrum.png  used on input line 371.
+Package pdftex.def Info: images/spectrum.png  used on input line 363.
 (pdftex.def)             Requested size: 246.0pt x 242.16895pt.
-<images/viterbi_tracking_canonical.png, id=379, 1133.4345pt x 533.5935pt>
+<images/viterbi_tracking_canonical.png, id=378, 1133.4345pt x 533.5935pt>
 File: images/viterbi_tracking_canonical.png Graphic file (type png)
 <use images/viterbi_tracking_canonical.png>
 Package pdftex.def Info: images/viterbi_tracking_canonical.png  used on input l
-ine 378.
+ine 370.
 (pdftex.def)             Requested size: 510.0pt x 240.09857pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 383--384
+Underfull \hbox (badness 1389) in paragraph at lines 375--376
+\OT1/cmr/m/n/10 fec-tive signal-to-noise ra-tio equals $\OML/cmm/m/it/10 h[]=^^
+[[] \OT1/cmr/m/n/10 = 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 025$.
+ []
+
+
+Underfull \hbox (badness 1275) in paragraph at lines 375--376
+\OT1/cmr/m/n/10 All other pa-ram-e-ters are spec-i-fied in Ta-ble [][]I[][]. Fo
+r
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 375--376
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 386--387
+Underfull \hbox (badness 10000) in paragraph at lines 378--379
 
  []
 
@@ -933,16 +945,16 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.398 
+l.390 
        <./images/spectrum.png>]
 <images/roc_curve_mains_power_params.png, id=397, 724.6272pt x 714.5094pt>
 File: images/roc_curve_mains_power_params.png Graphic file (type png)
 <use images/roc_curve_mains_power_params.png>
 Package pdftex.def Info: images/roc_curve_mains_power_params.png  used on input
- line 412.
+ line 404.
 (pdftex.def)             Requested size: 246.0pt x 242.5593pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 417--418
+Underfull \hbox (badness 10000) in paragraph at lines 409--410
 
  []
 
@@ -951,52 +963,48 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has
  been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.418 
+l.410 
       
 pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.418 
+l.410 
        <./images/viterbi_tracking_canonical.png>]
 
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 418.
+ on input line 410.
 
 <images/roc_curve_filter_params.png, id=406, 724.6272pt x 714.5094pt>
 File: images/roc_curve_filter_params.png Graphic file (type png)
 <use images/roc_curve_filter_params.png>
 Package pdftex.def Info: images/roc_curve_filter_params.png  used on input line
- 426.
+ 418.
 (pdftex.def)             Requested size: 246.0pt x 242.5593pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 437--438
-
- []
-
 [10
 pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.438 
-       <./images/roc_curve_mains_power_params.png>]
-
-LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 438.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 441--442
-
- []
-
-[11
+l.424 \begin{enumerate}
+                       
 pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.585 \newpage
-               <./images/roc_curve_filter_params.png>] (./main-lines.bbl
+l.424 \begin{enumerate}
+                        <./images/roc_curve_mains_power_params.png> <./images/r
+oc_curve_filter_params.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 429--430
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 433--434
+
+ []
+
+[11] (./main-lines.bbl
 Underfull \hbox (badness 2828) in paragraph at lines 145--155
  []\OT1/cmr/m/n/9 J. Glanzer, S. Soni, J. Spoon, A. Ef-fler,  and
  []
@@ -1065,10 +1073,10 @@ Package rerunfilecheck Info: File `main-lines.out' has not changed.
 (rerunfilecheck)             Checksum: 382BC81021EE389A1502EF1FAADDAED5;3512.
  ) 
 Here is how much of TeX's memory you used:
- 14694 strings out of 478268
- 231016 string characters out of 5846348
- 575780 words of memory out of 5000000
- 32526 multiletter control sequences out of 15000+600000
+ 14695 strings out of 478268
+ 231025 string characters out of 5846348
+ 575818 words of memory out of 5000000
+ 32527 multiletter control sequences out of 15000+600000
  483035 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  69i,12n,76p,2414b,582s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1098,7 +1106,7 @@ ts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2022/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2022/texmf-dist/fonts/t
 ype1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2022/texmf-dist/fon
 ts/type1/public/amsfonts/symbols/msam7.pfb>
-Output written on main-lines.pdf (13 pages, 6051327 bytes).
+Output written on main-lines.pdf (13 pages, 6050216 bytes).
 PDF statistics:
  758 PDF objects out of 1000 (max. 8388607)
  652 compressed objects within 7 object streams

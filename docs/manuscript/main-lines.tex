@@ -216,7 +216,7 @@ Figure \ref{coherenceplot_1} displays $C_{xr}(f)$ relating the high latency, cal
 		\includegraphics[width=\textwidth]{images/coherence_spectrogram_canonical}
 	\end{center}
 	\caption{\label{correlation_1}
-		Coherence spectrogram between the strain channel \StrainChanName  \, and the PEM channel \PEMChanName  	\, covering a 1 hour period of O3 data. The $x$-axis is the time in minutes from the start of O3a, separated into 10s bins. The $y$-axis is the frequency in Hz. The pixel colour denotes the coherence $C_{xy}$, Equation \eqref{eq:coherence}, in that time-frequency bin. A strong coherence is observed at 60 Hz due to the main power interference. Additional coherence features can also be observed at 0.2 kHz and 0.3 kHz due to instrumental lines of a different provenance c.f. Figure \ref{fig:strainSensitivity}.}
+		Coherence spectrogram between the strain channel \StrainChanName  \, and the PEM channel \PEMChanName  	\, covering a 1 hour period of O3 data. The horizontal axis is the time in minutes from the start of O3a, divided into $10-{\rm s}$ bins. The vertical axis is the frequency in Hz. The pixel colour denotes the coherence $C_{xr}$, defined Equation \eqref{eq:coherence}, in that time-frequency bin; see colour bar at right (dimensionless). High coherence is observed at 60 Hz due to the mains power interference. Additional coherence features are visible at 0.2 kHz and 0.3 kHz due to instrumental lines of a different provenance, c.f. Figure \ref{fig:strainSensitivity}.}
 \end{figure*}
 
 
@@ -231,7 +231,7 @@ The first step in implementing ANC is to convert $r(t)$ into an estimate of the 
 \begin{eqnarray}
 	e(t) = x(t) - \hat{c}(t) \ .\label{eq:error_estimate}
 \end{eqnarray}
-In the limit $\hat{c}(t) \to c(t)$, one obtains	$e(t) \to h(t) + n(t)$ and recovers a noise cancelled timeseries. The clutter estimate is modelled by a finite duration impulse response (FIR) filter,
+In the limit $\hat{c}(t) \to c(t)$, one obtains	$e(t) \to h(t) + n(t)$ and recovers a noise-cancelled timeseries. The clutter estimate is modelled by a finite duration impulse response (FIR) filter,
 \begin{eqnarray}
 	\hat{c}_k = \mathbf{w}^{\intercal}\mathbf{u}_k \ . \label{clutter_estimate}
 \end{eqnarray}
@@ -248,12 +248,12 @@ The goal of ANC is to determine the optimal tap weights $\mathbf{w}_{\rm opt}$, 
 \begin{eqnarray}
 	\mathbf{w}_{\rm opt} = \arg \min \sum_{k=1}^{K} \lambda^{K-k-1} |e_k|^2 \ , \label{eq:minim}
 \end{eqnarray}
-where $0 \leq \lambda \leq 1$ is a ``forgetting factor" which gives exponentially less weight to older samples and can be freely chosen. The choice of $\lambda$ in this paper is discussed in Section \ref{sec:ARLS}. The minimization problem described by Equation \eqref{eq:minim} can be solved in many ways. Here we implement an ARLS algorithm. The algorithm is outlined in Section \ref{sec:ARLS}
+where $0 \leq \lambda \leq 1$ is a ``forgetting factor" which gives exponentially less weight to older samples and can be freely chosen. The choice of $\lambda$ in this paper is discussed in Section \ref{sec:ARLS}. The minimization problem described by Equation \eqref{eq:minim} can be solved in many ways. Here we implement an ARLS algorithm. The algorithm is outlined in Section \ref{sec:ARLS}.
 
 \subsection{ARLS algorithm}
 \label{sec:ARLS}
 
-As its name implies, the ARLS algorithm is adaptive, in the sense that the weights $\mathbf{w}$ are continually updated based on new data. It is also recursive, in the sense that $\mathbf{w}$ are updated iteratively as new data arrives, rather than reprocessing all previous data. Abbreviated pseudocode is presented below for the sake of reproducibility and the reader's convenience. The reader is referred to standard signal processing textbooks, e.g. \cite{HaykinAdaptiveFT:2002} for more information. \newline 
+As its name implies, the ARLS algorithm is adaptive, in the sense that the weights $\mathbf{w}$ are continually updated based on new data. It is also recursive, in the sense that $\mathbf{w}$ is updated iteratively as new data arrive, rather than reprocessing all previous data. Abbreviated pseudocode is presented below for the sake of reproducibility and the reader's convenience. The reader is referred to standard signal processing textbooks, e.g. \cite{HaykinAdaptiveFT:2002} for more information. \newline 
 
 ARLS proceeds as follows:
 
@@ -263,47 +263,47 @@ ARLS proceeds as follows:
 	\begin{enumerate}
 		\item Estimate the clutter $\hat{c}_k$ from Equation \eqref{clutter_estimate}
 		\item Calculate the residual $e_k$ from Equation \eqref{eq:error_estimate}
-		\item Calculate the gain vector
+		\item Calculate the gain vector,
 		\begin{eqnarray}
-			\mathbf{g}_k = \frac{\mathbf{P} \mathbf{u}_k}{\lambda + \mathbf{u}_k^{\intercal}\mathbf{P} \mathbf{u}_k}
+			\mathbf{g}_k = \frac{\mathbf{P} \mathbf{u}_k}{\lambda + \mathbf{u}_k^{\intercal}\mathbf{P} \mathbf{u}_k} \ .
 		\end{eqnarray}
-	\item Update the tap weights
+	\item Update the tap weights,
 			\begin{eqnarray}
-		\mathbf{w}_k = \mathbf{w}_{k-1} +  e_k \mathbf{g}_k 
+		\mathbf{w}_k = \mathbf{w}_{k-1} +  e_k \mathbf{g}_k  \ .
 	\end{eqnarray}
-	\item Update the covariance matrix
+	\item Update the covariance matrix,
 \begin{eqnarray}
-	\mathbf{P}_k =  \mathbf{P}_{k-1}  \lambda^{-1}  - \mathbf{g}_k \mathbf{u}_k^{\intercal}  \lambda^{-1} \mathbf{P}_{k-1} 
+	\mathbf{P}_k =  \mathbf{P}_{k-1}  \lambda^{-1}  - \mathbf{g}_k \mathbf{u}_k^{\intercal}  \lambda^{-1} \mathbf{P}_{k-1} \ .
 \end{eqnarray}
 
 	\end{enumerate}
 
 \end{enumerate}
-The pseudocode is also illustrated in Figure \ref{fig:arlsBlock} via a block diagram. At time $t$ the filter receives the reference signal $r(t)$ and produces an estimate of the clutter $\hat{c}(t)$, given the current tap weights $\mathbf{w}$. By comparing $\hat{c}(t)$ with the strain data $x(t)$ a residual is calculated $e(t)$. The residual is then used in conjunction with $r(t)$ to update the weights and the algorithm continues iteratively. \newline 
+The pseudocode is depicted in Figure \ref{fig:arlsBlock} as a block diagram. At time $t$ the filter receives the reference signal $r(t)$ and produces an estimate of the clutter $\hat{c}(t)$, given the current tap weights $\mathbf{w}$. By comparing $\hat{c}(t)$ with the strain data $x(t)$ a residual $e(t)$ is calculated. The residual is then used in conjunction with $r(t)$ to update the weights and the algorithm continues iteratively. \newline 
 
 %https://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=597B4CA0A9E3A810EF9E49A466A02ADC?doi=10.1.1.4.2748&rep=rep1&type=pdf for groing wndow
-ARLS has three free parameters: the order parameter $M$, the forgetting factor $\lambda$, and the regularisation parameter $\delta$. Larger values of $M$ corresponds to an increased model complexity. Whilst this generally increases the accuracy of the resulting estimates, it also increases the computational overhead and hence the latency between receiving the input data and updating the weights. In Sec.~\ref{sec:results} we trial a selection of $M$ values for synthetic GW data. Regarding the forgetting factor,  $\lambda=1$ corresponds to infinite memory, causing the filter becomes a "growing window" RLS \citep{10.5555/547203,10.5555/560138}. In this work we use $\lambda=0.9999$. Different values of $\lambda$ are investigated in Section \ref{sec:roc2}. The regularisation parameter $\delta$ must be ``suitably chosen" \citep{ljung1999system,1989system}. A large $\delta$ leads to rapid convergence of the ARLS algorithm, but with correspondingly larger variance in the parameter estimates before convergence. Conversely, a smaller $\delta$ leads to slower convergence and smaller variance in the parameter estimates. General guidelines for choosing $\delta$ are not readily available. Instead $\delta$ is typically empirically selected for the particular problem. In this work we found $\delta = 100$ to be a reasonable choice, since we have a large uncertainty in our initial estimate of the weights. We refer the reader to Chapter 9 of Ref.~\cite{HaykinAdaptiveFT:2002} for a full review of adaptive least squares estimation in the context of linear filtering. 
+ARLS has three free parameters: the order parameter $M$, the forgetting factor $\lambda$, and the regularisation parameter $\delta$. Larger values of $M$ increases the model's complexity. Whilst this generally increases the accuracy of the resulting estimates, it also increases the computational overhead and hence the latency between receiving the input data and updating the weights. In Sec.~\ref{sec:results} we trial a selection of $M$ values for synthetic GW data. Regarding the forgetting factor,  $\lambda=1$ corresponds to infinite memory, whereupon the filter becomes a ``growing window" RLS \citep{10.5555/547203,10.5555/560138}. In this work we use $\lambda=0.9999$ as a default. Different values of $\lambda$ are investigated in Section \ref{sec:roc2}. The regularisation parameter $\delta$ must be chosen judiciously to balance competing priorities  \citep{ljung1999system,1989system}. A large $\delta$ leads to rapid convergence of the ARLS algorithm, but with correspondingly larger variance in the parameter estimates before convergence. Conversely, a smaller $\delta$ leads to slower convergence and smaller variance in the parameter estimates. General guidelines for choosing $\delta$ are not readily available. Instead $\delta$ is typically selected empirically for the particular problem. In this work we find $\delta = 100$ to be a reasonable choice, given the uncertainty in our initial estimate of the weights. We refer the reader to Chapter 9 of Ref.~\cite{HaykinAdaptiveFT:2002} for a full review of adaptive least squares estimation in the context of linear filtering. 
 \begin{figure}
 	\begin{center}
 		\includegraphics[width=\columnwidth]{images/fir_block_2.pdf}
 	\end{center}
-	\caption{Block diagram of the ARLS method described in Section \ref{sec:ARLS}. The reference signal $r(t)$ is passed to an FIR filter to construct an estimate of the clutter. Subtracting $\hat{c}(t)$ from the primary signal $x(t)$ provides a residual $e(t)$ which controls the process to update to update the weights $\mathbf{w}$ of the FIR filter. The method proceeds iteratively. The diagonal line across the FIR filter block denotes that the parameters of the block (i.e. $\mathbf{w}$) are being updated, but are not part of the signal processed by the block.}
+	\caption{Block diagram of the ARLS method described in Section \ref{sec:ARLS}. The reference signal $r(t)$ is passed to an FIR filter to construct an estimate $\hat{c}(t)$ of the clutter. Subtracting $\hat{c}(t)$ from the primary signal $x(t)$ provides a residual $e(t)$ which controls the process to update to update the weights $\mathbf{w}$ of the FIR filter. The method proceeds iteratively. The diagonal line across the FIR filter block denotes that the parameters of the block (i.e. $\mathbf{w}$) are updated, but are not part of the signal processed by the block.}
 	\label{fig:arlsBlock}
 \end{figure}
 
 \section{Validation tests with an HMM} \label{sec:results}
-We test the ANC scheme in Section \ref{sec:method} by combining it with a HMM to search for a CW signal with randomly wandering frequency, which overlaps the mains power line. Many other validation tests are possible, of course, and no individual test represents the final word on the efficacy of the scheme. Nonetheless, HMM-based searches are a key element of the data analysis program of the LVK Collaboration, generating a substantial corpus of published results \citep{LIGOMarkov17,LIGOMarkov19,PhysRevD.99.084042,2018PhRvD..97d3013S,LIGOMarkov22,2023PhRvD.107f4062V}. In the context of this paper, validations tests involving a HMM are especially powerful, because they present the ANC scheme with an additional challenge: to subtract the mains power line well enough to reveal an underlying CW signal, which is itself ``noisy'' (in the sense that its frequency wanders) rather than monochromatic. That is, the ANC-HMM combination is tasked to not only remove the stochastic 60-Hz interference but also distinguish it from the process noise in the CW signal's frequency. If the ANC succeeds in this complicated task, one may be confident that it also succeeds in the easier task of subtracting the mains power line to reveal an underlying CW signal whose frequency is constant.  \newline 
+We test the ANC scheme in Section \ref{sec:method} by combining it with a HMM to search for a CW signal with randomly wandering frequency, which overlaps the mains power line. Many other validation tests are possible, of course, and no individual test represents the final word on the efficacy of the scheme. Nonetheless, HMM-based searches are a key element of the data analysis program of the LVK Collaboration, generating a substantial corpus of published results \citep{LIGOMarkov17,LIGOMarkov19,PhysRevD.99.084042,2018PhRvD..97d3013S,LIGOMarkov22,2023PhRvD.107f4062V}. In the context of this paper, validations tests involving a HMM are especially powerful, because they present the ANC scheme with an additional challenge: to detect an underlying CW signal, which is itself ``noisy'' (in the sense that its frequency wanders) rather than monochromatic. That is, the ANC-HMM combination is tasked to not only remove the stochastic 60-Hz interference but also distinguish it from the process noise in the CW signal's frequency. If the ANC succeeds in this complicated task, one may be confident that it also succeeds in the easier task of detecting an underlying CW signal whose frequency is constant.  \newline 
 
-In what follows, we employ the HMM scheme introduced by \citet{Suvorova2016PhRv}, which has been thoroughly tested through multiple LVK searches \cite{Piccinni2022,Riles2023,Wette2023}. We do not cover any details of the HMM scheme in this work and refer the reader to \citet{Suvorova2016PhRv} for further information. A synthetic CW signal $h(t)$, whose frequency executes an unbiased random walk, is injected into synthetic Gaussian noise $n(t)$ typical of the LIGO detectors. A simulated 60-Hz mains power line $c(t)$ is superposed, whose properties mimic the real system (see Section \ref{sec22}). The challenge is to recover the $h(t)$ by passing the data $x(t)$ through the ANC filter and feeding the output into the HMM tracker. In Section \ref{sec:creating_data} we describe how we create a synthetic time series $x(t)$. In Section \ref{sec:representative_example} we present a representative example and compare the HMM's ability to detect and track $h(t)$ before and after applying ANC. 
+In what follows, we employ the HMM scheme introduced by \citet{Suvorova2016PhRv}, which has been thoroughly tested through multiple LVK searches \cite{Piccinni2022,Riles2023,Wette2023}. We do not cover any details of the HMM scheme in this work and refer the reader to \citet{Suvorova2016PhRv} for further information. A synthetic CW signal $h(t)$, whose frequency executes an unbiased random walk, is injected into synthetic Gaussian noise $n(t)$ typical of the LIGO detectors. Clutter $c(t)$ proportional to a simulated 60-Hz mains power line is superposed, whose properties mimic the real electrical supply (see Section \ref{sec22}). The challenge is to recover the $h(t)$ by passing the data $x(t)$ through the ANC filter and feeding the output into the HMM tracker. In Section \ref{sec:creating_data} we describe how we create a synthetic time series $x(t)$. In Section \ref{sec:representative_example} we present a representative example and compare the HMM's ability to detect and track $h(t)$ before and after applying ANC. 
 
 \subsection{Synthetic data} \label{sec:creating_data}
-In the tests that follow, we work with representative synthetic data, generated under controlled conditions, rather than directly with the LIGO data. We can generate synthetic data for the constituents of Equation \eqref{eq:data} - namely $h(t)$, $c(t)$, and $n(t)$, by applying the recipe in Section \ref{sec21} as follows. \newline 
+In the tests that follow, we work with representative synthetic data, generated under controlled conditions, rather than directly with LIGO data. We generate synthetic data for the constituents of Equation \eqref{eq:data}, namely $h(t)$, $c(t)$, and $n(t)$, by applying the recipe in Section \ref{sec21} as follows. \newline 
 
-Starting with $h(t)$ we assume that the source is isolated (i.e. not in a binary) and that the GW signal is quasimonochromatic (i.e. the frequency varies slowly over many wave cycles if at all). We also place the source at a fixed sky position and neglect for simplicity the rotation and revolution of the Earth. The latter corrections are included readily in searches with real data through the maximum likelihood ${\cal F}$-statistic \citep{Jaranowski1998}. Under these assumptions the GW model reduces to 
+We assume that the source is isolated (i.e. not in a binary) and that the GW signal is quasimonochromatic (i.e. the frequency varies slowly over many wave cycles). We also place the source at a fixed sky position and neglect for simplicity the rotation and revolution of the Earth. The latter corrections are included readily in searches with real data through the maximum likelihood ${\cal F}$-statistic \citep{Jaranowski1998}. Under these assumptions the GW model reduces to 
 \begin{equation}
 	h(t) = h_0\sin[2\pi \phi_{\rm gw}(t)] \ , 
 \end{equation}
-where $h_0$ is the constant amplitude, $\phi_{\rm gw}(t)$ a random phase,
+where $h_0$ is the constant amplitude, $\phi_{\rm gw}(t)$ is a random phase,
 \begin{equation}
 	\phi_{\rm gw}(t) = \int_{0}^{t} ds \, f_{\rm gw}(s)  \ ,
 \end{equation}
@@ -311,55 +311,47 @@ and the GW frequency $f_{\rm gw}(t)$ evolves stochastically and piecewise linear
 \begin{eqnarray}
 	f_{\rm gw}(t_{n+1}) = f_{\rm gw}(t_n) + \epsilon_n 
 \end{eqnarray}
-where $\epsilon_n$ is a zero-mean Gaussian random variable, with variance $\sigma_f^2$ viz.
+where $\epsilon_n$ is a zero-mean Gaussian random variable with variance $\sigma_f^2$, viz.
 \begin{equation}
 	\epsilon_n = \mathcal{N}(0, \Delta t  \, \sigma_f^2) \ . \label{eq:gwfreqnoise}
 \end{equation}
 Hence the synthetic GW signal $h(t)$ is completely described by the parameters $h_0$, $\sigma_f$, and $f_{\rm gw}(t=0)$ \newline 
 
-
-The clutter and reference signals evolve according to Equations \eqref{eq:voltage} and \eqref{eq:vclutter} respectively. For this initial study we take the amplitudes $A_r(t) = a_r$ and $A_c(t) = a_c$ to be constants. Similarly, $P(t) = P=$ constant. Different values for $P$ are explored in Section \ref{sec:roc1}. Under these assumptions, Equations \eqref{eq:voltage} and \eqref{eq:vclutter} reduce to 
+The clutter and reference signals evolve according to Equations \eqref{eq:voltage} and \eqref{eq:vclutter} respectively. For this initial study we take $A_r(t) = a_r$, $A_c(t) = a_c$, and $P(t) = P$ to be constant. Different $P$ values are explored in Section \ref{sec:roc1}. Under these assumptions, Equations \eqref{eq:voltage} and \eqref{eq:vclutter} reduce to 
 \begin{align}
- 	r(t) =&a_r \cos \left[ 2 \pi f_{\rm ac} t +2 \pi \Delta f_{\rm ac} \cos\left(\frac{2 \pi t}{P}\right) + n_{\Theta} (t_n) \right] \nonumber \\ 
- 	&+n_r(t_n) \ ,
-\end{align}
-\begin{align}
-	c(t) = a_c \cos &\biggl \{ 2 \pi f_{\rm ac} (t_n - \tau_{\rm delay}) \nonumber \\ 
+ 	r(t) = & a_r \cos \left[ 2 \pi f_{\rm ac} t +2 \pi \Delta f_{\rm ac} \cos\left(\frac{2 \pi t}{P}\right) + n_{\Theta} (t_n) \right] \nonumber \\ 
+ 	&+n_r(t_n) \ , \\ 
+	c(t) = & a_c \cos \biggl \{ 2 \pi f_{\rm ac} (t_n - \tau_{\rm delay}) \nonumber \\ 
 	&+ 2 \pi \Delta f_{\rm ac} \cos \biggl [ \frac{2 \pi (t_n - \tau_{\rm delay)}}{P} \biggr ] \nonumber \\ 
-	&+ n_{\Theta} (t_n - \tau_{\rm delay}) \biggr \}
+	&+ n_{\Theta} (t_n - \tau_{\rm delay}) \biggr \} \ .
 	\label{eq:clutterequation}
 \end{align}
-The synthetic reference and clutter data are fully described by the parameters $a_r,a_c,f_{\rm ac}, \Delta f_{\rm ac}, P,\sigma^2_{\Theta}$, $\sigma_r^2$. \newline 
+The synthetic reference and clutter data are fully described by the parameters $a_r,a_c,P, f_{\rm ac}, \Delta f_{\rm ac},\sigma^2_{\Theta}$, $\sigma_r^2$. \newline 
 
-
-
-
-The 11 free parameters are summarised in Table \ref{tab:parameterdescription1}, along with their chosen injected values. There are three amplitude parameters $h, a_r, a_c$, with $h \ll a_c, a_r$. There are four noise parameters $\sigma_n^2, \sigma_{\Theta}^2, \sigma_r^2$ and  $\sigma_f^2$. In this paper $\sigma_n^2$ and $\sigma_r^2$ have fixed, constant values, whilst different values for $\sigma_f^2$ and $\sigma_{\Theta}^2$ are investigated in Section \ref{sec:representative_example} and Section \ref{sec:roc1} respectively. There are three additional parameters that specify the modulation of the central frequency: $f_{\rm ac}$, $\Delta f_{\rm ac}$ and $P$. In this paper $f_{\rm ac}$ is fixed at 60 Hz. Different values of $\Delta f_{\rm ac}$ and $P$ are investigated in Section \ref{sec:roc1}. Finally there is the initial G frequency, $f_{\rm gw}(t=0)$.
+The 11 free parameters are summarised in Table \ref{tab:parameterdescription1}, along with their chosen injected values. There are three amplitude parameters $h_0, a_r, a_c$, with $h \ll a_r, a_c$. There are four noise parameters $\sigma_n, \sigma_{\Theta}, \sigma_r$ and  $\sigma_f$. In this paper $\sigma_n$ and $\sigma_r$ have fixed, constant values, whilst different values for $\sigma_f$ and $\sigma_{\Theta}$ are investigated in Section \ref{sec:representative_example} and Section \ref{sec:roc1} respectively. There are three additional parameters that specify the modulation of the central frequency: $f_{\rm ac}$, $\Delta f_{\rm ac}$ and $P$. In this paper $f_{\rm ac}$ is fixed at 60 Hz. Different values of $\Delta f_{\rm ac}$ and $P$ are investigated in Section \ref{sec:roc1}. Finally there is the initial GW frequency, $f_{\rm gw}(t=0)$.
 \begin{table*}
 	
 	\begin{tabular}{llcc}
 		\hline 
 		
-		 \multirow{2}{*}{Parameter} & \multirow{2}{*}{Physical meaning}  & \multicolumn{2}{c}{Injected Value} \\
+		 \multirow{2}{*}{Parameter} & \multirow{2}{*}{Physical meaning}  & \multicolumn{2}{c}{Injected value} \\
 		\cline{3-4}
 			 &  &Section \ref{sec:results} & Section \ref{sec:theroccurves}    \\
 		\hline
 		$h_0$  &    GW strain amplitude & 0.025& 0.022 \\ 
 		$a_r$ & Mains voltage amplitude at PEM & $\mathcal{U}(10-0.01,10+0.01)$& $\mathcal{U}(10-0.01,10+0.01)$ \\
 		$a_c$ & Interference voltage amplitude &$\mathcal{U}(1.2-0.001,1.2+0.001)$& $\mathcal{U}(1.2-0.001,1.2+0.001)$ \\
-		$\sigma_n^2$ & Strain channel measurement noise &1& 1 \\
-		$\sigma_r^2$  & PEM voltage measurement noise & $10^{-4}$&$10^{-4}$ \\
-		$\sigma_{\Theta}^2$ & PEM voltage phase noise  & $10^{-2}$& $\{ 10^{-3}, 10^{-2}, 10^{-1}\}$\\
-		$\sigma^2_f$ &  GW frequency noise & $\{0.01,0.1\}$& 0.0016\\
+		$\sigma_n$ & Strain channel measurement noise &1& 1 \\
+		$\sigma_r$  & PEM voltage measurement noise & $10^{-2}$&$10^{-2}$ \\
+		$\sigma_{\Theta}$ & PEM voltage phase noise  & $10^{-1}$& $\{ 10^{-3/2}, 10^{-1}, 10^{-1/2}\}$\\
+		$\sigma_f$ &  GW frequency noise & $\{0.1,\sqrt{0.1}\}$ s$^{1/2}$& 0.04 s$^{1/2}$\\
 		$f_{\rm gw}(t=0)$ &  Initial GW frequency  & 59.5 Hz& 59.9 Hz\\
 		$ f_{\rm ac}$ &  Central interference frequency & 60 Hz& 60 Hz\\ 
 		$\Delta f_{\rm ac}$ &  Amplitude of interference frequency modulation  & 1 Hz& $\{0.5, 1.0, 1.5\}$ Hz\\
 		$P$ & Period of interference frequency modulation & $10^2$ s& $\{ 10^{1}, 10^2, 10^3\}$ s \\
 		\hline
-		
 	\end{tabular} 
-	
-	\caption{Parameters, their physical meaning, and the injected values used to generate synthetic data. The injected values are listed for validating the ANC scheme in Section \ref{sec:results}, and quantifying the performance of the scheme as a function of the properties of the mains power interference in Section  \ref{sec:theroccurves}. $a_r$ and $a_c$ are randomly drawn from separate uniform distributions. The braces notation (e.g. $\{0.01, 0.1\}$) indicates that multiple injected values have been trialled. The quoted injected values have been scaled such that $\sigma_n^2 = 1$.}
+	\caption{Parameters, their physical meaning, and the injected values used to generate synthetic data. The injected values are listed for validating the ANC scheme in Section \ref{sec:results}, and quantifying the performance of the scheme as a function of the properties of the mains power interference in Section  \ref{sec:theroccurves}. $a_r$ and $a_c$ are randomly drawn from separate uniform distributions, denoted by $\mathcal{U}$ The braces notation (e.g. $\{0.01, 0.1\}$) indicates that multiple injected values are trialled. The quoted injected values of the three amplitude parameters and the four noise parameters and the are scaled such that $\sigma^2 = 1$.}
 	\label{tab:parameterdescription1}
 \end{table*}
 
@@ -370,7 +362,7 @@ The 11 free parameters are summarised in Table \ref{tab:parameterdescription1}, 
 	\begin{center}
 		\includegraphics[width=\columnwidth]{images/spectrum.png}
 	\end{center}
-	\caption{Spectrum (i.e.\ modulus of the Fourier transform) of the data $x(t)$ (orange curve), GW signal $h(t)$ (green curve) and decluttered output of the ANC filter $x(t) - \hat{c}(t)$ (blue curve) for a system with parameters described in Table \ref{tab:parameterdescription1}. ANC suppresses the orange spikes near $60 \, {\rm Hz}$, which corresponding to mains power interference, by $\approx 20\, {\rm dB}$.}
+	\caption{Spectrum (i.e.\ modulus of the Fourier transform) of the data $x(t)$ (orange curve), GW signal $h(t)$ (green curve) and decluttered output of the ANC filter $x(t) - \hat{c}(t)$ (blue curve) for a system with parameters described in Table \ref{tab:parameterdescription1}. ANC suppresses by $\approx 20\, {\rm dB}$ the orange spikes near $60 \, {\rm Hz}$, corresponding to mains power interference}
 	\label{fig:spectrum}
 \end{figure}
 \begin{figure*}
@@ -378,14 +370,14 @@ The 11 free parameters are summarised in Table \ref{tab:parameterdescription1}, 
 			\includegraphics[width=\textwidth]{images/viterbi_tracking_canonical}
 		\end{center}
 	\caption{\label{frequency tracking before and after1}
-			HMM tracking of a CW signal with spin wandering in the presence of $60 \, {\rm Hz}$ mains power interference before (left panel) and after (right panel) ANC. Colored contours (arbitrary units; see color bar at right) show the spectrogram of the data, i.e.\ the squared modulus of the Fourier transform of $x(t)$. The $60 \, {\rm Hz}$ line is visible as a vertical yellow band in the left panel; it cannot be discerned in the right panel. Injected signals: lower spin wandering, with $\sigma_f (N \Delta t)^{1/2} / f_{\rm ac} = 0.047$ (solid orange curve), and higher spin wandering, with $\sigma_f (N \Delta t)^{1/2} / f_{\rm ac} = 0.15$ (solid green curve). In both cases $h_0 / \sigma_n^2 = 0.025$. Recovered signals: dashed white curves. Neither signal can be detected before ANC, so the dashed white curves appear in the right panel only.}
+			HMM tracking of a CW signal with spin wandering in the presence of $60 \, {\rm Hz}$ mains power interference before (left panel) and after (right panel) ANC. Coloured contours (arbitrary units; see colour bar at right) show the spectrogram of the data, i.e.\ the squared modulus of the Fourier transform of $x(t)$. The $60 \, {\rm Hz}$ line is visible as a vertical yellow band in the left panel; it cannot be discerned in the right panel. Injected signals: lower spin wandering, with $\sigma_f (N \Delta t)^{1/2} / f_{\rm ac} = 0.047$ (solid orange curve) and $h_0 / \sigma_n = 0.025$, higher spin wandering, with $\sigma_f (N \Delta t)^{1/2} / f_{\rm ac} = 0.15$ (solid green curve) and $h_0 / \sigma_n = 0.025$.  Recovered signals: dashed white curves. Neither signal can be detected before ANC, so the dashed white curves are visible in the right panel only.}
 \end{figure*}
-To orient the reader, we start with two representative examples where the frequency wandering is  (i)`low', with $\sigma_f (N \Delta t)^{1/2} / f_{\rm ac} = 0.047$, and (ii) `high', with $\sigma_f (N \Delta t)^{1/2} / f_{\rm ac} = 0.15$. In both cases the effective SNR $h_0 / \sigma_n ^2= 0.025$. All other parameters are specified in Table \ref{tab:parameterdescription1}. For clarity of illustration, we work with a single PEM in this section and extend to multiple PEMs in Section \ref{sec:roc2} \newline 
+To orient the reader, we start with two representative examples where the frequency wandering is  (i) `low', with $\sigma_f (N \Delta t)^{1/2} / f_{\rm ac} = 0.047$, and (ii) `high', with $\sigma_f (N \Delta t)^{1/2} / f_{\rm ac} = 0.15$. In both cases the effective signal-to-noise ratio equals $h_0 / \sigma_n = 0.025$. All other parameters are specified in Table \ref{tab:parameterdescription1}. For clarity of exposition, we work with a single PEM in this section and extend to multiple PEMs in Section \ref{sec:roc2}. \newline 
 
 
-We start by checking visually that the ANC filter removes most of the excess power from the 60 Hz interference. In Figure \ref{fig:spectrum} we plot the modulus of the Fourier transform of the synthetic data $x(t)$, the underlying GW signal $h(t)$, and the decluttered output of the ANC filter, $e(t) = x(t) - \hat{c}(t)$, for Fourier frequencies from $58 \, {\rm Hz}$ to $62 \, {\rm Hz}$ for case (i). Before filtering, the spectrum of $x(t)$ has multiple modes about $f_{\rm ac} = 60 \, {\rm Hz}$, visible as the orange spikes in Figure \ref{fig:spectrum}. After filtering, the spectrum of $e(t)$ is flatter, as indicated by the blue curve in Figure \ref{fig:spectrum}, with the exception of a clear feature at $59.5$ Hz coincident with the GW injection at $f_{\rm gw}(t=0)$ (green curve). In rough terms, the ANC scheme achieves $20 \, {\rm dB}$ of suppression in case (i).  \newline 
+We start by checking visually that the ANC filter removes most of the excess power from the 60 Hz interference. In Figure \ref{fig:spectrum} we plot the modulus of the Fourier transforms of the synthetic data $x(t)$, the underlying GW signal $h(t)$, and the decluttered output of the ANC filter, $e(t) = x(t) - \hat{c}(t)$, for Fourier frequencies from $58 \, {\rm Hz}$ to $62 \, {\rm Hz}$ for case (i). Before filtering, the spectrum of $x(t)$ has multiple peaks near $f = f_{\rm ac} = 60 \, {\rm Hz}$, visible as the orange spikes in Figure \ref{fig:spectrum}. After filtering, the spectrum of $e(t)$ is flatter, as indicated by the blue curve in Figure \ref{fig:spectrum}, with the exception of a clear feature at $59.5$ Hz coincident with the GW injection at $f_{\rm gw}(t=0)$ (green curve). In rough terms, the ANC scheme achieves $20 \, {\rm dB}$ of suppression in case (i). Similar results (not plotted) are obtained for case (ii). \newline 
  
-Having established the ability of the ANC scheme to filter out $c(t)$ by calibrating against $r(t)$, we pass the ANC output to the HMM tracker and evaluate its performance. The results are shown in  Figure \ref{frequency tracking before and after1} for both low and high frequency wandering, for a single realisation of the noise. The figure shows the spectrogram of $x(t)$ as a heat map before (left panel) and after (right panel) ANC filtering. It is clear that ANC suppresses the mains power interference, which is visible as a vertical yellow band in the left panel and is almost absent from the right panel. The spin wandering of the injected GW source (green solid curve for higher $\sigma_f$, orange solid curve for lower $\sigma_f$) and the HMM estimate (dashed white curves for both higher and lower $\sigma_f$) are superposed onto the spectrogram. The approximate overlap between the solid coloured and dashed white curves confirms that the ANC scheme and HMM tracker detect both injected signals successfully. For lower $\sigma_f$, the GW spin frequency wanders close to, but below, the 60 Hz interference line. For higher $\sigma_f$, the GW signal crosses the interference line, presenting a more difficult challenge, which is surmounted successfully nevertheless. The time-averaged root-mean-square error in the frequency estimate is $0.038$ Hz for low $\sigma_f $ and $0.47$ Hz for high $\sigma_f$. In contrast, neither the lower-$\sigma_f$ nor the higher-$\sigma_f$ injections are detected by the HMM tracker before ANC in the left panel. 
+Having established the ability of the ANC scheme to filter out $c(t)$ by calibrating against $r(t)$, we pass the ANC output to the HMM tracker and evaluate the tracker's performance. The results are shown in  Figure \ref{frequency tracking before and after1} for both low and high frequency wandering, for a single realisation of the noise. The figure shows the spectrogram of $x(t)$ as a heat map before (left panel) and after (right panel) ANC filtering. It is clear that ANC suppresses the mains power interference, which is visible as a vertical yellow band in the left panel and is almost absent from the right panel. The spin wandering of the injected GW source (green solid curve for higher $\sigma_f$, orange solid curve for lower $\sigma_f$) and the HMM estimate (dashed white curves for both higher and lower $\sigma_f$) are superposed onto the spectrogram. The approximate overlap between the solid coloured and dashed white curves confirms that the ANC scheme and HMM tracker detect both injected signals successfully. For lower $\sigma_f$, the GW spin frequency wanders close to, but below, the 60 Hz interference line. For higher $\sigma_f$, the GW signal crosses the interference line, presenting a more difficult challenge, which is surmounted successfully nevertheless. The time-averaged root-mean-square error in the frequency estimate is $0.038$ Hz for low $\sigma_f $ and $0.47$ Hz for high $\sigma_f$. In contrast, neither the lower-$\sigma_f$ nor the higher-$\sigma_f$ injections are detected by the HMM tracker before ANC in the left panel (which is why there are no dashed white curves in the left panel). 
 
 
 
@@ -411,10 +403,10 @@ In this section, we quantify the performance of the HMM tracker, when it analyze
 	\begin{center}
 		\includegraphics[width=\columnwidth]{images/roc_curve_mains_power_params}
 	\end{center}
-	\caption{Detection probability $p_{\rm d}$ as a function of false alarm probability $p_{\rm fa}$ (i.e. ROC curves) for HMM tracking of a CW signal ($h_0 / \sigma_n^2 = 0.022$) in conjunction with the ANC scheme, for different mains power interference parameters. The top panel shows different values of $\Delta f_{\rm ac}$, the middle panel different values of $\sigma_{\Theta}^2$, and the bottom panel different values of $P$. The grey dashed line in all panels denotes the performance of a random classifier. For all panels the curves are broadly overlaid, illustrating that the HMM and ANC scheme is resilient to different mains power parameters. At $p_{\rm fa} = 0.05$, the mean $p_{d}$ across the 3 curves is 0.52 (top panel), 0.48 (middle panel) and 0.58 (bottom panel). \textcolor{red}{TK: we could also label as e.g. $\Delta f_{\rm ac} / f_{\rm ac}$ as AM suggests. I personally find the absolute value with units more intuitive w.r.t the rest of the body text. Also: what do we think about having blue/green/orange curves in every panel?}}
+	\caption{Detection probability $p_{\rm d}$ as a function of false alarm probability $p_{\rm fa}$ (i.e. ROC curve) for HMM tracking of a CW signal ($h_0 / \sigma_n = 0.022$) in conjunction with the ANC scheme, for different mains power interference parameters. The top, middle and bottom panels display different values of $\Delta f_{\rm ac}$, $\sigma_{\Theta}^2$, and $P$ respectively. The diagonal grey dashed line in all panels corresponds to the performance of a random classifier. In all panels the curves overlap approximately, illustrating that the performance of the HMM and ANC scheme is insensitive to the mains power parameters. At $p_{\rm fa} = 0.05$, the mean $p_{d}$ across the 3 curves is 0.52 (top panel), 0.48 (middle panel) and 0.58 (bottom panel).}
 	\label{fig:roc1}
 \end{figure}
-In this section we test how the ANC scheme and HMM tracker perform together as a function of the mains power parameters $\Delta f_{\rm ac}$, $\sigma_\Theta^2$ and $P$. To this end, we calculate the probability of detecting the CW signal, $p_{\rm d}$, as a function of the false alarm probability, $p_{\rm fa}$, i.e. the ROC curve $p_{\rm d} (p_{\rm fa})$. We consider three numerical experiments. In the first experiment we vary $\Delta f_{\rm ac} =  \{0.5, 1.0, 1.5\}$ Hz whilst holding constant $\sigma_{\Theta}^2 = 10^{-2}$ and $P = 100 $s. In the second experiment we vary $\sigma_{\Theta}^2 =  \{ 10^{-3}, 10^{-2}, 10^{-1}\}$ whilst holding constant $\Delta f_{\rm ac} = 1.0$ Hz and $P = 100 $s. In the third experiment we vary $P=  \{ 10, 10^2, 10^3\}$ s whilst holding constant $\Delta f_{\rm ac} = 1.0$ Hz and $\sigma_{\Theta}^2 = 10^{-2}$. For all experiments $h_0 / \sigma_n^2 = 0.022$, $f_{\rm gw}(t=0)$ is fixed to 59.9 Hz, and $N \Delta t = 800$ s. Note that despite expecting $\Delta f_{\rm ac} < 0.5$, as discussed in Section \ref{sec21}, in this Section we trial larger values of $\Delta f_{\rm ac}$ in order to provide a more difficult test for the ANC scheme and HMM tracker. All other parameters are specified in Table \ref{tab:parameterdescription1}. \newline 
+In this section we test how the ANC scheme and HMM tracker perform together as a function of the mains power parameters $\Delta f_{\rm ac}$, $\sigma_\Theta^2$ and $P$. To this end, we calculate the probability of detecting the CW signal, $p_{\rm d}$, as a function of the false alarm probability, $p_{\rm fa}$, i.e. the ROC curve $p_{\rm d} (p_{\rm fa})$. We consider three numerical experiments. In the first experiment we vary $\Delta f_{\rm ac} =  \{0.5, 1.0, 1.5\}$ Hz whilst holding constant $\sigma_{\Theta}^2 = 10^{-2}$ and $P = 100 $ s. In the second experiment we vary $\sigma_{\Theta}^2 =  \{ 10^{-3}, 10^{-2}, 10^{-1}\}$ whilst holding constant $\Delta f_{\rm ac} = 1.0$ Hz and $P = 100 $ s. In the third experiment we vary $P=  \{ 10, 10^2, 10^3\}$ s whilst holding constant $\Delta f_{\rm ac} = 1.0$ Hz and $\sigma_{\Theta}^2 = 10^{-2}$. For all experiments we fix $h_0 / \sigma_n = 0.022$, $f_{\rm gw}(t=0) = 59.9$ Hz, and $N \Delta t = 800$ s. Despite expecting $\Delta f_{\rm ac} < 0.5$ in practice, as discussed in Section \ref{sec21}, we trial larger values of $\Delta f_{\rm ac}$ in order to set a more difficult test for the ANC scheme and HMM tracker. All injected parameters are specified in Table \ref{tab:parameterdescription1}. \newline 
 
 
 Figure \ref{fig:roc1} displays the ROC curves resulting from the three numerical experiments above. In the top panel the results of the first experiment are plotted, where we set  $\Delta f_{\rm ac} = \{0.5, 1.0, 1.5\}$ Hz (blue, green and orange curves respectively). Also plotted for comparison is the performance of a random classifier (grey dashed diagonal line). The performance across different $\Delta f_{\rm ac}$ values is broadly comparable, with the ROC curves generally overlaid. For all values of $\Delta f_{\rm ac}$ the ANC scheme and HMM tracker outperform a random classifier (i.e. each of the ROC curves lies above the grey dashed line). We take $p_{d}(p_{\rm fa} =0.05)$ as a scalar metric to quantify the performance of the HMM-ANC combination. For the top panel $p_{\rm d}(0.05$) = $(0.5, 0.5, 0.57)$ for $\Delta f_{\rm ac} =  \{0.5, 1.0, 1.5\}$ Hz respectively. In the middle panel the results of the second experiment are plotted, where we set  $\sigma_{\Theta}^2 =  \{ 10^{-3}, 10^{-2}, 10^{-1}\}$  (blue, green and orange curves respectively). Again the ANC scheme and HMM tracker outperform a random classifier, and the results are broadly consistent across different parameter values, with $p_{\rm d}(0.05$) = $(0.44,0.50,0.49)$ for $\sigma_{\Theta}^2 =  \{ 10^{-3}, 10^{-2}, 10^{-1}\}$ respectively. In the bottom panel the results of the third experiment are plotted where we set $P=  \{ 10, 10^2, 10^3\}$ s (blue, green and orange curves respectively). Once again the scheme outperforms a random classifier and is robust to different parameter values, with $p_{\rm d}(0.05) = (0.7,0.49,0.54)$ for $P=  \{ 10, 10^2, 10^3\}$ s respectively.
