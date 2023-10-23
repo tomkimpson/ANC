@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.3)  18 OCT 2023 11:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.3)  23 OCT 2023 14:16
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -600,240 +600,231 @@ Package caption Info: End \AtBeginDocument code.
 Class revtex4-2 Info: Taking \maketitle back from hyperref on input line 76.
 \openout3 = `main-linesNotes.bib'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 90.
-
+LaTeX Font Info:    Trying to load font information for U+msa on input line 144
+.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 90.
-
+LaTeX Font Info:    Trying to load font information for U+msb on input line 144
+.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-
-Class revtex4-2 Warning: Assuming \noaffiliation for authors.
-
-
-Underfull \hbox (badness 1478) in paragraph at lines 103--104
+Underfull \hbox (badness 1478) in paragraph at lines 157--158
 []\OT1/cmr/m/n/10 Instrumental noise ar-ti-facts in grav-i-ta-tional wave
  []
 
 
-Underfull \hbox (badness 1831) in paragraph at lines 103--104
+Underfull \hbox (badness 1831) in paragraph at lines 157--158
 \OT1/cmr/m/n/10 (GW) searches with ter-res-trial, long-baseline in-ter-
  []
 
 
-Underfull \hbox (badness 1215) in paragraph at lines 103--104
+Underfull \hbox (badness 1215) in paragraph at lines 157--158
 \OT1/cmr/m/n/10 and re-sem-bles the noise ar-ti-fact spec-trally. Many
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--104
+Underfull \hbox (badness 10000) in paragraph at lines 157--158
 
  []
 
 
-Underfull \hbox (badness 2158) in paragraph at lines 106--107
+Underfull \hbox (badness 2158) in paragraph at lines 160--161
 \OT1/cmr/m/n/10 CW searches specif-i-cally, the dis-tinc-tive am-pli-tude
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 106--107
+Underfull \hbox (badness 10000) in paragraph at lines 160--161
 
  []
 
 
-Underfull \hbox (badness 1168) in paragraph at lines 108--108
+Underfull \hbox (badness 1168) in paragraph at lines 162--162
   [][][]\OT1/cmr/m/n/8 A reg-u-larly up-dated log of nar-row-band in-stru-men-t
 al lines
  []
 
 
-Underfull \hbox (badness 1769) in paragraph at lines 108--108
+Underfull \hbox (badness 1769) in paragraph at lines 162--162
  \OT1/cmr/m/n/8 in the LVK de-tec-tor is main-tained at [][]dcc.ligo.org/LIGO-
  []
 
 
-Underfull \hbox (badness 3514) in paragraph at lines 108--109
+Underfull \hbox (badness 3514) in paragraph at lines 162--163
 \OT1/cmr/m/n/10 and tracks quasi-monochromatic GW sig-nals with
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 108--109
+Underfull \hbox (badness 10000) in paragraph at lines 162--163
 
  []
 
 [1{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 3449) in paragraph at lines 113--114
+Underfull \hbox (badness 3449) in paragraph at lines 167--168
 []\OT1/cmr/m/n/10 The goal of this pa-per is to de-tect a quasi-
  []
 
 
-Underfull \hbox (badness 1314) in paragraph at lines 119--120
+Underfull \hbox (badness 1314) in paragraph at lines 173--174
 \OT1/cmr/m/n/10 of the high-sensitivity elec-tronic com-po-nents within
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 119--120
+Underfull \hbox (badness 10000) in paragraph at lines 173--174
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--122
+Underfull \hbox (badness 10000) in paragraph at lines 175--176
 
  []
 
-<images/sensitivity.png, id=156, 746.0673pt x 495.0495pt>
+<images/sensitivity.png, id=159, 746.0673pt x 495.0495pt>
 File: images/sensitivity.png Graphic file (type png)
 <use images/sensitivity.png>
-Package pdftex.def Info: images/sensitivity.png  used on input line 129.
+Package pdftex.def Info: images/sensitivity.png  used on input line 183.
 (pdftex.def)             Requested size: 246.0pt x 163.23087pt.
-<images/new_cascade_O3_new.png, id=162, 455.301pt x 606.3453pt>
+<images/new_cascade_O3_new.png, id=165, 455.301pt x 606.3453pt>
 File: images/new_cascade_O3_new.png Graphic file (type png)
 <use images/new_cascade_O3_new.png>
-Package pdftex.def Info: images/new_cascade_O3_new.png  used on input line 134.
+Package pdftex.def Info: images/new_cascade_O3_new.png  used on input line 188.
 
 (pdftex.def)             Requested size: 246.0pt x 327.60663pt.
 
-Underfull \hbox (badness 2521) in paragraph at lines 135--135
+Underfull \hbox (badness 2521) in paragraph at lines 189--189
 \OT1/cmr/m/n/9 of the am-pli-tude spec-tral den-sity (units: Hz$[]$) of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 145--146
+Underfull \hbox (badness 10000) in paragraph at lines 199--200
 
  []
 
-[2
-pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
-s been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.146 
-       <./images/sensitivity.png>]
+[2]
 
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 146.
+ on input line 200.
 
 
-Underfull \hbox (badness 1990) in paragraph at lines 151--153
+Underfull \hbox (badness 1990) in paragraph at lines 205--207
 \OT1/cmr/m/n/10 sig-nal is quasi-monochromatic, amplitude-modulated
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 151--153
+Underfull \hbox (badness 10000) in paragraph at lines 205--207
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--172
+Underfull \hbox (badness 10000) in paragraph at lines 218--226
 
  []
 
 [3
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.226 
+      
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.180 
-       <./images/new_cascade_O3_new.png>]
+l.226 
+       <./images/sensitivity.png> <./images/new_cascade_O3_new.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 184.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 184.
+(hyperref)                removing `math shift' on input line 238.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 184.
+(hyperref)                removing `math shift' on input line 238.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 184.
+(hyperref)                removing `math shift' on input line 238.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 185--186
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 238.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 239--240
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 198--200
+Underfull \hbox (badness 10000) in paragraph at lines 252--254
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 202--202
+Underfull \hbox (badness 10000) in paragraph at lines 256--256
   [][][][][]$\OT1/cmtt/m/n/8 https : / / computing . docs . ligo . org / guide 
 /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 202--202
+Underfull \hbox (badness 10000) in paragraph at lines 256--256
   [][][][][]$\OT1/cmtt/m/n/8 https : / / git . ligo . org / detchar / ligo-[]ch
 annel-[]lists / -[] / blob /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 202--204
+Underfull \hbox (badness 10000) in paragraph at lines 256--258
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 205--206
+Underfull \hbox (badness 10000) in paragraph at lines 259--260
 
  []
 
-<images/stacked_coherence_plot_new.png, id=224, 625.3764pt x 1067.4279pt>
+<images/stacked_coherence_plot_new.png, id=227, 625.3764pt x 1067.4279pt>
 File: images/stacked_coherence_plot_new.png Graphic file (type png)
 <use images/stacked_coherence_plot_new.png>
 Package pdftex.def Info: images/stacked_coherence_plot_new.png  used on input l
-ine 210.
+ine 264.
 (pdftex.def)             Requested size: 246.0pt x 419.89478pt.
 
-Underfull \hbox (badness 7814) in paragraph at lines 212--212
+Underfull \hbox (badness 7814) in paragraph at lines 266--266
 []\OT1/cmr/m/n/9 FIG. 3. [][] Co-her-ence $\OML/cmm/m/it/9 C[]$\OT1/cmr/m/n/9 ,
  de-fined by Equa-
  []
 
 
-Underfull \hbox (badness 3158) in paragraph at lines 212--212
+Underfull \hbox (badness 3158) in paragraph at lines 266--266
 \OT1/cmr/m/n/9 tion [], re-lat-ing the LIGO-Livingston strain chan-nel
  []
 
 
-Underfull \hbox (badness 5696) in paragraph at lines 212--212
+Underfull \hbox (badness 5696) in paragraph at lines 266--266
 \OT1/cmtt/m/n/9 L1:DCS-CALIB[]STRAIN[]C01[]AR \OT1/cmr/m/n/9 and the nine three
 -phase
  []
 
-<images/coherence_spectrogram_canonical.png, id=227, 801.2334pt x 378.6948pt>
+<images/coherence_spectrogram_canonical.png, id=230, 801.2334pt x 378.6948pt>
 File: images/coherence_spectrogram_canonical.png Graphic file (type png)
 <use images/coherence_spectrogram_canonical.png>
 Package pdftex.def Info: images/coherence_spectrogram_canonical.png  used on in
-put line 216.
+put line 270.
 (pdftex.def)             Requested size: 510.0pt x 241.04636pt.
-
-Underfull \hbox (badness 1895) in paragraph at lines 226--227
+[4]
+Underfull \hbox (badness 1895) in paragraph at lines 280--281
 []\OT1/cmr/m/n/10 ANC is a method for es-ti-mat-ing an un-der-ly-ing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 226--227
+Underfull \hbox (badness 10000) in paragraph at lines 280--281
 
  []
 
-[4]
 
-LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 227.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 256--257
+Underfull \hbox (badness 10000) in paragraph at lines 310--311
 
  []
 
@@ -842,52 +833,35 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.265 		\item C
-               alculate the residual $e_k$ from Equation \eqref{eq:error_est...
- <./images/stacked_coherence_plot_new.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 282--283
+l.311 
+       <./images/stacked_coherence_plot_new.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 336--337
 
  []
 
-<images/fir_block_2.pdf, id=282, 202.63203pt x 152.7848pt>
+<images/fir_block_2.pdf, id=283, 202.63203pt x 152.7848pt>
 File: images/fir_block_2.pdf Graphic file (type pdf)
 <use images/fir_block_2.pdf>
-Package pdftex.def Info: images/fir_block_2.pdf  used on input line 288.
+Package pdftex.def Info: images/fir_block_2.pdf  used on input line 341.
 (pdftex.def)             Requested size: 246.0pt x 185.48796pt.
-
-Underfull \hbox (badness 1062) in paragraph at lines 295--296
-\OT1/cmr/m/n/10 of the LVK Col-lab-o-ra-tion, gen-er-at-ing a sub-stan-tial
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 295--296
-
- []
-
 [6
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.296 
+l.346 
        <./images/coherence_spectrogram_canonical.png>]
+Underfull \hbox (badness 1062) in paragraph at lines 348--349
+\OT1/cmr/m/n/10 of the LVK Col-lab-o-ra-tion, gen-er-at-ing a sub-stan-tial
+ []
 
-LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 296.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 300--301
+Underfull \hbox (badness 10000) in paragraph at lines 348--349
 
  []
 
 
-Underfull \hbox (badness 1515) in paragraph at lines 317--319
-\OT1/cmr/m/n/10 Hence the syn-thetic GW sig-nal $\OML/cmm/m/it/10 h\OT1/cmr/m/n
-/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )$ is com-pletely
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 317--319
+Underfull \hbox (badness 10000) in paragraph at lines 353--354
 
  []
 
@@ -896,47 +870,58 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.328 \end{align}
-                  <./images/fir_block_2.pdf>]
-Underfull \hbox (badness 1694) in paragraph at lines 328--330
+l.370 \end{equation}
+                     <./images/fir_block_2.pdf>]
+Underfull \hbox (badness 1515) in paragraph at lines 370--372
+\OT1/cmr/m/n/10 Hence the syn-thetic GW sig-nal $\OML/cmm/m/it/10 h\OT1/cmr/m/n
+/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )$ is com-pletely
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 370--372
+
+ []
+
+
+Underfull \hbox (badness 1694) in paragraph at lines 381--383
 \OT1/cmr/m/n/10 The syn-thetic ref-er-ence and clut-ter data are fully
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 328--330
+Underfull \hbox (badness 10000) in paragraph at lines 381--383
 
  []
 
-<images/spectrum.png, id=375, 727.9998pt x 716.6775pt>
+<images/spectrum.png, id=377, 727.9998pt x 716.6775pt>
 File: images/spectrum.png Graphic file (type png)
 <use images/spectrum.png>
-Package pdftex.def Info: images/spectrum.png  used on input line 363.
+Package pdftex.def Info: images/spectrum.png  used on input line 417.
 (pdftex.def)             Requested size: 246.0pt x 242.16895pt.
-<images/viterbi_tracking_canonical.png, id=378, 1133.4345pt x 533.5935pt>
+<images/viterbi_tracking_canonical.png, id=380, 1133.4345pt x 533.5935pt>
 File: images/viterbi_tracking_canonical.png Graphic file (type png)
 <use images/viterbi_tracking_canonical.png>
 Package pdftex.def Info: images/viterbi_tracking_canonical.png  used on input l
-ine 370.
+ine 424.
 (pdftex.def)             Requested size: 510.0pt x 240.09857pt.
 
-Underfull \hbox (badness 1389) in paragraph at lines 375--376
+Underfull \hbox (badness 1389) in paragraph at lines 429--430
 \OT1/cmr/m/n/10 fec-tive signal-to-noise ra-tio equals $\OML/cmm/m/it/10 h[]=^^
 [[] \OT1/cmr/m/n/10 = 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 025$.
  []
 
 
-Underfull \hbox (badness 1275) in paragraph at lines 375--376
+Underfull \hbox (badness 1275) in paragraph at lines 429--430
 \OT1/cmr/m/n/10 All other pa-ram-e-ters are spec-i-fied in Ta-ble [][]I[][]. Fo
 r
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 375--376
+Underfull \hbox (badness 10000) in paragraph at lines 429--430
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 378--379
+Underfull \hbox (badness 10000) in paragraph at lines 432--433
 
  []
 
@@ -945,87 +930,101 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.390 
-       <./images/spectrum.png>]
-<images/roc_curve_mains_power_params_log.png, id=397, 732.336pt x 714.5094pt>
-File: images/roc_curve_mains_power_params_log.png Graphic file (type png)
-<use images/roc_curve_mains_power_params_log.png>
-Package pdftex.def Info: images/roc_curve_mains_power_params_log.png  used on i
-nput line 404.
-(pdftex.def)             Requested size: 246.0pt x 240.0081pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 409--410
-
- []
-
-[9
+l.435 
+       <./images/spectrum.png>] [9
 pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has
  been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.410 
+l.444 
       
 pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.410 
+l.444 
        <./images/viterbi_tracking_canonical.png>]
+<images/roc_curve_mains_power_params.png, id=405, 732.336pt x 714.5094pt>
+File: images/roc_curve_mains_power_params.png Graphic file (type png)
+<use images/roc_curve_mains_power_params.png>
+Package pdftex.def Info: images/roc_curve_mains_power_params.png  used on input
+ line 449.
+(pdftex.def)             Requested size: 246.0pt x 240.0081pt.
 
-LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 410.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 412--413
+Underfull \hbox (badness 10000) in paragraph at lines 454--455
 
  []
 
-<images/roc_curve_filter_params_log.png, id=406, 732.336pt x 714.5094pt>
-File: images/roc_curve_filter_params_log.png Graphic file (type png)
-<use images/roc_curve_filter_params_log.png>
-Package pdftex.def Info: images/roc_curve_filter_params_log.png  used on input 
-line 421.
+
+Underfull \hbox (badness 10000) in paragraph at lines 457--458
+
+ []
+
+<images/roc_curve_filter_params.png, id=409, 732.336pt x 714.5094pt>
+File: images/roc_curve_filter_params.png Graphic file (type png)
+<use images/roc_curve_filter_params.png>
+Package pdftex.def Info: images/roc_curve_filter_params.png  used on input line
+ 466.
 (pdftex.def)             Requested size: 246.0pt x 240.0081pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 479--480
+
+ []
+
+
+Underfull \hbox (badness 1394) in paragraph at lines 481--482
+\OT1/cmr/m/n/10 which di-rectly mea-sure the three-phase volt-ages at
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 481--482
+
+ []
+
 [10
 pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.430 	\item H
-              ow does ANC performance depend on $\lambda$?
+l.482 
+       <./images/roc_curve_mains_power_params.png>]
+
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
+ on input line 482.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 484--485
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 487--488
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 493--494
+
+ []
+
+
+Underfull \hbox (badness 3260) in paragraph at lines 495--496
+\OT1/cmr/m/n/10 prob-a-bil-ity $\OML/cmm/m/it/10 p[]\OT1/cmr/m/n/10 (0\OML/cmm/
+m/it/10 :\OT1/cmr/m/n/10 05)$ gen-er-ally in-creases with these
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 495--496
+
+ []
+
+[11
 pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.430 	\item H
-              ow does ANC performance depend on $\lambda$? <./images/roc_curve_
-mains_power_params_log.png> <./images/roc_curve_filter_params_log.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 434--435
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 437--438
-
- []
-
-
-Underfull \hbox (badness 1019) in paragraph at lines 440--441
-\OT1/cmr/m/n/10 mis-ad-just-ment (i.e. $\OT1/cmr/bx/n/10 w$ \OT1/cmr/m/n/10 is 
-not er-ro-neously up-dated
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 440--441
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 448--449
-
- []
-
-[11] (./main-lines.bbl
+l.496 
+       <./images/roc_curve_filter_params.png>] (./main-lines.bbl
 Underfull \hbox (badness 2828) in paragraph at lines 145--155
  []\OT1/cmr/m/n/9 J. Glanzer, S. Soni, J. Spoon, A. Ef-fler,  and
  []
@@ -1042,7 +1041,7 @@ Underfull \hbox (badness 6691) in paragraph at lines 390--397
 /cmr/m/n/9 (2022),
  []
 
-
+[12]
 Underfull \hbox (badness 2181) in paragraph at lines 573--581
  \OT1/cmr/m/n/9 K. Staats, G. Va-jente,  and D. Williams, [][]arXiv
  []
@@ -1052,7 +1051,7 @@ Underfull \hbox (badness 1436) in paragraph at lines 573--581
  \OT1/cmr/m/n/9 e-prints , arXiv:2005.03745 (2020)[][], [][]arXiv:2005.03745
  []
 
-[12]
+
 Underfull \hbox (badness 4492) in paragraph at lines 735--739
  []\OT1/cmr/m/n/9 B. Widrow, J. Glover, J. Mc-Cool, J. Kau-nitz,
  []
@@ -1084,23 +1083,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 943--947
 /cmr/m/n/9 (2022),
  []
 
-)
+) [13]
 
 Class revtex4-2 Warning: Environment acknowledgements is obsolete;
 Use acknowledgments instead.
 
-[13] (./main-lines.aux)
+[14] (./main-lines.aux)
 Package rerunfilecheck Info: File `main-lines.out' has not changed.
 (rerunfilecheck)             Checksum: CFFD631A5FD8FBF52CC1111A70761741;3535.
  ) 
 Here is how much of TeX's memory you used:
- 14698 strings out of 478268
- 231188 string characters out of 5846348
- 581354 words of memory out of 5000000
- 32530 multiletter control sequences out of 15000+600000
+ 14697 strings out of 478268
+ 231098 string characters out of 5846348
+ 568205 words of memory out of 5000000
+ 32526 multiletter control sequences out of 15000+600000
  483035 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 69i,12n,76p,2070b,572s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 69i,12n,76p,1700b,556s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></
@@ -1125,12 +1124,11 @@ fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2022/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2022/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2022/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2022/texmf-dist/fonts/t
-ype1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2022/texmf-dist/fon
-ts/type1/public/amsfonts/symbols/msam7.pfb>
-Output written on main-lines.pdf (13 pages, 6036534 bytes).
+ype1/public/amsfonts/symbols/msam10.pfb>
+Output written on main-lines.pdf (14 pages, 6026975 bytes).
 PDF statistics:
- 766 PDF objects out of 1000 (max. 8388607)
- 659 compressed objects within 7 object streams
- 140 named destinations out of 1000 (max. 500000)
+ 772 PDF objects out of 1000 (max. 8388607)
+ 666 compressed objects within 7 object streams
+ 143 named destinations out of 1000 (max. 500000)
  198 words of extra memory for PDF output out of 10000 (max. 10000000)
 
