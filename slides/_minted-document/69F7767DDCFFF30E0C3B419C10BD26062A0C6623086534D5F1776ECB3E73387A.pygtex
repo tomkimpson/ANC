@@ -1,0 +1,142 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+
+\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{frame}\PYG{p}{\PYGZcb{}\PYGZob{}}\PYG{n}{Table}\PYG{+w}{ }\PYG{n}{of}\PYG{+w}{ }\PYG{n}{contents}\PYG{p}{\PYGZcb{}}
+\PYG{err}{\PYGZbs{}}\PYG{n}{setbeamertemplate}\PYG{p}{\PYGZob{}}\PYG{n}{section}\PYG{+w}{ }\PYG{k}{in}\PYG{+w}{ }\PYG{n}{toc}\PYG{p}{\PYGZcb{}[}\PYG{n}{sections}\PYG{+w}{ }\PYG{n}{numbered}\PYG{p}{]}
+\PYG{err}{\PYGZbs{}}\PYG{n}{tableofcontents}\PYG{p}{[}\PYG{n}{hideallsubsections}\PYG{p}{]}
+\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{frame}\PYG{p}{\PYGZcb{}}
+
+
+\PYG{n}{ection}\PYG{p}{\PYGZob{}}\PYG{n}{Derivatives}\PYG{p}{\PYGZcb{}}
+
+
+
+\PYG{n}{egin}\PYG{p}{\PYGZob{}}\PYG{n}{frame}\PYG{p}{\PYGZcb{}}
+\PYG{n}{erivatives}\PYG{+w}{ }\PYG{n}{are}\PYG{+w}{ }\PYG{n}{ubiquitous}\PYG{+w}{ }\PYG{k}{in}\PYG{+w}{ }\PYG{n}{physics}\PYG{p}{.}
+
+\PYG{n}{sually}\PYG{+w}{ }\PYG{n}{either}\PYG{+w}{ }\PYG{n}{symbolic}\PYG{+w}{ }\PYG{n+nf}{expression}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{e}\PYG{p}{.}\PYG{n}{g}\PYG{p}{.}\PYG{+w}{ }\PYG{n}{GR}\PYG{p}{)}
+
+\PYG{+w}{  }\PYG{n}{Or}\PYG{+w}{ }\PYG{n}{some}\PYG{+w}{ }\PYG{n}{kind}\PYG{+w}{ }\PYG{n}{of}\PYG{+w}{ }\PYG{n}{parameter}\PYG{+w}{ }\PYG{n}{estimation}\PYG{o}{/}\PYG{+w}{ }\PYG{n}{optimisation}\PYG{o}{/}\PYG{n}{inverse}\PYG{+w}{ }\PYG{n}{problem}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{e}\PYG{p}{.}\PYG{n}{g}\PYG{p}{.}\PYG{+w}{ }\PYG{n}{gradient}\PYG{+w}{ }\PYG{n}{descent}\PYG{p}{)}
+\PYG{+w}{  	}
+\PYG{n}{nd}\PYG{p}{\PYGZob{}}\PYG{n}{frame}\PYG{p}{\PYGZcb{}}
+
+
+\PYG{n}{egin}\PYG{p}{\PYGZob{}}\PYG{n}{frame}\PYG{p}{\PYGZcb{}}
+\PYG{+w}{ }\PYG{n}{How}\PYG{+w}{ }\PYG{n}{can}\PYG{+w}{ }\PYG{n}{we}\PYG{+w}{ }\PYG{n}{calculate}\PYG{+w}{ }\PYG{n}{derivatives}\PYG{o}{?}
+\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{enumerate}\PYG{p}{\PYGZcb{}}
+\PYG{err}{\PYGZbs{}}\PYG{n}{item}\PYG{+w}{ }\PYG{n}{Symbolic}
+\PYG{err}{\PYGZbs{}}\PYG{n}{item}\PYG{+w}{ }\PYG{n}{Numerically}\PYG{+w}{ 	}\PYG{err}{\PYGZdl{}\PYGZbs{}}\PYG{k}{partial}\PYG{+w}{ }\PYG{n}{f}\PYG{p}{(}\PYG{n}{x}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{err}{\PYGZbs{}}\PYG{n}{lim\PYGZus{}}\PYG{p}{\PYGZob{}}\PYG{n}{h}\PYG{+w}{ }\PYG{err}{\PYGZbs{}}\PYG{n}{rightarrow}\PYG{+w}{ }\PYG{l+m}{0}\PYG{p}{\PYGZcb{}}\PYG{+w}{ }\PYG{err}{\PYGZbs{}}\PYG{n}{frac}\PYG{p}{\PYGZob{}}\PYG{n}{f}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{x}\PYG{o}{+}\PYG{n}{h}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{+w}{ }\PYG{n}{f}\PYG{p}{(}\PYG{n}{x}\PYG{p}{)\PYGZcb{}\PYGZob{}}\PYG{n}{h}\PYG{p}{\PYGZcb{}}\PYG{err}{\PYGZdl{}}
+\PYG{err}{\PYGZbs{}}\PYG{n}{item}\PYG{+w}{ }\PYG{err}{\PYGZbs{}}\PYG{n}{alert}\PYG{p}{\PYGZob{}}\PYG{n}{Automatic}\PYG{p}{\PYGZcb{}}
+\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{enumerate}\PYG{p}{\PYGZcb{}}
+\PYG{n}{nd}\PYG{p}{\PYGZob{}}\PYG{n}{frame}\PYG{p}{\PYGZcb{}}
+
+\PYG{n}{egin}\PYG{p}{\PYGZob{}}\PYG{n}{frame}\PYG{p}{\PYGZcb{}}
+
+\PYG{n}{ets}\PYG{+w}{ }\PYG{k}{try}\PYG{+w}{ }\PYG{n}{an}\PYG{+w}{ }\PYG{n}{easy}\PYG{+w}{ }\PYG{n}{example}\PYG{p}{.}
+
+\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{equation}\PYG{p}{\PYGZcb{}}
+\PYG{p}{(}\PYG{n}{x}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m}{2}\PYG{+w}{ }\PYG{n}{x}\PYG{o}{\PYGZca{}}\PYG{l+m}{2}\PYG{+w}{ }\PYG{err}{\PYGZbs{}}\PYG{n}{nonumber}
+\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{equation}\PYG{p}{\PYGZcb{}}
+
+\PYG{n}{hat}\PYG{+w}{ }\PYG{k}{is}\PYG{+w}{ }\PYG{err}{\PYGZdl{}}\PYG{n}{f}\PYG{+w}{ }\PYG{err}{\PYGZbs{}}\PYG{p}{,}\PYG{+w}{ }\PYG{err}{\PYGZsq{}}\PYG{p}{(}\PYG{n}{x}\PYG{p}{)}\PYG{err}{\PYGZdl{}}\PYG{+w}{ }\PYG{n}{when}\PYG{+w}{ }\PYG{err}{\PYGZdl{}}\PYG{n}{x}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m}{2}\PYG{err}{\PYGZdl{}}\PYG{o}{?}
+
+\PYG{err}{\PYGZbs{}}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{enumerate}\PYG{p}{\PYGZcb{}}
+\PYG{err}{\PYGZbs{}}\PYG{n}{item}\PYG{+w}{ }\PYG{n}{Symbolic}\PYG{p}{:}\PYG{+w}{ }\PYG{n}{Trivial}\PYG{+w}{ }\PYG{err}{\PYGZdl{}}\PYG{n}{f}\PYG{+w}{ }\PYG{err}{\PYGZbs{}}\PYG{p}{,}\PYG{+w}{ }\PYG{err}{\PYGZsq{}}\PYG{p}{(}\PYG{l+m}{2}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m}{8}\PYG{err}{\PYGZdl{}}
+\PYG{err}{\PYGZbs{}}\PYG{n}{item}\PYG{+w}{ }\PYG{n}{Numerically}\PYG{+w}{ }\PYG{p}{:}\PYG{+w}{ 	}\PYG{err}{\PYGZdl{}\PYGZbs{}}\PYG{k}{partial}\PYG{+w}{ }\PYG{n}{f}\PYG{p}{(}\PYG{n}{x}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{err}{\PYGZbs{}}\PYG{n}{lim\PYGZus{}}\PYG{p}{\PYGZob{}}\PYG{n}{h}\PYG{+w}{ }\PYG{err}{\PYGZbs{}}\PYG{n}{rightarrow}\PYG{+w}{ }\PYG{l+m}{0}\PYG{p}{\PYGZcb{}}\PYG{+w}{ }\PYG{err}{\PYGZbs{}}\PYG{n}{frac}\PYG{p}{\PYGZob{}}\PYG{n}{f}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{x}\PYG{o}{+}\PYG{n}{h}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{+w}{ }\PYG{n}{f}\PYG{p}{(}\PYG{n}{x}\PYG{p}{)\PYGZcb{}\PYGZob{}}\PYG{n}{h}\PYG{p}{\PYGZcb{}}\PYG{err}{\PYGZdl{}}
+\PYG{err}{\PYGZbs{}}\PYG{n}{item}\PYG{+w}{ }\PYG{err}{\PYGZbs{}}\PYG{n}{alert}\PYG{p}{\PYGZob{}}\PYG{n}{Automatic}\PYG{p}{\PYGZcb{}:}\PYG{+w}{ }\PYG{o}{?}
+\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{enumerate}\PYG{p}{\PYGZcb{}}
+
+
+\PYG{n}{nd}\PYG{p}{\PYGZob{}}\PYG{n}{frame}\PYG{p}{\PYGZcb{}}
+
+\PYG{n}{ection}\PYG{p}{\PYGZob{}}\PYG{n}{AD}\PYG{p}{\PYGZcb{}}
+
+\PYG{n}{ection}\PYG{p}{\PYGZob{}}\PYG{n}{How}\PYG{+w}{ }\PYG{n}{does}\PYG{+w}{ }\PYG{n}{AD}\PYG{+w}{ }\PYG{n}{actually}\PYG{+w}{ }\PYG{n}{work}\PYG{o}{?}\PYG{p}{\PYGZcb{}}
+
+\PYG{n}{ection}\PYG{p}{\PYGZob{}}\PYG{n}{Example}\PYG{+w}{ }\PYG{n}{applications}\PYG{p}{\PYGZcb{}}
+
+\PYG{n}{ection}\PYG{p}{\PYGZob{}}\PYG{n}{How}\PYG{+w}{ }\PYG{n}{can}\PYG{+w}{ }\PYG{n}{I}\PYG{+w}{ }\PYG{n}{use}\PYG{+w}{ }\PYG{n}{AD}\PYG{+w}{ }\PYG{k}{in}\PYG{+w}{ }\PYG{n}{my}\PYG{+w}{ }\PYG{n}{code}\PYG{o}{?}\PYG{p}{\PYGZcb{}}
+
+\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{frame}\PYG{p}{\PYGZcb{}\PYGZob{}\PYGZcb{}}
+\PYG{n}{redicting}\PYG{+w}{ }\PYG{n}{climate}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{numerical}\PYG{+w}{ }\PYG{n}{modelling}
+\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{itemize}\PYG{p}{\PYGZcb{}}
+\PYG{err}{\PYGZbs{}}\PYG{n}{item}\PYG{+w}{ }\PYG{n}{Computationally}\PYG{+w}{ }\PYG{n}{intensive}
+\PYG{err}{\PYGZbs{}}\PYG{n}{item}\PYG{+w}{ }\PYG{n}{Can}\PYG{+w}{ }\PYG{n}{we}\PYG{+w}{ }\PYG{n}{improve}\PYG{+w}{ }\PYG{n}{computational}\PYG{+w}{ }\PYG{n}{efficiency}\PYG{+w}{ }\PYG{k}{by}\PYG{+w}{ }\PYG{k}{using}\PYG{+w}{ }\PYG{n+nn}{lower}\PYG{+w}{ }\PYG{n}{precision}\PYG{+w}{ }\PYG{n}{number}\PYG{+w}{ }\PYG{n}{formats}\PYG{o}{?}\PYG{+w}{ }\PYG{n}{i}\PYG{p}{.}\PYG{n}{e}\PYG{p}{.}\PYG{+w}{ }\PYG{err}{\PYGZbs{}}\PYG{n}{alert}\PYG{p}{\PYGZob{}}\PYG{n}{not}\PYG{p}{\PYGZcb{}}\PYG{+w}{ }\PYG{n}{Float64}
+\PYG{err}{\PYGZbs{}}\PYG{n}{item}\PYG{+w}{ }\PYG{n}{Can}\PYG{+w}{ }\PYG{n}{we}\PYG{+w}{ }\PYG{n}{piggyback}\PYG{+w}{ }\PYG{n}{hardware}\PYG{+w}{ }\PYG{n}{developments}\PYG{+w}{ }\PYG{k}{in}\PYG{+w}{ }\PYG{n}{deep}\PYG{+w}{ }\PYG{n}{learning}\PYG{o}{?}
+\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{itemize}\PYG{p}{\PYGZcb{}}
+
+\PYG{n}{nd}\PYG{p}{\PYGZob{}}\PYG{n}{frame}\PYG{p}{\PYGZcb{}}
+
+
+
+
+
+\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{frame}\PYG{p}{\PYGZcb{}}
+
+\PYG{+w}{ }\PYG{n}{match}\PYG{+w}{ }\PYG{n}{made}\PYG{+w}{ }\PYG{k}{in}\PYG{+w}{ }\PYG{n}{heaven}\PYG{p}{:}\PYG{+w}{ }\PYG{n}{reduced}\PYG{+w}{ }\PYG{n}{precision}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{n}{stochastic}\PYG{+w}{ }\PYG{n}{rounding}\PYG{+w}{ }\PYG{err}{\PYGZbs{}}\PYG{n}{newline}
+
+\PYG{+w}{  }\PYG{err}{\PYGZbs{}}\PYG{n}{centering}
+\PYG{err}{\PYGZbs{}}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{tikzpicture}\PYG{p}{\PYGZcb{}}
+\PYG{+w}{  }\PYG{err}{\PYGZbs{}}\PYG{n}{draw}\PYG{+w}{ }\PYG{p}{[}\PYG{o}{\PYGZhy{}}\PYG{p}{,}\PYG{o}{\PYGZgt{}=}\PYG{n}{stealth}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{color}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{black}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{thick}\PYG{p}{]}\PYG{+w}{ }\PYG{p}{(}\PYG{o}{\PYGZhy{}}\PYG{l+m}{5}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m}{0.0}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{\PYGZhy{}\PYGZhy{}}\PYG{+w}{ }\PYG{p}{(}\PYG{o}{+}\PYG{l+m}{5}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m}{0.0}\PYG{p}{);}
+\PYG{+w}{   }\PYG{err}{\PYGZbs{}}\PYG{n}{draw}\PYG{+w}{ }\PYG{p}{[}\PYG{n}{densely}\PYG{+w}{ }\PYG{n}{dashed}\PYG{p}{,}\PYG{o}{\PYGZgt{}=}\PYG{n}{stealth}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{color}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{black}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{thick}\PYG{p}{]}\PYG{+w}{ }\PYG{p}{(}\PYG{l+m}{0.0}\PYG{p}{,}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{l+m}{0.50}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{\PYGZhy{}\PYGZhy{}}\PYG{+w}{ }\PYG{p}{(}\PYG{l+m}{0.0}\PYG{p}{,}\PYG{+w}{ }\PYG{o}{+}\PYG{l+m}{0.5}\PYG{p}{);}
+\PYG{+w}{    }\PYG{err}{\PYGZbs{}}\PYG{n}{draw}\PYG{+w}{ }\PYG{p}{[}\PYG{o}{\PYGZhy{}}\PYG{p}{,}\PYG{o}{\PYGZgt{}=}\PYG{n}{stealth}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{color}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{black}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{thick}\PYG{p}{]}\PYG{+w}{ }\PYG{p}{(}\PYG{o}{\PYGZhy{}}\PYG{l+m}{3}\PYG{p}{,}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{l+m}{0.50}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{\PYGZhy{}\PYGZhy{}}\PYG{+w}{ }\PYG{p}{(}\PYG{o}{\PYGZhy{}}\PYG{l+m}{3}\PYG{p}{,}\PYG{+w}{ }\PYG{o}{+}\PYG{l+m}{0.5}\PYG{p}{);}
+\PYG{n}{draw}\PYG{+w}{ }\PYG{p}{[}\PYG{o}{\PYGZhy{}}\PYG{p}{,}\PYG{o}{\PYGZgt{}=}\PYG{n}{stealth}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{color}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{black}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{thick}\PYG{p}{]}\PYG{+w}{ }\PYG{p}{(}\PYG{o}{+}\PYG{l+m}{3}\PYG{p}{,}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{l+m}{0.50}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{\PYGZhy{}\PYGZhy{}}\PYG{+w}{ }\PYG{p}{(}\PYG{o}{+}\PYG{l+m}{3}\PYG{p}{,}\PYG{+w}{ }\PYG{o}{+}\PYG{l+m}{0.5}\PYG{p}{);}
+\PYG{n}{node}\PYG{p}{[}\PYG{n}{text}\PYG{o}{=}\PYG{n}{blue}\PYG{p}{]}\PYG{+w}{ }\PYG{n}{at}\PYG{+w}{ }\PYG{p}{(}\PYG{l+m}{3.2}\PYG{p}{,}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{l+m}{0.5}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{err}{\PYGZdl{}}\PYG{n}{x\PYGZus{}2}\PYG{err}{\PYGZdl{}}\PYG{p}{\PYGZcb{};}
+\PYG{n}{node}\PYG{p}{[}\PYG{n}{text}\PYG{o}{=}\PYG{n}{blue}\PYG{p}{]}\PYG{+w}{ }\PYG{n}{at}\PYG{+w}{ }\PYG{p}{(}\PYG{o}{\PYGZhy{}}\PYG{l+m}{2.8}\PYG{p}{,}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{l+m}{0.5}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{err}{\PYGZdl{}}\PYG{n}{x\PYGZus{}1}\PYG{err}{\PYGZdl{}}\PYG{p}{\PYGZcb{};}
+\PYG{n}{node}\PYG{p}{[}\PYG{n}{text}\PYG{o}{=}\PYG{n}{blue}\PYG{p}{]}\PYG{+w}{ }\PYG{n}{at}\PYG{+w}{ }\PYG{p}{(}\PYG{l+m}{1.5}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m}{1.2}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{err}{\PYGZdl{}}\PYG{n}{x}\PYG{err}{\PYGZdl{}}\PYG{p}{\PYGZcb{};}
+\PYG{n}{draw}\PYG{+w}{ }\PYG{p}{[}\PYG{o}{\PYGZhy{}}\PYG{n}{stealth}\PYG{p}{,}\PYG{n}{color}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{blue}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{thick}\PYG{p}{]}\PYG{+w}{ }\PYG{p}{(}\PYG{l+m}{1.5}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m}{1.01}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{\PYGZhy{}\PYGZhy{}}\PYG{+w}{ }\PYG{p}{(}\PYG{l+m}{1.5}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m}{0.0}\PYG{p}{);}
+
+\PYG{n}{draw}\PYG{+w}{ }\PYG{p}{[}\PYG{o}{\PYGZhy{}}\PYG{p}{,}\PYG{o}{\PYGZgt{}=}\PYG{n}{stealth}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{color}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{red}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{thick}\PYG{p}{]}\PYG{+w}{ }\PYG{p}{(}\PYG{o}{\PYGZhy{}}\PYG{l+m}{5}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m}{1.0}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{\PYGZhy{}\PYGZhy{}}\PYG{+w}{ }\PYG{p}{(}\PYG{o}{+}\PYG{l+m}{5}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m}{1.0}\PYG{p}{);}
+
+\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{tikzpicture}\PYG{p}{\PYGZcb{}}
+
+\PYG{n}{aggedright}
+
+\PYG{n}{egin}\PYG{p}{\PYGZob{}}\PYG{n}{itemize}\PYG{p}{\PYGZcb{}}
+\PYG{n}{item}\PYG{+w}{ }\PYG{n}{Usual}\PYG{+w}{ }\PYG{n}{way}\PYG{p}{:}\PYG{+w}{ }\PYG{n}{Round}\PYG{o}{\PYGZhy{}}\PYG{n}{to}\PYG{o}{\PYGZhy{}}\PYG{n}{nearest}
+\PYG{n}{item}\PYG{+w}{ }\PYG{n}{Alternatively}\PYG{p}{:}\PYG{+w}{ }\PYG{n}{Round}\PYG{+w}{ }\PYG{err}{\PYGZbs{}}\PYG{n}{alert}\PYG{p}{\PYGZob{}}\PYG{n}{stochastically}\PYG{p}{\PYGZcb{}}
+\PYG{n}{nd}\PYG{p}{\PYGZob{}}\PYG{n}{itemize}\PYG{p}{\PYGZcb{}}
+
+\PYG{n}{y}\PYG{+w}{ }\PYG{n}{bother}\PYG{o}{?}\PYG{+w}{ }\PYG{err}{\PYGZdl{}\PYGZbs{}}\PYG{n}{rightarrow}\PYG{+w}{ }\PYG{err}{\PYGZbs{}}\PYG{n}{mathbb}\PYG{p}{\PYGZob{}}\PYG{n}{E}\PYG{p}{\PYGZcb{}}\PYG{+w}{ }\PYG{err}{\PYGZbs{}}\PYG{n}{left}\PYG{p}{(}\PYG{err}{\PYGZbs{}}\PYG{n}{mathcal}\PYG{p}{\PYGZob{}}\PYG{n}{R}\PYG{p}{\PYGZcb{}(}\PYG{n}{x}\PYG{p}{)}\PYG{err}{\PYGZbs{}}\PYG{n}{right}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{x}\PYG{err}{\PYGZdl{}}
+
+
+\PYG{n}{nd}\PYG{p}{\PYGZob{}}\PYG{n}{frame}\PYG{p}{\PYGZcb{}}
+
+
+
+
+
+
+\PYG{n}{egin}\PYG{p}{\PYGZob{}}\PYG{n}{frame}\PYG{p}{\PYGZcb{}\PYGZob{}\PYGZcb{}}
+\PYG{n}{entering}
+\PYG{n}{space}\PYG{p}{\PYGZob{}}\PYG{l+m}{5}\PYG{n}{mm}\PYG{p}{\PYGZcb{}}
+\PYG{n}{ncludegraphics}\PYG{p}{[}\PYG{n}{width}\PYG{o}{=}\PYG{l+m}{0.75}\PYG{err}{\PYGZbs{}}\PYG{n}{textwidth}\PYG{p}{,}\PYG{n}{height}\PYG{o}{=}\PYG{l+m}{0.75}\PYG{err}{\PYGZbs{}}\PYG{n}{textwidth}\PYG{p}{]\PYGZob{}}\PYG{n}{images}\PYG{o}{/}\PYG{n}{precip\PYGZus{}ensemble\PYGZus{}timeseries\PYGZus{}decadal}\PYG{p}{\PYGZcb{}}
+
+\PYG{n}{aggedleft}
+\PYG{n}{space}\PYG{p}{\PYGZob{}}\PYG{o}{\PYGZhy{}}\PYG{l+m}{1}\PYG{n}{mm}\PYG{p}{\PYGZcb{}}
+\PYG{n}{iny}\PYG{+w}{ }\PYG{err}{\PYGZbs{}}\PYG{n}{url}\PYG{p}{\PYGZob{}}\PYG{n}{arxiv}\PYG{p}{.}\PYG{n}{org}\PYG{o}{/}\PYG{n}{abs}\PYG{o}{/}\PYG{l+m}{2207.14598}\PYG{p}{\PYGZcb{}}\PYG{+w}{ }\PYG{err}{\PYGZbs{}}\PYG{n}{normalsize}
+
+\PYG{n}{nd}\PYG{p}{\PYGZob{}}\PYG{n}{frame}\PYG{p}{\PYGZcb{}}
+
+
+
+
+
+\PYG{err}{\PYGZbs{}}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{frame}\PYG{p}{\PYGZcb{}\PYGZob{}\PYGZcb{}}
+
+\PYG{n}{Numerical}\PYG{+w}{ }\PYG{n}{weather}\PYG{+w}{ }\PYG{n}{and}\PYG{+w}{ }\PYG{n}{climate}\PYG{+w}{ }\PYG{n}{modelling}
+
+\PYG{+w}{        }\PYG{err}{\PYGZbs{}}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{itemize}\PYG{p}{\PYGZcb{}}
+\PYG{o}{\PYGZpc{}}\PYG{+w}{	        }\PYG{err}{\PYGZbs{}}\PYG{n}{item}\PYG{+w}{ }\PYG{n}{Reduced}\PYG{+w}{ }\PYG{n}{precision}\PYG{+w}{ }\PYG{n}{floats}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{n}{stochastic}\PYG{+w}{ }\PYG{n}{rounding}
+\PYG{o}{\PYGZpc{}}\PYG{+w}{	        }\PYG{err}{\PYGZbs{}}\PYG{n}{item}\PYG{+w}{ }\PYG{n}{Automatic}\PYG{+w}{ }\PYG{n}{Differentiation}
+\PYG{o}{\PYGZpc{}}\PYG{+w}{        }\PYG{err}{\PYGZbs{}}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{itemize}\PYG{p}{\PYGZcb{}}
+
+\PYG{+w}{    }\PYG{err}{\PYGZbs{}}\PYG{n}{alert}\PYG{p}{\PYGZob{}}\PYG{n}{Open}\PYG{+w}{ }\PYG{n}{call}\PYG{+w}{ }\PYG{k}{for}\PYG{+w}{ }\PYG{n}{collaboration}\PYG{o}{!}\PYG{p}{\PYGZcb{}}
+
+
+\PYG{+w}{	}\PYG{err}{\PYGZbs{}}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{frame}\PYG{p}{\PYGZcb{}}
+
+
+
+
+\PYG{n}{nd}\PYG{p}{\PYGZob{}}\PYG{n}{document}\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

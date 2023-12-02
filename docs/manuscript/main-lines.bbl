@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{64}%
+\begin{thebibliography}{67}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -72,11 +72,11 @@
   {eid} {184004} (\bibinfo {year} {2008})},\ \Eprint
   {http://arxiv.org/abs/0804.0800} {arXiv:0804.0800 [gr-qc]} \BibitemShut
   {NoStop}%
-\bibitem [{\citenamefont {{Aasi}}\ \emph {et~al.}(2012)\citenamefont {{Aasi}},
-  \citenamefont {{Abadie}}, \citenamefont {{Abbott}}, \citenamefont {{Abbott}},
-  \citenamefont {{Abbott}}, \citenamefont {{Abernathy}}, \citenamefont
-  {{Accadia}}, \citenamefont {{Acernese}}, \citenamefont {{Adams}} \emph
-  {et~al.}}]{Aasi2012}%
+\bibitem [{\citenamefont {{Aasi}}\ \emph
+  {et~al.}(2012{\natexlab{a}})\citenamefont {{Aasi}}, \citenamefont {{Abadie}},
+  \citenamefont {{Abbott}}, \citenamefont {{Abbott}}, \citenamefont {{Abbott}},
+  \citenamefont {{Abernathy}}, \citenamefont {{Accadia}}, \citenamefont
+  {{Acernese}}, \citenamefont {{Adams}} \emph {et~al.}}]{Aasi2012}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
   {{Aasi}}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {{Abadie}}},
@@ -89,9 +89,9 @@
   {\bibfnamefont {C.}~\bibnamefont {{Adams}}},  \emph {et~al.},\ }\href
   {\doibase 10.1088/0264-9381/29/15/155002} {\bibfield  {journal} {\bibinfo
   {journal} {Classical and Quantum Gravity}\ }\textbf {\bibinfo {volume}
-  {29}},\ \bibinfo {eid} {155002} (\bibinfo {year} {2012})},\ \Eprint
-  {http://arxiv.org/abs/1203.5613} {arXiv:1203.5613 [gr-qc]} \BibitemShut
-  {NoStop}%
+  {29}},\ \bibinfo {eid} {155002} (\bibinfo {year} {2012}{\natexlab{a}})},\
+  \Eprint {http://arxiv.org/abs/1203.5613} {arXiv:1203.5613 [gr-qc]}
+  \BibitemShut {NoStop}%
 \bibitem [{\citenamefont {{Aasi}}\ \emph {et~al.}(2015)\citenamefont {{Aasi}},
   \citenamefont {{Abadie}}, \citenamefont {{Abbott}}, \citenamefont {{Abbott}},
   \citenamefont {{Abbott}}, \citenamefont {{Abernathy}}, \citenamefont
@@ -190,9 +190,41 @@
   {eid} {055002} (\bibinfo {year} {2020})},\ \Eprint
   {http://arxiv.org/abs/1908.11170} {arXiv:1908.11170 [gr-qc]} \BibitemShut
   {NoStop}%
-\bibitem [{VIR()}]{VIROGnoise}%
+\bibitem [{\citenamefont {{Fiori}}\ \emph {et~al.}(2020)\citenamefont
+  {{Fiori}}, \citenamefont {{Paoletti}}, \citenamefont {{Tringali}},
+  \citenamefont {{Janssens}}, \citenamefont {{Karathanasis}}, \citenamefont
+  {{Men{\'e}ndez-V{\'a}zquez}}, \citenamefont {{Romero-Rodr{\'\i}guez}},
+  \citenamefont {{Sugimoto}}, \citenamefont {{Washimi}}, \citenamefont
+  {{Boschi}}, \citenamefont {{Chiummo}}, \citenamefont {{Cie{\'s}lar}},
+  \citenamefont {{De Rosa}}, \citenamefont {{De Rossi}}, \citenamefont {{Di
+  Renzo}}, \citenamefont {{Nardecchia}}, \citenamefont {{Pasqualetti}},
+  \citenamefont {{Patricelli}}, \citenamefont {{Ruggi}},\ and\ \citenamefont
+  {{Singh}}}]{2020Galax...8...82F}%
   \BibitemOpen
-  \href@noop {} {\ }\BibitemShut {NoStop}%
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {I.}~\bibnamefont
+  {{Fiori}}}, \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont {{Paoletti}}},
+  \bibinfo {author} {\bibfnamefont {M.~C.}\ \bibnamefont {{Tringali}}},
+  \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont {{Janssens}}}, \bibinfo
+  {author} {\bibfnamefont {C.}~\bibnamefont {{Karathanasis}}}, \bibinfo
+  {author} {\bibfnamefont {A.}~\bibnamefont {{Men{\'e}ndez-V{\'a}zquez}}},
+  \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {{Romero-Rodr{\'\i}guez}}}, \bibinfo {author} {\bibfnamefont
+  {R.}~\bibnamefont {{Sugimoto}}}, \bibinfo {author} {\bibfnamefont
+  {T.}~\bibnamefont {{Washimi}}}, \bibinfo {author} {\bibfnamefont
+  {V.}~\bibnamefont {{Boschi}}}, \bibinfo {author} {\bibfnamefont
+  {A.}~\bibnamefont {{Chiummo}}}, \bibinfo {author} {\bibfnamefont
+  {M.}~\bibnamefont {{Cie{\'s}lar}}}, \bibinfo {author} {\bibfnamefont
+  {R.}~\bibnamefont {{De Rosa}}}, \bibinfo {author} {\bibfnamefont
+  {C.}~\bibnamefont {{De Rossi}}}, \bibinfo {author} {\bibfnamefont
+  {F.}~\bibnamefont {{Di Renzo}}}, \bibinfo {author} {\bibfnamefont
+  {I.}~\bibnamefont {{Nardecchia}}}, \bibinfo {author} {\bibfnamefont
+  {A.}~\bibnamefont {{Pasqualetti}}}, \bibinfo {author} {\bibfnamefont
+  {B.}~\bibnamefont {{Patricelli}}}, \bibinfo {author} {\bibfnamefont
+  {P.}~\bibnamefont {{Ruggi}}}, \ and\ \bibinfo {author} {\bibfnamefont
+  {N.}~\bibnamefont {{Singh}}},\ }\href {\doibase 10.3390/galaxies8040082}
+  {\bibfield  {journal} {\bibinfo  {journal} {Galaxies}\ }\textbf {\bibinfo
+  {volume} {8}},\ \bibinfo {pages} {82} (\bibinfo {year} {2020})}\BibitemShut
+  {NoStop}%
 \bibitem [{\citenamefont {{Akutsu}}\ \emph {et~al.}(2021)\citenamefont
   {{Akutsu}}, \citenamefont {{Ando}}, \citenamefont {{Arai}}, \citenamefont
   {{Arai}}, \citenamefont {{Araki}}, \citenamefont {{Araya}}, \citenamefont
@@ -660,6 +692,50 @@
   {\prd}\ }\textbf {\bibinfo {volume} {93}},\ \bibinfo {eid} {123009} (\bibinfo
   {year} {2016})},\ \Eprint {http://arxiv.org/abs/1606.02412} {arXiv:1606.02412
   [astro-ph.IM]} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{Aasi}}\ \emph
+  {et~al.}(2012{\natexlab{b}})\citenamefont {{Aasi}}, \citenamefont {{Abadie}},
+  \citenamefont {{Abbott}}, \citenamefont {{Abbott}}, \citenamefont {{Abbott}},
+  \citenamefont {{Abernathy}}, \citenamefont {{Accadia}}, \citenamefont
+  {{Acernese}}, \citenamefont {{Adams}} \emph {et~al.}}]{Virgo2012_lines}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {{Aasi}}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {{Abadie}}},
+  \bibinfo {author} {\bibfnamefont {B.~P.}\ \bibnamefont {{Abbott}}}, \bibinfo
+  {author} {\bibfnamefont {R.}~\bibnamefont {{Abbott}}}, \bibinfo {author}
+  {\bibfnamefont {T.~D.}\ \bibnamefont {{Abbott}}}, \bibinfo {author}
+  {\bibfnamefont {M.}~\bibnamefont {{Abernathy}}}, \bibinfo {author}
+  {\bibfnamefont {T.}~\bibnamefont {{Accadia}}}, \bibinfo {author}
+  {\bibfnamefont {F.}~\bibnamefont {{Acernese}}}, \bibinfo {author}
+  {\bibfnamefont {C.}~\bibnamefont {{Adams}}},  \emph {et~al.},\ }\href
+  {\doibase 10.1088/0264-9381/29/15/155002} {\bibfield  {journal} {\bibinfo
+  {journal} {Classical and Quantum Gravity}\ }\textbf {\bibinfo {volume}
+  {29}},\ \bibinfo {eid} {155002} (\bibinfo {year} {2012}{\natexlab{b}})},\
+  \Eprint {http://arxiv.org/abs/1203.5613} {arXiv:1203.5613 [gr-qc]}
+  \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{Abe}}\ \emph {et~al.}(2023)\citenamefont {{Abe}},
+  \citenamefont {{Adhikari}}, \citenamefont {{Akutsu}}, \citenamefont {{Ando}},
+  \citenamefont {{Araya}}, \citenamefont {{Aritomi}}, \citenamefont {{Asada}}
+  \emph {et~al.}}]{Kagra2023_lines}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.}~\bibnamefont
+  {{Abe}}}, \bibinfo {author} {\bibfnamefont {R.~X.}\ \bibnamefont
+  {{Adhikari}}}, \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
+  {{Akutsu}}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {{Ando}}},
+  \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {{Araya}}}, \bibinfo
+  {author} {\bibfnamefont {N.}~\bibnamefont {{Aritomi}}}, \bibinfo {author}
+  {\bibfnamefont {H.}~\bibnamefont {{Asada}}},  \emph {et~al.},\ }\href
+  {\doibase 10.1093/ptep/ptac093} {\bibfield  {journal} {\bibinfo  {journal}
+  {Progress of Theoretical and Experimental Physics}\ }\textbf {\bibinfo
+  {volume} {2023}},\ \bibinfo {eid} {10A101} (\bibinfo {year} {2023})},\
+  \Eprint {http://arxiv.org/abs/2203.07011} {arXiv:2203.07011 [astro-ph.IM]}
+  \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{Pitkin}}(2018)}]{psrqpy}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {{Pitkin}}},\ }\href {\doibase 10.21105/joss.00538} {\bibfield  {journal}
+  {\bibinfo  {journal} {{Journal of Open Source Software}}\ }\textbf {\bibinfo
+  {volume} {3}},\ \bibinfo {pages} {538} (\bibinfo {year} {2018})}\BibitemShut
+  {NoStop}%
 \bibitem [{\citenamefont {{The LIGO Scientific Collaboration}}\ \emph
   {et~al.}(2021)\citenamefont {{The LIGO Scientific Collaboration}},
   \citenamefont {{the Virgo Collaboration}}, \citenamefont {{the KAGRA

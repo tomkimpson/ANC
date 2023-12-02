@@ -17,40 +17,30 @@ Reallocated ex_buf (elt_size=1) to 40000 items from 20000.
 Reallocated out_buf (elt_size=1) to 40000 items from 20000.
 Reallocated name_tok (elt_size=4) to 40000 items from 20000.
 Reallocated name_sep_char (elt_size=1) to 40000 items from 20000.
-I was expecting a `,' or a `}'---line 1093 of file bibLinesPaper.bib
- :  
- :  author = {{Fiori}, Irene and {Paoletti}, Federico and {Tringali}, Maria Concetta and {Janssens}, Kamiel and {Karathanasis}, Christos and {Men{\'e}ndez-V{\'a}zquez}, Alexis and {Romero-Rodr{\'\i}guez}, Alba and {Sugimoto}, Ryosuke and {Washimi}, Tatsuki and {Boschi}, Valerio and {Chiummo}, Antonino and {Cie{\'s}lar}, Marek and {De Rosa}, Rosario and {De Rossi}, Camilla and {Di Renzo}, Francesco and {Nardecchia}, Ilaria and {Pasqualetti}, Antonio and {Patricelli}, Barbara and {Ruggi}, Paolo and {Singh}, Neha},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-Repeated entry---line 1269 of file bibLinesPaper.bib
+Repeated entry---line 1332 of file bibLinesPaper.bib
  : @article{Riles2023
  :                   ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1288 of file bibLinesPaper.bib
+Repeated entry---line 1351 of file bibLinesPaper.bib
  : @article{Wette2023
  :                   ,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 1762 of file bibLinesPaper.bib
+I was expecting a `,' or a `}'---line 1825 of file bibLinesPaper.bib
  :  
  :  author = {{Abdikamalov}, Ernazar and {Pagliaroli}, Giulia and {Radice}, David},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Repeated entry---line 1974 of file bibLinesPaper.bib
+Repeated entry---line 2037 of file bibLinesPaper.bib
  : @article{Riles2023
  :                   ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2069 of file bibLinesPaper.bib
+Repeated entry---line 2132 of file bibLinesPaper.bib
  : @article{LIGO_O3
  :                 ,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 2115 of file bibLinesPaper.bib
+I was expecting a `,' or a `}'---line 2178 of file bibLinesPaper.bib
  :  
  :  year={1997}
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 2244 of file bibLinesPaper.bib
- : 
- : @book{anderson2012optimal,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Name 1 in "LIGO Scientific Collaboration, Virgo Collaboration, and KAGRA Collaboration" has a comma at the end for entry LIGOMarkov22
@@ -64,9 +54,6 @@ Control: production of article title (-1) disabled
 Control: page (0) single
 Control: year (1) truncated
 Control: production of eprint (0) enabled
-Warning--empty author in VIROGnoise
-Warning--missing journal in VIROGnoise
-Warning--empty year in VIROGnoise
 Warning--empty year in marin1997
 Warning--empty year in GWOSC:online
 Name 1 in "LIGO Scientific Collaboration, Virgo Collaboration, and KAGRA Collaboration" has a comma at the end for entry LIGOMarkov22
@@ -77,45 +64,45 @@ Name 1 in "LIGO Scientific Collaboration, Virgo Collaboration, and KAGRA Collabo
 while executing---line 3444 of file apsrev4-1.bst
 Name 1 in "LIGO Scientific Collaboration, Virgo Collaboration, and KAGRA Collaboration" has a comma at the end for entry LIGOMarkov22
 while executing---line 3444 of file apsrev4-1.bst
-You've used 64 entries,
+You've used 67 entries,
             5847 wiz_defined-function locations,
-            2104 strings with 32696 characters,
-and the built_in function-call counts, 80719 in all, are:
-= -- 4208
-> -- 2925
-< -- 537
-+ -- 900
-- -- 762
-* -- 14261
-:= -- 7294
-add.period$ -- 66
-call.type$ -- 64
-change.case$ -- 268
-chr.to.int$ -- 82
-cite$ -- 73
-duplicate$ -- 7485
-empty$ -- 5823
-format.name$ -- 1718
-if$ -- 16000
-int.to.chr$ -- 1
-int.to.str$ -- 72
-missing$ -- 932
-newline$ -- 244
-num.names$ -- 186
-pop$ -- 2763
+            2124 strings with 33799 characters,
+and the built_in function-call counts, 86754 in all, are:
+= -- 4458
+> -- 3212
+< -- 583
++ -- 985
+- -- 840
+* -- 15439
+:= -- 7793
+add.period$ -- 69
+call.type$ -- 67
+change.case$ -- 280
+chr.to.int$ -- 84
+cite$ -- 71
+duplicate$ -- 8025
+empty$ -- 6229
+format.name$ -- 1884
+if$ -- 17213
+int.to.chr$ -- 2
+int.to.str$ -- 75
+missing$ -- 1001
+newline$ -- 253
+num.names$ -- 198
+pop$ -- 2916
 preamble$ -- 1
-purify$ -- 317
+purify$ -- 333
 quote$ -- 0
-skip$ -- 2550
+skip$ -- 2723
 stack$ -- 0
-substring$ -- 1237
-swap$ -- 7750
-text.length$ -- 365
+substring$ -- 1292
+swap$ -- 8382
+text.length$ -- 402
 text.prefix$ -- 0
 top$ -- 8
-type$ -- 1080
-warning$ -- 5
-while$ -- 155
+type$ -- 1152
+warning$ -- 2
+while$ -- 165
 width$ -- 0
-write$ -- 587
-(There were 13 error messages)
+write$ -- 617
+(There were 11 error messages)

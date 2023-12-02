@@ -1,0 +1,19 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{k}{using}\PYG{+w}{ }\PYG{n}{Zygote}
+
+\PYG{+w}{	}\PYG{k}{function}\PYG{+w}{ }\PYG{n}{loss\PYGZus{}function}\PYG{p}{(}\PYG{n}{p}\PYG{p}{)}
+
+\PYG{+w}{        }\PYG{n}{solution}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{timestepping}\PYG{p}{(}\PYG{n}{p}\PYG{p}{)}\PYG{+w}{		}
+
+\PYG{+w}{    }\PYG{c}{\PYGZsh{} Get just the last element of the first variable as an arbitrary loss}
+\PYG{+w}{    }\PYG{n}{critical\PYGZus{}value}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mf}{28.54}\PYG{o}{\PYGZhy{}}\PYG{+w}{ }\PYG{n}{last}\PYG{p}{(}\PYG{n}{solution}\PYG{p}{[}\PYG{l+m+mi}{3}\PYG{p}{,}\PYG{o}{:}\PYG{p}{])}
+
+\PYG{+w}{    }\PYG{k}{return}\PYG{+w}{ }\PYG{n}{critical\PYGZus{}value}
+
+\PYG{+w}{    }\PYG{k}{end}
+
+
+\PYG{n}{Zygote}\PYG{o}{.}\PYG{n}{gradient}\PYG{p}{(}\PYG{n}{x}\PYG{+w}{ }\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{+w}{ }\PYG{n}{loss\PYGZus{}function}\PYG{p}{(}\PYG{n}{x}\PYG{p}{),(}\PYG{l+m+mi}{8}\PYG{o}{/}\PYG{l+m+mi}{3}\PYG{p}{))[}\PYG{l+m+mi}{1}\PYG{p}{]}
+
+\PYG{k}{end}\PYG{+w}{ 		}
+\end{Verbatim}
