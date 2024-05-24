@@ -1,0 +1,192 @@
+\documentclass[10pt]{article}
+\usepackage{vmargin}
+\setpapersize{USletter}
+\usepackage{ragged2e}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}	% Including figure files
+\usepackage[caption=false]{subfig}
+\graphicspath{{ResponeFigures/}}
+\usepackage{hyperref}
+\usepackage[shortlabels]{enumitem}
+
+\hypersetup{
+	colorlinks   = true, %Colours links instead of ugly boxes
+	urlcolor     = teal, %Colour for external hyperlinks
+	linkcolor    = teal, %Colour of internal links
+	citecolor   = red %Colour of citations
+}
+\usepackage{xcolor}
+\author{T.Kimpson, S. Suvorova, H. Middleton, C. Liu, A. Melaots, R. Evans, W. Moran}
+\title{Response to referee comments: \\ PRD Submission DM13138,}
+\begin{document}
+	\maketitle
+\noindent Author response to the referee report for the paper DM13138,
+entitled \textit{`Adaptive cancellation of mains power interference in continuous gravitational wave searches with a hidden Markov model'}. \newline 
+
+\noindent We thank the referee for their constructive review.
+We agree with all the comments and have made the recommended changes as described below. The referee comments are reproduced in italics for convenience. We separate the response into ``main" comments (indexed alphabetically) and ``additional" comments (indexed numerically), following the convention of the referee. We hope that this satisfies the request for changes necessary to proceed with the publication of the manuscript \newline 
+
+
+
+\newpage
+\noindent \Large \textbf{Referee comments} \normalsize
+
+\vspace{5mm}
+
+\noindent \textbf{Main comments}
+
+\begin{enumerate}[A.]
+	\item \textit{In section II, it is not sufficiently clear if the model is  
+		intended as a realistic representation of the North American power grid, or just  
+		a phenomenological model that is "good enough" for the purpose of subtraction.  
+		This should be spelled out better. An authoritative reference on the actual  
+		grid's design and/or statistical properties, if the authors can find one, would  
+		also be highly valuable for the typical target audience of this article  
+		(astrophysicists / data analysts) who are unlikely to have such information at  
+		hand.}
+	
+		\textbf{Author response:} 
+	
+	Yes, these are important questions...
+	
+	
+	
+		\item \textit{In the end, it is not clear enough how big the positive impact of  
+			the method really is. Especially, and regardless of the answer to point A, it  
+			seems necessary to present at least some level of real-data test of the proposed  
+			method, beyond the presented simulated noise case. Since LIGO data is readily  
+			available via the GWOSC site, this should be straightforward to perform. A  
+			clearer summary of the results in abstract and conclusion would then be  
+			appreciated.  }
+	
+	\textbf{Author response:} 
+	
+	Yes, these are important questions...
+	
+	
+\end{enumerate}
+
+
+
+\noindent \textbf{Additional comments}
+
+
+
+
+\begin{enumerate}
+	\item \textit{The abstract currently points out that the validation test is on "synthetic  
+		signals", which is perfectly fine, but what is more important is the nature of  
+		the noise data.  }
+	
+	
+	\item \textit{A brief summary of the results would be valuable at the end of the abstract  
+		(as per point B above). }
+	
+	\item \textit{A few comments on references the introduction section:  
+		The first 3 are very old, describing glitches in initial detectors - consider  
+		updating to 2G references like the Davis+ papers already cited later.  
+		The standard Advanced Virgo detector reference arxiv:1408.3978 seems to be  
+		missing.  
+		Please check if [21] (Lee et al) was indeed the intended citation - this seems  
+		to be a deep learning waveform model paper, not about artifact identification.  
+		At the end of the second paragraph, another important class of line vetoes not  
+		cited yet are those based on multi-detector consistency (e.g.  
+		doi:10.1088/0031-8949/90/12/125001 and doi:10.1103/PhysRevD.89.064023)}
+	
+	
+	
+	
+	\item \textit{In the paragraph below, the statement that candidates are vetoed blindly  
+		without checking the strength of the noise contribution is not true for all  
+		standard CW pipelines. More nuanced discussions can be found in some recent LVK  
+		results papers.}
+	
+	
+	
+	
+	\item \textit{Please try using multiple linestyles for better readability of figures  
+		1,6,8,9. In particular, in Fig. 6 it is difficult to discern that the blue x(f)  
+		curve actually shows the signal peak, as it is mostly hidden behind the green  
+		h(f).  }
+	
+	
+	
+	\item \textit{At the end of II.A, there should be an astrophysical reference for the Crab's  
+		frequency, not just a software paper. (Or both together, since citing software  
+		used is indeed commendable.) Since the Crab's frequency evolves relatively  
+		quickly, a reference year would also be appropriate when quoting it with decimal  
+		digits.  }
+	
+	
+	\item \textit{Fig. 1: missing definition of the abbreviation "ASD"  }
+	
+	\item \textit{After Eq. (1) the strict separation of frequency and amplitude modulation is  
+		misleading, as both parts of the Earth's motion contribute to both modulations.  }
+	
+	\item \textit{Before Eq. (4), when talking about the coupling "in various complicated  
+		ways", would this not naturally be expected to cause stochastic overlaps of  
+		components with different time delays tau? Could the authors comment on whether  
+		this is a likely explanation for the observed losses in coherence?  }
+	
+	\item \textit{footnote 3: gitlab file URLs can be quite ephemeral. Is there no better  
+		(more stable) way to reference this list, such as a GWOSC release with DOI, a  
+		LIGO DCC entry, etc?}
+	
+	\item \textit{The statements at the end of II.C and in the Fig. 4 caption contradict each  
+		other: are the higher-frequency peaks harmonics of the power mains, or "of  
+		different provenance"?}
+	
+	\item \textit{ In the coherence discussion, it remains unclear what threshold is considered  
+		to be still sufficient, and below which the channel would no longer be  
+		considered a reliable witness. }
+	
+	\item \textit{In Eq. (12), it is not made explicit what argument the "arg min" is taken  
+		over. Would it be appropriate to write $e_k(w)$ with an explicit argument?}
+	
+	
+	\item \textit{In IV.A, can the authors make an argument why neglecting the Earth's  
+		movement is not changing qualitatively the signal-vs-line behaviour? Since CW  
+		signals are expected to modulate very slowly intrinsically, typically the shape  
+		and extent of their detector-frame frequency spectrum should be dominated by  
+		these terms.  }
+	
+	\item \textit{Also in the same discussion, there is a reference to the F-statistic. This  
+		is taking a maximum likelihood over amplitude parameters, not over those related  
+		to the Earth's movement. Indeed F-statistic searches typically also include a  
+		"demodulation", which is probably what the authors had in mind here. But the way  
+		it is currently phrased will confuse a non-expert reader into thinking it  
+		maximizes over frequency evolution parameters.  }
+	
+	
+	\item \textit{In IV.B, the definition of signal-to-noise ratio does not match the standard  
+		in the CW literature, which usually includes the observation time. The duration  
+		is also important for the frequency resolution. Is it the 800s visible in Fig.  
+		7? Please clarify more explicitly. }
+	
+	
+	\item \textit{The case (ii) "not plotted for brevity" would seem relevant to show - since  
+		now fgw lies within the affected frequency range, it sounds like it could be  
+		qualitatively different, and more impressive to demonstrate that the method can  
+		still deal with it?  }
+	
+	
+	\item \textit{At the end of IV.B, have the authors verified that the Earth Doppler effect  
+		is negligible compared to these frequency errors?  }
+	
+	\item \textit{In figures 8/9, it would be interesting to also compare with the performance  
+		without ANC - is that similar to, or even worse than the "random guess"?  }
+	
+	
+	\item \textit{Why is the "zero interference ROC curve" shown only in Fig. 9, not 8? Is it  
+		understood why the best performing ANC results are still quite far away from  
+		this, if before the subtraction looked visually very impressive? }
+	
+	
+	\item \textit{Near the end of V.B, latency issues are discussed. Are these really relevant  
+		for CW searches, which are usually run on archival data?}
+\end{enumerate}
+
+
+
+
+\end{document}
