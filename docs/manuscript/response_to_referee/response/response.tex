@@ -24,7 +24,7 @@
 entitled \textit{`Adaptive cancellation of mains power interference in continuous gravitational wave searches with a hidden Markov model'}. \newline 
 
 \noindent We thank the referee for their constructive review.
-We agree with all the comments and have made the recommended changes as described below. The referee comments are reproduced in italics for convenience. We separate the response into ``main" comments (indexed alphabetically) and ``additional" comments (indexed numerically), following the convention of the referee. We hope that this satisfies the request for changes necessary to proceed with the publication of the manuscript \newline 
+We agree with all the comments and have made the recommended changes as described below. The referee comments are reproduced in italics for convenience. We separate the response into ``main" comments (indexed alphabetically) and ``additional" comments (indexed numerically), following the convention of the referee.  \newline 
 
 
 
@@ -47,7 +47,9 @@ We agree with all the comments and have made the recommended changes as describe
 	
 		\textbf{Author response:} 
 	
-	Yes, these are important questions...
+	Yes, we agree with the referee that it is important to specify clearly that the model is intended as a phenomenological model that seeks to reproduce the main qualitative features of the mains power (i.e. constant central frequency with small amplitude stochastic wandering, see third paragraph in Section IIB.). We have followed the referee's suggestion and updated the discussion in Section II to make this point explicitly.
+	
+	 \textcolor{red}{TK: I cannot find any references for the empirical behaviour of the grid. Perhaps the EE-side might know.}
 	
 	
 	
@@ -57,11 +59,38 @@ We agree with all the comments and have made the recommended changes as describe
 			method, beyond the presented simulated noise case. Since LIGO data is readily  
 			available via the GWOSC site, this should be straightforward to perform. A  
 			clearer summary of the results in abstract and conclusion would then be  
-			appreciated.  }
+			appreciated.}
 	
 	\textbf{Author response:} 
 	
-	Yes, these are important questions...
+
+
+Yes we agree that a clearer summary of the main results quantifying the impact of the method is important to include. We have updated the abstract and the conclusion accordingly. Specifically
+\begin{itemize}
+	\item For the representative system (Table 1) ANC suppresses the 60-Hz interference by approximately 20 dB.
+	\item Without ANC, the HMM tracker is unable to track the wandering CW signal. After ANC, the HMM tracker is able to track the wandering CW signal. The time-averaged RMS error in the HMM tracking after ANC is 0.038Hz for low $\sigma_f$ and $0.47 Hz$ for high $\sigma_f$.
+	\item The detection probability at a 5\% false alarm rate, $p_{\rm d}(0.05) \approx 0.5 $--$0.6$ across a range of mains power interference parameters and filter parameters.
+\end{itemize}
+
+
+\textcolor{red}{TK: Tests on real-data to be discussed in person. A summary of some thoughts below.}
+
+We currently generate some synthetic strain-channel data $x(t) = h(t) + c(t) + n(t)$, and some synthetic reference-channel data $r(t)$, according to some analytical expressions which are specified in the manuscript.
+
+Which of these components would be appropriate to replace with real GWOSC data?
+
+We don't have GWOSC $h(t)$ - no CWs have been detected! Let's assume that in some strain data $x(t)$ that we obtain from GWOSC that there is no $h(t)$ signal in there. The procedure for testing the method on real data might then look like:
+
+\begin{itemize}
+	\item Take some strain-channel data $x(t)$ from GWOSC
+	\item Simulate some synthetic $h(t)$ according to the manuscript equations. 
+	\item Inject the $h(t)$ into $x(t)$ to obtain some data $y(t) = h(t) + x(t)$ which gets passed to the ANC scheme.
+	\item Take $N \leq 9$ PEM channels from GWOSC. Pass these to the ANC scheme as $r_{\rm empirical}(t)$.
+	\item Run ANC scheme - can we recover our injected $h(t)$? 
+\end{itemize}
+
+
+	
 	
 	
 \end{enumerate}
@@ -78,9 +107,13 @@ We agree with all the comments and have made the recommended changes as describe
 		signals", which is perfectly fine, but what is more important is the nature of  
 		the noise data.  }
 	
+	\textcolor{red}{TK: this is related to point B, re real data. To be updated once point B has been answered}
 	
 	\item \textit{A brief summary of the results would be valuable at the end of the abstract  
 		(as per point B above). }
+	
+	\textbf{Author response:}  \newline 
+	Yes, we agree that the main results should be better summarised in the abstract. We have updated the abstract accordingly.
 	
 	\item \textit{A few comments on references the introduction section:  
 		The first 3 are very old, describing glitches in initial detectors - consider  
@@ -94,34 +127,50 @@ We agree with all the comments and have made the recommended changes as describe
 		doi:10.1088/0031-8949/90/12/125001 and doi:10.1103/PhysRevD.89.064023)}
 	
 	
-	
+		\textbf{Author response:}  \newline 
+	We thank the referee for bringing to our attention references which we had previously overlooked, and the erroneous [21] Lee et al. citation. We have now included all the suggested references, removed reference [21] , and included discussion on the class of vetos based on multi-detector consistency
 	
 	\item \textit{In the paragraph below, the statement that candidates are vetoed blindly  
 		without checking the strength of the noise contribution is not true for all  
 		standard CW pipelines. More nuanced discussions can be found in some recent LVK  
 		results papers.}
 	
-	
-	
+			\textbf{Author response:}  \newline 
+			Yes we agree with the referee that the previous statement was too broad. We have now updated the paragraph to caveat that some pipelines do have ``line robust" algorithms  which combine statistics from different detectors to suppress single detector artifacts (e.g. Keitel et al. 2015, Keitel 2016a,b).
+%			 https://arxiv.org/abs/2201.00697
 	
 	\item \textit{Please try using multiple linestyles for better readability of figures  
 		1,6,8,9. In particular, in Fig. 6 it is difficult to discern that the blue x(f)  
 		curve actually shows the signal peak, as it is mostly hidden behind the green  
 		h(f).  }
 	
+	\textbf{Author response:}  \newline 
+	We have updated all linestyles in the figures to improve readability, as suggested.
 	
 	
 	\item \textit{At the end of II.A, there should be an astrophysical reference for the Crab's  
 		frequency, not just a software paper. (Or both together, since citing software  
 		used is indeed commendable.) Since the Crab's frequency evolves relatively  
 		quickly, a reference year would also be appropriate when quoting it with decimal  
-		digits.  }
+		digits. }
 	
+	
+		\textbf{Author response:}  \newline 
+		We have updated the reference to the Crab frequency to include both an astrophysical reference and a software reference. We now also quote the Crab frequency for a given reference year, as suggested.
 	
 	\item \textit{Fig. 1: missing definition of the abbreviation "ASD"  }
 	
+		\textbf{Author response:}  \newline 
+The abbreviation ASD is now defined in the caption of Figure 1.
+	
+	
 	\item \textit{After Eq. (1) the strict separation of frequency and amplitude modulation is  
-		misleading, as both parts of the Earth's motion contribute to both modulations.  }
+		misleading, as both parts of the Earth's motion contribute to both modulations.}
+	
+		\textbf{Author response:}  \newline 
+The text has been updated to remove the misleading separation between the two modulations.
+
+
 	
 	\item \textit{Before Eq. (4), when talking about the coupling "in various complicated  
 		ways", would this not naturally be expected to cause stochastic overlaps of  
