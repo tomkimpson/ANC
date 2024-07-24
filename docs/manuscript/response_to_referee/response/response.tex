@@ -47,9 +47,9 @@ We agree with all the comments and have made the recommended changes as describe
 	
 		\textbf{Author response:} 
 	
-	Yes, we agree with the referee that it is important to specify clearly that the model is intended as a phenomenological model that seeks to reproduce the main qualitative features of the mains power (i.e. constant central frequency with small amplitude stochastic wandering, see third paragraph in Section IIB.). We have followed the referee's suggestion and updated the discussion in Section II to make this point explicitly.
+	Yes, we agree with the referee that it is important to specify clearly that the model is intended as a phenomenological model that seeks to reproduce the main qualitative features of the power grid (i.e. an approximately constant central frequency with small amplitude, slow periodic modulations; a voltage with a stochastically wandering phase offset, etc.; see third paragraph in Section IIB). We have followed the referee's suggestion and updated the discussion in Section II to make this point explicitly.
 	
-	 \textcolor{red}{TK: I cannot find any references for the empirical behaviour of the grid. Perhaps the EE-side might know.}
+	 \textcolor{red}{TK: I cannot find any references for the empirical behaviour of the grid. Perhaps the EE-side might know?}
 	
 	
 	
@@ -65,10 +65,10 @@ We agree with all the comments and have made the recommended changes as describe
 	
 
 
-Yes we agree that a clearer summary of the main results quantifying the impact of the method is important to include. We have updated the abstract and the conclusion accordingly. Specifically
+Yes we agree that a clearer summary of the main results quantifying the impact of the method is important to include. We have updated the abstract and the conclusion accordingly. Specifically,
 \begin{itemize}
 	\item For the representative system (Table 1) ANC suppresses the 60-Hz interference by approximately 20 dB.
-	\item Without ANC, the HMM tracker is unable to track the wandering CW signal. After ANC, the HMM tracker is able to track the wandering CW signal. The time-averaged RMS error in the HMM tracking after ANC is 0.038Hz for low $\sigma_f$ and $0.47 Hz$ for high $\sigma_f$.
+	\item Without ANC, the HMM tracker is unable to track the wandering CW signal. After ANC, the HMM tracker is able to track the wandering CW signal. The time-averaged RMS error in the HMM tracking after ANC is 0.038Hz for low $\sigma_f$ and $0.47$Hz for high $\sigma_f$.
 	\item The detection probability at a 5\% false alarm rate, $p_{\rm d}(0.05) \approx 0.5 $--$0.6$ across a range of mains power interference parameters and filter parameters.
 \end{itemize}
 
@@ -89,7 +89,7 @@ We don't have GWOSC $h(t)$ - no CWs have been detected! Let's assume that in som
 	\item Run ANC scheme - can we recover our injected $h(t)$? 
 \end{itemize}
 
-
+If this workflow seems reasonable, TK will work on obtaining the relevant data to pass into Sofia's pipeline. 
 	
 	
 	
@@ -128,7 +128,7 @@ We don't have GWOSC $h(t)$ - no CWs have been detected! Let's assume that in som
 	
 	
 		\textbf{Author response:}  \newline 
-	We thank the referee for bringing to our attention references which we had previously overlooked, and the erroneous [21] Lee et al. citation. We have now included all the suggested references, removed reference [21] , and included discussion on the class of vetos based on multi-detector consistency
+	We thank the referee for bringing to our attention references which we had previously overlooked, and the erroneous [21] Lee et al. citation. We have now included all the suggested references, removed reference [21], and included discussion on the class of vetos based on multi-detector consistency
 	
 	\item \textit{In the paragraph below, the statement that candidates are vetoed blindly  
 		without checking the strength of the noise contribution is not true for all  
@@ -136,7 +136,7 @@ We don't have GWOSC $h(t)$ - no CWs have been detected! Let's assume that in som
 		results papers.}
 	
 			\textbf{Author response:}  \newline 
-			Yes we agree with the referee that the previous statement was too broad. We have now updated the paragraph to caveat that some pipelines do have ``line robust" algorithms  which combine statistics from different detectors to suppress single detector artifacts (e.g. Keitel et al. 2015, Keitel 2016a,b).
+			Yes we agree with the referee that the previous statement was too broad. We have now updated the paragraph to caveat that some pipelines do have ``line robust" algorithms  which combine statistics from different detectors to suppress single detector artifacts (e.g. Keitel et al. 2015, Keitel 2016a,b). \textcolor{red}{TK: Andres provided these references. Are there any others that we should be citing here?}
 %			 https://arxiv.org/abs/2201.00697
 	
 	\item \textit{Please try using multiple linestyles for better readability of figures  
@@ -177,27 +177,55 @@ The text has been updated to remove the misleading separation between the two mo
 		components with different time delays tau? Could the authors comment on whether  
 		this is a likely explanation for the observed losses in coherence?  }
 	
+			\textbf{Author response:}  \newline 
+\textcolor{red}{TK: to discuss. I think the answer here is that we just take as a simplifying assumption that there is one $\tau$.  Indeed, $\tau$ corresponds to the delay due to the spatial propagation between the PEM position and the GW sensing apparatus. 	Unless I am missing something it seems like there would only be one $\tau$, regardless of the coupling mechanism? I also am not sure what the referee means by ``observed losses in coherence". Do they mean that we don't get coherence values =1, but instead $\approx 0.8$? (Figure 3)}
+	
+	
+
 	\item \textit{footnote 3: gitlab file URLs can be quite ephemeral. Is there no better  
 		(more stable) way to reference this list, such as a GWOSC release with DOI, a  
 		LIGO DCC entry, etc?}
 	
+				\textbf{Author response:}  \newline 
+	Yes, we agree that is is desirable to provide a more permanent reference to the PEM channels. However, unfortunately at this point in time there is no DOI /DCC reference that covers all nine PEM channels. It is possible to reference the GWOSC O3 auxiliary channel data release, DOI: 10.7935/3bh6-0k98. However this dataset only contains a subset (three) of the (nine) PEM channels. For lack of a better option, we have followed the referee's suggestion and included this DOI as an additional reference. 
+
 	\item \textit{The statements at the end of II.C and in the Fig. 4 caption contradict each  
-		other: are the higher-frequency peaks harmonics of the power mains, or "of  
+		other: are the higher-frequency peaks harmonics of the power mains, or ``of  
 		different provenance"?}
 	
-	\item \textit{ In the coherence discussion, it remains unclear what threshold is considered  
-		to be still sufficient, and below which the channel would no longer be  
-		considered a reliable witness. }
+				\textbf{Author response:}  \newline 
+	Yes, this is a mistake. The higher-frequency peaks are harmonics. We have updated the Fig 4 caption accordingly. We thank the referee for brining this mistake to our attention.
 	
-	\item \textit{In Eq. (12), it is not made explicit what argument the "arg min" is taken  
+	\item \textit{In the coherence discussion, it remains unclear what threshold is considered  to be still sufficient, and below which the channel would no longer be considered a reliable witness.}
+	
+				\textbf{Author response:}  \newline 
+	Yes, we agree with the referee that the performance of the ANC scheme is directly related to the degree of coherence between the strain and witness channels. 
+	
+	Specifically, the fraction of possible noise cancellation $R$ for an idealised system is related to the coherence as
+	$$ R(f) = \frac{1}{1 - |C_{xr}(f)|}$$ 
+	
+	see e.g. DOI: 10.1109/ASPAA.1997.625628 or DOI: 10.3390/s22176591.
+	
+	The threshold value of $R(f)$ required in order for HMM algorithms to run successfully is an empirical question that will depend on the properties of the signal. 
+	
+	We have added a discussion on these points to Section IIC.
+	
+
+	\item \textit{In Eq. (12), it is not made explicit what argument the ``arg min" is taken  
 		over. Would it be appropriate to write $e_k(w)$ with an explicit argument?}
 	
-	
+					\textbf{Author response:}  \newline 
+					Yes, we agree with the referee's suggestion. We have updated Equation (12) to specify explicitly that the argmin is taken over the argument $\boldsymbol{w}$ (i.e. the tap weights), which influence the residual $e_k(\boldsymbol{w})$.
+					
+					
+					
 	\item \textit{In IV.A, can the authors make an argument why neglecting the Earth's  
 		movement is not changing qualitatively the signal-vs-line behaviour? Since CW  
 		signals are expected to modulate very slowly intrinsically, typically the shape  
 		and extent of their detector-frame frequency spectrum should be dominated by  
 		these terms.  }
+	
+	\textcolor{red}{TK: to discuss this point with astro side}
 	
 	\item \textit{Also in the same discussion, there is a reference to the F-statistic. This  
 		is taking a maximum likelihood over amplitude parameters, not over those related  
@@ -206,6 +234,7 @@ The text has been updated to remove the misleading separation between the two mo
 		it is currently phrased will confuse a non-expert reader into thinking it  
 		maximizes over frequency evolution parameters.  }
 	
+		\textcolor{red}{TK: to discuss this point with astro side}
 	
 	\item \textit{In IV.B, the definition of signal-to-noise ratio does not match the standard  
 		in the CW literature, which usually includes the observation time. The duration  
@@ -213,26 +242,40 @@ The text has been updated to remove the misleading separation between the two mo
 		7? Please clarify more explicitly. }
 	
 	
+	Yes, we agree with the referee that traditionally the definition of SNR in the CW literature does include the value of $T_{\rm obs}$. In this paper we fix $T_{\rm obs} = 800 $s throughout and vary only the ratio $h_0/\sigma_{n}$. Accordingly, we previously felt that for this paper it was sufficient to neglect the influence of $T_{\rm obs}$ in the definition of the SNR. However, we agree with the referee that in order to make better contact with the CW literature it is more appropriate include $T_{\rm obs}$ in the SNR definition; we have updated the relevant definitions in the manuscript accordingly.
+	
+	Regarding the question on whether the $T_{\rm obs}=800$s is visible in Figure 7,  one can see that the vertical axis covers the 800s observation period. We have updated the main text to clarify this point more explicitly, as suggested. 
+	
 	\item \textit{The case (ii) "not plotted for brevity" would seem relevant to show - since  
 		now fgw lies within the affected frequency range, it sounds like it could be  
 		qualitatively different, and more impressive to demonstrate that the method can  
 		still deal with it?  }
 	
+	\textcolor{red}{TK: we can definitely include this as requested, I just need to get the data off of Sofia.}
 	
 	\item \textit{At the end of IV.B, have the authors verified that the Earth Doppler effect  
 		is negligible compared to these frequency errors?  }
 	
-	\item \textit{In figures 8/9, it would be interesting to also compare with the performance  
-		without ANC - is that similar to, or even worse than the "random guess"?  }
+		
+	\textcolor{red}{TK: To discuss with astro side. Also related to Q14/15.}
+	
+	\item \textit{In figures 8/9, it would be interesting to also compare with the performance without ANC - is that similar to, or even worse than the ``random guess"? }
+
+It is not possible to run the HMM algorithm without first applying ANC. One can also see this in the left panel of Figure 7, where no dashed white curves are plotted. Consequently, without ANC one cannot obtain a $p_{\rm d}$ or a $p_{\rm fa}$. 
+
+We have added a sentence to the main text, relating to Figures 8/9, reminding the reader that the HMM can only be deployed in conjunction with the ANC.
+	
+	\item \textit{Why is the "zero interference ROC curve" shown only in Fig. 9, not 8? Is it understood why the best performing ANC results are still quite far away from this, if before the subtraction looked visually very impressive? }
 	
 	
-	\item \textit{Why is the "zero interference ROC curve" shown only in Fig. 9, not 8? Is it  
-		understood why the best performing ANC results are still quite far away from  
-		this, if before the subtraction looked visually very impressive? }
+	Yes, this is a mistake. We agree that the zero interference curve should be plotted for both figures. We have updated Figure 8 accordingly. 
 	
 	
-	\item \textit{Near the end of V.B, latency issues are discussed. Are these really relevant  
-		for CW searches, which are usually run on archival data?}
+	Some of the ANC results are do no perform as well as in the zero interference case, simply because the noise is not being removed perfectly. The performance of the ANC filter can be improved in general by tuning the relevant parameters. For example in the bottom panel of Figure 9, the $\lambda=1$ ROC curve is very similar to the zero-interference curve, for reasons that are discussed in the text. We have added additional discussion on this point to the main text.
+	
+	\item \textit{Near the end of V.B, latency issues are discussed. Are these really relevant for CW searches, which are usually run on archival data?}
+	
+	\textcolor{red}{TK: I think the honest answer here is that latency is not relevant. For online EE applications it is generally, but I think we can remove the latency discussion. To discuss.}
 \end{enumerate}
 
 
