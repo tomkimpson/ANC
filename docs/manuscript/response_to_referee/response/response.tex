@@ -49,8 +49,8 @@ We agree with all the comments and have made the recommended changes as describe
 	
 	Yes, we agree with the referee that it is important to specify clearly that the model is intended as a phenomenological model that seeks to reproduce the main qualitative features of the power grid (i.e. an approximately constant central frequency with small amplitude, slow periodic modulations; a voltage with a stochastically wandering phase offset, etc.; see third paragraph in Section IIB). We have followed the referee's suggestion and updated the discussion in Section II to make this point explicitly.
 	
-	 \textcolor{red}{TK: I cannot find any references for the empirical behaviour of the grid. Perhaps the EE-side might know?}
-	
+
+	The power grid is controlled by frequency. When load increases frequency drops, more fuel is supplied and frequency rise so demand is met. The statistics are thus the statistical variation of the demand but this is complicated by faults etc. It is a complicated story and there is no simple statistical model for frequency variation. Accordingly, it is difficult to provide a single authoritative reference for the statistical properties of the grid as the referee suggests. We point to two (\href{https://www.nrel.gov/docs/fy18osti/70029.pdf}{Folgueras et al. 2017}, \href{https://ieeexplore.ieee.org/abstract/document/8571793}{Schafer et al. 2018}) useful papers which discuss thee above issues in the main text. 
 	
 	
 		\item \textit{In the end, it is not clear enough how big the positive impact of  
@@ -63,33 +63,25 @@ We agree with all the comments and have made the recommended changes as describe
 	
 	\textbf{Author response:} 
 	
+Yes we agree that testing the method on real data is a valuable addition.
+
+We have updated the main text to also test the method on real data...
+
+\textcolor{red}{TK: this section to be updated out once we have actually done the tests. I will work with Sofia to sort this out.}
 
 
-Yes we agree that a clearer summary of the main results quantifying the impact of the method is important to include. We have updated the abstract and the conclusion accordingly. Specifically,
+
+
+We also agree with the referee that a clearer summary of the main results quantifying the impact of the method is important to include. We have updated the abstract and the conclusion accordingly. Specifically,
 \begin{itemize}
 	\item For the representative system (Table 1) ANC suppresses the 60-Hz interference by approximately 20 dB.
 	\item Without ANC, the HMM tracker is unable to track the wandering CW signal. After ANC, the HMM tracker is able to track the wandering CW signal. The time-averaged RMS error in the HMM tracking after ANC is 0.038Hz for low $\sigma_f$ and $0.47$Hz for high $\sigma_f$.
 	\item The detection probability at a 5\% false alarm rate, $p_{\rm d}(0.05) \approx 0.5 $--$0.6$ across a range of mains power interference parameters and filter parameters.
+	\item \textcolor{red}{TK: +real data results}
 \end{itemize}
 
 
-\textcolor{red}{TK: Tests on real-data to be discussed in person. A summary of some thoughts below.}
 
-We currently generate some synthetic strain-channel data $x(t) = h(t) + c(t) + n(t)$, and some synthetic reference-channel data $r(t)$, according to some analytical expressions which are specified in the manuscript.
-
-Which of these components would be appropriate to replace with real GWOSC data?
-
-We don't have GWOSC $h(t)$ - no CWs have been detected! Let's assume that in some strain data $x(t)$ that we obtain from GWOSC that there is no $h(t)$ signal in there. The procedure for testing the method on real data might then look like:
-
-\begin{itemize}
-	\item Take some strain-channel data $x(t)$ from GWOSC
-	\item Simulate some synthetic $h(t)$ according to the manuscript equations. 
-	\item Inject the $h(t)$ into $x(t)$ to obtain some data $y(t) = h(t) + x(t)$ which gets passed to the ANC scheme.
-	\item Take $N \leq 9$ PEM channels from GWOSC. Pass these to the ANC scheme as $r_{\rm empirical}(t)$.
-	\item Run ANC scheme - can we recover our injected $h(t)$? 
-\end{itemize}
-
-If this workflow seems reasonable, TK will work on obtaining the relevant data to pass into Sofia's pipeline. 
 	
 	
 	
@@ -105,9 +97,9 @@ If this workflow seems reasonable, TK will work on obtaining the relevant data t
 \begin{enumerate}
 	\item \textit{The abstract currently points out that the validation test is on "synthetic  
 		signals", which is perfectly fine, but what is more important is the nature of  
-		the noise data.  }
+		the noise data.}
 	
-	\textcolor{red}{TK: this is related to point B, re real data. To be updated once point B has been answered}
+Yes we agree that the behaviour and statistical properties of the noise are important. We have added a qualifying sentence to the abstract that specifies the properties of the noise.  
 	
 	\item \textit{A brief summary of the results would be valuable at the end of the abstract  
 		(as per point B above). }
@@ -136,7 +128,7 @@ If this workflow seems reasonable, TK will work on obtaining the relevant data t
 		results papers.}
 	
 			\textbf{Author response:}  \newline 
-			Yes we agree with the referee that the previous statement was too broad. We have now updated the paragraph to caveat that some pipelines do have ``line robust" algorithms  which combine statistics from different detectors to suppress single detector artifacts (e.g. Keitel et al. 2015, Keitel 2016a,b). \textcolor{red}{TK: Andres provided these references. Are there any others that we should be citing here?}
+			Yes we agree with the referee that the previous statement was too broad. We have now updated the paragraph to caveat that some pipelines do have ``line robust" algorithms  which combine statistics from different detectors to suppress single detector artifacts (e.g. Keitel et al. 2015, Keitel 2016a,b).
 %			 https://arxiv.org/abs/2201.00697
 	
 	\item \textit{Please try using multiple linestyles for better readability of figures  
@@ -178,10 +170,14 @@ The text has been updated to remove the misleading separation between the two mo
 		this is a likely explanation for the observed losses in coherence?  }
 	
 			\textbf{Author response:}  \newline 
-\textcolor{red}{TK: to discuss. I think the answer here is that we just take as a simplifying assumption that there is one $\tau$.  Indeed, $\tau$ corresponds to the delay due to the spatial propagation between the PEM position and the GW sensing apparatus. 	Unless I am missing something it seems like there would only be one $\tau$, regardless of the coupling mechanism? I also am not sure what the referee means by ``observed losses in coherence". Do they mean that we don't get coherence values =1, but instead $\approx 0.8$? (Figure 3)}
-	
-	
-
+			
+			The two primary mechanisms by which mains power couples into the strain channel are the shared power supply of the electronic components, and the 60 Hz magnetic field coupling to magnets which are present in certain optical components of the interferometer. 
+			
+			Regardless of the coupling mechanism, the time delay $\tau$ is the same; $\tau$ is the time delay due to the spatial propagation of the signal between the PEM position and the GW sensing apparatus. 
+			
+			As is discussed in the text, a coherence $<1$ occurs due to a non-linear relationship between the signal measurement in the reference and strain channels. 
+			
+			
 	\item \textit{footnote 3: gitlab file URLs can be quite ephemeral. Is there no better  
 		(more stable) way to reference this list, such as a GWOSC release with DOI, a  
 		LIGO DCC entry, etc?}
@@ -225,7 +221,8 @@ The text has been updated to remove the misleading separation between the two mo
 		and extent of their detector-frame frequency spectrum should be dominated by  
 		these terms.  }
 	
-	\textcolor{red}{TK: to discuss this point with astro side}
+		
+	\textcolor{red}{TK: to discuss in person. See also point 18 below.}
 	
 	\item \textit{Also in the same discussion, there is a reference to the F-statistic. This  
 		is taking a maximum likelihood over amplitude parameters, not over those related  
@@ -234,7 +231,7 @@ The text has been updated to remove the misleading separation between the two mo
 		it is currently phrased will confuse a non-expert reader into thinking it  
 		maximizes over frequency evolution parameters.  }
 	
-		\textcolor{red}{TK: to discuss this point with astro side}
+	Yes, the referee is correct to point out the potential for confusion through the current phrasing. We have rephrased these sentences to make it clear that the F-statistic maximises over $h_0, \phi_0, \iota$ and $\psi$, leaving a function of the remaining ``Doppler parameters".
 	
 	\item \textit{In IV.B, the definition of signal-to-noise ratio does not match the standard  
 		in the CW literature, which usually includes the observation time. The duration  
@@ -257,7 +254,7 @@ The text has been updated to remove the misleading separation between the two mo
 		is negligible compared to these frequency errors?  }
 	
 		
-	\textcolor{red}{TK: To discuss with astro side. Also related to Q14/15.}
+	\textcolor{red}{TK: To discuss in person. Also related to point 14.}
 	
 	\item \textit{In figures 8/9, it would be interesting to also compare with the performance without ANC - is that similar to, or even worse than the ``random guess"? }
 
@@ -275,7 +272,8 @@ We have added a sentence to the main text, relating to Figures 8/9, reminding th
 	
 	\item \textit{Near the end of V.B, latency issues are discussed. Are these really relevant for CW searches, which are usually run on archival data?}
 	
-	\textcolor{red}{TK: I think the honest answer here is that latency is not relevant. For online EE applications it is generally, but I think we can remove the latency discussion. To discuss.}
+	The referee is correct to point out that latency is not a problem when dealing with offline searches. We have removed the discussion on latency from the manuscript and now focus exclusively on the computational cost of the method.
+	
 \end{enumerate}
 
 
