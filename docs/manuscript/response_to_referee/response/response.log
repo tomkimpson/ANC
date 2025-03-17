@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.3)  3 SEP 2024 08:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.3)  11 OCT 2024 14:39
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -429,22 +429,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 26--28
 
 {/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 172--173
+Underfull \hbox (badness 10000) in paragraph at lines 144--145
 
  []
 
-[3] [4] [5] (./response.aux)
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 180--181
+
+ []
+
+[4] [5] [6] (./response.aux)
 Package rerunfilecheck Info: File `response.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 11278 strings out of 478268
- 178144 string characters out of 5846348
- 475960 words of memory out of 5000000
+ 11279 strings out of 478268
+ 178150 string characters out of 5846348
+ 474960 words of memory out of 5000000
  29316 multiletter control sequences out of 15000+600000
  479945 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,6n,63p,750b,460s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 60i,6n,63p,1081b,563s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 }</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 </usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
@@ -456,12 +461,13 @@ local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/lo
 cal/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/loca
 l/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/t
 exlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
-xlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/tex
-live/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on response.pdf (5 pages, 168164 bytes).
+xlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texl
+ive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texli
+ve/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on response.pdf (6 pages, 182909 bytes).
 PDF statistics:
- 120 PDF objects out of 1000 (max. 8388607)
- 88 compressed objects within 1 object stream
- 29 named destinations out of 1000 (max. 500000)
+ 130 PDF objects out of 1000 (max. 8388607)
+ 95 compressed objects within 1 object stream
+ 30 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

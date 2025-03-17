@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{67}%
+\begin{thebibliography}{80}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -246,6 +246,27 @@
   \bibinfo {eid} {05A102} (\bibinfo {year} {2021})},\ \Eprint
   {http://arxiv.org/abs/2009.09305} {arXiv:2009.09305 [gr-qc]} \BibitemShut
   {NoStop}%
+\bibitem [{\citenamefont {{Davis}}\ \emph {et~al.}(2021)\citenamefont
+  {{Davis}}, \citenamefont {{Areeda}}, \citenamefont {{Berger}}, \citenamefont
+  {{Bruntz}}, \citenamefont {{Effler}}, \citenamefont {{Essick}}, \citenamefont
+  {{Fisher}}, \citenamefont {{Godwin}}, \citenamefont {{Goetz}}, \citenamefont
+  {{Helmling-Cornell}} \emph {et~al.}}]{Davis2021}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
+  {{Davis}}}, \bibinfo {author} {\bibfnamefont {J.~S.}\ \bibnamefont
+  {{Areeda}}}, \bibinfo {author} {\bibfnamefont {B.~K.}\ \bibnamefont
+  {{Berger}}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {{Bruntz}}},
+  \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {{Effler}}}, \bibinfo
+  {author} {\bibfnamefont {R.~C.}\ \bibnamefont {{Essick}}}, \bibinfo {author}
+  {\bibfnamefont {R.~P.}\ \bibnamefont {{Fisher}}}, \bibinfo {author}
+  {\bibfnamefont {P.}~\bibnamefont {{Godwin}}}, \bibinfo {author}
+  {\bibfnamefont {E.}~\bibnamefont {{Goetz}}}, \bibinfo {author} {\bibfnamefont
+  {A.~F.}\ \bibnamefont {{Helmling-Cornell}}},  \emph {et~al.},\ }\href
+  {\doibase 10.1088/1361-6382/abfd85} {\bibfield  {journal} {\bibinfo
+  {journal} {Classical and Quantum Gravity}\ }\textbf {\bibinfo {volume}
+  {38}},\ \bibinfo {eid} {135014} (\bibinfo {year} {2021})},\ \Eprint
+  {http://arxiv.org/abs/2101.11673} {arXiv:2101.11673 [astro-ph.IM]}
+  \BibitemShut {NoStop}%
 \bibitem [{\citenamefont {{Nguyen}}\ \emph {et~al.}(2021)\citenamefont
   {{Nguyen}}, \citenamefont {{Schofield}}, \citenamefont {{Effler}},
   \citenamefont {{Austin}}, \citenamefont {{Adya}}, \citenamefont {{Ball}},
@@ -365,14 +386,14 @@
   {volume} {921}},\ \bibinfo {eid} {80} (\bibinfo {year} {2021})},\ \Eprint
   {http://arxiv.org/abs/2105.11641} {arXiv:2105.11641 [astro-ph.HE]}
   \BibitemShut {NoStop}%
-\bibitem [{\citenamefont {{Abbott}}\ \emph {et~al.}(2022)\citenamefont
-  {{Abbott}}, \citenamefont {{Abbott}}, \citenamefont {{Acernese}},
-  \citenamefont {{Ackley}}, \citenamefont {{Adams}}, \citenamefont
-  {{Adhikari}}, \citenamefont {{Adhikari}}, \citenamefont {{Adya}},
-  \citenamefont {{Affeldt}}, \citenamefont {{Agarwal}}, \citenamefont
-  {{Agathos}}, \citenamefont {{Agatsuma}}, \citenamefont {{Aggarwal}},
-  \citenamefont {{Aguiar}}, \citenamefont {{Aiello}} \emph
-  {et~al.}}]{ligo_lineveto3}%
+\bibitem [{\citenamefont {{Abbott}}\ \emph
+  {et~al.}(2022{\natexlab{a}})\citenamefont {{Abbott}}, \citenamefont
+  {{Abbott}}, \citenamefont {{Acernese}}, \citenamefont {{Ackley}},
+  \citenamefont {{Adams}}, \citenamefont {{Adhikari}}, \citenamefont
+  {{Adhikari}}, \citenamefont {{Adya}}, \citenamefont {{Affeldt}},
+  \citenamefont {{Agarwal}}, \citenamefont {{Agathos}}, \citenamefont
+  {{Agatsuma}}, \citenamefont {{Aggarwal}}, \citenamefont {{Aguiar}},
+  \citenamefont {{Aiello}} \emph {et~al.}}]{ligo_lineveto3}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
   {{Abbott}}}, \bibinfo {author} {\bibfnamefont {T.~D.}\ \bibnamefont
@@ -391,29 +412,331 @@
   {\bibfnamefont {L.}~\bibnamefont {{Aiello}}},  \emph {et~al.},\ }\href
   {\doibase 10.3847/1538-4357/ac6ad0} {\bibfield  {journal} {\bibinfo
   {journal} {\apj}\ }\textbf {\bibinfo {volume} {932}},\ \bibinfo {eid} {133}
-  (\bibinfo {year} {2022})},\ \Eprint {http://arxiv.org/abs/2112.10990}
-  {arXiv:2112.10990 [gr-qc]} \BibitemShut {NoStop}%
-\bibitem [{\citenamefont {{Davis}}\ \emph {et~al.}(2021)\citenamefont
-  {{Davis}}, \citenamefont {{Areeda}}, \citenamefont {{Berger}}, \citenamefont
-  {{Bruntz}}, \citenamefont {{Effler}}, \citenamefont {{Essick}}, \citenamefont
-  {{Fisher}}, \citenamefont {{Godwin}}, \citenamefont {{Goetz}}, \citenamefont
-  {{Helmling-Cornell}} \emph {et~al.}}]{Davis2021}%
+  (\bibinfo {year} {2022}{\natexlab{a}})},\ \Eprint
+  {http://arxiv.org/abs/2112.10990} {arXiv:2112.10990 [gr-qc]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {{Acernese}}\ \emph {et~al.}(2015)\citenamefont
+  {{Acernese}}, \citenamefont {{Agathos}}, \citenamefont {{Agatsuma}},
+  \citenamefont {{Aisa}}, \citenamefont {{Allemandou}}, \citenamefont
+  {{Allocca}}, \citenamefont {{Amarni}}, \citenamefont {{Astone}},
+  \citenamefont {{Balestri}}, \citenamefont {{Ballardin}}, \citenamefont
+  {{Barone}}, \citenamefont {{Baronick}}, \citenamefont {{Barsuglia}},
+  \citenamefont {{Basti}}, \citenamefont {{Basti}}, \citenamefont {{Bauer}},
+  \citenamefont {{Bavigadda}}, \citenamefont {{Bejger}}, \citenamefont
+  {{Beker}}, \citenamefont {{Belczynski}}, \citenamefont {{Bersanetti}},
+  \citenamefont {{Bertolini}}, \citenamefont {{Bitossi}}, \citenamefont
+  {{Bizouard}}, \citenamefont {{Bloemen}}, \citenamefont {{Blom}},
+  \citenamefont {{Boer}}, \citenamefont {{Bogaert}}, \citenamefont {{Bondi}},
+  \citenamefont {{Bondu}}, \citenamefont {{Bonelli}}, \citenamefont
+  {{Bonnand}}, \citenamefont {{Boschi}}, \citenamefont {{Bosi}}, \citenamefont
+  {{Bouedo}}, \citenamefont {{Bradaschia}}, \citenamefont {{Branchesi}},
+  \citenamefont {{Briant}}, \citenamefont {{Brillet}}, \citenamefont
+  {{Brisson}}, \citenamefont {{Bulik}}, \citenamefont {{Bulten}}, \citenamefont
+  {{Buskulic}}, \citenamefont {{Buy}}, \citenamefont {{Cagnoli}}, \citenamefont
+  {{Calloni}}, \citenamefont {{Campeggi}}, \citenamefont {{Canuel}},
+  \citenamefont {{Carbognani}}, \citenamefont {{Cavalier}}, \citenamefont
+  {{Cavalieri}}, \citenamefont {{Cella}}, \citenamefont {{Cesarini}},
+  \citenamefont {{Mottin}}, \citenamefont {{Chincarini}}, \citenamefont
+  {{Chiummo}}, \citenamefont {{Chua}}, \citenamefont {{Cleva}}, \citenamefont
+  {{Coccia}}, \citenamefont {{Cohadon}}, \citenamefont {{Colla}}, \citenamefont
+  {{Colombini}}, \citenamefont {{Conte}}, \citenamefont {{Coulon}},
+  \citenamefont {{Cuoco}}, \citenamefont {{Dalmaz}}, \citenamefont
+  {{D'Antonio}}, \citenamefont {{Dattilo}}, \citenamefont {{Davier}},
+  \citenamefont {{Day}}, \citenamefont {{Debreczeni}}, \citenamefont
+  {{Degallaix}}, \citenamefont {{Del{\'e}glise}}, \citenamefont {{Pozzo}},
+  \citenamefont {{Dereli}}, \citenamefont {{Rosa}}, \citenamefont {{Fiore}},
+  \citenamefont {{Lieto}}, \citenamefont {{Virgilio}}, \citenamefont {{Doets}},
+  \citenamefont {{Dolique}}, \citenamefont {{Drago}}, \citenamefont {{Ducrot}},
+  \citenamefont {{Endr{\H{o}}czi}}, \citenamefont {{Fafone}}, \citenamefont
+  {{Farinon}}, \citenamefont {{Ferrante}}, \citenamefont {{Ferrini}},
+  \citenamefont {{Fidecaro}}, \citenamefont {{Fiori}}, \citenamefont
+  {{Flaminio}}, \citenamefont {{Fournier}}, \citenamefont {{Franco}},
+  \citenamefont {{Frasca}}, \citenamefont {{Frasconi}}, \citenamefont
+  {{Gammaitoni}}, \citenamefont {{Garufi}}, \citenamefont {{Gaspard}},
+  \citenamefont {{Gatto}}, \citenamefont {{Gemme}}, \citenamefont {{Gendre}},
+  \citenamefont {{Genin}}, \citenamefont {{Gennai}}, \citenamefont {{Ghosh}},
+  \citenamefont {{Giacobone}}, \citenamefont {{Giazotto}}, \citenamefont
+  {{Gouaty}}, \citenamefont {{Granata}}, \citenamefont {{Greco}}, \citenamefont
+  {{Groot}}, \citenamefont {{Guidi}}, \citenamefont {{Harms}}, \citenamefont
+  {{Heidmann}}, \citenamefont {{Heitmann}}, \citenamefont {{Hello}},
+  \citenamefont {{Hemming}}, \citenamefont {{Hennes}}, \citenamefont
+  {{Hofman}}, \citenamefont {{Jaranowski}}, \citenamefont {{Jonker}},
+  \citenamefont {{Kasprzack}}, \citenamefont {{K{\'e}f{\'e}lian}},
+  \citenamefont {{Kowalska}}, \citenamefont {{Kraan}}, \citenamefont
+  {{Kr{\'o}lak}}, \citenamefont {{Kutynia}}, \citenamefont {{Lazzaro}},
+  \citenamefont {{Leonardi}}, \citenamefont {{Leroy}}, \citenamefont
+  {{Letendre}}, \citenamefont {{Li}}, \citenamefont {{Lieunard}}, \citenamefont
+  {{Lorenzini}}, \citenamefont {{Loriette}}, \citenamefont {{Losurdo}},
+  \citenamefont {{Magazz{\`u}}}, \citenamefont {{Majorana}}, \citenamefont
+  {{Maksimovic}}, \citenamefont {{Malvezzi}}, \citenamefont {{Man}},
+  \citenamefont {{Mangano}}, \citenamefont {{Mantovani}}, \citenamefont
+  {{Marchesoni}}, \citenamefont {{Marion}}, \citenamefont {{Marque}},
+  \citenamefont {{Martelli}}, \citenamefont {{Martellini}}, \citenamefont
+  {{Masserot}}, \citenamefont {{Meacher}}, \citenamefont {{Meidam}},
+  \citenamefont {{Mezzani}}, \citenamefont {{Michel}}, \citenamefont
+  {{Milano}}, \citenamefont {{Minenkov}}, \citenamefont {{Moggi}},
+  \citenamefont {{Mohan}}, \citenamefont {{Montani}}, \citenamefont
+  {{Morgado}}, \citenamefont {{Mours}}, \citenamefont {{Mul}}, \citenamefont
+  {{Nagy}}, \citenamefont {{Nardecchia}}, \citenamefont {{Naticchioni}},
+  \citenamefont {{Nelemans}}, \citenamefont {{Neri}}, \citenamefont {{Neri}},
+  \citenamefont {{Nocera}}, \citenamefont {{Pacaud}}, \citenamefont
+  {{Palomba}}, \citenamefont {{Paoletti}}, \citenamefont {{Paoli}},
+  \citenamefont {{Pasqualetti}}, \citenamefont {{Passaquieti}}, \citenamefont
+  {{Passuello}}, \citenamefont {{Perciballi}}, \citenamefont {{Petit}},
+  \citenamefont {{Pichot}}, \citenamefont {{Piergiovanni}}, \citenamefont
+  {{Pillant}}, \citenamefont {{Piluso}}, \citenamefont {{Pinard}},
+  \citenamefont {{Poggiani}}, \citenamefont {{Prijatelj}}, \citenamefont
+  {{Prodi}}, \citenamefont {{Punturo}}, \citenamefont {{Puppo}}, \citenamefont
+  {{Rabeling}}, \citenamefont {{R{\'a}cz}}, \citenamefont {{Rapagnani}},
+  \citenamefont {{Razzano}}, \citenamefont {{Re}}, \citenamefont {{Regimbau}},
+  \citenamefont {{Ricci}}, \citenamefont {{Robinet}}, \citenamefont {{Rocchi}},
+  \citenamefont {{Rolland}}, \citenamefont {{Romano}}, \citenamefont
+  {{Rosi{\'n}ska}}, \citenamefont {{Ruggi}}, \citenamefont {{Saracco}},
+  \citenamefont {{Sassolas}}, \citenamefont {{Schimmel}}, \citenamefont
+  {{Sentenac}}, \citenamefont {{Sequino}}, \citenamefont {{Shah}},
+  \citenamefont {{Siellez}}, \citenamefont {{Straniero}}, \citenamefont
+  {{Swinkels}}, \citenamefont {{Tacca}}, \citenamefont {{Tonelli}},
+  \citenamefont {{Travasso}}, \citenamefont {{Turconi}}, \citenamefont
+  {{Vajente}}, \citenamefont {{van Bakel}}, \citenamefont {{van Beuzekom}},
+  \citenamefont {{van den Brand}}, \citenamefont {{Van Den Broeck}},
+  \citenamefont {{van der Sluys}}, \citenamefont {{van Heijningen}},
+  \citenamefont {{Vas{\'u}th}}, \citenamefont {{Vedovato}}, \citenamefont
+  {{Veitch}}, \citenamefont {{Verkindt}}, \citenamefont {{Vetrano}},
+  \citenamefont {{Vicer{\'e}}}, \citenamefont {{Vinet}}, \citenamefont
+  {{Visser}}, \citenamefont {{Vocca}}, \citenamefont {{Ward}}, \citenamefont
+  {{Was}}, \citenamefont {{Wei}}, \citenamefont {{Yvert}}, \citenamefont
+  {{{\.z}ny}},\ and\ \citenamefont {{Zendri}}}]{2015CQGra..32b4001A}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
-  {{Davis}}}, \bibinfo {author} {\bibfnamefont {J.~S.}\ \bibnamefont
-  {{Areeda}}}, \bibinfo {author} {\bibfnamefont {B.~K.}\ \bibnamefont
-  {{Berger}}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {{Bruntz}}},
-  \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {{Effler}}}, \bibinfo
-  {author} {\bibfnamefont {R.~C.}\ \bibnamefont {{Essick}}}, \bibinfo {author}
-  {\bibfnamefont {R.~P.}\ \bibnamefont {{Fisher}}}, \bibinfo {author}
-  {\bibfnamefont {P.}~\bibnamefont {{Godwin}}}, \bibinfo {author}
-  {\bibfnamefont {E.}~\bibnamefont {{Goetz}}}, \bibinfo {author} {\bibfnamefont
-  {A.~F.}\ \bibnamefont {{Helmling-Cornell}}},  \emph {et~al.},\ }\href
-  {\doibase 10.1088/1361-6382/abfd85} {\bibfield  {journal} {\bibinfo
-  {journal} {Classical and Quantum Gravity}\ }\textbf {\bibinfo {volume}
-  {38}},\ \bibinfo {eid} {135014} (\bibinfo {year} {2021})},\ \Eprint
-  {http://arxiv.org/abs/2101.11673} {arXiv:2101.11673 [astro-ph.IM]}
-  \BibitemShut {NoStop}%
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {{Acernese}}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {{Agathos}}}, \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
+  {{Agatsuma}}}, \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont {{Aisa}}},
+  \bibinfo {author} {\bibfnamefont {N.}~\bibnamefont {{Allemandou}}}, \bibinfo
+  {author} {\bibfnamefont {A.}~\bibnamefont {{Allocca}}}, \bibinfo {author}
+  {\bibfnamefont {J.}~\bibnamefont {{Amarni}}}, \bibinfo {author}
+  {\bibfnamefont {P.}~\bibnamefont {{Astone}}}, \bibinfo {author}
+  {\bibfnamefont {G.}~\bibnamefont {{Balestri}}}, \bibinfo {author}
+  {\bibfnamefont {G.}~\bibnamefont {{Ballardin}}}, \bibinfo {author}
+  {\bibfnamefont {F.}~\bibnamefont {{Barone}}}, \bibinfo {author}
+  {\bibfnamefont {J.~P.}\ \bibnamefont {{Baronick}}}, \bibinfo {author}
+  {\bibfnamefont {M.}~\bibnamefont {{Barsuglia}}}, \bibinfo {author}
+  {\bibfnamefont {A.}~\bibnamefont {{Basti}}}, \bibinfo {author} {\bibfnamefont
+  {F.}~\bibnamefont {{Basti}}}, \bibinfo {author} {\bibfnamefont {T.~S.}\
+  \bibnamefont {{Bauer}}}, \bibinfo {author} {\bibfnamefont {V.}~\bibnamefont
+  {{Bavigadda}}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {{Bejger}}}, \bibinfo {author} {\bibfnamefont {M.~G.}\ \bibnamefont
+  {{Beker}}}, \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {{Belczynski}}}, \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
+  {{Bersanetti}}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {{Bertolini}}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {{Bitossi}}}, \bibinfo {author} {\bibfnamefont {M.~A.}\ \bibnamefont
+  {{Bizouard}}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {{Bloemen}}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {{Blom}}},
+  \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {{Boer}}}, \bibinfo
+  {author} {\bibfnamefont {G.}~\bibnamefont {{Bogaert}}}, \bibinfo {author}
+  {\bibfnamefont {D.}~\bibnamefont {{Bondi}}}, \bibinfo {author} {\bibfnamefont
+  {F.}~\bibnamefont {{Bondu}}}, \bibinfo {author} {\bibfnamefont
+  {L.}~\bibnamefont {{Bonelli}}}, \bibinfo {author} {\bibfnamefont
+  {R.}~\bibnamefont {{Bonnand}}}, \bibinfo {author} {\bibfnamefont
+  {V.}~\bibnamefont {{Boschi}}}, \bibinfo {author} {\bibfnamefont
+  {L.}~\bibnamefont {{Bosi}}}, \bibinfo {author} {\bibfnamefont
+  {T.}~\bibnamefont {{Bouedo}}}, \bibinfo {author} {\bibfnamefont
+  {C.}~\bibnamefont {{Bradaschia}}}, \bibinfo {author} {\bibfnamefont
+  {M.}~\bibnamefont {{Branchesi}}}, \bibinfo {author} {\bibfnamefont
+  {T.}~\bibnamefont {{Briant}}}, \bibinfo {author} {\bibfnamefont
+  {A.}~\bibnamefont {{Brillet}}}, \bibinfo {author} {\bibfnamefont
+  {V.}~\bibnamefont {{Brisson}}}, \bibinfo {author} {\bibfnamefont
+  {T.}~\bibnamefont {{Bulik}}}, \bibinfo {author} {\bibfnamefont {H.~J.}\
+  \bibnamefont {{Bulten}}}, \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
+  {{Buskulic}}}, \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {{Buy}}},
+  \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {{Cagnoli}}}, \bibinfo
+  {author} {\bibfnamefont {E.}~\bibnamefont {{Calloni}}}, \bibinfo {author}
+  {\bibfnamefont {C.}~\bibnamefont {{Campeggi}}}, \bibinfo {author}
+  {\bibfnamefont {B.}~\bibnamefont {{Canuel}}}, \bibinfo {author}
+  {\bibfnamefont {F.}~\bibnamefont {{Carbognani}}}, \bibinfo {author}
+  {\bibfnamefont {F.}~\bibnamefont {{Cavalier}}}, \bibinfo {author}
+  {\bibfnamefont {R.}~\bibnamefont {{Cavalieri}}}, \bibinfo {author}
+  {\bibfnamefont {G.}~\bibnamefont {{Cella}}}, \bibinfo {author} {\bibfnamefont
+  {E.}~\bibnamefont {{Cesarini}}}, \bibinfo {author} {\bibfnamefont {E.~C.}\
+  \bibnamefont {{Mottin}}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {{Chincarini}}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {{Chiummo}}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {{Chua}}},
+  \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont {{Cleva}}}, \bibinfo
+  {author} {\bibfnamefont {E.}~\bibnamefont {{Coccia}}}, \bibinfo {author}
+  {\bibfnamefont {P.~F.}\ \bibnamefont {{Cohadon}}}, \bibinfo {author}
+  {\bibfnamefont {A.}~\bibnamefont {{Colla}}}, \bibinfo {author} {\bibfnamefont
+  {M.}~\bibnamefont {{Colombini}}}, \bibinfo {author} {\bibfnamefont
+  {A.}~\bibnamefont {{Conte}}}, \bibinfo {author} {\bibfnamefont {J.~P.}\
+  \bibnamefont {{Coulon}}}, \bibinfo {author} {\bibfnamefont {E.}~\bibnamefont
+  {{Cuoco}}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {{Dalmaz}}},
+  \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {{D'Antonio}}}, \bibinfo
+  {author} {\bibfnamefont {V.}~\bibnamefont {{Dattilo}}}, \bibinfo {author}
+  {\bibfnamefont {M.}~\bibnamefont {{Davier}}}, \bibinfo {author}
+  {\bibfnamefont {R.}~\bibnamefont {{Day}}}, \bibinfo {author} {\bibfnamefont
+  {G.}~\bibnamefont {{Debreczeni}}}, \bibinfo {author} {\bibfnamefont
+  {J.}~\bibnamefont {{Degallaix}}}, \bibinfo {author} {\bibfnamefont
+  {S.}~\bibnamefont {{Del{\'e}glise}}}, \bibinfo {author} {\bibfnamefont
+  {W.~D.}\ \bibnamefont {{Pozzo}}}, \bibinfo {author} {\bibfnamefont
+  {H.}~\bibnamefont {{Dereli}}}, \bibinfo {author} {\bibfnamefont {R.~D.}\
+  \bibnamefont {{Rosa}}}, \bibinfo {author} {\bibfnamefont {L.~D.}\
+  \bibnamefont {{Fiore}}}, \bibinfo {author} {\bibfnamefont {A.~D.}\
+  \bibnamefont {{Lieto}}}, \bibinfo {author} {\bibfnamefont {A.~D.}\
+  \bibnamefont {{Virgilio}}}, \bibinfo {author} {\bibfnamefont
+  {M.}~\bibnamefont {{Doets}}}, \bibinfo {author} {\bibfnamefont
+  {V.}~\bibnamefont {{Dolique}}}, \bibinfo {author} {\bibfnamefont
+  {M.}~\bibnamefont {{Drago}}}, \bibinfo {author} {\bibfnamefont
+  {M.}~\bibnamefont {{Ducrot}}}, \bibinfo {author} {\bibfnamefont
+  {G.}~\bibnamefont {{Endr{\H{o}}czi}}}, \bibinfo {author} {\bibfnamefont
+  {V.}~\bibnamefont {{Fafone}}}, \bibinfo {author} {\bibfnamefont
+  {S.}~\bibnamefont {{Farinon}}}, \bibinfo {author} {\bibfnamefont
+  {I.}~\bibnamefont {{Ferrante}}}, \bibinfo {author} {\bibfnamefont
+  {F.}~\bibnamefont {{Ferrini}}}, \bibinfo {author} {\bibfnamefont
+  {F.}~\bibnamefont {{Fidecaro}}}, \bibinfo {author} {\bibfnamefont
+  {I.}~\bibnamefont {{Fiori}}}, \bibinfo {author} {\bibfnamefont
+  {R.}~\bibnamefont {{Flaminio}}}, \bibinfo {author} {\bibfnamefont {J.~D.}\
+  \bibnamefont {{Fournier}}}, \bibinfo {author} {\bibfnamefont
+  {S.}~\bibnamefont {{Franco}}}, \bibinfo {author} {\bibfnamefont
+  {S.}~\bibnamefont {{Frasca}}}, \bibinfo {author} {\bibfnamefont
+  {F.}~\bibnamefont {{Frasconi}}}, \bibinfo {author} {\bibfnamefont
+  {L.}~\bibnamefont {{Gammaitoni}}}, \bibinfo {author} {\bibfnamefont
+  {F.}~\bibnamefont {{Garufi}}}, \bibinfo {author} {\bibfnamefont
+  {M.}~\bibnamefont {{Gaspard}}}, \bibinfo {author} {\bibfnamefont
+  {A.}~\bibnamefont {{Gatto}}}, \bibinfo {author} {\bibfnamefont
+  {G.}~\bibnamefont {{Gemme}}}, \bibinfo {author} {\bibfnamefont
+  {B.}~\bibnamefont {{Gendre}}}, \bibinfo {author} {\bibfnamefont
+  {E.}~\bibnamefont {{Genin}}}, \bibinfo {author} {\bibfnamefont
+  {A.}~\bibnamefont {{Gennai}}}, \bibinfo {author} {\bibfnamefont
+  {S.}~\bibnamefont {{Ghosh}}}, \bibinfo {author} {\bibfnamefont
+  {L.}~\bibnamefont {{Giacobone}}}, \bibinfo {author} {\bibfnamefont
+  {A.}~\bibnamefont {{Giazotto}}}, \bibinfo {author} {\bibfnamefont
+  {R.}~\bibnamefont {{Gouaty}}}, \bibinfo {author} {\bibfnamefont
+  {M.}~\bibnamefont {{Granata}}}, \bibinfo {author} {\bibfnamefont
+  {G.}~\bibnamefont {{Greco}}}, \bibinfo {author} {\bibfnamefont
+  {P.}~\bibnamefont {{Groot}}}, \bibinfo {author} {\bibfnamefont {G.~M.}\
+  \bibnamefont {{Guidi}}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {{Harms}}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {{Heidmann}}},
+  \bibinfo {author} {\bibfnamefont {H.}~\bibnamefont {{Heitmann}}}, \bibinfo
+  {author} {\bibfnamefont {P.}~\bibnamefont {{Hello}}}, \bibinfo {author}
+  {\bibfnamefont {G.}~\bibnamefont {{Hemming}}}, \bibinfo {author}
+  {\bibfnamefont {E.}~\bibnamefont {{Hennes}}}, \bibinfo {author}
+  {\bibfnamefont {D.}~\bibnamefont {{Hofman}}}, \bibinfo {author}
+  {\bibfnamefont {P.}~\bibnamefont {{Jaranowski}}}, \bibinfo {author}
+  {\bibfnamefont {R.~J.~G.}\ \bibnamefont {{Jonker}}}, \bibinfo {author}
+  {\bibfnamefont {M.}~\bibnamefont {{Kasprzack}}}, \bibinfo {author}
+  {\bibfnamefont {F.}~\bibnamefont {{K{\'e}f{\'e}lian}}}, \bibinfo {author}
+  {\bibfnamefont {I.}~\bibnamefont {{Kowalska}}}, \bibinfo {author}
+  {\bibfnamefont {M.}~\bibnamefont {{Kraan}}}, \bibinfo {author} {\bibfnamefont
+  {A.}~\bibnamefont {{Kr{\'o}lak}}}, \bibinfo {author} {\bibfnamefont
+  {A.}~\bibnamefont {{Kutynia}}}, \bibinfo {author} {\bibfnamefont
+  {C.}~\bibnamefont {{Lazzaro}}}, \bibinfo {author} {\bibfnamefont
+  {M.}~\bibnamefont {{Leonardi}}}, \bibinfo {author} {\bibfnamefont
+  {N.}~\bibnamefont {{Leroy}}}, \bibinfo {author} {\bibfnamefont
+  {N.}~\bibnamefont {{Letendre}}}, \bibinfo {author} {\bibfnamefont {T.~G.~F.}\
+  \bibnamefont {{Li}}}, \bibinfo {author} {\bibfnamefont {B.}~\bibnamefont
+  {{Lieunard}}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {{Lorenzini}}}, \bibinfo {author} {\bibfnamefont {V.}~\bibnamefont
+  {{Loriette}}}, \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
+  {{Losurdo}}}, \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {{Magazz{\`u}}}}, \bibinfo {author} {\bibfnamefont {E.}~\bibnamefont
+  {{Majorana}}}, \bibinfo {author} {\bibfnamefont {I.}~\bibnamefont
+  {{Maksimovic}}}, \bibinfo {author} {\bibfnamefont {V.}~\bibnamefont
+  {{Malvezzi}}}, \bibinfo {author} {\bibfnamefont {N.}~\bibnamefont {{Man}}},
+  \bibinfo {author} {\bibfnamefont {V.}~\bibnamefont {{Mangano}}}, \bibinfo
+  {author} {\bibfnamefont {M.}~\bibnamefont {{Mantovani}}}, \bibinfo {author}
+  {\bibfnamefont {F.}~\bibnamefont {{Marchesoni}}}, \bibinfo {author}
+  {\bibfnamefont {F.}~\bibnamefont {{Marion}}}, \bibinfo {author}
+  {\bibfnamefont {J.}~\bibnamefont {{Marque}}}, \bibinfo {author}
+  {\bibfnamefont {F.}~\bibnamefont {{Martelli}}}, \bibinfo {author}
+  {\bibfnamefont {L.}~\bibnamefont {{Martellini}}}, \bibinfo {author}
+  {\bibfnamefont {A.}~\bibnamefont {{Masserot}}}, \bibinfo {author}
+  {\bibfnamefont {D.}~\bibnamefont {{Meacher}}}, \bibinfo {author}
+  {\bibfnamefont {J.}~\bibnamefont {{Meidam}}}, \bibinfo {author}
+  {\bibfnamefont {F.}~\bibnamefont {{Mezzani}}}, \bibinfo {author}
+  {\bibfnamefont {C.}~\bibnamefont {{Michel}}}, \bibinfo {author}
+  {\bibfnamefont {L.}~\bibnamefont {{Milano}}}, \bibinfo {author}
+  {\bibfnamefont {Y.}~\bibnamefont {{Minenkov}}}, \bibinfo {author}
+  {\bibfnamefont {A.}~\bibnamefont {{Moggi}}}, \bibinfo {author} {\bibfnamefont
+  {M.}~\bibnamefont {{Mohan}}}, \bibinfo {author} {\bibfnamefont
+  {M.}~\bibnamefont {{Montani}}}, \bibinfo {author} {\bibfnamefont
+  {N.}~\bibnamefont {{Morgado}}}, \bibinfo {author} {\bibfnamefont
+  {B.}~\bibnamefont {{Mours}}}, \bibinfo {author} {\bibfnamefont
+  {F.}~\bibnamefont {{Mul}}}, \bibinfo {author} {\bibfnamefont {M.~F.}\
+  \bibnamefont {{Nagy}}}, \bibinfo {author} {\bibfnamefont {I.}~\bibnamefont
+  {{Nardecchia}}}, \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
+  {{Naticchioni}}}, \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
+  {{Nelemans}}}, \bibinfo {author} {\bibfnamefont {I.}~\bibnamefont {{Neri}}},
+  \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {{Neri}}}, \bibinfo
+  {author} {\bibfnamefont {F.}~\bibnamefont {{Nocera}}}, \bibinfo {author}
+  {\bibfnamefont {E.}~\bibnamefont {{Pacaud}}}, \bibinfo {author}
+  {\bibfnamefont {C.}~\bibnamefont {{Palomba}}}, \bibinfo {author}
+  {\bibfnamefont {F.}~\bibnamefont {{Paoletti}}}, \bibinfo {author}
+  {\bibfnamefont {A.}~\bibnamefont {{Paoli}}}, \bibinfo {author} {\bibfnamefont
+  {A.}~\bibnamefont {{Pasqualetti}}}, \bibinfo {author} {\bibfnamefont
+  {R.}~\bibnamefont {{Passaquieti}}}, \bibinfo {author} {\bibfnamefont
+  {D.}~\bibnamefont {{Passuello}}}, \bibinfo {author} {\bibfnamefont
+  {M.}~\bibnamefont {{Perciballi}}}, \bibinfo {author} {\bibfnamefont
+  {S.}~\bibnamefont {{Petit}}}, \bibinfo {author} {\bibfnamefont
+  {M.}~\bibnamefont {{Pichot}}}, \bibinfo {author} {\bibfnamefont
+  {F.}~\bibnamefont {{Piergiovanni}}}, \bibinfo {author} {\bibfnamefont
+  {G.}~\bibnamefont {{Pillant}}}, \bibinfo {author} {\bibfnamefont
+  {A.}~\bibnamefont {{Piluso}}}, \bibinfo {author} {\bibfnamefont
+  {L.}~\bibnamefont {{Pinard}}}, \bibinfo {author} {\bibfnamefont
+  {R.}~\bibnamefont {{Poggiani}}}, \bibinfo {author} {\bibfnamefont
+  {M.}~\bibnamefont {{Prijatelj}}}, \bibinfo {author} {\bibfnamefont {G.~A.}\
+  \bibnamefont {{Prodi}}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {{Punturo}}}, \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont {{Puppo}}},
+  \bibinfo {author} {\bibfnamefont {D.~S.}\ \bibnamefont {{Rabeling}}},
+  \bibinfo {author} {\bibfnamefont {I.}~\bibnamefont {{R{\'a}cz}}}, \bibinfo
+  {author} {\bibfnamefont {P.}~\bibnamefont {{Rapagnani}}}, \bibinfo {author}
+  {\bibfnamefont {M.}~\bibnamefont {{Razzano}}}, \bibinfo {author}
+  {\bibfnamefont {V.}~\bibnamefont {{Re}}}, \bibinfo {author} {\bibfnamefont
+  {T.}~\bibnamefont {{Regimbau}}}, \bibinfo {author} {\bibfnamefont
+  {F.}~\bibnamefont {{Ricci}}}, \bibinfo {author} {\bibfnamefont
+  {F.}~\bibnamefont {{Robinet}}}, \bibinfo {author} {\bibfnamefont
+  {A.}~\bibnamefont {{Rocchi}}}, \bibinfo {author} {\bibfnamefont
+  {L.}~\bibnamefont {{Rolland}}}, \bibinfo {author} {\bibfnamefont
+  {R.}~\bibnamefont {{Romano}}}, \bibinfo {author} {\bibfnamefont
+  {D.}~\bibnamefont {{Rosi{\'n}ska}}}, \bibinfo {author} {\bibfnamefont
+  {P.}~\bibnamefont {{Ruggi}}}, \bibinfo {author} {\bibfnamefont
+  {E.}~\bibnamefont {{Saracco}}}, \bibinfo {author} {\bibfnamefont
+  {B.}~\bibnamefont {{Sassolas}}}, \bibinfo {author} {\bibfnamefont
+  {F.}~\bibnamefont {{Schimmel}}}, \bibinfo {author} {\bibfnamefont
+  {D.}~\bibnamefont {{Sentenac}}}, \bibinfo {author} {\bibfnamefont
+  {V.}~\bibnamefont {{Sequino}}}, \bibinfo {author} {\bibfnamefont
+  {S.}~\bibnamefont {{Shah}}}, \bibinfo {author} {\bibfnamefont
+  {K.}~\bibnamefont {{Siellez}}}, \bibinfo {author} {\bibfnamefont
+  {N.}~\bibnamefont {{Straniero}}}, \bibinfo {author} {\bibfnamefont
+  {B.}~\bibnamefont {{Swinkels}}}, \bibinfo {author} {\bibfnamefont
+  {M.}~\bibnamefont {{Tacca}}}, \bibinfo {author} {\bibfnamefont
+  {M.}~\bibnamefont {{Tonelli}}}, \bibinfo {author} {\bibfnamefont
+  {F.}~\bibnamefont {{Travasso}}}, \bibinfo {author} {\bibfnamefont
+  {M.}~\bibnamefont {{Turconi}}}, \bibinfo {author} {\bibfnamefont
+  {G.}~\bibnamefont {{Vajente}}}, \bibinfo {author} {\bibfnamefont
+  {N.}~\bibnamefont {{van Bakel}}}, \bibinfo {author} {\bibfnamefont
+  {M.}~\bibnamefont {{van Beuzekom}}}, \bibinfo {author} {\bibfnamefont
+  {J.~F.~J.}\ \bibnamefont {{van den Brand}}}, \bibinfo {author} {\bibfnamefont
+  {C.}~\bibnamefont {{Van Den Broeck}}}, \bibinfo {author} {\bibfnamefont
+  {M.~V.}\ \bibnamefont {{van der Sluys}}}, \bibinfo {author} {\bibfnamefont
+  {J.}~\bibnamefont {{van Heijningen}}}, \bibinfo {author} {\bibfnamefont
+  {M.}~\bibnamefont {{Vas{\'u}th}}}, \bibinfo {author} {\bibfnamefont
+  {G.}~\bibnamefont {{Vedovato}}}, \bibinfo {author} {\bibfnamefont
+  {J.}~\bibnamefont {{Veitch}}}, \bibinfo {author} {\bibfnamefont
+  {D.}~\bibnamefont {{Verkindt}}}, \bibinfo {author} {\bibfnamefont
+  {F.}~\bibnamefont {{Vetrano}}}, \bibinfo {author} {\bibfnamefont
+  {A.}~\bibnamefont {{Vicer{\'e}}}}, \bibinfo {author} {\bibfnamefont {J.~Y.}\
+  \bibnamefont {{Vinet}}}, \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
+  {{Visser}}}, \bibinfo {author} {\bibfnamefont {H.}~\bibnamefont {{Vocca}}},
+  \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {{Ward}}}, \bibinfo
+  {author} {\bibfnamefont {M.}~\bibnamefont {{Was}}}, \bibinfo {author}
+  {\bibfnamefont {L.~W.}\ \bibnamefont {{Wei}}}, \bibinfo {author}
+  {\bibfnamefont {M.}~\bibnamefont {{Yvert}}}, \bibinfo {author} {\bibfnamefont
+  {A.~Z.}\ \bibnamefont {{{\.z}ny}}}, \ and\ \bibinfo {author} {\bibfnamefont
+  {J.~P.}\ \bibnamefont {{Zendri}}},\ }\href {\doibase
+  10.1088/0264-9381/32/2/024001} {\bibfield  {journal} {\bibinfo  {journal}
+  {Classical and Quantum Gravity}\ }\textbf {\bibinfo {volume} {32}},\ \bibinfo
+  {eid} {024001} (\bibinfo {year} {2015})},\ \Eprint
+  {http://arxiv.org/abs/1408.3978} {arXiv:1408.3978 [gr-qc]} \BibitemShut
+  {NoStop}%
 \bibitem [{\citenamefont {Davis}\ and\ \citenamefont
   {Walker}(2022)}]{Davisgalaxies10010012}%
   \BibitemOpen
@@ -443,20 +766,6 @@
   {eid} {065010} (\bibinfo {year} {2018})},\ \Eprint
   {http://arxiv.org/abs/1710.02185} {arXiv:1710.02185 [gr-qc]} \BibitemShut
   {NoStop}%
-\bibitem [{\citenamefont {Lee}\ \emph {et~al.}(2021)\citenamefont {Lee},
-  \citenamefont {Oh}, \citenamefont {Kim}, \citenamefont {Cho}, \citenamefont
-  {Oh}, \citenamefont {Son},\ and\ \citenamefont {Lee}}]{Lee2021}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
-  {Lee}}, \bibinfo {author} {\bibfnamefont {S.~H.}\ \bibnamefont {Oh}},
-  \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont {Kim}}, \bibinfo {author}
-  {\bibfnamefont {G.}~\bibnamefont {Cho}}, \bibinfo {author} {\bibfnamefont
-  {J.~J.}\ \bibnamefont {Oh}}, \bibinfo {author} {\bibfnamefont {E.~J.}\
-  \bibnamefont {Son}}, \ and\ \bibinfo {author} {\bibfnamefont {H.~M.}\
-  \bibnamefont {Lee}},\ }\href {\doibase 10.1103/PhysRevD.103.123023}
-  {\bibfield  {journal} {\bibinfo  {journal} {Phys. Rev. D}\ }\textbf {\bibinfo
-  {volume} {103}},\ \bibinfo {pages} {123023} (\bibinfo {year}
-  {2021})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {{Steltner}}\ \emph {et~al.}(2022)\citenamefont
   {{Steltner}}, \citenamefont {{Papa}},\ and\ \citenamefont
   {{Eggenstein}}}]{Steltner2022Ph}%
@@ -556,15 +865,16 @@
   10.1103/PhysRevD.106.042010} {\bibfield  {journal} {\bibinfo  {journal}
   {Phys. Rev. D}\ }\textbf {\bibinfo {volume} {106}},\ \bibinfo {pages}
   {042010} (\bibinfo {year} {2022})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Marin}\ \emph {et~al.}()\citenamefont {Marin},
+\bibitem [{\citenamefont {Marin}\ \emph {et~al.}(1997)\citenamefont {Marin},
   \citenamefont {Shoemaker},\ and\ \citenamefont {Weiss}}]{marin1997}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
   {Marin}}, \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont {Shoemaker}}, \
   and\ \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Weiss}},\
   }\href@noop {} {\enquote {\bibinfo {title} {Subtracting narrow-band noise
-  from ligo strain data in the third observing run},}\ }\bibinfo {note} {LIGo
-  Technical Report LIGO-T970127-02-D}\BibitemShut {NoStop}%
+  from ligo strain data in the third observing run},}\ } (\bibinfo {year}
+  {1997}),\ \bibinfo {note} {lIGO Technical Report
+  LIGO-T970127-02-D}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {{Cuoco}}\ \emph {et~al.}(2020)\citenamefont
   {{Cuoco}}, \citenamefont {{Powell}}, \citenamefont {{Cavagli{\`a}}},
   \citenamefont {{Ackley}}, \citenamefont {{Bejger}}, \citenamefont
@@ -647,6 +957,26 @@
   {Liu}},\ }\href {\doibase 10.1103/PhysRevD.107.044032} {\bibfield  {journal}
   {\bibinfo  {journal} {Phys. Rev. D}\ }\textbf {\bibinfo {volume} {107}},\
   \bibinfo {pages} {044032} (\bibinfo {year} {2023})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{Keitel}}\ \emph {et~al.}(2014)\citenamefont
+  {{Keitel}}, \citenamefont {{Prix}}, \citenamefont {{Papa}}, \citenamefont
+  {{Leaci}},\ and\ \citenamefont {{Siddiqi}}}]{KeitelEtAl:2014}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
+  {{Keitel}}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {{Prix}}},
+  \bibinfo {author} {\bibfnamefont {M.~A.}\ \bibnamefont {{Papa}}}, \bibinfo
+  {author} {\bibfnamefont {P.}~\bibnamefont {{Leaci}}}, \ and\ \bibinfo
+  {author} {\bibfnamefont {M.}~\bibnamefont {{Siddiqi}}},\ }\href {\doibase
+  10.1103/PhysRevD.89.064023} {\bibfield  {journal} {\bibinfo  {journal}
+  {\prd}\ }\textbf {\bibinfo {volume} {89}},\ \bibinfo {eid} {064023} (\bibinfo
+  {year} {2014})},\ \Eprint {http://arxiv.org/abs/1311.5738} {arXiv:1311.5738
+  [gr-qc]} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{Leaci}}(2015)}]{2015PhyS...90l5001L}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
+  {{Leaci}}},\ }\href {\doibase 10.1088/0031-8949/90/12/125001} {\bibfield
+  {journal} {\bibinfo  {journal} {Physica Scripta}\ }\textbf {\bibinfo {volume}
+  {90}},\ \bibinfo {eid} {125001} (\bibinfo {year} {2015})}\BibitemShut
+  {NoStop}%
 \bibitem [{\citenamefont {{Zhu}}\ \emph {et~al.}(2017)\citenamefont {{Zhu}},
   \citenamefont {{Papa}},\ and\ \citenamefont {{Walsh}}}]{Zhu2017PhRvD}%
   \BibitemOpen
@@ -679,6 +1009,40 @@
   {\bibfield  {journal} {\bibinfo  {journal} {Phys. Rev. D}\ }\textbf {\bibinfo
   {volume} {106}},\ \bibinfo {pages} {123011} (\bibinfo {year}
   {2022})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{Keitel}}\ and\ \citenamefont
+  {{Prix}}(2015)}]{2015CQGra..32c5004K}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
+  {{Keitel}}}\ and\ \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {{Prix}}},\ }\href {\doibase 10.1088/0264-9381/32/3/035004} {\bibfield
+  {journal} {\bibinfo  {journal} {Classical and Quantum Gravity}\ }\textbf
+  {\bibinfo {volume} {32}},\ \bibinfo {eid} {035004} (\bibinfo {year}
+  {2015})},\ \Eprint {http://arxiv.org/abs/1409.2696} {arXiv:1409.2696 [gr-qc]}
+  \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Keitel}(2016{\natexlab{a}})}]{PhysRevD.93.084024}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
+  {Keitel}},\ }\href {\doibase 10.1103/PhysRevD.93.084024} {\bibfield
+  {journal} {\bibinfo  {journal} {Phys. Rev. D}\ }\textbf {\bibinfo {volume}
+  {93}},\ \bibinfo {pages} {084024} (\bibinfo {year}
+  {2016}{\natexlab{a}})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Keitel}(2016{\natexlab{b}})}]{Keitel_2016}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
+  {Keitel}},\ }\href {\doibase 10.1088/1742-6596/716/1/012003} {\bibfield
+  {journal} {\bibinfo  {journal} {Journal of Physics: Conference Series}\
+  }\textbf {\bibinfo {volume} {716}},\ \bibinfo {pages} {012003} (\bibinfo
+  {year} {2016}{\natexlab{b}})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{Abbott}}\ \emph
+  {et~al.}(2022{\natexlab{b}})\citenamefont {{Abbott}} \emph
+  {et~al.}}]{2022PhRvD.106j2008A}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {{Abbott}}} \emph {et~al.},\ }\href {\doibase 10.1103/PhysRevD.106.102008}
+  {\bibfield  {journal} {\bibinfo  {journal} {\prd}\ }\textbf {\bibinfo
+  {volume} {106}},\ \bibinfo {eid} {102008} (\bibinfo {year}
+  {2022}{\natexlab{b}})},\ \Eprint {http://arxiv.org/abs/2201.00697}
+  {arXiv:2201.00697 [gr-qc]} \BibitemShut {NoStop}%
 \bibitem [{\citenamefont {{Suvorova}}\ \emph {et~al.}(2016)\citenamefont
   {{Suvorova}}, \citenamefont {{Sun}}, \citenamefont {{Melatos}}, \citenamefont
   {{Moran}},\ and\ \citenamefont {{Evans}}}]{Suvorova2016PhRv}%
@@ -729,6 +1093,20 @@
   {volume} {2023}},\ \bibinfo {eid} {10A101} (\bibinfo {year} {2023})},\
   \Eprint {http://arxiv.org/abs/2203.07011} {arXiv:2203.07011 [astro-ph.IM]}
   \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{Lyne}}\ \emph {et~al.}(2015)\citenamefont {{Lyne}},
+  \citenamefont {{Jordan}}, \citenamefont {{Graham-Smith}}, \citenamefont
+  {{Espinoza}}, \citenamefont {{Stappers}},\ and\ \citenamefont
+  {{Weltevrede}}}]{crab}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.~G.}\ \bibnamefont
+  {{Lyne}}}, \bibinfo {author} {\bibfnamefont {C.~A.}\ \bibnamefont
+  {{Jordan}}}, \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {{Graham-Smith}}}, \bibinfo {author} {\bibfnamefont {C.~M.}\ \bibnamefont
+  {{Espinoza}}}, \bibinfo {author} {\bibfnamefont {B.~W.}\ \bibnamefont
+  {{Stappers}}}, \ and\ \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
+  {{Weltevrede}}},\ }\href {\doibase 10.1093/mnras/stu2118} {\bibfield
+  {journal} {\bibinfo  {journal} {MNRAS}\ }\textbf {\bibinfo {volume} {446}},\
+  \bibinfo {pages} {857} (\bibinfo {year} {2015})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {{Pitkin}}(2018)}]{psrqpy}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
@@ -775,6 +1153,30 @@
   {volume} {58}},\ \bibinfo {eid} {063001} (\bibinfo {year} {1998})},\ \Eprint
   {http://arxiv.org/abs/gr-qc/9804014} {arXiv:gr-qc/9804014 [gr-qc]}
   \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Florita}\ \emph {et~al.}(2017)\citenamefont
+  {Florita}, \citenamefont {Gevorgian}, \citenamefont {Folgueras},
+  \citenamefont {Wenger},\ and\ \citenamefont
+  {Clark}}]{888ed69a34a94bd1bdcb5073edcdd3fa}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Florita}}, \bibinfo {author} {\bibfnamefont {V.}~\bibnamefont {Gevorgian}},
+  \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Folgueras}}, \bibinfo
+  {author} {\bibfnamefont {E.}~\bibnamefont {Wenger}}, \ and\ \bibinfo {author}
+  {\bibfnamefont {K.}~\bibnamefont {Clark}}\ }(\bibinfo {year} {2017})\
+  \bibinfo {note} {international Workshop on Large-Scale Integration of Wind
+  Power into Power Systems as well as on Transmission Networks for Offshore
+  Wind Power Plants (Wind Integration Workshop) ; Conference date: 25-10-2017
+  Through 27-10-2017}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Schafer}\ \emph {et~al.}(2018)\citenamefont
+  {Schafer}, \citenamefont {Timme},\ and\ \citenamefont {Witthaut}}]{8571793}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.}~\bibnamefont
+  {Schafer}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Timme}}, \
+  and\ \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont {Witthaut}},\ }in\
+  \href {\doibase 10.1109/ISGTEurope.2018.8571793} {\emph {\bibinfo {booktitle}
+  {2018 IEEE PES Innovative Smart Grid Technologies Conference Europe
+  (ISGT-Europe)}}}\ (\bibinfo {year} {2018})\ pp.\ \bibinfo {pages}
+  {1--5}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {{Macleod}}\ \emph {et~al.}(2021)\citenamefont
   {{Macleod}}, \citenamefont {{Areeda}}, \citenamefont {{Coughlin}},
   \citenamefont {{Massinger}},\ and\ \citenamefont {{Urban}}}]{gwpy}%
@@ -788,6 +1190,12 @@
   {journal} {\bibinfo  {journal} {SoftwareX}\ }\textbf {\bibinfo {volume}
   {13}},\ \bibinfo {pages} {100657} (\bibinfo {year} {2021})}\BibitemShut
   {NoStop}%
+\bibitem [{\citenamefont {GWOSC}(2019)}]{pemrefs}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {GWOSC}},\ }\href@noop
+  {} {\enquote {\bibinfo {title} {O3 auxiliary channel data release},}\
+  }\bibinfo {howpublished} {doi: 10.7935/3bh6-0k98} (\bibinfo {year}
+  {2019})\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Welch}(1967)}]{Welch1161901}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
@@ -795,6 +1203,22 @@
   {\bibinfo  {journal} {IEEE Transactions on Audio and Electroacoustics}\
   }\textbf {\bibinfo {volume} {15}},\ \bibinfo {pages} {70} (\bibinfo {year}
   {1967})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Fynn}\ \emph {et~al.}(2022)\citenamefont {Fynn},
+  \citenamefont {Nordholm},\ and\ \citenamefont {Rong}}]{s22176591}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Fynn}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Nordholm}}, \
+  and\ \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont {Rong}},\ }\href
+  {\doibase 10.3390/s22176591} {\bibfield  {journal} {\bibinfo  {journal}
+  {Sensors}\ }\textbf {\bibinfo {volume} {22}} (\bibinfo {year} {2022}),\
+  10.3390/s22176591}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Elko}(1997)}]{625628}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
+  {Elko}},\ }in\ \href {\doibase 10.1109/ASPAA.1997.625628} {\emph {\bibinfo
+  {booktitle} {Proceedings of 1997 Workshop on Applications of Signal
+  Processing to Audio and Acoustics}}}\ (\bibinfo {year} {1997})\ pp.\ \bibinfo
+  {pages} {4 pp.--}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Widrow}\ \emph {et~al.}(1975)\citenamefont {Widrow},
   \citenamefont {Glover}, \citenamefont {McCool}, \citenamefont {Kaunitz},
   \citenamefont {Williams}, \citenamefont {Hearn}, \citenamefont {Zeidler},
@@ -895,16 +1319,18 @@
   {\prd}\ }\textbf {\bibinfo {volume} {97}},\ \bibinfo {eid} {043013} (\bibinfo
   {year} {2018})},\ \Eprint {http://arxiv.org/abs/1710.00460} {arXiv:1710.00460
   [astro-ph.IM]} \BibitemShut {NoStop}%
-\bibitem [{\citenamefont {LIGO Scientific~Collaboration}\ and\ \citenamefont
-  {Collaboration}(2022)}]{LIGOMarkov22}%
+\bibitem [{\citenamefont {Collaboratio}\ \emph {et~al.}(2022)\citenamefont
+  {Collaboratio}, \citenamefont {Collaboration},\ and\ \citenamefont
+  {Collaboration}}]{LIGOMarkov22}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {V.~C.}\ \bibnamefont
-  {LIGO Scientific~Collaboration}}\ and\ \bibinfo {author} {\bibfnamefont
-  {K.}~\bibnamefont {Collaboration}} (\bibinfo {collaboration} {LIGO Scientific
-  Collaboration, Virgo Collaboration, and KAGRA Collaboration}),\ }\href
-  {\doibase 10.1103/PhysRevD.106.062002} {\bibfield  {journal} {\bibinfo
-  {journal} {Phys. Rev. D}\ }\textbf {\bibinfo {volume} {106}},\ \bibinfo
-  {pages} {062002} (\bibinfo {year} {2022})}\BibitemShut {NoStop}%
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.~S.}\ \bibnamefont
+  {Collaboratio}}, \bibinfo {author} {\bibfnamefont {V.}~\bibnamefont
+  {Collaboration}}, \ and\ \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
+  {Collaboration}} (\bibinfo {collaboration} {LIGO Scientific Collaboration and
+  Virgo Collaboration and KAGRA Collaboration}),\ }\href {\doibase
+  10.1103/PhysRevD.106.062002} {\bibfield  {journal} {\bibinfo  {journal}
+  {Phys. Rev. D}\ }\textbf {\bibinfo {volume} {106}},\ \bibinfo {pages}
+  {062002} (\bibinfo {year} {2022})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {{Vargas}}\ and\ \citenamefont
   {{Melatos}}(2023)}]{2023PhRvD.107f4062V}%
   \BibitemOpen
@@ -915,6 +1341,21 @@
   \bibinfo {eid} {064062} (\bibinfo {year} {2023})},\ \Eprint
   {http://arxiv.org/abs/2208.03932} {arXiv:2208.03932 [gr-qc]} \BibitemShut
   {NoStop}%
+\bibitem [{\citenamefont {{Suvorova}}\ \emph {et~al.}(2017)\citenamefont
+  {{Suvorova}}, \citenamefont {{Clearwater}}, \citenamefont {{Melatos}},
+  \citenamefont {{Sun}}, \citenamefont {{Moran}},\ and\ \citenamefont
+  {{Evans}}}]{2017PhRvD..96j2006S}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {{Suvorova}}}, \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
+  {{Clearwater}}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {{Melatos}}}, \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont {{Sun}}},
+  \bibinfo {author} {\bibfnamefont {W.}~\bibnamefont {{Moran}}}, \ and\
+  \bibinfo {author} {\bibfnamefont {R.~J.}\ \bibnamefont {{Evans}}},\ }\href
+  {\doibase 10.1103/PhysRevD.96.102006} {\bibfield  {journal} {\bibinfo
+  {journal} {\prd}\ }\textbf {\bibinfo {volume} {96}},\ \bibinfo {eid} {102006}
+  (\bibinfo {year} {2017})},\ \Eprint {http://arxiv.org/abs/1710.07092}
+  {arXiv:1710.07092 [astro-ph.IM]} \BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Cheer}\ \emph {et~al.}(2019)\citenamefont {Cheer},
   \citenamefont {Patel},\ and\ \citenamefont {Fontana}}]{10.1121/1.5109394}%
   \BibitemOpen

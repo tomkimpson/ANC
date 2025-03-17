@@ -16,7 +16,7 @@
 	citecolor   = red %Colour of citations
 }
 \usepackage{xcolor}
-\author{T.Kimpson, S. Suvorova, H. Middleton, C. Liu, A. Melaots, R. Evans, W. Moran}
+\author{T.Kimpson, S. Suvorova, H. Middleton, C. Liu, A. Melatos, R. Evans, W. Moran}
 \title{Response to referee comments: \\ PRD Submission DM13138,}
 \begin{document}
 	\maketitle
@@ -47,12 +47,13 @@ We agree with all the comments and have made the recommended changes as describe
 	
 		\textbf{Author response:} 
 	
-	Yes, we agree with the referee that it is important to specify clearly that the model is intended as a phenomenological model that seeks to reproduce the main qualitative features of the power grid (i.e. an approximately constant central frequency with small amplitude, slow periodic modulations; a voltage with a stochastically wandering phase offset, etc.; see third paragraph in Section IIB). We have followed the referee's suggestion and updated the discussion in Section II to make this point explicitly.
+	Yes, we agree with the referee that it is important to specify clearly that the model is intended as a phenomenological model that seeks to reproduce the main qualitative features of the power grid (i.e. an approximately constant central frequency with small, slow, periodic modulations; a voltage with a stochastically wandering phase offset; see third paragraph in Section IIB). We have followed the referee's suggestion and updated the discussion in Section II to make this point explicitly.
 	
 
-	The power grid is controlled by frequency. When load increases frequency drops, more fuel is supplied and frequency rise so demand is met. The statistics are thus the statistical variation of the demand but this is complicated by faults etc. It is a complicated story and there is no simple statistical model for frequency variation. Accordingly, it is difficult to provide a single authoritative reference for the statistical properties of the grid as the referee suggests. We point to two (\href{https://www.nrel.gov/docs/fy18osti/70029.pdf}{Folgueras et al. 2017}, \href{https://ieeexplore.ieee.org/abstract/document/8571793}{Schafer et al. 2018}) useful papers which discuss thee above issues in the main text. 
 	
-	
+	We also agree that the addition of a reference describing the statistical properties of the grid would be valuable. We have updated the main text to point to two useful papers (\href{https://www.nrel.gov/docs/fy18osti/70029.pdf}{Folgueras et al. 2017}, \href{https://ieeexplore.ieee.org/abstract/document/8571793}{Schafer et al. 2018}). However, we caution that there is no simple statistical model for frequency fluctuations. The power grid responds to demand by adjusting the frequency. When load increases, the frequency drops, more fuel is supplied to turbine-based generators to meet the increased load, and the frequency rises. The frequency statistics therefore reflect hard-to-predict fluctuations in demand, which stem from random exogenous spatio-temporal factors, such as weather, economic activity, faults, and so on. The challenges of providing a single authoritative statistical model for the properties of the grid are discussed in the cited papers, and we have also included an additional discussion in the main text (Section II).
+
+
 		\item \textit{In the end, it is not clear enough how big the positive impact of  
 			the method really is. Especially, and regardless of the answer to point A, it  
 			seems necessary to present at least some level of real-data test of the proposed  
@@ -63,21 +64,22 @@ We agree with all the comments and have made the recommended changes as describe
 	
 	\textbf{Author response:} 
 	
-Yes we agree that testing the method on real data is a valuable addition.
-
-We have updated the main text to also test the method on real data...
-
-\textcolor{red}{TK: this section to be updated out once we have actually done the tests. I will work with Sofia to sort this out.}
-
-
+Yes we agree that testing the method on real data is a valuable addition. We have added an additional section (Section VI) to the main text where we extend the previous validation tests to real data. We obtain strain data from the LIGO-Livingston strain channel and reference data from the nine independent PEM channels that directly measure mains voltage. We then inject a synthetic GW signal. Before applying ANC the 60 Hz line corrupts the performance of the HMM, which erroneously tracks the noise line. After applying ANC the 60 Hz line is removed and the HMM successfully tracks the underlying GW signal, and the time-averaged root-mean-square error in the frequency estimate is $0.06$ Hz. 
 
 
 We also agree with the referee that a clearer summary of the main results quantifying the impact of the method is important to include. We have updated the abstract and the conclusion accordingly. Specifically,
 \begin{itemize}
-	\item For the representative system (Table 1) ANC suppresses the 60-Hz interference by approximately 20 dB.
-	\item Without ANC, the HMM tracker is unable to track the wandering CW signal. After ANC, the HMM tracker is able to track the wandering CW signal. The time-averaged RMS error in the HMM tracking after ANC is 0.038Hz for low $\sigma_f$ and $0.47$Hz for high $\sigma_f$.
-	\item The detection probability at a 5\% false alarm rate, $p_{\rm d}(0.05) \approx 0.5 $--$0.6$ across a range of mains power interference parameters and filter parameters.
-	\item \textcolor{red}{TK: +real data results}
+	\item For representative synthetic data (Table 1), ANC suppresses the 60-Hz interference by approximately 40 dB.
+	
+	
+	\item For representative synthetic data, without ANC, the HMM tracker is unable to track the wandering CW signal. After ANC, the HMM tracker is able to track the wandering CW signal. The time-averaged RMS error in the HMM tracking after ANC is 0.038Hz for low $\sigma_f$ ($\sigma_f N^{1/2} \Delta t^{1/2} f_{\rm ac}^{-1} = 0.047$; see Section IV B) and $0.47$Hz for high $\sigma_f$ ($\sigma_f N^{1/2} \Delta t^{1/2} f_{\rm ac}^{-1} = 0.15$).
+	
+	\item For real LIGO data (Section VI), ANC suppresses the 60-Hz interference by approximately 20 dB.
+	
+	\item For real data, before applying ANC the 60 Hz line corrupts the performance of the HMM, which erroneously tracks the noise line. After applying ANC the 60 Hz line is removed and the HMM successfully tracks the underlying GW signal, and the time-averaged root-mean-square error in the frequency estimate is $0.06$ Hz. 
+	
+	\item Tests on synthetic data confirm that the detection probability at a 5\% false alarm rate satisfies $p_{\rm d}(0.05) \approx 0.5 $--$0.6$ across a range of plausible mains power interference parameters and filter parameters, e.g. $ 0.5 \text{Hz} \leq \Delta f_{\rm ac} \leq 1.5 \text{Hz}$
+
 \end{itemize}
 
 
@@ -99,13 +101,15 @@ We also agree with the referee that a clearer summary of the main results quanti
 		signals", which is perfectly fine, but what is more important is the nature of  
 		the noise data.}
 	
-Yes we agree that the behaviour and statistical properties of the noise are important. We have added a qualifying sentence to the abstract that specifies the properties of the noise.  
+			\textbf{Author response:} 
+	
+Yes, we agree that the behaviour and statistical properties of the noise are important. We have added a qualifying sentence to the abstract that specifies the properties of the noise.  
 	
 	\item \textit{A brief summary of the results would be valuable at the end of the abstract  
 		(as per point B above). }
 	
 	\textbf{Author response:}  \newline 
-	Yes, we agree that the main results should be better summarised in the abstract. We have updated the abstract accordingly.
+	Yes, we agree that the main results should be better summarised in the abstract. We have updated the abstract accordingly as recommended, in line with point B.
 	
 	\item \textit{A few comments on references the introduction section:  
 		The first 3 are very old, describing glitches in initial detectors - consider  
@@ -120,7 +124,7 @@ Yes we agree that the behaviour and statistical properties of the noise are impo
 	
 	
 		\textbf{Author response:}  \newline 
-	We thank the referee for bringing to our attention references which we had previously overlooked, and the erroneous [21] Lee et al. citation. We have now included all the suggested references, removed reference [21], and included discussion on the class of vetos based on multi-detector consistency
+	We thank the referee for bringing to our attention references which we had previously overlooked, and the erroneous [21] Lee et al. citation. We have now included all the suggested references, removed reference [21], updated to advanced detectors, and included discussion on the class of vetos based on multi-detector consistency.
 	
 	\item \textit{In the paragraph below, the statement that candidates are vetoed blindly  
 		without checking the strength of the noise contribution is not true for all  
@@ -128,16 +132,20 @@ Yes we agree that the behaviour and statistical properties of the noise are impo
 		results papers.}
 	
 			\textbf{Author response:}  \newline 
-			Yes we agree with the referee that the previous statement was too broad. We have now updated the paragraph to caveat that some pipelines do have ``line robust" algorithms  which combine statistics from different detectors to suppress single detector artifacts (e.g. Keitel et al. 2015, Keitel 2016a,b).
-%			 https://arxiv.org/abs/2201.00697
-	
+			Yes we agree with the referee that the previous statement was imprecise.
+			
+			We have updated the paragraph to better describe the vetoing procedures for standard CW pipelines (e.g. \textit{FrequencyHough}, \textit{SkyHough}, see arXiv 2201.00697) and discuss ``line robust" algorithms, which combine statistics from different detectors to suppress single detector artifacts (e.g. Keitel et al. 2015, Keitel 2016a,b). 
+
 	\item \textit{Please try using multiple linestyles for better readability of figures  
 		1,6,8,9. In particular, in Fig. 6 it is difficult to discern that the blue x(f)  
 		curve actually shows the signal peak, as it is mostly hidden behind the green  
 		h(f).  }
 	
 	\textbf{Author response:}  \newline 
-	We have updated all linestyles in the figures to improve readability, as suggested.
+	
+	We have trialled different linestyles in the figures to improve readability, as suggested. However, in practice we find that different linestyles do not improve the figure readability. For example, in Fig 6 changing the linestyle of the green $h(f)$ curve still obscures the blue $x(f)$ signal peak. Modifying other figure settings such as the line width also does not help. We agree with the referee that there is the potential for confusion with Fig 6. We have updated the figure caption to explicitly state that the two peaks are overlaid and difficult to resolve separately by eye.
+	
+	
 	
 	
 	\item \textit{At the end of II.A, there should be an astrophysical reference for the Crab's  
@@ -148,7 +156,7 @@ Yes we agree that the behaviour and statistical properties of the noise are impo
 	
 	
 		\textbf{Author response:}  \newline 
-		We have updated the reference to the Crab frequency to include both an astrophysical reference and a software reference. We now also quote the Crab frequency for a given reference year, as suggested.
+		We have updated the reference to the Crab frequency to include both an astrophysical reference and a software reference. We now also quote the Crab frequency for a given reference epoch (48442.5 MJD), as suggested.
 	
 	\item \textit{Fig. 1: missing definition of the abbreviation "ASD"  }
 	
@@ -173,38 +181,38 @@ The text has been updated to remove the misleading separation between the two mo
 			
 			The two primary mechanisms by which mains power couples into the strain channel are the shared power supply of the electronic components, and the 60 Hz magnetic field coupling to magnets which are present in certain optical components of the interferometer. 
 			
-			Regardless of the coupling mechanism, the time delay $\tau$ is the same; $\tau$ is the time delay due to the spatial propagation of the signal between the PEM position and the GW sensing apparatus. 
+			For both the above coupling mechanisms, the time delay $\tau$ is the same. Specifically, $\tau$ is the delay due to the spatial propagation of the signal between the PEM position and the GW sensing apparatus. 
 			
-			As is discussed in the text, a coherence $<1$ occurs due to a non-linear relationship between the signal measurement in the reference and strain channels. 
+			We have added a sentence to the final paragraph of Section IIB to clarify the above point and to flag that other coupling mechanisms may have different $\tau$ values, potentially leading to stochastic overlap of different time-delay components, as the referee suggests.
 			
+			As is discussed in the text, coherence $<1$ occurs due to (i) the non-linear relationship between the strain and PEM channels and; (ii) additional unmodelled components (e.g. noise) that are present in one channel but not the other. 
+
 			
 	\item \textit{footnote 3: gitlab file URLs can be quite ephemeral. Is there no better  
 		(more stable) way to reference this list, such as a GWOSC release with DOI, a  
 		LIGO DCC entry, etc?}
 	
 				\textbf{Author response:}  \newline 
-	Yes, we agree that is is desirable to provide a more permanent reference to the PEM channels. However, unfortunately at this point in time there is no DOI /DCC reference that covers all nine PEM channels. It is possible to reference the GWOSC O3 auxiliary channel data release, DOI: 10.7935/3bh6-0k98. However this dataset only contains a subset (three) of the (nine) PEM channels. For lack of a better option, we have followed the referee's suggestion and included this DOI as an additional reference. 
+	Yes, we agree that is is desirable to provide a more permanent reference to the PEM channels. However, unfortunately at this point in time there is no DOI /DCC reference that covers all nine PEM channels. It is possible to reference the GWOSC O3 auxiliary channel data release, DOI: 10.7935/3bh6-0k98. Note that this dataset only contains a subset (three) of the (nine) PEM channels. For lack of a better option, we have followed the referee's suggestion and included this DOI as an additional reference. 
 
 	\item \textit{The statements at the end of II.C and in the Fig. 4 caption contradict each  
 		other: are the higher-frequency peaks harmonics of the power mains, or ``of  
 		different provenance"?}
 	
 				\textbf{Author response:}  \newline 
-	Yes, this is a mistake. The higher-frequency peaks are harmonics. We have updated the Fig 4 caption accordingly. We thank the referee for brining this mistake to our attention.
+	Yes, this is a mistake. The higher-frequency peaks are harmonics. We have updated the Figure 4 caption accordingly. We thank the referee for brining this mistake to our attention.
 	
 	\item \textit{In the coherence discussion, it remains unclear what threshold is considered  to be still sufficient, and below which the channel would no longer be considered a reliable witness.}
 	
 				\textbf{Author response:}  \newline 
 	Yes, we agree with the referee that the performance of the ANC scheme is directly related to the degree of coherence between the strain and witness channels. 
 	
-	Specifically, the fraction of possible noise cancellation $R$ for an idealised system is related to the coherence as
+	Specifically, the fraction of possible noise cancellation $R$ for an idealised system is related to the coherence by
 	$$ R(f) = \frac{1}{1 - |C_{xr}(f)|}$$ 
 	
 	see e.g. DOI: 10.1109/ASPAA.1997.625628 or DOI: 10.3390/s22176591.
 	
-	The threshold value of $R(f)$ required in order for HMM algorithms to run successfully is an empirical question that will depend on the properties of the signal. 
-	
-	We have added a discussion on these points to Section IIC.
+	The threshold value of $R(f)$ required in order for HMM algorithms to run successfully is an empirical question that depends on the properties of the signal (e.g. how strong is the signal? How much does it stochastically wander?). We have added a discussion on these points to Section IIC.
 	
 
 	\item \textit{In Eq. (12), it is not made explicit what argument the ``arg min" is taken  
@@ -221,9 +229,12 @@ The text has been updated to remove the misleading separation between the two mo
 		and extent of their detector-frame frequency spectrum should be dominated by  
 		these terms.  }
 	
-		
-	\textcolor{red}{TK: to discuss in person. See also point 18 below.}
-	
+			\textbf{Author response:} 
+			
+The referee is correct to point out that the Earth's motion would influence the received GW signal. However, continuous wave searches based on the F-statistic matched filter, such as those analysed in this paper, correct for the Earth's movement automatically by including the Earth-related terms in the phase model tracked by the F-statistic. For the HMM used in this paper, the detection statistic at each step of the algorithm is a function of the calculated F-statistic values only; the Earth's motion does not enter anywhere else. Hence neglecting the Earth's motion does not have any influence on the  efficacy of the ANC algorithm, which is the main focus of this paper (see also point 15). 
+
+
+
 	\item \textit{Also in the same discussion, there is a reference to the F-statistic. This  
 		is taking a maximum likelihood over amplitude parameters, not over those related  
 		to the Earth's movement. Indeed F-statistic searches typically also include a  
@@ -231,47 +242,57 @@ The text has been updated to remove the misleading separation between the two mo
 		it is currently phrased will confuse a non-expert reader into thinking it  
 		maximizes over frequency evolution parameters.  }
 	
-	Yes, the referee is correct to point out the potential for confusion through the current phrasing. We have rephrased these sentences to make it clear that the F-statistic maximises over $h_0, \phi_0, \iota$ and $\psi$, leaving a function of the remaining ``Doppler parameters".
+			\textbf{Author response:} 
+			
+	Yes, the referee is correct to point out the potential for confusion through the current phrasing. We have rephrased these sentences to clarify that demodulation is readily included in standard continuous wave search pipelines. 
 	
 	\item \textit{In IV.B, the definition of signal-to-noise ratio does not match the standard  
 		in the CW literature, which usually includes the observation time. The duration  
 		is also important for the frequency resolution. Is it the 800s visible in Fig.  
 		7? Please clarify more explicitly. }
 	
+			\textbf{Author response:} 
 	
-	Yes, we agree with the referee that traditionally the definition of SNR in the CW literature does include the value of $T_{\rm obs}$. In this paper we fix $T_{\rm obs} = 800 $s throughout and vary only the ratio $h_0/\sigma_{n}$. Accordingly, we previously felt that for this paper it was sufficient to neglect the influence of $T_{\rm obs}$ in the definition of the SNR. However, we agree with the referee that in order to make better contact with the CW literature it is more appropriate include $T_{\rm obs}$ in the SNR definition; we have updated the relevant definitions in the manuscript accordingly.
+	Yes, we agree with the referee that traditionally the definition of SNR in the CW literature does include the value of $T_{\rm obs}$. In this paper we fix $T_{\rm obs} = 800 $s throughout and vary only the ratio $h_0/\sigma_{n}$. Accordingly, we previously felt that for this paper it was sufficient to neglect the scaling with $T_{\rm obs}$ in the definition of the SNR. However, we agree with the referee that in order to make better contact with the CW literature it is more appropriate to include $T_{\rm obs}$ in the SNR definition. We have updated the relevant definitions in the manuscript accordingly.
 	
-	Regarding the question on whether the $T_{\rm obs}=800$s is visible in Figure 7,  one can see that the vertical axis covers the 800s observation period. We have updated the main text to clarify this point more explicitly, as suggested. 
+	Regarding the question on whether the $T_{\rm obs}=800$s is visible in Figure 7,  indeed the vertical axis covers the 800s observation period. We have updated the main text to clarify this point more explicitly, as suggested. 
 	
 	\item \textit{The case (ii) "not plotted for brevity" would seem relevant to show - since  
 		now fgw lies within the affected frequency range, it sounds like it could be  
 		qualitatively different, and more impressive to demonstrate that the method can  
 		still deal with it?  }
 	
-	\textcolor{red}{TK: we can definitely include this as requested, I just need to get the data off of Sofia.}
+			\textbf{Author response:} 
 	
-	\item \textit{At the end of IV.B, have the authors verified that the Earth Doppler effect  
-		is negligible compared to these frequency errors?  }
+We appreciate the referee's recommendation and did our best to implement it. However in practice plotting case (ii) produces a plot which is almost identical to Figure 6, but with the injected signal (solid green curve) having a broader spectrum. Whether we use case (i) or case (ii) does not affect the ability of the ANC to suppress the 60 Hz noise line. Actually the success of the ANC/HMM method for case (ii) is demonstrated nicely by Figure 7, where the HMM is able to successfully track the GW signal (dashed white curve and solid green curve overlap in right-panel). 
 	
-		
-	\textcolor{red}{TK: To discuss in person. Also related to point 14.}
-	
+	\item \textit{At the end of IV.B, have the authors verified that the Earth Doppler effect is negligible compared to these frequency errors?  }
+
+		\textbf{Author response:} 
+
+
+
+Yes, via previous work (Suvorova et al. 2016, 2017). We have now added a sentence making this point (with the associated references) in Section IV B. As noted in point 14, the Earth's Doppler effect only enters through the well-tested F-statistic, which corrects for it. It is not referenced directly by the ANC algorithm (or even the HMM, actually).
+
+
 	\item \textit{In figures 8/9, it would be interesting to also compare with the performance without ANC - is that similar to, or even worse than the ``random guess"? }
-
-It is not possible to run the HMM algorithm without first applying ANC. One can also see this in the left panel of Figure 7, where no dashed white curves are plotted. Consequently, without ANC one cannot obtain a $p_{\rm d}$ or a $p_{\rm fa}$. 
-
-We have added a sentence to the main text, relating to Figures 8/9, reminding the reader that the HMM can only be deployed in conjunction with the ANC.
+	
+			\textbf{Author response:} 
+	
+When we run the HMM algorithm to try to recover the GW signal that overlaps with the 60 Hz instrumental line, the algorithm erroneously tracks the 60 Hz line. Accordingly, the HMM consistently claims an erroneous detection and the performance is worse than a random guess. That is, the ``performance without ANC" $p_{\rm d} - p_{\rm fa}$ curve reduces to the single point $p_{\rm d} = 0$ and $p_{\rm fa}=1$. 
 	
 	\item \textit{Why is the "zero interference ROC curve" shown only in Fig. 9, not 8? Is it understood why the best performing ANC results are still quite far away from this, if before the subtraction looked visually very impressive? }
 	
-	
+			\textbf{Author response:} 
+			
 	Yes, this is a mistake. We agree that the zero interference curve should be plotted for both figures. We have updated Figure 8 accordingly. 
 	
-	
-	Some of the ANC results are do no perform as well as in the zero interference case, simply because the noise is not being removed perfectly. The performance of the ANC filter can be improved in general by tuning the relevant parameters. For example in the bottom panel of Figure 9, the $\lambda=1$ ROC curve is very similar to the zero-interference curve, for reasons that are discussed in the text. We have added additional discussion on this point to the main text.
+	Under some circumstances, the ANC does not perform as well as for zero interference, simply because the noise is not being removed perfectly. The performance of the ANC filter can be improved in general by tuning the relevant parameters. For example in the bottom panel of Figure 9, the $\lambda=1$ ROC curve is very similar to the zero-interference curve, for reasons that are discussed in the text. We have added additional discussion on this point to the main text in Section V.A.
 	
 	\item \textit{Near the end of V.B, latency issues are discussed. Are these really relevant for CW searches, which are usually run on archival data?}
-	
+		
+			\textbf{Author response:} 
+			
 	The referee is correct to point out that latency is not a problem when dealing with offline searches. We have removed the discussion on latency from the manuscript and now focus exclusively on the computational cost of the method.
 	
 \end{enumerate}

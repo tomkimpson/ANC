@@ -17,34 +17,6 @@ Reallocated ex_buf (elt_size=1) to 40000 items from 20000.
 Reallocated out_buf (elt_size=1) to 40000 items from 20000.
 Reallocated name_tok (elt_size=4) to 40000 items from 20000.
 Reallocated name_sep_char (elt_size=1) to 40000 items from 20000.
-Repeated entry---line 1332 of file bibLinesPaper.bib
- : @article{Riles2023
- :                   ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1351 of file bibLinesPaper.bib
- : @article{Wette2023
- :                   ,
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 1825 of file bibLinesPaper.bib
- :  
- :  author = {{Abdikamalov}, Ernazar and {Pagliaroli}, Giulia and {Radice}, David},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-Repeated entry---line 2037 of file bibLinesPaper.bib
- : @article{Riles2023
- :                   ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 2132 of file bibLinesPaper.bib
- : @article{LIGO_O3
- :                 ,
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 2178 of file bibLinesPaper.bib
- :  
- :  year={1997}
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-Name 1 in "LIGO Scientific Collaboration, Virgo Collaboration, and KAGRA Collaboration" has a comma at the end for entry LIGOMarkov22
-while executing---line 3238 of file apsrev4-1.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 merlin.mbs apsrev4-1.bst 2010-07-25 4.21a (PWD, AO, DPC) hacked
 Control: key (0) 
@@ -54,55 +26,47 @@ Control: production of article title (-1) disabled
 Control: page (0) single
 Control: year (1) truncated
 Control: production of eprint (0) enabled
-Warning--empty year in marin1997
+Reallocated str_pool (elt_size=1) to 130000 items from 65000.
 Warning--empty year in GWOSC:online
-Name 1 in "LIGO Scientific Collaboration, Virgo Collaboration, and KAGRA Collaboration" has a comma at the end for entry LIGOMarkov22
-while executing---line 3444 of file apsrev4-1.bst
-Name 1 in "LIGO Scientific Collaboration, Virgo Collaboration, and KAGRA Collaboration" has a comma at the end for entry LIGOMarkov22
-while executing---line 3444 of file apsrev4-1.bst
-Name 1 in "LIGO Scientific Collaboration, Virgo Collaboration, and KAGRA Collaboration" has a comma at the end for entry LIGOMarkov22
-while executing---line 3444 of file apsrev4-1.bst
-Name 1 in "LIGO Scientific Collaboration, Virgo Collaboration, and KAGRA Collaboration" has a comma at the end for entry LIGOMarkov22
-while executing---line 3444 of file apsrev4-1.bst
-You've used 67 entries,
+You've used 80 entries,
             5847 wiz_defined-function locations,
-            2124 strings with 33799 characters,
-and the built_in function-call counts, 86754 in all, are:
-= -- 4458
-> -- 3212
-< -- 583
-+ -- 985
-- -- 840
-* -- 15439
-:= -- 7793
-add.period$ -- 69
-call.type$ -- 67
-change.case$ -- 280
-chr.to.int$ -- 84
-cite$ -- 71
-duplicate$ -- 8025
-empty$ -- 6229
-format.name$ -- 1884
-if$ -- 17213
-int.to.chr$ -- 2
-int.to.str$ -- 75
-missing$ -- 1001
-newline$ -- 253
-num.names$ -- 198
-pop$ -- 2916
+            2216 strings with 41324 characters,
+and the built_in function-call counts, 121023 in all, are:
+= -- 5488
+> -- 5113
+< -- 881
++ -- 1543
+- -- 1370
+* -- 22368
+:= -- 10382
+add.period$ -- 83
+call.type$ -- 80
+change.case$ -- 334
+chr.to.int$ -- 95
+cite$ -- 83
+duplicate$ -- 11023
+empty$ -- 8508
+format.name$ -- 2974
+if$ -- 24166
+int.to.chr$ -- 4
+int.to.str$ -- 88
+missing$ -- 1377
+newline$ -- 292
+num.names$ -- 237
+pop$ -- 3837
 preamble$ -- 1
-purify$ -- 333
+purify$ -- 399
 quote$ -- 0
-skip$ -- 2723
+skip$ -- 3602
 stack$ -- 0
-substring$ -- 1292
-swap$ -- 8382
-text.length$ -- 402
+substring$ -- 1535
+swap$ -- 12003
+text.length$ -- 667
 text.prefix$ -- 0
 top$ -- 8
-type$ -- 1152
-warning$ -- 2
-while$ -- 165
+type$ -- 1560
+warning$ -- 1
+while$ -- 197
 width$ -- 0
-write$ -- 617
-(There were 11 error messages)
+write$ -- 724
+(There was 1 warning)
