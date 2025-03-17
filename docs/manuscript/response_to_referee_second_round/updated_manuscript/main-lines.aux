@@ -1,0 +1,230 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\citation{Aasi2015,AcerneseEtAlAdVirgo:2015,Akutsu2021PTEP}
+\citation{DetCharGW150914:2016,Davis2021,Davisgalaxies10010012,Glanzer2023}
+\citation{AasiEtAlAdLIGO:2015,LIGOnoiseguide,2020Galax...8...82F,Nguyen2021}
+\citation{CovasEtAl:2018}
+\citation{Piccinni2022,Riles2023,Wette2023}
+\citation{Ligo_lineveto1,ligo_lineveto2,ligo_lineveto3}
+\citation{Davis2021,Davisgalaxies10010012}
+\citation{Abbott2018CQVeto,Steltner2022Ph}
+\citation{Driggers2012RScI,Tiwari2015,Davis2019,Driggers2019}
+\citation{Jung2022PRD,marin1997}
+\citation{Cuoco2020,Vajente2020PhR,OrmistonEtAl:2020,Yamamoto2023}
+\citation{KeitelEtAl:2014,2015PhyS...90l5001L}
+\citation{Zhu2017PhRvD,JonesPhysRevD.106.123011}
+\newlabel{FirstPage}{{}{1}{}{section*.1}{}}
+\@writefile{toc}{\contentsline {title}{Adaptive cancellation of mains power interference in continuous gravitational wave searches with a hidden Markov model}{1}{section*.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {abstract}{Abstract}{1}{section*.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {I}Introduction}{1}{section*.3}\protected@file@percent }
+\newlabel{sec:intro}{{I}{1}{}{section*.3}{}}
+\citation{KeitelEtAl:2014,2015CQGra..32c5004K,PhysRevD.93.084024,Keitel_2016}
+\citation{2022PhRvD.106j2008A}
+\citation{Suvorova2016PhRv,Piccinni2022,Riles2023,Wette2023}
+\citation{Virgo2012_lines}
+\citation{Kagra2023_lines}
+\citation{CovasEtAl:2018}
+\citation{CovasEtAl:2018}
+\citation{crab,psrqpy}
+\citation{LIGO_O3,GWOSC:online}
+\citation{LIGO_O3,GWOSC:online}
+\@writefile{toc}{\contentsline {section}{\numberline {II}Mains power interference}{2}{section*.4}\protected@file@percent }
+\newlabel{sec:pgi}{{II}{2}{}{section*.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {A}LIGO 60 Hz Interference}{2}{section*.5}\protected@file@percent }
+\newlabel{sec22}{{II\,A}{2}{}{section*.5}{}}
+\citation{Jaranowski1998}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces GW strain amplitude spectral density (abbreviated as ASD on axis label) for LIGO-Hanford (orange) and LIGO-Livingston (blue) for a snapshot of data ($10.0$ minutes) from O3 (channel \texttt  {*:DCS-CALIB\_STRAIN\_C01\_AR}, see Ref.\nobreakspace  {}\cite  {LIGO_O3, GWOSC:online}. The vertical axis plots the amplitude spectral density of the detector noise in units of Hz$^{-1/2}$, while the horizontal axis plots the observation frequency in units of Hz. The spectral line at $60\,{\rm  Hz}$ is clearly visible as a spike rising three decades, along with multiple other instrumental lines at other frequencies.}}{3}{figure.1}\protected@file@percent }
+\newlabel{fig:strainSensitivity}{{1}{3}{GW strain amplitude spectral density (abbreviated as ASD on axis label) for LIGO-Hanford (orange) and LIGO-Livingston (blue) for a snapshot of data ($10.0$ minutes) from O3 (channel \texttt {*:DCS-CALIB\_STRAIN\_C01\_AR}, see Ref.~\cite {LIGO_O3, GWOSC:online}. The vertical axis plots the amplitude spectral density of the detector noise in units of Hz$^{-1/2}$, while the horizontal axis plots the observation frequency in units of Hz. The spectral line at $60\,{\rm Hz}$ is clearly visible as a spike rising three decades, along with multiple other instrumental lines at other frequencies}{figure.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {B}Statement of the problem: signal and noise models}{3}{section*.6}\protected@file@percent }
+\newlabel{sec21}{{II\,B}{3}{}{section*.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Cascade plot showing the temporal evolution of the amplitude spectral density (units: Hz$^{-1/2}$) of the LIGO-Hanford three-phase mains-power PEM monitor \texttt  {H1:PEM-CS\_MAINSMON\_EBAY\_1\_DQ}\nobreakspace  {} (corner station, phase 1) as a function of frequency (units: Hz). Each trace corresponds to $320\,{\rm  s}$ ($\approx 5\,{\rm  min}$) of data ($210$ traces stacked vertically). The peak of the mains power line wanders by $\approx \pm 30$ mHz about its time-averaged frequency $60.004$ Hz.}}{3}{figure.2}\protected@file@percent }
+\newlabel{fig:powerCascade}{{2}{3}{Cascade plot showing the temporal evolution of the amplitude spectral density (units: Hz$^{-1/2}$) of the LIGO-Hanford three-phase mains-power PEM monitor \CSOneName ~ (corner station, phase 1) as a function of frequency (units: Hz). Each trace corresponds to $320\,{\rm s}$ ($\approx 5\,{\rm min}$) of data ($210$ traces stacked vertically). The peak of the mains power line wanders by $\approx \pm 30$ mHz about its time-averaged frequency $60.004$ Hz}{figure.2}{}}
+\newlabel{eq:data}{{1}{3}{}{equation.2.1}{}}
+\citation{888ed69a34a94bd1bdcb5073edcdd3fa,8571793}
+\citation{LIGO_O3}
+\citation{gwpy}
+\citation{pemrefs}
+\newlabel{eq:voltage}{{2}{4}{}{equation.2.2}{}}
+\newlabel{eq:voltage_theta}{{3}{4}{}{equation.2.3}{}}
+\newlabel{eq:vclutter}{{4}{4}{}{equation.2.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {C}Coherence between $x(t)$ and $r(t)$}{4}{section*.7}\protected@file@percent }
+\newlabel{sec23}{{II\,C}{4}{}{section*.7}{}}
+\newlabel{eq:coherence}{{5}{4}{}{equation.2.5}{}}
+\newlabel{eq:psd}{{6}{4}{}{equation.2.6}{}}
+\newlabel{eq:cross-corr}{{7}{4}{}{equation.2.7}{}}
+\citation{Welch1161901}
+\citation{s22176591,625628}
+\citation{Widrow1451965}
+\@writefile{toc}{\contentsline {section}{\numberline {III}ANC scheme}{5}{section*.8}\protected@file@percent }
+\newlabel{sec:method}{{III}{5}{}{section*.8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {A}Filter}{5}{section*.9}\protected@file@percent }
+\newlabel{eq:error_estimate}{{9}{5}{}{equation.3.9}{}}
+\newlabel{clutter_estimate}{{10}{5}{}{equation.3.10}{}}
+\citation{HaykinAdaptiveFT:2002}
+\citation{10.5555/547203,10.5555/560138}
+\citation{ljung1999system,1989system}
+\citation{HaykinAdaptiveFT:2002}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces  Coherence $C_{xr}$, defined by Equation \textup  {\hbox {\mathsurround \z@ \normalfont  (\ignorespaces \ref  {eq:coherence}\unskip \@@italiccorr )}}, relating the LIGO-Livingston strain channel \texttt  {L1:DCS-CALIB\_STRAIN\_C01\_AR} and the nine three-phase mains-power PEM channels at the LIGO-Livingston end stations and corner station during a 10 minute observation interval. Clear features at 60 Hz are present in every panel, with amplitudes $ > 0.8$ (unitless).}}{6}{figure.3}\protected@file@percent }
+\newlabel{coherenceplot_1}{{3}{6}{Coherence $C_{xr}$, defined by Equation \eqref {eq:coherence}, relating the LIGO-Livingston strain channel \texttt {L1:DCS-CALIB\_STRAIN\_C01\_AR} and the nine three-phase mains-power PEM channels at the LIGO-Livingston end stations and corner station during a 10 minute observation interval. Clear features at 60 Hz are present in every panel, with amplitudes $ > 0.8$ (unitless)}{figure.3}{}}
+\newlabel{eq:minim}{{13}{6}{}{equation.3.13}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {B}ARLS algorithm}{6}{section*.10}\protected@file@percent }
+\newlabel{sec:ARLS}{{III\,B}{6}{}{section*.10}{}}
+\citation{LIGOMarkov17,LIGOMarkov19,PhysRevD.99.084042,2018PhRvD..97d3013S,LIGOMarkov22,2023PhRvD.107f4062V}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces  Coherence spectrogram between the strain channel \texttt  {L1:DCS-CALIB\_STRAIN\_C01\_AR}\, and the PEM channel \texttt  {L1:PEM-CS\_MAINSMON\_EBAY\_1\_DQ}\, covering a 1 hour period of O3 data. The horizontal axis is the time in minutes from the start of O3a, divided into 10-s bins. The vertical axis is the Fourier frequency in Hz. The pixel colour denotes the coherence $C_{xr}$, defined by Equation \textup  {\hbox {\mathsurround \z@ \normalfont  (\ignorespaces \ref  {eq:coherence}\unskip \@@italiccorr )}}, in that time-frequency bin; see colour bar at right (dimensionless). High coherence is observed at 60 Hz due to the mains power interference. Additional coherence features are visible at 0.2 kHz and 0.3 kHz, corresponding to higher harmonics of the mains interference.}}{7}{figure.4}\protected@file@percent }
+\newlabel{correlation_1}{{4}{7}{Coherence spectrogram between the strain channel \StrainChanName \, and the PEM channel \PEMChanName \, covering a 1 hour period of O3 data. The horizontal axis is the time in minutes from the start of O3a, divided into 10-s bins. The vertical axis is the Fourier frequency in Hz. The pixel colour denotes the coherence $C_{xr}$, defined by Equation \eqref {eq:coherence}, in that time-frequency bin; see colour bar at right (dimensionless). High coherence is observed at 60 Hz due to the mains power interference. Additional coherence features are visible at 0.2 kHz and 0.3 kHz, corresponding to higher harmonics of the mains interference}{figure.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {IV}Validation tests with an HMM}{7}{section*.11}\protected@file@percent }
+\newlabel{sec:results}{{IV}{7}{}{section*.11}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Block diagram of the ARLS method described in Section \ref  {sec:ARLS}. The reference signal $r(t)$ is passed to an FIR filter to construct an estimate $\hat  {c}(t)$ of the clutter. Subtracting $\hat  {c}(t)$ from the primary signal $x(t)$ provides a residual $e(t)$ which controls the process to update the weights $\mathbf  {w}$ of the FIR filter. The method proceeds iteratively. The diagonal line across the FIR filter block denotes that the parameters of the block (i.e. $\mathbf  {w}$) are updated, but are not part of the signal processed by the block.}}{7}{figure.5}\protected@file@percent }
+\newlabel{fig:arlsBlock}{{5}{7}{Block diagram of the ARLS method described in Section \ref {sec:ARLS}. The reference signal $r(t)$ is passed to an FIR filter to construct an estimate $\hat {c}(t)$ of the clutter. Subtracting $\hat {c}(t)$ from the primary signal $x(t)$ provides a residual $e(t)$ which controls the process to update the weights $\mathbf {w}$ of the FIR filter. The method proceeds iteratively. The diagonal line across the FIR filter block denotes that the parameters of the block (i.e. $\mathbf {w}$) are updated, but are not part of the signal processed by the block}{figure.5}{}}
+\citation{Suvorova2016PhRv}
+\citation{Piccinni2022,Riles2023,Wette2023}
+\citation{Suvorova2016PhRv}
+\citation{Suvorova2016PhRv,2022PhRvD.106j2008A}
+\@writefile{toc}{\contentsline {subsection}{\numberline {A}Synthetic data}{8}{section*.12}\protected@file@percent }
+\newlabel{sec:creating_data}{{IV\,A}{8}{}{section*.12}{}}
+\newlabel{eq:ht}{{18}{8}{}{equation.4.18}{}}
+\newlabel{eq:gwfreqnoise}{{21}{8}{}{equation.4.21}{}}
+\newlabel{eq:clutterequation}{{23}{8}{}{equation.4.23}{}}
+\citation{Suvorova2016PhRv}
+\citation{2017PhRvD..96j2006S}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Spectrum (i.e.\ modulus of the Fourier transform) of the data $x(t)$ (orange curve), GW signal $h(t)$ (green curve) and decluttered output of the ANC filter $x(t) - \hat  {c}(t)$ (blue curve) for a system with parameters described in Table \ref  {tab:parameterdescription1}. The peak in the blue curve at 59.5 Hz is partially obscured by the green curve. ANC suppresses by $\approx 40\, {\rm  dB}$ the orange spikes near $60 \, {\rm  Hz}$, corresponding to mains power interference.}}{9}{figure.6}\protected@file@percent }
+\newlabel{fig:spectrum}{{6}{9}{Spectrum (i.e.\ modulus of the Fourier transform) of the data $x(t)$ (orange curve), GW signal $h(t)$ (green curve) and decluttered output of the ANC filter $x(t) - \hat {c}(t)$ (blue curve) for a system with parameters described in Table \ref {tab:parameterdescription1}. The peak in the blue curve at 59.5 Hz is partially obscured by the green curve. ANC suppresses by $\approx 40\, {\rm dB}$ the orange spikes near $60 \, {\rm Hz}$, corresponding to mains power interference}{figure.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {B}Representative worked examples}{9}{section*.13}\protected@file@percent }
+\newlabel{sec:representative_example}{{IV\,B}{9}{}{section*.13}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {V}ROC curves}{9}{section*.14}\protected@file@percent }
+\newlabel{sec:theroccurves}{{V}{9}{}{section*.14}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {I}{\ignorespaces Parameters, their physical meaning, and the injected values used to generate synthetic data. The injected values are listed for validating the ANC scheme in Section \ref  {sec:results}, and quantifying the performance of the scheme as a function of the properties of the mains power interference in Section \ref  {sec:theroccurves}. $a_r$ and $a_c$ are randomly drawn from separate uniform distributions, denoted by $\mathcal  {U}$. The braces notation (e.g. $\{0.01, 0.1\}$) indicates that multiple injected values are trialled. The quoted injected values of the three amplitude parameters and the four noise parameters are scaled such that $\sigma _n^2 = 1$.}}{10}{table.1}\protected@file@percent }
+\newlabel{tab:parameterdescription1}{{I}{10}{Parameters, their physical meaning, and the injected values used to generate synthetic data. The injected values are listed for validating the ANC scheme in Section \ref {sec:results}, and quantifying the performance of the scheme as a function of the properties of the mains power interference in Section \ref {sec:theroccurves}. $a_r$ and $a_c$ are randomly drawn from separate uniform distributions, denoted by $\mathcal {U}$. The braces notation (e.g. $\{0.01, 0.1\}$) indicates that multiple injected values are trialled. The quoted injected values of the three amplitude parameters and the four noise parameters are scaled such that $\sigma _n^2 = 1$}{table.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces  HMM tracking of a CW signal with spin wandering in the presence of $60 \, {\rm  Hz}$ mains power interference before (left panel) and after (right panel) ANC. Coloured contours (arbitrary units; see colour bar at right) show the spectrogram of the data, i.e.\ the squared modulus of the Fourier transform of $x(t)$. The $60 \, {\rm  Hz}$ line is visible as a vertical yellow band in the left panel; it cannot be discerned in the right panel. Injected signals: lower spin wandering, with $\sigma _f (N \Delta t)^{1/2} / f_{\rm  ac} = 0.047$ and $ h_0 \sqrt  {T_{\rm  obs}} / \sigma _n = 0.71$ (solid orange curve); higher spin wandering, with $\sigma _f (N \Delta t)^{1/2} / f_{\rm  ac} = 0.15$ and $ h_0 \sqrt  {T_{\rm  obs}} / \sigma _n = 0.71$ (solid green curve). Recovered signals: dashed white curves. Neither signal can be detected before ANC, so the dashed white curves are visible in the right panel only.}}{10}{figure.7}\protected@file@percent }
+\newlabel{frequency tracking before and after1}{{7}{10}{HMM tracking of a CW signal with spin wandering in the presence of $60 \, {\rm Hz}$ mains power interference before (left panel) and after (right panel) ANC. Coloured contours (arbitrary units; see colour bar at right) show the spectrogram of the data, i.e.\ the squared modulus of the Fourier transform of $x(t)$. The $60 \, {\rm Hz}$ line is visible as a vertical yellow band in the left panel; it cannot be discerned in the right panel. Injected signals: lower spin wandering, with $\sigma _f (N \Delta t)^{1/2} / f_{\rm ac} = 0.047$ and $ h_0 \sqrt {T_{\rm obs}} / \sigma _n = 0.71$ (solid orange curve); higher spin wandering, with $\sigma _f (N \Delta t)^{1/2} / f_{\rm ac} = 0.15$ and $ h_0 \sqrt {T_{\rm obs}} / \sigma _n = 0.71$ (solid green curve). Recovered signals: dashed white curves. Neither signal can be detected before ANC, so the dashed white curves are visible in the right panel only}{figure.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {A}Mains power interference parameters}{10}{section*.15}\protected@file@percent }
+\newlabel{sec:roc1}{{V\,A}{10}{}{section*.15}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Detection probability $p_{\rm  d}$ as a function of false alarm probability $p_{\rm  fa}$ (i.e. ROC curve) for HMM tracking of a CW signal ($ h_0 \sqrt  {T_{\rm  obs}} / \sigma _n = 0.62$) in conjunction with the ANC scheme, for different mains power interference parameters. The top, middle and bottom panels display different values of $\Delta f_{\rm  ac}$, $\sigma _{\Theta }^2$, and $P$ respectively. The grey dashed curve in all panels corresponds to the performance of a random classifier. The grey dotted curve in all panels is a performance upper limit, corresponding to the case where there is zero mains power interference. In all panels the curves overlap approximately, illustrating that the performance of the HMM and ANC scheme is insensitive to the mains power parameters. At $p_{\rm  fa} = 0.05$, the mean $p_{\rm  d}$ across the three curves is 0.52 (top panel), 0.48 (middle panel) and 0.58 (bottom panel).}}{11}{figure.8}\protected@file@percent }
+\newlabel{fig:roc1}{{8}{11}{Detection probability $p_{\rm d}$ as a function of false alarm probability $p_{\rm fa}$ (i.e. ROC curve) for HMM tracking of a CW signal ($ h_0 \sqrt {T_{\rm obs}} / \sigma _n = 0.62$) in conjunction with the ANC scheme, for different mains power interference parameters. The top, middle and bottom panels display different values of $\Delta f_{\rm ac}$, $\sigma _{\Theta }^2$, and $P$ respectively. The grey dashed curve in all panels corresponds to the performance of a random classifier. The grey dotted curve in all panels is a performance upper limit, corresponding to the case where there is zero mains power interference. In all panels the curves overlap approximately, illustrating that the performance of the HMM and ANC scheme is insensitive to the mains power parameters. At $p_{\rm fa} = 0.05$, the mean $p_{\rm d}$ across the three curves is 0.52 (top panel), 0.48 (middle panel) and 0.58 (bottom panel)}{figure.8}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Same as Figure \ref  {fig:roc1} but for different ANC filter parameters. The top, middle and bottom panels display the ROC curves for different numbers of PEM reference channels $N_{\rm  ref}$, tap weights $M$, and forgetting factors $\lambda $ respectively. All panels additionally include the ROC curve for a random classifier (i.e. the lower performance limit, grey dashed curve) and the zero interference ROC curve (i.e. the upper performance limit, grey dotted curve).}}{11}{figure.9}\protected@file@percent }
+\newlabel{fig:roc2}{{9}{11}{Same as Figure \ref {fig:roc1} but for different ANC filter parameters. The top, middle and bottom panels display the ROC curves for different numbers of PEM reference channels $N_{\rm ref}$, tap weights $M$, and forgetting factors $\lambda $ respectively. All panels additionally include the ROC curve for a random classifier (i.e. the lower performance limit, grey dashed curve) and the zero interference ROC curve (i.e. the upper performance limit, grey dotted curve)}{figure.9}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {B}ANC filter parameters}{11}{section*.16}\protected@file@percent }
+\newlabel{sec:roc2}{{V\,B}{11}{}{section*.16}{}}
+\citation{10.1121/1.5109394}
+\citation{KUO1996669,doi:10.1177/1084713812456906}
+\citation{7755741}
+\citation{1326385,KAR2017422,KAR2020107043}
+\citation{6349749}
+\citation{Ciochina5206117}
+\citation{app12042077,1468506,4639569}
+\citation{O3data2023}
+\@writefile{toc}{\contentsline {section}{\numberline {VI}Real LIGO noise}{12}{section*.17}\protected@file@percent }
+\newlabel{sec:real_data}{{VI}{12}{}{section*.17}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {A}Data}{12}{section*.18}\protected@file@percent }
+\newlabel{sec:real_data_generation}{{VI\,A}{12}{}{section*.18}{}}
+\citation{CovasEtAl:2018}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Spectrum (i.e.\ modulus of the Fourier transform) of the data $x'(t)$ (orange curve), and decluttered output of the ANC filter $x'(t) - \hat  {c}(t)$ (blue curve) for LIGO data obtained via the procedure outlined in Section \ref  {sec:real_data_generation}. ANC suppresses by $\approx 20\, {\rm  dB}$ the orange spike near $60 \, {\rm  Hz}$, corresponding to mains power interference. Fig. \ref  {fig:spectrum} is the same as Fig. \ref  {fig:spectrum_real} but for synthetic noise generated via the procedure in Section \ref  {sec:real_data_generation}.}}{13}{figure.10}\protected@file@percent }
+\newlabel{fig:spectrum_real}{{10}{13}{Spectrum (i.e.\ modulus of the Fourier transform) of the data $x'(t)$ (orange curve), and decluttered output of the ANC filter $x'(t) - \hat {c}(t)$ (blue curve) for LIGO data obtained via the procedure outlined in Section \ref {sec:real_data_generation}. ANC suppresses by $\approx 20\, {\rm dB}$ the orange spike near $60 \, {\rm Hz}$, corresponding to mains power interference. Fig. \ref {fig:spectrum} is the same as Fig. \ref {fig:spectrum_real} but for synthetic noise generated via the procedure in Section \ref {sec:real_data_generation}}{figure.10}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {B}Representative worked example}{13}{section*.19}\protected@file@percent }
+\newlabel{sec:real_data_example}{{VI\,B}{13}{}{section*.19}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {VII}Conclusions}{13}{section*.20}\protected@file@percent }
+\newlabel{sec:conclusions}{{VII}{13}{}{section*.20}{}}
+\bibdata{main-linesNotes,bibLinesPaper}
+\bibcite{Aasi2015}{{1}{2015}{{{Aasi}\ \emph  {et~al.}}}{{{Aasi}, {Abadie}, {Abbott}, {Abbott}, {Abbott}, {Abernathy}, {Accadia}, {Acernese}, {Adams}, {Adams} \emph  {et~al.}}}}
+\bibcite{AcerneseEtAlAdVirgo:2015}{{2}{2015}{{{Acernese}\ \emph  {et~al.}}}{{{Acernese}, {Agathos}, {Agatsuma}, {Aisa}, {Allemandou}, {Allocca}, {Amarni}, {Astone}, {Balestri}, {Ballardin},\ and\ et~al.}}}
+\bibcite{Akutsu2021PTEP}{{3}{2021}{{{Akutsu}\ \emph  {et~al.}}}{{{Akutsu}, {Ando}, {Arai}, {Arai}, {Araki}, {Araya}, {Aritomi}, {Asada}, {Aso}, {Bae} \emph  {et~al.}}}}
+\bibcite{DetCharGW150914:2016}{{4}{2016}{{{Abbott}\ \emph  {et~al.}}}{{{Abbott}, {Abbott}, {Abbott}, {Abernathy}, {Acernese}, {Ackley}, {Adamo}, {Adams}, {Adams}, {Addesso} \emph  {et~al.}}}}
+\bibcite{Davis2021}{{5}{2021}{{{Davis}\ \emph  {et~al.}}}{{{Davis}, {Areeda}, {Berger}, {Bruntz}, {Effler}, {Essick}, {Fisher}, {Godwin}, {Goetz}, {Helmling-Cornell} \emph  {et~al.}}}}
+\bibcite{Davisgalaxies10010012}{{6}{2022}{{Davis\ and\ Walker}}{{}}}
+\bibcite{Glanzer2023}{{7}{2023}{{{Glanzer}\ \emph  {et~al.}}}{{{Glanzer}, {Soni}, {Spoon}, {Effler},\ and\ {Gonz{\'a}lez}}}}
+\bibcite{AasiEtAlAdLIGO:2015}{{8}{2015}{{{LIGO Scientific Collaboration}\ \emph  {et~al.}}}{{{LIGO Scientific Collaboration}, {Aasi}, {Abbott}, {Abbott}, {Abbott}, {Abernathy}, {Ackley}, {Adams}, {Adams}, {Addesso},\ and\ et~al.}}}
+\bibcite{LIGOnoiseguide}{{9}{2020}{{{Abbott}\ \emph  {et~al.}}}{{{Abbott}, {Abbott}, {Abbott}, {Abraham}, {Acernese}, {Ackley}, {Adams}, {Adya}, {Affeldt}, {Agathos} \emph  {et~al.}}}}
+\bibcite{2020Galax...8...82F}{{10}{2020}{{{Fiori}\ \emph  {et~al.}}}{{{Fiori}, {Paoletti}, {Tringali}, {Janssens}, {Karathanasis}, {Men{\'e}ndez-V{\'a}zquez}, {Romero-Rodr{\'\i }guez}, {Sugimoto}, {Washimi}, {Boschi}, {Chiummo}, {Cie{\'s}lar}, {De Rosa}, {De Rossi}, {Di Renzo}, {Nardecchia}, {Pasqualetti}, {Patricelli}, {Ruggi},\ and\ {Singh}}}}
+\bibcite{Nguyen2021}{{11}{2021}{{{Nguyen}\ \emph  {et~al.}}}{{{Nguyen}, {Schofield}, {Effler}, {Austin}, {Adya}, {Ball}, {Banagiri}, {Banowetz}, {Billman}, {Blair} \emph  {et~al.}}}}
+\bibcite{CovasEtAl:2018}{{12}{2018}{{{Covas}\ \emph  {et~al.}}}{{{Covas}, {Effler}, {Goetz}, {Meyers}, {Neunzert}, {Oliver}, {Pearlstone}, {Roma}, {Schofield}, {Adya},\ and\ et~al.}}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces  Same as Figure \ref  {frequency tracking before and after1}, but for a GW signal (orange curve) injected into real LIGO noise. The $60 \, {\rm  Hz}$ line is visible as a vertical yellow band in the left panel; it cannot be discerned in the right panel. The signal recovered by the HMM is given by the dashed white curves. Before ANC, the HMM erroneously tracks the 60 Hz interference line. After ANC, the HMM successfully tracks the underlying GW signal.}}{14}{figure.11}\protected@file@percent }
+\newlabel{frequency tracking before and after_real_Date}{{11}{14}{Same as Figure \ref {frequency tracking before and after1}, but for a GW signal (orange curve) injected into real LIGO noise. The $60 \, {\rm Hz}$ line is visible as a vertical yellow band in the left panel; it cannot be discerned in the right panel. The signal recovered by the HMM is given by the dashed white curves. Before ANC, the HMM erroneously tracks the 60 Hz interference line. After ANC, the HMM successfully tracks the underlying GW signal}{figure.11}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {}References}{14}{section*.21}\protected@file@percent }
+\bibcite{Piccinni2022}{{13}{2022}{{{Piccinni}}}{{}}}
+\bibcite{Riles2023}{{14}{2023}{{{Riles}}}{{}}}
+\bibcite{Wette2023}{{15}{2023}{{{Wette}}}{{}}}
+\bibcite{Ligo_lineveto1}{{16}{2022}{{Abbott\ \emph  {et~al.}}}{{Abbott, Abe, Acernese, Ackley, Adhikari, Adhikari, Adkins, Adya, Affeldt, Agarwal, Agathos, Agatsuma, Aggarwal, Aguiar \emph  {et~al.}}}}
+\bibcite{ligo_lineveto2}{{17}{2021}{{{Abbott}\ \emph  {et~al.}}}{{{Abbott}, {Abbott}, {Abraham}, {Acernese}, {Ackley}, {Adams}, {Adams}, {Adhikari}, {Adya}, {Affeldt}, {Agarwal}, {Agathos}, {Agatsuma}, {Aggarwal}, {Aguiar} \emph  {et~al.}}}}
+\bibcite{ligo_lineveto3}{{18}{2022{}}{{{Abbott}\ \emph  {et~al.}}}{{{Abbott}, {Abbott}, {Acernese}, {Ackley}, {Adams}, {Adhikari}, {Adhikari}, {Adya}, {Affeldt}, {Agarwal}, {Agathos}, {Agatsuma}, {Aggarwal}, {Aguiar}, {Aiello} \emph  {et~al.}}}}
+\bibcite{Abbott2018CQVeto}{{19}{2018}{{{Abbott}\ \emph  {et~al.}}}{{{Abbott}, {Abbott}, {Abbott}, {Abernathy}, {Acernese}, {Ackley}, {Adams}, {Adams}, {Addesso}, {Adhikari} \emph  {et~al.}}}}
+\bibcite{Steltner2022Ph}{{20}{2022}{{{Steltner}\ \emph  {et~al.}}}{{{Steltner}, {Papa},\ and\ {Eggenstein}}}}
+\bibcite{Driggers2012RScI}{{21}{2012}{{{Driggers}\ \emph  {et~al.}}}{{{Driggers}, {Evans}, {Pepper},\ and\ {Adhikari}}}}
+\bibcite{Tiwari2015}{{22}{2015}{{{Tiwari}\ \emph  {et~al.}}}{{{Tiwari}, {Drago}, {Frolov}, {Klimenko}, {Mitselmakher}, {Necula}, {Prodi}, {Re}, {Salemi}, {Vedovato},\ and\ {Yakushin}}}}
+\bibcite{Davis2019}{{23}{2019}{{{Davis}\ \emph  {et~al.}}}{{{Davis}, {Massinger}, {Lundgren}, {Driggers}, {Urban},\ and\ {Nuttall}}}}
+\bibcite{Driggers2019}{{24}{2019}{{{Driggers}\ \emph  {et~al.}}}{{{Driggers}, {Vitale}, {Lundgren}, {Evans}, {Kawabe}, {Dwyer}, {Izumi}, {Schofield}, {Effler}, {Sigg}, {Fritschel}, {Drago} \emph  {et~al.}}}}
+\bibcite{Jung2022PRD}{{25}{2022}{{Jung\ \emph  {et~al.}}}{{Jung, Oh, Kim, Son, Yokozawa, Washimi,\ and\ Oh}}}
+\bibcite{marin1997}{{26}{1997}{{Marin\ \emph  {et~al.}}}{{Marin, Shoemaker,\ and\ Weiss}}}
+\bibcite{Cuoco2020}{{27}{2020}{{{Cuoco}\ \emph  {et~al.}}}{{{Cuoco}, {Powell}, {Cavagli{\`a}}, {Ackley}, {Bejger}, {Chatterjee}, {Coughlin}, {Coughlin}, {Easter}, {Essick}, {Gabbard}, {Gebhard}, {Ghosh}, {Haegel}, {Iess}, {Keitel}, {Marka}, {Marka}, {Morawski}, {Nguyen}, {Ormiston}, {Puerrer}, {Razzano}, {Staats}, {Vajente},\ and\ {Williams}}}}
+\bibcite{Vajente2020PhR}{{28}{2020}{{{Vajente}\ \emph  {et~al.}}}{{{Vajente}, {Huang}, {Isi}, {Driggers}, {Kissel}, {Szczepa{\'n}czyk},\ and\ {Vitale}}}}
+\bibcite{OrmistonEtAl:2020}{{29}{2020}{{{Ormiston}\ \emph  {et~al.}}}{{{Ormiston}, {Nguyen}, {Coughlin}, {Adhikari},\ and\ {Katsavounidis}}}}
+\bibcite{Yamamoto2023}{{30}{2023}{{Yamamoto\ \emph  {et~al.}}}{{Yamamoto, Kuroyanagi,\ and\ Liu}}}
+\bibcite{KeitelEtAl:2014}{{31}{2014}{{{Keitel}\ \emph  {et~al.}}}{{{Keitel}, {Prix}, {Papa}, {Leaci},\ and\ {Siddiqi}}}}
+\bibcite{2015PhyS...90l5001L}{{32}{2015}{{{Leaci}}}{{}}}
+\bibcite{Zhu2017PhRvD}{{33}{2017}{{{Zhu}\ \emph  {et~al.}}}{{{Zhu}, {Papa},\ and\ {Walsh}}}}
+\bibcite{JonesPhysRevD.106.123011}{{34}{2022}{{Jones\ \emph  {et~al.}}}{{Jones, Sun, Carlin, Dunn, Millhouse, Middleton, Meyers, Clearwater, Beniwal, Strang, Vargas,\ and\ Melatos}}}
+\bibcite{2015CQGra..32c5004K}{{35}{2015}{{{Keitel}\ and\ {Prix}}}{{}}}
+\bibcite{PhysRevD.93.084024}{{36}{2016{}}{{Keitel}}{{}}}
+\bibcite{Keitel_2016}{{37}{2016{}}{{Keitel}}{{}}}
+\bibcite{2022PhRvD.106j2008A}{{38}{2022{}}{{{Abbott}\ \emph  {et~al.}}}{{{Abbott} \emph  {et~al.}}}}
+\bibcite{Suvorova2016PhRv}{{39}{2016}{{{Suvorova}\ \emph  {et~al.}}}{{{Suvorova}, {Sun}, {Melatos}, {Moran},\ and\ {Evans}}}}
+\bibcite{Virgo2012_lines}{{40}{2012}{{{Aasi}\ \emph  {et~al.}}}{{{Aasi}, {Abadie}, {Abbott}, {Abbott}, {Abbott}, {Abernathy}, {Accadia}, {Acernese}, {Adams} \emph  {et~al.}}}}
+\bibcite{Kagra2023_lines}{{41}{2023}{{{Abe}\ \emph  {et~al.}}}{{{Abe}, {Adhikari}, {Akutsu}, {Ando}, {Araya}, {Aritomi}, {Asada} \emph  {et~al.}}}}
+\bibcite{crab}{{42}{2015}{{{Lyne}\ \emph  {et~al.}}}{{{Lyne}, {Jordan}, {Graham-Smith}, {Espinoza}, {Stappers},\ and\ {Weltevrede}}}}
+\bibcite{psrqpy}{{43}{2018}{{{Pitkin}}}{{}}}
+\bibcite{LIGO_O3}{{44}{2021}{{{The LIGO Scientific Collaboration}\ \emph  {et~al.}}}{{{The LIGO Scientific Collaboration}, {the Virgo Collaboration}, {the KAGRA Collaboration}, {Abbott}, {Abbott}, {Acernese}, {Ackley}, {Adams}, {Adhikari}, {Adhikari} \emph  {et~al.}}}}
+\bibcite{GWOSC:online}{{45}{}{{GWO}}{{}}}
+\bibcite{Jaranowski1998}{{46}{1998}{{{Jaranowski}\ \emph  {et~al.}}}{{{Jaranowski}, {Kr{\'o}lak},\ and\ {Schutz}}}}
+\bibcite{888ed69a34a94bd1bdcb5073edcdd3fa}{{47}{2017}{{Florita\ \emph  {et~al.}}}{{Florita, Gevorgian, Folgueras, Wenger,\ and\ Clark}}}
+\bibcite{8571793}{{48}{2018}{{Schafer\ \emph  {et~al.}}}{{Schafer, Timme,\ and\ Witthaut}}}
+\bibcite{gwpy}{{49}{2021}{{{Macleod}\ \emph  {et~al.}}}{{{Macleod}, {Areeda}, {Coughlin}, {Massinger},\ and\ {Urban}}}}
+\bibcite{pemrefs}{{50}{2019}{{GWOSC}}{{}}}
+\bibcite{Welch1161901}{{51}{1967}{{Welch}}{{}}}
+\bibcite{s22176591}{{52}{2022}{{Fynn\ \emph  {et~al.}}}{{Fynn, Nordholm,\ and\ Rong}}}
+\bibcite{625628}{{53}{1997}{{Elko}}{{}}}
+\bibcite{Widrow1451965}{{54}{1975}{{Widrow\ \emph  {et~al.}}}{{Widrow, Glover, McCool, Kaunitz, Williams, Hearn, Zeidler, Eugene~Dong,\ and\ Goodlin}}}
+\bibcite{HaykinAdaptiveFT:2002}{{55}{2002}{{Haykin}}{{}}}
+\bibcite{10.5555/547203}{{56}{1996}{{Hayes}}{{}}}
+\bibcite{10.5555/560138}{{57}{2002}{{Ifeachor\ and\ Jervis}}{{}}}
+\bibcite{ljung1999system}{{58}{1999}{{Ljung}}{{}}}
+\bibcite{1989system}{{59}{1989}{{S{\"o}derstr{\"o}m\ and\ Stoica}}{{}}}
+\bibcite{LIGOMarkov17}{{60}{2017}{{Collaboration\ and\ Collaboration}}{{}}}
+\bibcite{LIGOMarkov19}{{61}{2019}{{Collaboration\ and\ Collaboration}}{{}}}
+\bibcite{PhysRevD.99.084042}{{62}{2019}{{Isi\ \emph  {et~al.}}}{{Isi, Sun, Brito,\ and\ Melatos}}}
+\bibcite{2018PhRvD..97d3013S}{{63}{2018}{{{Sun}\ \emph  {et~al.}}}{{{Sun}, {Melatos}, {Suvorova}, {Moran},\ and\ {Evans}}}}
+\bibcite{LIGOMarkov22}{{64}{2022}{{Collaboratio\ \emph  {et~al.}}}{{Collaboratio, Collaboration,\ and\ Collaboration}}}
+\bibcite{2023PhRvD.107f4062V}{{65}{2023}{{{Vargas}\ and\ {Melatos}}}{{}}}
+\bibcite{2017PhRvD..96j2006S}{{66}{2017}{{{Suvorova}\ \emph  {et~al.}}}{{{Suvorova}, {Clearwater}, {Melatos}, {Sun}, {Moran},\ and\ {Evans}}}}
+\bibcite{10.1121/1.5109394}{{67}{2019}{{Cheer\ \emph  {et~al.}}}{{Cheer, Patel,\ and\ Fontana}}}
+\bibcite{KUO1996669}{{68}{1996}{{Kuo\ and\ Kunduru}}{{}}}
+\bibcite{doi:10.1177/1084713812456906}{{69}{2012}{{Kokkinakis\ \emph  {et~al.}}}{{Kokkinakis, Azimi, Hu,\ and\ Friedland}}}
+\bibcite{7755741}{{70}{2018}{{Chowdhury\ \emph  {et~al.}}}{{Chowdhury, Hyder, Hafiz,\ and\ Haque}}}
+\bibcite{1326385}{{71}{2004}{{Gong\ and\ Cowan}}{{}}}
+\bibcite{KAR2017422}{{72}{2017}{{Kar\ and\ Swamy}}{{}}}
+\bibcite{KAR2020107043}{{73}{2020}{{Kar\ \emph  {et~al.}}}{{Kar, Anand,\ and\ Swamy}}}
+\bibcite{6349749}{{74}{2012}{{Van~Vaerenbergh\ \emph  {et~al.}}}{{Van~Vaerenbergh, Santamaría,\ and\ Lázaro-Gredilla}}}
+\bibcite{Ciochina5206117}{{75}{2009}{{Ciochina\ \emph  {et~al.}}}{{Ciochina, Paleologu, Benesty,\ and\ Enescu}}}
+\bibcite{app12042077}{{76}{2022}{{Mahadi\ \emph  {et~al.}}}{{Mahadi, Ballal, Moinuddin,\ and\ Al-Saggaf}}}
+\bibcite{1468506}{{77}{2005}{{Leung\ and\ So}}{{}}}
+\bibcite{4639569}{{78}{2008}{{Paleologu\ \emph  {et~al.}}}{{Paleologu, Benesty,\ and\ Ciochina}}}
+\bibcite{O3data2023}{{79}{2023}{{{Abbott}\ \emph  {et~al.}}}{{{Abbott} \emph  {et~al.}}}}
+\bibstyle{apsrev4-1}
+\newlabel{LastBibItem}{{79}{16}{}{section*.21}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {}Acknowledgments}{16}{section*.22}\protected@file@percent }
+\newlabel{LastPage}{{}{16}{}{}{}}
+\gdef \@abspage@last{16}

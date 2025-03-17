@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{+w}{			}\PYG{n}{string}\PYG{+w}{ }\PYG{n}{title}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{This is a Unicode π in the sky}\PYG{l+s}{\PYGZdq{}}
+\PYG{+w}{			}\PYG{o}{/}\PYG{o}{*}
+\PYG{+w}{			}\PYG{n}{Defined}\PYG{+w}{ }\PYG{n}{as}\PYG{+w}{ }\PYG{o}{\PYGZdl{}}\PYG{o}{\PYGZbs{}}\PYG{n+nb}{pi}\PYG{o}{=}\PYG{o}{\PYGZbs{}}\PYG{k+kt}{lim\PYGZus{}}\PYG{p}{\PYGZob{}}\PYG{k+kt}{n}\PYG{o}{\PYGZbs{}}\PYG{k+kt}{to}\PYG{o}{\PYGZbs{}}\PYG{k+kt}{infty}\PYG{p}{\PYGZcb{}}\PYG{o}{\PYGZbs{}}\PYG{k+kt}{frac}\PYG{p}{\PYGZob{}}\PYG{k+kt}{P\PYGZus{}n}\PYG{p}{\PYGZcb{}}\PYG{p}{\PYGZob{}}\PYG{k+kt}{d}\PYG{p}{\PYGZcb{}}\PYG{o}{\PYGZdl{}}\PYG{+w}{ }\PYG{k}{where}\PYG{+w}{ }\PYG{o}{\PYGZdl{}}\PYG{n}{P}\PYG{o}{\PYGZdl{}}\PYG{+w}{ }\PYG{n}{is}\PYG{+w}{ }\PYG{n}{the}\PYG{+w}{ }\PYG{n}{perimeter}
+\PYG{+w}{			}\PYG{n}{of}\PYG{+w}{ }\PYG{n}{an}\PYG{+w}{ }\PYG{o}{\PYGZdl{}}\PYG{n}{n}\PYG{o}{\PYGZdl{}}\PYG{o}{\PYGZhy{}}\PYG{n}{sided}\PYG{+w}{ }\PYG{n}{regular}\PYG{+w}{ }\PYG{n}{polygon}\PYG{+w}{ }\PYG{n}{circumscribing}\PYG{+w}{ }\PYG{n}{a}
+\PYG{+w}{			}\PYG{n}{circle}\PYG{+w}{ }\PYG{n}{of}\PYG{+w}{ }\PYG{n}{diameter}\PYG{+w}{ }\PYG{o}{\PYGZdl{}}\PYG{n}{d}\PYG{o}{\PYGZdl{}}\PYG{o}{.}
+\PYG{+w}{			}\PYG{o}{*}\PYG{o}{/}
+\PYG{+w}{			}\PYG{k}{const}\PYG{+w}{ }\PYG{n}{double}\PYG{+w}{ }\PYG{n+nb}{pi}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mf}{3.1415926535}
+\end{Verbatim}

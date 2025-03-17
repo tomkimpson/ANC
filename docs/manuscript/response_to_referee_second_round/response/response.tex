@@ -1,0 +1,108 @@
+\documentclass[10pt]{article}
+\usepackage{vmargin}
+\setpapersize{USletter}
+\usepackage{ragged2e}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}	% Including figure files
+\usepackage[caption=false]{subfig}
+\graphicspath{{ResponeFigures/}}
+\usepackage{hyperref}
+\usepackage[shortlabels]{enumitem}
+
+\hypersetup{
+	colorlinks   = true, %Colours links instead of ugly boxes
+	urlcolor     = teal, %Colour for external hyperlinks
+	linkcolor    = teal, %Colour of internal links
+	citecolor   = red %Colour of citations
+}
+\usepackage{xcolor}
+\author{T.Kimpson, S. Suvorova, H. Middleton, C. Liu, A. Melatos, R. Evans, W. Moran}
+\title{Response to referee comments: \\ PRD Submission DM13138,}
+\begin{document}
+	\maketitle
+\noindent Author response to the second referee report for the paper DM13138,
+entitled \textit{`Adaptive cancellation of mains power interference in continuous gravitational wave searches with a hidden Markov model'}. \newline 
+
+\noindent We again thank the referee for their constructive review.
+We agree with all the comments and have made the recommended changes as described below. \newline 
+
+
+
+\newpage
+\noindent \Large \textbf{Referee comments} \normalsize
+
+\vspace{5mm}
+
+
+\begin{enumerate}
+	\item  \textit{One response I am somewhat doubtful about is the one to my previous comment
+	14, on neglecting the Earth’s movement. The authors have responded that
+	F-statistic / matched-filter methods "correct" for this. This is true in the
+	sense that the instantaneous signal frequency at any time is matched with the corresponding data bins in the right way. However, the actual amount of time a signal spends physically overlapping, or not, with a fixed-frequency instrumental line (or with a broader and complicated feature like the 60Hz mains) still depends on the Earth-induced frequency modulation. Hence, I would expect that performance depends on its inclusion, and can vary depending on the signal's sky location of origin, as different signals may become more or less separated from the noise feature. I agree with the authors that modelling that effect is not necessary for the scope of this paper, but a short comment seems warranted.}
+	
+			\textbf{Author response:} 
+			
+			Yes, we agree with the referee that the Doppler frequency modulations can influence the time a monochromatic GW signal spends overlapping with the instrumental line. Specifically, for a GW source with intrinsic frequency $f_0$, the frequency evaluated in the detector frame is 
+			\begin{equation}
+				f(t) = f_0 \left(1 + \frac{\vec{v}(t)}{c} \cdot \vec{n}\right)
+			\end{equation}
+		for sky position $\vec{n}$ and detector velocity $\vec{v}$. The detector velocity term includes both the diurnal and annual motions, which are typically of order $\mathcal{O} \left(10^{-6}\right)$ and $\mathcal{O} \left(10^{-4}\right)$ respectively (see e.g. arXiv:2111.12575). The frequency modulations are generally narrower than the $60\,{\rm Hz}$ line (see e.g. Figure 2 in the manuscript). Hence the signal overlaps either always with the $60 \, {\rm Hz}$ line, except in the unlikely circumstance where it hovers by chance near the (fuzzy) edge of the line. Nevertheless the referee is correct to point out that the situation is different with other, narrower noise lines, where the signal overlaps with the line during part but not all of the diurnal or annual Doppler cycle. We have added discussion in the second paragraph of Section IV A to discuss this point. We thank the referee for raising this subtlety to our attention.
+
+	
+	\item \textit{abstract: The wording "the LIGO detector" makes it sound like there is only
+	one; it should be "one of the LIGO detectors" or "the LIGO Livingston detector".}
+
+	\textbf{Author response:} 
+
+Yes, we agree. The abstract has been updated to refer to ``the LIGO Livingston detector"
+	
+	\item  \textit{introduction: The Acernese+2014 Advanced Virgo detector reference (currently
+	[19]) has been added to the list "[e.g. 16-19]", which otherwise contains CW
+	results papers. This seems erroneous. Together with the current [6] and [9], for
+	LIGO and KAGRA respectively, these citations should be attached to the names of
+	the corresponding detectors, or in the first sentence where "interferometers"
+	are first mentioned. The update "to advanced detectors" for the initial list of
+	references about non-stationarities, though mentioned in the response, also does
+	not seem to have actually happened in the resubmitted manuscript.}
+
+	\textbf{Author response:} 
+	
+	We now cite the LIGO, Virgo and Kagra papers in the first sentence of the introduction after ``interferometers", as suggested by the referee. The list of references in the second sentence of the introduction, re non-stationarities, has now been updated to reference more modern papers, as per the referee's original suggestion. Specifically, we now cite
+	\begin{itemize} 
+		\item Abbot et al. 2016 ``Characterization of transient noise in Advanced LIGO relevant to gravitational wave signal GW150914"
+		\item Davis et al. 2021 ``LIGO detector characterization in the second and third observing runs
+		\item Davis et al. 2022 ``Detector Characterization and Mitigation of Noise in Ground-Based Gravitational-Wave Interferometers"
+		\item Glanzer et al. 2023 ``Noise in the LIGO Livingston Gravitational Wave Observatory due to Trains"
+	\end{itemize} 
+	
+	
+	
+	
+	
+	\item \textit{Sec. II.C: The added sentence starting "It is an empirical question which depends on the properties of the underlying signal, as to the threshold value of Cxr (f = 60Hz) required for noise cancellation to work sufficiently" is difficult to read due to unclear grammatical antecedent: what is an empirical question is only said in the middle of the sentence, after the "which depends" intermission. Turning around the word order might help.}
+	
+		\textbf{Author response:} 
+		
+		Yes we agree that this sentence as written is obscure. We have updated the sentence in the manuscript to be clearer. 
+		
+
+	\item \textit{Sec. VI.A: The reference for O3 data should be
+	doi.org/10.3847/1538-4365/acdc9f
+	rather than the catalog paper currently used.}
+
+	\textbf{Author response:} 
+	
+	The reference has been updated.
+	
+	\item \textit{Fig. 10: To me this looks like the ANC is actually over-subtracting the real 60Hz feature to some degree. This is probably worth a comment and could be a useful aspect to study and improve in future work.}
+	
+		\textbf{Author response:} 
+		
+		Yes we agree with the referee that for the particular example presented in Fig 10, the ANC marginally over-subtracts the noise. This is likely due to the non-linear relationship between the strain and the PEM channels, cf. the coherence discussion in II.C, and the free parameters of the ANC filter which could be tuned better, cf. Section V.B. We have added a comment to the end of the first paragraph of Section VI.B.
+	
+\end{enumerate}
+
+
+
+
+\end{document}

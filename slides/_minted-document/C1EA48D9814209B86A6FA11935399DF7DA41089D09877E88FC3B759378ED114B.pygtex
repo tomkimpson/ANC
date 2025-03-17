@@ -1,0 +1,21 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{k}{using}\PYG{+w}{ }\PYG{n}{Zygote}
+
+\PYG{k}{function}\PYG{+w}{ }\PYG{n}{loss\PYGZus{}function}\PYG{p}{(}\PYG{n}{p}\PYG{p}{)}
+
+\PYG{c}{\PYGZsh{} \PYGZsh{}Do an integration}
+\PYG{c}{\PYGZsh{} a = 1.0}
+\PYG{c}{\PYGZsh{} b = 2.0}
+\PYG{c}{\PYGZsh{} c = c}
+\PYG{c}{\PYGZsh{} \PYGZsh{}a,b,c = θ[1], θ[2],θ[3]}
+\PYG{n}{solution}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{timestepping}\PYG{p}{(}\PYG{n}{p}\PYG{p}{)}
+
+\PYG{c}{\PYGZsh{}Get just the last element of the first variable as an arbitrary loss}
+\PYG{n}{critical\PYGZus{}value}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mf}{28.546138914755634}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{+w}{ }\PYG{n}{last}\PYG{p}{(}\PYG{n}{solution}\PYG{p}{[}\PYG{l+m+mi}{3}\PYG{p}{,}\PYG{o}{:}\PYG{p}{])}
+
+\PYG{k}{return}\PYG{+w}{ }\PYG{n}{critical\PYGZus{}value}
+
+\PYG{k}{end}
+
+
+\end{Verbatim}

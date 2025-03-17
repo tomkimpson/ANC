@@ -1,0 +1,39 @@
+
+%^^I^^I\begin{equation}
+%^^I^^I^^If(x) = \log(1 + \exp(w*x + b)) \nonumber
+%^^I^^I\end{equation}
+^^IConsider a simple network:
+^^I\begin{columns}
+^^I^^I\column{0.7\textwidth}
+^^I^^I^^I\begin{tikzpicture}[shorten >=1pt,->]
+^^I^^I^^I\tikzstyle{unit}=[draw,shape=circle,minimum size=1.15cm]
+^^I^^I^^I\node[unit](p) at (2,1){$y_1$};
+^^I^^I^^I\node[unit](q) at (4,1){$y_2$};
+^^I^^I^^I
+^^I^^I^^I\node(w1) at (1.1,1.5){$w_1$};
+^^I^^I^^I\node(w1) at (3.1,1.5){$w_2$};
+^^I^^I^^I
+^^I^^I^^I\draw (2,2.5) node[xshift=-10]{$b_1$} -- (p);
+^^I^^I^^I\draw (4,2.5) node[xshift=-10]{$b_2$} -- (q);
+^^I^^I^^I\draw (0.5,1) node[xshift=-10]{$x_1$} --(p);
+^^I^^I^^I\draw (0.5,1) node[xshift=-10]{$x_1$} --(p);
+^^I^^I^^I\draw (0.5,1)  (p)--(q);
+^^I^^I^^I\draw (q) -- (5,1) node[xshift=30]{$y := f(f(x_1))$};
+^^I^^I^^I
+^^I^^I^^I%^^I\draw (p) -- (3,1) node[xshift=30]{$y := f(w_i, b)$};
+^^I^^I\end{tikzpicture}
+^^I^^I
+^^I^^I
+^^I^^I\column{0.3\textwidth}
+^^I^^I\alert{What is $\partial y_{,w_1}$?} \newline \newline
+^^I\end{columns}
+
+^^I
+
+^^I
+%^^I\centering
+\vspace{5mm}
+\textcolor{red}{Mathematica:}
+^^I\includegraphics[width=0.8\columnwidth,height=0.2\columnwidth]{images/relu}
+^^I
+^^I

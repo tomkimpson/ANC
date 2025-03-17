@@ -1,0 +1,982 @@
+%merlin.mbs apsrev4-1.bst 2010-07-25 4.21a (PWD, AO, DPC) hacked
+%Control: key (0)
+%Control: author (72) initials jnrlst
+%Control: editor formatted (1) identically to author
+%Control: production of article title (-1) disabled
+%Control: page (0) single
+%Control: year (1) truncated
+%Control: production of eprint (0) enabled
+\begin{thebibliography}{66}%
+\makeatletter
+\providecommand \@ifxundefined [1]{%
+ \@ifx{#1\undefined}
+}%
+\providecommand \@ifnum [1]{%
+ \ifnum #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \@ifx [1]{%
+ \ifx #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \natexlab [1]{#1}%
+\providecommand \enquote  [1]{``#1''}%
+\providecommand \bibnamefont  [1]{#1}%
+\providecommand \bibfnamefont [1]{#1}%
+\providecommand \citenamefont [1]{#1}%
+\providecommand \href@noop [0]{\@secondoftwo}%
+\providecommand \href [0]{\begingroup \@sanitize@url \@href}%
+\providecommand \@href[1]{\@@startlink{#1}\@@href}%
+\providecommand \@@href[1]{\endgroup#1\@@endlink}%
+\providecommand \@sanitize@url [0]{\catcode `\\12\catcode `\$12\catcode
+  `\&12\catcode `\#12\catcode `\^12\catcode `\_12\catcode `\%12\relax}%
+\providecommand \@@startlink[1]{}%
+\providecommand \@@endlink[0]{}%
+\providecommand \url  [0]{\begingroup\@sanitize@url \@url }%
+\providecommand \@url [1]{\endgroup\@href {#1}{\urlprefix }}%
+\providecommand \urlprefix  [0]{URL }%
+\providecommand \Eprint [0]{\href }%
+\providecommand \doibase [0]{http://dx.doi.org/}%
+\providecommand \selectlanguage [0]{\@gobble}%
+\providecommand \bibinfo  [0]{\@secondoftwo}%
+\providecommand \bibfield  [0]{\@secondoftwo}%
+\providecommand \translation [1]{[#1]}%
+\providecommand \BibitemOpen [0]{}%
+\providecommand \bibitemStop [0]{}%
+\providecommand \bibitemNoStop [0]{.\EOS\space}%
+\providecommand \EOS [0]{\spacefactor3000\relax}%
+\providecommand \BibitemShut  [1]{\csname bibitem#1\endcsname}%
+\let\auto@bib@innerbib\@empty
+%</preamble>
+\bibitem [{\citenamefont {{Blackburn}}\ \emph {et~al.}(2008)\citenamefont
+  {{Blackburn}}, \citenamefont {{Cadonati}}, \citenamefont {{Caride}},
+  \citenamefont {{Caudill}}, \citenamefont {{Chatterji}}, \citenamefont
+  {{Christensen}}, \citenamefont {{Dalrymple}}, \citenamefont {{Desai}},
+  \citenamefont {{Di Credico}}, \citenamefont {{Ely}} \emph
+  {et~al.}}]{Blackburn2008}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
+  {{Blackburn}}}, \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
+  {{Cadonati}}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {{Caride}}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {{Caudill}}},
+  \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {{Chatterji}}}, \bibinfo
+  {author} {\bibfnamefont {N.}~\bibnamefont {{Christensen}}}, \bibinfo {author}
+  {\bibfnamefont {J.}~\bibnamefont {{Dalrymple}}}, \bibinfo {author}
+  {\bibfnamefont {S.}~\bibnamefont {{Desai}}}, \bibinfo {author} {\bibfnamefont
+  {A.}~\bibnamefont {{Di Credico}}}, \bibinfo {author} {\bibfnamefont
+  {G.}~\bibnamefont {{Ely}}},  \emph {et~al.},\ }\href {\doibase
+  10.1088/0264-9381/25/18/184004} {\bibfield  {journal} {\bibinfo  {journal}
+  {Classical and Quantum Gravity}\ }\textbf {\bibinfo {volume} {25}},\ \bibinfo
+  {eid} {184004} (\bibinfo {year} {2008})},\ \Eprint
+  {http://arxiv.org/abs/0804.0800} {arXiv:0804.0800 [gr-qc]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {{Aasi}}\ \emph {et~al.}(2012)\citenamefont {{Aasi}},
+  \citenamefont {{Abadie}}, \citenamefont {{Abbott}}, \citenamefont {{Abbott}},
+  \citenamefont {{Abbott}}, \citenamefont {{Abernathy}}, \citenamefont
+  {{Accadia}}, \citenamefont {{Acernese}}, \citenamefont {{Adams}} \emph
+  {et~al.}}]{Aasi2012}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {{Aasi}}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {{Abadie}}},
+  \bibinfo {author} {\bibfnamefont {B.~P.}\ \bibnamefont {{Abbott}}}, \bibinfo
+  {author} {\bibfnamefont {R.}~\bibnamefont {{Abbott}}}, \bibinfo {author}
+  {\bibfnamefont {T.~D.}\ \bibnamefont {{Abbott}}}, \bibinfo {author}
+  {\bibfnamefont {M.}~\bibnamefont {{Abernathy}}}, \bibinfo {author}
+  {\bibfnamefont {T.}~\bibnamefont {{Accadia}}}, \bibinfo {author}
+  {\bibfnamefont {F.}~\bibnamefont {{Acernese}}}, \bibinfo {author}
+  {\bibfnamefont {C.}~\bibnamefont {{Adams}}},  \emph {et~al.},\ }\href
+  {\doibase 10.1088/0264-9381/29/15/155002} {\bibfield  {journal} {\bibinfo
+  {journal} {Classical and Quantum Gravity}\ }\textbf {\bibinfo {volume}
+  {29}},\ \bibinfo {eid} {155002} (\bibinfo {year} {2012})},\ \Eprint
+  {http://arxiv.org/abs/1203.5613} {arXiv:1203.5613 [gr-qc]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {{Aasi}}\ \emph {et~al.}(2015)\citenamefont {{Aasi}},
+  \citenamefont {{Abadie}}, \citenamefont {{Abbott}}, \citenamefont {{Abbott}},
+  \citenamefont {{Abbott}}, \citenamefont {{Abernathy}}, \citenamefont
+  {{Accadia}}, \citenamefont {{Acernese}}, \citenamefont {{Adams}},
+  \citenamefont {{Adams}} \emph {et~al.}}]{Aasi2015}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {{Aasi}}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {{Abadie}}},
+  \bibinfo {author} {\bibfnamefont {B.~P.}\ \bibnamefont {{Abbott}}}, \bibinfo
+  {author} {\bibfnamefont {R.}~\bibnamefont {{Abbott}}}, \bibinfo {author}
+  {\bibfnamefont {T.}~\bibnamefont {{Abbott}}}, \bibinfo {author}
+  {\bibfnamefont {M.~R.}\ \bibnamefont {{Abernathy}}}, \bibinfo {author}
+  {\bibfnamefont {T.}~\bibnamefont {{Accadia}}}, \bibinfo {author}
+  {\bibfnamefont {F.}~\bibnamefont {{Acernese}}}, \bibinfo {author}
+  {\bibfnamefont {C.}~\bibnamefont {{Adams}}}, \bibinfo {author} {\bibfnamefont
+  {T.}~\bibnamefont {{Adams}}},  \emph {et~al.},\ }\href {\doibase
+  10.1088/0264-9381/32/11/115012} {\bibfield  {journal} {\bibinfo  {journal}
+  {Classical and Quantum Gravity}\ }\textbf {\bibinfo {volume} {32}},\ \bibinfo
+  {eid} {115012} (\bibinfo {year} {2015})},\ \Eprint
+  {http://arxiv.org/abs/1410.7764} {arXiv:1410.7764 [gr-qc]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {{Abbott}}\ \emph {et~al.}(2016)\citenamefont
+  {{Abbott}}, \citenamefont {{Abbott}}, \citenamefont {{Abbott}}, \citenamefont
+  {{Abernathy}}, \citenamefont {{Acernese}}, \citenamefont {{Ackley}},
+  \citenamefont {{Adamo}}, \citenamefont {{Adams}}, \citenamefont {{Adams}},
+  \citenamefont {{Addesso}} \emph {et~al.}}]{DetCharGW150914:2016}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.~P.}\ \bibnamefont
+  {{Abbott}}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {{Abbott}}},
+  \bibinfo {author} {\bibfnamefont {T.~D.}\ \bibnamefont {{Abbott}}}, \bibinfo
+  {author} {\bibfnamefont {M.~R.}\ \bibnamefont {{Abernathy}}}, \bibinfo
+  {author} {\bibfnamefont {F.}~\bibnamefont {{Acernese}}}, \bibinfo {author}
+  {\bibfnamefont {K.}~\bibnamefont {{Ackley}}}, \bibinfo {author}
+  {\bibfnamefont {M.}~\bibnamefont {{Adamo}}}, \bibinfo {author} {\bibfnamefont
+  {C.}~\bibnamefont {{Adams}}}, \bibinfo {author} {\bibfnamefont
+  {T.}~\bibnamefont {{Adams}}}, \bibinfo {author} {\bibfnamefont
+  {P.}~\bibnamefont {{Addesso}}},  \emph {et~al.},\ }\href {\doibase
+  10.1088/0264-9381/33/13/134001} {\bibfield  {journal} {\bibinfo  {journal}
+  {Classical and Quantum Gravity}\ }\textbf {\bibinfo {volume} {33}},\ \bibinfo
+  {eid} {134001} (\bibinfo {year} {2016})},\ \Eprint
+  {http://arxiv.org/abs/1602.03844} {arXiv:1602.03844 [gr-qc]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {{Glanzer}}\ \emph {et~al.}(2023)\citenamefont
+  {{Glanzer}}, \citenamefont {{Soni}}, \citenamefont {{Spoon}}, \citenamefont
+  {{Effler}},\ and\ \citenamefont {{Gonz{\'a}lez}}}]{Glanzer2023}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {{Glanzer}}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {{Soni}}},
+  \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {{Spoon}}}, \bibinfo
+  {author} {\bibfnamefont {A.}~\bibnamefont {{Effler}}}, \ and\ \bibinfo
+  {author} {\bibfnamefont {G.}~\bibnamefont {{Gonz{\'a}lez}}},\ }\href
+  {\doibase 10.48550/arXiv.2304.07477} {\bibfield  {journal} {\bibinfo
+  {journal} {arXiv e-prints}\ ,\ \bibinfo {eid} {arXiv:2304.07477}} (\bibinfo
+  {year} {2023})},\ \Eprint {http://arxiv.org/abs/2304.07477} {arXiv:2304.07477
+  [astro-ph.IM]} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{LIGO Scientific Collaboration}}\ \emph
+  {et~al.}(2015)\citenamefont {{LIGO Scientific Collaboration}}, \citenamefont
+  {{Aasi}}, \citenamefont {{Abbott}}, \citenamefont {{Abbott}}, \citenamefont
+  {{Abbott}}, \citenamefont {{Abernathy}}, \citenamefont {{Ackley}},
+  \citenamefont {{Adams}}, \citenamefont {{Adams}}, \citenamefont {{Addesso}},\
+  and\ \citenamefont {et~al.}}]{AasiEtAlAdLIGO:2015}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {{LIGO Scientific
+  Collaboration}}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {{Aasi}}}, \bibinfo {author} {\bibfnamefont {B.~P.}\ \bibnamefont
+  {{Abbott}}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {{Abbott}}},
+  \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont {{Abbott}}}, \bibinfo
+  {author} {\bibfnamefont {M.~R.}\ \bibnamefont {{Abernathy}}}, \bibinfo
+  {author} {\bibfnamefont {K.}~\bibnamefont {{Ackley}}}, \bibinfo {author}
+  {\bibfnamefont {C.}~\bibnamefont {{Adams}}}, \bibinfo {author} {\bibfnamefont
+  {T.}~\bibnamefont {{Adams}}}, \bibinfo {author} {\bibfnamefont
+  {P.}~\bibnamefont {{Addesso}}}, \ and\ \bibinfo {author} {\bibnamefont
+  {et~al.}},\ }\href {\doibase 10.1088/0264-9381/32/7/074001} {\bibfield
+  {journal} {\bibinfo  {journal} {Classical and Quantum Gravity}\ }\textbf
+  {\bibinfo {volume} {32}},\ \bibinfo {eid} {074001} (\bibinfo {year}
+  {2015})},\ \Eprint {http://arxiv.org/abs/1411.4547} {arXiv:1411.4547 [gr-qc]}
+  \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{Abbott}}\ \emph {et~al.}(2020)\citenamefont
+  {{Abbott}}, \citenamefont {{Abbott}}, \citenamefont {{Abbott}}, \citenamefont
+  {{Abraham}}, \citenamefont {{Acernese}}, \citenamefont {{Ackley}},
+  \citenamefont {{Adams}}, \citenamefont {{Adya}}, \citenamefont {{Affeldt}},
+  \citenamefont {{Agathos}} \emph {et~al.}}]{LIGOnoiseguide}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.~P.}\ \bibnamefont
+  {{Abbott}}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {{Abbott}}},
+  \bibinfo {author} {\bibfnamefont {T.~D.}\ \bibnamefont {{Abbott}}}, \bibinfo
+  {author} {\bibfnamefont {S.}~\bibnamefont {{Abraham}}}, \bibinfo {author}
+  {\bibfnamefont {F.}~\bibnamefont {{Acernese}}}, \bibinfo {author}
+  {\bibfnamefont {K.}~\bibnamefont {{Ackley}}}, \bibinfo {author}
+  {\bibfnamefont {C.}~\bibnamefont {{Adams}}}, \bibinfo {author} {\bibfnamefont
+  {V.~B.}\ \bibnamefont {{Adya}}}, \bibinfo {author} {\bibfnamefont
+  {C.}~\bibnamefont {{Affeldt}}}, \bibinfo {author} {\bibfnamefont
+  {M.}~\bibnamefont {{Agathos}}},  \emph {et~al.},\ }\href {\doibase
+  10.1088/1361-6382/ab685e} {\bibfield  {journal} {\bibinfo  {journal}
+  {Classical and Quantum Gravity}\ }\textbf {\bibinfo {volume} {37}},\ \bibinfo
+  {eid} {055002} (\bibinfo {year} {2020})},\ \Eprint
+  {http://arxiv.org/abs/1908.11170} {arXiv:1908.11170 [gr-qc]} \BibitemShut
+  {NoStop}%
+\bibitem [{VIR()}]{VIROGnoise}%
+  \BibitemOpen
+  \href@noop {} {\ }\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{Akutsu}}\ \emph {et~al.}(2021)\citenamefont
+  {{Akutsu}}, \citenamefont {{Ando}}, \citenamefont {{Arai}}, \citenamefont
+  {{Arai}}, \citenamefont {{Araki}}, \citenamefont {{Araya}}, \citenamefont
+  {{Aritomi}}, \citenamefont {{Asada}}, \citenamefont {{Aso}}, \citenamefont
+  {{Bae}} \emph {et~al.}}]{Akutsu2021PTEP}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
+  {{Akutsu}}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {{Ando}}},
+  \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont {{Arai}}}, \bibinfo
+  {author} {\bibfnamefont {Y.}~\bibnamefont {{Arai}}}, \bibinfo {author}
+  {\bibfnamefont {S.}~\bibnamefont {{Araki}}}, \bibinfo {author} {\bibfnamefont
+  {A.}~\bibnamefont {{Araya}}}, \bibinfo {author} {\bibfnamefont
+  {N.}~\bibnamefont {{Aritomi}}}, \bibinfo {author} {\bibfnamefont
+  {H.}~\bibnamefont {{Asada}}}, \bibinfo {author} {\bibfnamefont
+  {Y.}~\bibnamefont {{Aso}}}, \bibinfo {author} {\bibfnamefont
+  {S.}~\bibnamefont {{Bae}}},  \emph {et~al.},\ }\href {\doibase
+  10.1093/ptep/ptab018} {\bibfield  {journal} {\bibinfo  {journal} {Progress of
+  Theoretical and Experimental Physics}\ }\textbf {\bibinfo {volume} {2021}},\
+  \bibinfo {eid} {05A102} (\bibinfo {year} {2021})},\ \Eprint
+  {http://arxiv.org/abs/2009.09305} {arXiv:2009.09305 [gr-qc]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {{Nguyen}}\ \emph {et~al.}(2021)\citenamefont
+  {{Nguyen}}, \citenamefont {{Schofield}}, \citenamefont {{Effler}},
+  \citenamefont {{Austin}}, \citenamefont {{Adya}}, \citenamefont {{Ball}},
+  \citenamefont {{Banagiri}}, \citenamefont {{Banowetz}}, \citenamefont
+  {{Billman}}, \citenamefont {{Blair}} \emph {et~al.}}]{Nguyen2021}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
+  {{Nguyen}}}, \bibinfo {author} {\bibfnamefont {R.~M.~S.}\ \bibnamefont
+  {{Schofield}}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {{Effler}}}, \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {{Austin}}},
+  \bibinfo {author} {\bibfnamefont {V.}~\bibnamefont {{Adya}}}, \bibinfo
+  {author} {\bibfnamefont {M.}~\bibnamefont {{Ball}}}, \bibinfo {author}
+  {\bibfnamefont {S.}~\bibnamefont {{Banagiri}}}, \bibinfo {author}
+  {\bibfnamefont {K.}~\bibnamefont {{Banowetz}}}, \bibinfo {author}
+  {\bibfnamefont {C.}~\bibnamefont {{Billman}}}, \bibinfo {author}
+  {\bibfnamefont {C.~D.}\ \bibnamefont {{Blair}}},  \emph {et~al.},\ }\href
+  {\doibase 10.1088/1361-6382/ac011a} {\bibfield  {journal} {\bibinfo
+  {journal} {Classical and Quantum Gravity}\ }\textbf {\bibinfo {volume}
+  {38}},\ \bibinfo {eid} {145001} (\bibinfo {year} {2021})},\ \Eprint
+  {http://arxiv.org/abs/2101.09935} {arXiv:2101.09935 [astro-ph.IM]}
+  \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{Covas}}\ \emph {et~al.}(2018)\citenamefont
+  {{Covas}}, \citenamefont {{Effler}}, \citenamefont {{Goetz}}, \citenamefont
+  {{Meyers}}, \citenamefont {{Neunzert}}, \citenamefont {{Oliver}},
+  \citenamefont {{Pearlstone}}, \citenamefont {{Roma}}, \citenamefont
+  {{Schofield}}, \citenamefont {{Adya}},\ and\ \citenamefont
+  {et~al.}}]{CovasEtAl:2018}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.~B.}\ \bibnamefont
+  {{Covas}}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {{Effler}}},
+  \bibinfo {author} {\bibfnamefont {E.}~\bibnamefont {{Goetz}}}, \bibinfo
+  {author} {\bibfnamefont {P.~M.}\ \bibnamefont {{Meyers}}}, \bibinfo {author}
+  {\bibfnamefont {A.}~\bibnamefont {{Neunzert}}}, \bibinfo {author}
+  {\bibfnamefont {M.}~\bibnamefont {{Oliver}}}, \bibinfo {author}
+  {\bibfnamefont {B.~L.}\ \bibnamefont {{Pearlstone}}}, \bibinfo {author}
+  {\bibfnamefont {V.~J.}\ \bibnamefont {{Roma}}}, \bibinfo {author}
+  {\bibfnamefont {R.~M.~S.}\ \bibnamefont {{Schofield}}}, \bibinfo {author}
+  {\bibfnamefont {V.~B.}\ \bibnamefont {{Adya}}}, \ and\ \bibinfo {author}
+  {\bibnamefont {et~al.}},\ }\href {\doibase 10.1103/PhysRevD.97.082002}
+  {\bibfield  {journal} {\bibinfo  {journal} {\prd}\ }\textbf {\bibinfo
+  {volume} {97}},\ \bibinfo {eid} {082002} (\bibinfo {year} {2018})},\ \Eprint
+  {http://arxiv.org/abs/1801.07204} {arXiv:1801.07204 [astro-ph.IM]}
+  \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{Piccinni}}(2022)}]{Piccinni2022}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {O.~J.}\ \bibnamefont
+  {{Piccinni}}},\ }\href {\doibase 10.3390/galaxies10030072} {\bibfield
+  {journal} {\bibinfo  {journal} {Galaxies}\ }\textbf {\bibinfo {volume}
+  {10}},\ \bibinfo {pages} {72} (\bibinfo {year} {2022})},\ \Eprint
+  {http://arxiv.org/abs/2202.01088} {arXiv:2202.01088 [gr-qc]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {{Riles}}(2023)}]{Riles2023}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
+  {{Riles}}},\ }\href {\doibase 10.1007/s41114-023-00044-3} {\bibfield
+  {journal} {\bibinfo  {journal} {Living Reviews in Relativity}\ }\textbf
+  {\bibinfo {volume} {26}},\ \bibinfo {eid} {3} (\bibinfo {year} {2023})},\
+  \Eprint {http://arxiv.org/abs/2206.06447} {arXiv:2206.06447 [astro-ph.HE]}
+  \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{Wette}}(2023)}]{Wette2023}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
+  {{Wette}}},\ }\href {\doibase 10.1016/j.astropartphys.2023.102880} {\bibfield
+   {journal} {\bibinfo  {journal} {Astroparticle Physics}\ }\textbf {\bibinfo
+  {volume} {153}},\ \bibinfo {eid} {102880} (\bibinfo {year} {2023})},\ \Eprint
+  {http://arxiv.org/abs/2305.07106} {arXiv:2305.07106 [gr-qc]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Abbott}\ \emph {et~al.}(2022)\citenamefont {Abbott},
+  \citenamefont {Abe}, \citenamefont {Acernese}, \citenamefont {Ackley},
+  \citenamefont {Adhikari}, \citenamefont {Adhikari}, \citenamefont {Adkins},
+  \citenamefont {Adya}, \citenamefont {Affeldt}, \citenamefont {Agarwal},
+  \citenamefont {Agathos}, \citenamefont {Agatsuma}, \citenamefont {Aggarwal},
+  \citenamefont {Aguiar} \emph {et~al.}}]{Ligo_lineveto1}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Abbott}}, \bibinfo {author} {\bibfnamefont {H.}~\bibnamefont {Abe}},
+  \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont {Acernese}}, \bibinfo
+  {author} {\bibfnamefont {K.}~\bibnamefont {Ackley}}, \bibinfo {author}
+  {\bibfnamefont {N.}~\bibnamefont {Adhikari}}, \bibinfo {author}
+  {\bibfnamefont {R.~X.}\ \bibnamefont {Adhikari}}, \bibinfo {author}
+  {\bibfnamefont {V.~K.}\ \bibnamefont {Adkins}}, \bibinfo {author}
+  {\bibfnamefont {V.~B.}\ \bibnamefont {Adya}}, \bibinfo {author}
+  {\bibfnamefont {C.}~\bibnamefont {Affeldt}}, \bibinfo {author} {\bibfnamefont
+  {D.}~\bibnamefont {Agarwal}}, \bibinfo {author} {\bibfnamefont
+  {M.}~\bibnamefont {Agathos}}, \bibinfo {author} {\bibfnamefont
+  {K.}~\bibnamefont {Agatsuma}}, \bibinfo {author} {\bibfnamefont
+  {N.}~\bibnamefont {Aggarwal}}, \bibinfo {author} {\bibfnamefont {O.~D.}\
+  \bibnamefont {Aguiar}},  \emph {et~al.} (\bibinfo {collaboration} {LIGO
+  Scientific Collaboration, Virgo Collaboration, and KAGRA Collaboration}),\
+  }\href {\doibase 10.1103/PhysRevD.106.062002} {\bibfield  {journal} {\bibinfo
+   {journal} {Phys. Rev. D}\ }\textbf {\bibinfo {volume} {106}},\ \bibinfo
+  {pages} {062002} (\bibinfo {year} {2022})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{Abbott}}\ \emph {et~al.}(2021)\citenamefont
+  {{Abbott}}, \citenamefont {{Abbott}}, \citenamefont {{Abraham}},
+  \citenamefont {{Acernese}}, \citenamefont {{Ackley}}, \citenamefont
+  {{Adams}}, \citenamefont {{Adams}}, \citenamefont {{Adhikari}}, \citenamefont
+  {{Adya}}, \citenamefont {{Affeldt}}, \citenamefont {{Agarwal}}, \citenamefont
+  {{Agathos}}, \citenamefont {{Agatsuma}}, \citenamefont {{Aggarwal}},
+  \citenamefont {{Aguiar}} \emph {et~al.}}]{ligo_lineveto2}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {{Abbott}}}, \bibinfo {author} {\bibfnamefont {T.~D.}\ \bibnamefont
+  {{Abbott}}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {{Abraham}}},
+  \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont {{Acernese}}}, \bibinfo
+  {author} {\bibfnamefont {K.}~\bibnamefont {{Ackley}}}, \bibinfo {author}
+  {\bibfnamefont {A.}~\bibnamefont {{Adams}}}, \bibinfo {author} {\bibfnamefont
+  {C.}~\bibnamefont {{Adams}}}, \bibinfo {author} {\bibfnamefont {R.~X.}\
+  \bibnamefont {{Adhikari}}}, \bibinfo {author} {\bibfnamefont {V.~B.}\
+  \bibnamefont {{Adya}}}, \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {{Affeldt}}}, \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
+  {{Agarwal}}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {{Agathos}}}, \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
+  {{Agatsuma}}}, \bibinfo {author} {\bibfnamefont {N.}~\bibnamefont
+  {{Aggarwal}}}, \bibinfo {author} {\bibfnamefont {O.~D.}\ \bibnamefont
+  {{Aguiar}}},  \emph {et~al.},\ }\href {\doibase 10.3847/1538-4357/ac17ea}
+  {\bibfield  {journal} {\bibinfo  {journal} {\apj}\ }\textbf {\bibinfo
+  {volume} {921}},\ \bibinfo {eid} {80} (\bibinfo {year} {2021})},\ \Eprint
+  {http://arxiv.org/abs/2105.11641} {arXiv:2105.11641 [astro-ph.HE]}
+  \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{Abbott}}\ \emph {et~al.}(2022)\citenamefont
+  {{Abbott}}, \citenamefont {{Abbott}}, \citenamefont {{Acernese}},
+  \citenamefont {{Ackley}}, \citenamefont {{Adams}}, \citenamefont
+  {{Adhikari}}, \citenamefont {{Adhikari}}, \citenamefont {{Adya}},
+  \citenamefont {{Affeldt}}, \citenamefont {{Agarwal}}, \citenamefont
+  {{Agathos}}, \citenamefont {{Agatsuma}}, \citenamefont {{Aggarwal}},
+  \citenamefont {{Aguiar}}, \citenamefont {{Aiello}} \emph
+  {et~al.}}]{ligo_lineveto3}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {{Abbott}}}, \bibinfo {author} {\bibfnamefont {T.~D.}\ \bibnamefont
+  {{Abbott}}}, \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {{Acernese}}}, \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
+  {{Ackley}}}, \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {{Adams}}},
+  \bibinfo {author} {\bibfnamefont {N.}~\bibnamefont {{Adhikari}}}, \bibinfo
+  {author} {\bibfnamefont {R.~X.}\ \bibnamefont {{Adhikari}}}, \bibinfo
+  {author} {\bibfnamefont {V.~B.}\ \bibnamefont {{Adya}}}, \bibinfo {author}
+  {\bibfnamefont {C.}~\bibnamefont {{Affeldt}}}, \bibinfo {author}
+  {\bibfnamefont {D.}~\bibnamefont {{Agarwal}}}, \bibinfo {author}
+  {\bibfnamefont {M.}~\bibnamefont {{Agathos}}}, \bibinfo {author}
+  {\bibfnamefont {K.}~\bibnamefont {{Agatsuma}}}, \bibinfo {author}
+  {\bibfnamefont {N.}~\bibnamefont {{Aggarwal}}}, \bibinfo {author}
+  {\bibfnamefont {O.~D.}\ \bibnamefont {{Aguiar}}}, \bibinfo {author}
+  {\bibfnamefont {L.}~\bibnamefont {{Aiello}}},  \emph {et~al.},\ }\href
+  {\doibase 10.3847/1538-4357/ac6ad0} {\bibfield  {journal} {\bibinfo
+  {journal} {\apj}\ }\textbf {\bibinfo {volume} {932}},\ \bibinfo {eid} {133}
+  (\bibinfo {year} {2022})},\ \Eprint {http://arxiv.org/abs/2112.10990}
+  {arXiv:2112.10990 [gr-qc]} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{Davis}}\ \emph {et~al.}(2021)\citenamefont
+  {{Davis}}, \citenamefont {{Areeda}}, \citenamefont {{Berger}}, \citenamefont
+  {{Bruntz}}, \citenamefont {{Effler}}, \citenamefont {{Essick}}, \citenamefont
+  {{Fisher}}, \citenamefont {{Godwin}}, \citenamefont {{Goetz}}, \citenamefont
+  {{Helmling-Cornell}} \emph {et~al.}}]{Davis2021}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
+  {{Davis}}}, \bibinfo {author} {\bibfnamefont {J.~S.}\ \bibnamefont
+  {{Areeda}}}, \bibinfo {author} {\bibfnamefont {B.~K.}\ \bibnamefont
+  {{Berger}}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {{Bruntz}}},
+  \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {{Effler}}}, \bibinfo
+  {author} {\bibfnamefont {R.~C.}\ \bibnamefont {{Essick}}}, \bibinfo {author}
+  {\bibfnamefont {R.~P.}\ \bibnamefont {{Fisher}}}, \bibinfo {author}
+  {\bibfnamefont {P.}~\bibnamefont {{Godwin}}}, \bibinfo {author}
+  {\bibfnamefont {E.}~\bibnamefont {{Goetz}}}, \bibinfo {author} {\bibfnamefont
+  {A.~F.}\ \bibnamefont {{Helmling-Cornell}}},  \emph {et~al.},\ }\href
+  {\doibase 10.1088/1361-6382/abfd85} {\bibfield  {journal} {\bibinfo
+  {journal} {Classical and Quantum Gravity}\ }\textbf {\bibinfo {volume}
+  {38}},\ \bibinfo {eid} {135014} (\bibinfo {year} {2021})},\ \Eprint
+  {http://arxiv.org/abs/2101.11673} {arXiv:2101.11673 [astro-ph.IM]}
+  \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Davis}\ and\ \citenamefont
+  {Walker}(2022)}]{Davisgalaxies10010012}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
+  {Davis}}\ and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Walker}},\
+  }\href {\doibase 10.3390/galaxies10010012} {\bibfield  {journal} {\bibinfo
+  {journal} {Galaxies}\ }\textbf {\bibinfo {volume} {10}} (\bibinfo {year}
+  {2022}),\ 10.3390/galaxies10010012}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{Abbott}}\ \emph {et~al.}(2018)\citenamefont
+  {{Abbott}}, \citenamefont {{Abbott}}, \citenamefont {{Abbott}}, \citenamefont
+  {{Abernathy}}, \citenamefont {{Acernese}}, \citenamefont {{Ackley}},
+  \citenamefont {{Adams}}, \citenamefont {{Adams}}, \citenamefont {{Addesso}},
+  \citenamefont {{Adhikari}} \emph {et~al.}}]{Abbott2018CQVeto}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.~P.}\ \bibnamefont
+  {{Abbott}}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {{Abbott}}},
+  \bibinfo {author} {\bibfnamefont {T.~D.}\ \bibnamefont {{Abbott}}}, \bibinfo
+  {author} {\bibfnamefont {M.~R.}\ \bibnamefont {{Abernathy}}}, \bibinfo
+  {author} {\bibfnamefont {F.}~\bibnamefont {{Acernese}}}, \bibinfo {author}
+  {\bibfnamefont {K.}~\bibnamefont {{Ackley}}}, \bibinfo {author}
+  {\bibfnamefont {C.}~\bibnamefont {{Adams}}}, \bibinfo {author} {\bibfnamefont
+  {T.}~\bibnamefont {{Adams}}}, \bibinfo {author} {\bibfnamefont
+  {P.}~\bibnamefont {{Addesso}}}, \bibinfo {author} {\bibfnamefont {R.~X.}\
+  \bibnamefont {{Adhikari}}},  \emph {et~al.},\ }\href {\doibase
+  10.1088/1361-6382/aaaafa} {\bibfield  {journal} {\bibinfo  {journal}
+  {Classical and Quantum Gravity}\ }\textbf {\bibinfo {volume} {35}},\ \bibinfo
+  {eid} {065010} (\bibinfo {year} {2018})},\ \Eprint
+  {http://arxiv.org/abs/1710.02185} {arXiv:1710.02185 [gr-qc]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Lee}\ \emph {et~al.}(2021)\citenamefont {Lee},
+  \citenamefont {Oh}, \citenamefont {Kim}, \citenamefont {Cho}, \citenamefont
+  {Oh}, \citenamefont {Son},\ and\ \citenamefont {Lee}}]{Lee2021}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Lee}}, \bibinfo {author} {\bibfnamefont {S.~H.}\ \bibnamefont {Oh}},
+  \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont {Kim}}, \bibinfo {author}
+  {\bibfnamefont {G.}~\bibnamefont {Cho}}, \bibinfo {author} {\bibfnamefont
+  {J.~J.}\ \bibnamefont {Oh}}, \bibinfo {author} {\bibfnamefont {E.~J.}\
+  \bibnamefont {Son}}, \ and\ \bibinfo {author} {\bibfnamefont {H.~M.}\
+  \bibnamefont {Lee}},\ }\href {\doibase 10.1103/PhysRevD.103.123023}
+  {\bibfield  {journal} {\bibinfo  {journal} {Phys. Rev. D}\ }\textbf {\bibinfo
+  {volume} {103}},\ \bibinfo {pages} {123023} (\bibinfo {year}
+  {2021})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{Steltner}}\ \emph {et~al.}(2022)\citenamefont
+  {{Steltner}}, \citenamefont {{Papa}},\ and\ \citenamefont
+  {{Eggenstein}}}]{Steltner2022Ph}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.}~\bibnamefont
+  {{Steltner}}}, \bibinfo {author} {\bibfnamefont {M.~A.}\ \bibnamefont
+  {{Papa}}}, \ and\ \bibinfo {author} {\bibfnamefont {H.-B.}\ \bibnamefont
+  {{Eggenstein}}},\ }\href {\doibase 10.1103/PhysRevD.105.022005} {\bibfield
+  {journal} {\bibinfo  {journal} {\prd}\ }\textbf {\bibinfo {volume} {105}},\
+  \bibinfo {eid} {022005} (\bibinfo {year} {2022})},\ \Eprint
+  {http://arxiv.org/abs/2105.09933} {arXiv:2105.09933 [gr-qc]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {{Driggers}}\ \emph {et~al.}(2012)\citenamefont
+  {{Driggers}}, \citenamefont {{Evans}}, \citenamefont {{Pepper}},\ and\
+  \citenamefont {{Adhikari}}}]{Driggers2012RScI}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~C.}\ \bibnamefont
+  {{Driggers}}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {{Evans}}},
+  \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont {{Pepper}}}, \ and\
+  \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {{Adhikari}}},\ }\href
+  {\doibase 10.1063/1.3675891} {\bibfield  {journal} {\bibinfo  {journal}
+  {Review of Scientific Instruments}\ }\textbf {\bibinfo {volume} {83}},\
+  \bibinfo {pages} {024501} (\bibinfo {year} {2012})},\ \Eprint
+  {http://arxiv.org/abs/1112.2224} {arXiv:1112.2224 [gr-qc]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {{Tiwari}}\ \emph {et~al.}(2015)\citenamefont
+  {{Tiwari}}, \citenamefont {{Drago}}, \citenamefont {{Frolov}}, \citenamefont
+  {{Klimenko}}, \citenamefont {{Mitselmakher}}, \citenamefont {{Necula}},
+  \citenamefont {{Prodi}}, \citenamefont {{Re}}, \citenamefont {{Salemi}},
+  \citenamefont {{Vedovato}},\ and\ \citenamefont {{Yakushin}}}]{Tiwari2015}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {V.}~\bibnamefont
+  {{Tiwari}}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {{Drago}}},
+  \bibinfo {author} {\bibfnamefont {V.}~\bibnamefont {{Frolov}}}, \bibinfo
+  {author} {\bibfnamefont {S.}~\bibnamefont {{Klimenko}}}, \bibinfo {author}
+  {\bibfnamefont {G.}~\bibnamefont {{Mitselmakher}}}, \bibinfo {author}
+  {\bibfnamefont {V.}~\bibnamefont {{Necula}}}, \bibinfo {author}
+  {\bibfnamefont {G.}~\bibnamefont {{Prodi}}}, \bibinfo {author} {\bibfnamefont
+  {V.}~\bibnamefont {{Re}}}, \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {{Salemi}}}, \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
+  {{Vedovato}}}, \ and\ \bibinfo {author} {\bibfnamefont {I.}~\bibnamefont
+  {{Yakushin}}},\ }\href {\doibase 10.1088/0264-9381/32/16/165014} {\bibfield
+  {journal} {\bibinfo  {journal} {Classical and Quantum Gravity}\ }\textbf
+  {\bibinfo {volume} {32}},\ \bibinfo {eid} {165014} (\bibinfo {year}
+  {2015})},\ \Eprint {http://arxiv.org/abs/1503.07476} {arXiv:1503.07476
+  [gr-qc]} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{Davis}}\ \emph {et~al.}(2019)\citenamefont
+  {{Davis}}, \citenamefont {{Massinger}}, \citenamefont {{Lundgren}},
+  \citenamefont {{Driggers}}, \citenamefont {{Urban}},\ and\ \citenamefont
+  {{Nuttall}}}]{Davis2019}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
+  {{Davis}}}, \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
+  {{Massinger}}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {{Lundgren}}}, \bibinfo {author} {\bibfnamefont {J.~C.}\ \bibnamefont
+  {{Driggers}}}, \bibinfo {author} {\bibfnamefont {A.~L.}\ \bibnamefont
+  {{Urban}}}, \ and\ \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
+  {{Nuttall}}},\ }\href {\doibase 10.1088/1361-6382/ab01c5} {\bibfield
+  {journal} {\bibinfo  {journal} {Classical and Quantum Gravity}\ }\textbf
+  {\bibinfo {volume} {36}},\ \bibinfo {eid} {055011} (\bibinfo {year}
+  {2019})},\ \Eprint {http://arxiv.org/abs/1809.05348} {arXiv:1809.05348
+  [astro-ph.IM]} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{Driggers}}\ \emph {et~al.}(2019)\citenamefont
+  {{Driggers}}, \citenamefont {{Vitale}}, \citenamefont {{Lundgren}},
+  \citenamefont {{Evans}}, \citenamefont {{Kawabe}}, \citenamefont {{Dwyer}},
+  \citenamefont {{Izumi}}, \citenamefont {{Schofield}}, \citenamefont
+  {{Effler}}, \citenamefont {{Sigg}}, \citenamefont {{Fritschel}},
+  \citenamefont {{Drago}} \emph {et~al.}}]{Driggers2019}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~C.}\ \bibnamefont
+  {{Driggers}}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {{Vitale}}}, \bibinfo {author} {\bibfnamefont {A.~P.}\ \bibnamefont
+  {{Lundgren}}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {{Evans}}},
+  \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont {{Kawabe}}}, \bibinfo
+  {author} {\bibfnamefont {S.~E.}\ \bibnamefont {{Dwyer}}}, \bibinfo {author}
+  {\bibfnamefont {K.}~\bibnamefont {{Izumi}}}, \bibinfo {author} {\bibfnamefont
+  {R.~M.~S.}\ \bibnamefont {{Schofield}}}, \bibinfo {author} {\bibfnamefont
+  {A.}~\bibnamefont {{Effler}}}, \bibinfo {author} {\bibfnamefont
+  {D.}~\bibnamefont {{Sigg}}}, \bibinfo {author} {\bibfnamefont
+  {P.}~\bibnamefont {{Fritschel}}}, \bibinfo {author} {\bibfnamefont
+  {M.}~\bibnamefont {{Drago}}},  \emph {et~al.},\ }\href {\doibase
+  10.1103/PhysRevD.99.042001} {\bibfield  {journal} {\bibinfo  {journal}
+  {\prd}\ }\textbf {\bibinfo {volume} {99}},\ \bibinfo {eid} {042001} (\bibinfo
+  {year} {2019})},\ \Eprint {http://arxiv.org/abs/1806.00532} {arXiv:1806.00532
+  [astro-ph.IM]} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Jung}\ \emph {et~al.}(2022)\citenamefont {Jung},
+  \citenamefont {Oh}, \citenamefont {Kim}, \citenamefont {Son}, \citenamefont
+  {Yokozawa}, \citenamefont {Washimi},\ and\ \citenamefont {Oh}}]{Jung2022PRD}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
+  {Jung}}, \bibinfo {author} {\bibfnamefont {S.~H.}\ \bibnamefont {Oh}},
+  \bibinfo {author} {\bibfnamefont {Y.-M.}\ \bibnamefont {Kim}}, \bibinfo
+  {author} {\bibfnamefont {E.~J.}\ \bibnamefont {Son}}, \bibinfo {author}
+  {\bibfnamefont {T.}~\bibnamefont {Yokozawa}}, \bibinfo {author}
+  {\bibfnamefont {T.}~\bibnamefont {Washimi}}, \ and\ \bibinfo {author}
+  {\bibfnamefont {J.~J.}\ \bibnamefont {Oh}},\ }\href {\doibase
+  10.1103/PhysRevD.106.042010} {\bibfield  {journal} {\bibinfo  {journal}
+  {Phys. Rev. D}\ }\textbf {\bibinfo {volume} {106}},\ \bibinfo {pages}
+  {042010} (\bibinfo {year} {2022})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Marin}\ \emph {et~al.}()\citenamefont {Marin},
+  \citenamefont {Shoemaker},\ and\ \citenamefont {Weiss}}]{marin1997}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Marin}}, \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont {Shoemaker}}, \
+  and\ \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Weiss}},\
+  }\href@noop {} {\enquote {\bibinfo {title} {Subtracting narrow-band noise
+  from ligo strain data in the third observing run},}\ }\bibinfo {note} {LIGo
+  Technical Report LIGO-T970127-02-D}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{Cuoco}}\ \emph {et~al.}(2020)\citenamefont
+  {{Cuoco}}, \citenamefont {{Powell}}, \citenamefont {{Cavagli{\`a}}},
+  \citenamefont {{Ackley}}, \citenamefont {{Bejger}}, \citenamefont
+  {{Chatterjee}}, \citenamefont {{Coughlin}}, \citenamefont {{Coughlin}},
+  \citenamefont {{Easter}}, \citenamefont {{Essick}}, \citenamefont
+  {{Gabbard}}, \citenamefont {{Gebhard}}, \citenamefont {{Ghosh}},
+  \citenamefont {{Haegel}}, \citenamefont {{Iess}}, \citenamefont {{Keitel}},
+  \citenamefont {{Marka}}, \citenamefont {{Marka}}, \citenamefont {{Morawski}},
+  \citenamefont {{Nguyen}}, \citenamefont {{Ormiston}}, \citenamefont
+  {{Puerrer}}, \citenamefont {{Razzano}}, \citenamefont {{Staats}},
+  \citenamefont {{Vajente}},\ and\ \citenamefont {{Williams}}}]{Cuoco2020}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {E.}~\bibnamefont
+  {{Cuoco}}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {{Powell}}},
+  \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {{Cavagli{\`a}}}},
+  \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont {{Ackley}}}, \bibinfo
+  {author} {\bibfnamefont {M.}~\bibnamefont {{Bejger}}}, \bibinfo {author}
+  {\bibfnamefont {C.}~\bibnamefont {{Chatterjee}}}, \bibinfo {author}
+  {\bibfnamefont {M.}~\bibnamefont {{Coughlin}}}, \bibinfo {author}
+  {\bibfnamefont {S.}~\bibnamefont {{Coughlin}}}, \bibinfo {author}
+  {\bibfnamefont {P.}~\bibnamefont {{Easter}}}, \bibinfo {author}
+  {\bibfnamefont {R.}~\bibnamefont {{Essick}}}, \bibinfo {author}
+  {\bibfnamefont {H.}~\bibnamefont {{Gabbard}}}, \bibinfo {author}
+  {\bibfnamefont {T.}~\bibnamefont {{Gebhard}}}, \bibinfo {author}
+  {\bibfnamefont {S.}~\bibnamefont {{Ghosh}}}, \bibinfo {author} {\bibfnamefont
+  {L.}~\bibnamefont {{Haegel}}}, \bibinfo {author} {\bibfnamefont
+  {A.}~\bibnamefont {{Iess}}}, \bibinfo {author} {\bibfnamefont
+  {D.}~\bibnamefont {{Keitel}}}, \bibinfo {author} {\bibfnamefont
+  {Z.}~\bibnamefont {{Marka}}}, \bibinfo {author} {\bibfnamefont
+  {S.}~\bibnamefont {{Marka}}}, \bibinfo {author} {\bibfnamefont
+  {F.}~\bibnamefont {{Morawski}}}, \bibinfo {author} {\bibfnamefont
+  {T.}~\bibnamefont {{Nguyen}}}, \bibinfo {author} {\bibfnamefont
+  {R.}~\bibnamefont {{Ormiston}}}, \bibinfo {author} {\bibfnamefont
+  {M.}~\bibnamefont {{Puerrer}}}, \bibinfo {author} {\bibfnamefont
+  {M.}~\bibnamefont {{Razzano}}}, \bibinfo {author} {\bibfnamefont
+  {K.}~\bibnamefont {{Staats}}}, \bibinfo {author} {\bibfnamefont
+  {G.}~\bibnamefont {{Vajente}}}, \ and\ \bibinfo {author} {\bibfnamefont
+  {D.}~\bibnamefont {{Williams}}},\ }\href {\doibase 10.48550/arXiv.2005.03745}
+  {\bibfield  {journal} {\bibinfo  {journal} {arXiv e-prints}\ ,\ \bibinfo
+  {eid} {arXiv:2005.03745}} (\bibinfo {year} {2020})},\ \Eprint
+  {http://arxiv.org/abs/2005.03745} {arXiv:2005.03745 [astro-ph.HE]}
+  \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{Vajente}}\ \emph {et~al.}(2020)\citenamefont
+  {{Vajente}}, \citenamefont {{Huang}}, \citenamefont {{Isi}}, \citenamefont
+  {{Driggers}}, \citenamefont {{Kissel}}, \citenamefont {{Szczepa{\'n}czyk}},\
+  and\ \citenamefont {{Vitale}}}]{Vajente2020PhR}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
+  {{Vajente}}}, \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont {{Huang}}},
+  \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {{Isi}}}, \bibinfo
+  {author} {\bibfnamefont {J.~C.}\ \bibnamefont {{Driggers}}}, \bibinfo
+  {author} {\bibfnamefont {J.~S.}\ \bibnamefont {{Kissel}}}, \bibinfo {author}
+  {\bibfnamefont {M.~J.}\ \bibnamefont {{Szczepa{\'n}czyk}}}, \ and\ \bibinfo
+  {author} {\bibfnamefont {S.}~\bibnamefont {{Vitale}}},\ }\href {\doibase
+  10.1103/PhysRevD.101.042003} {\bibfield  {journal} {\bibinfo  {journal}
+  {\prd}\ }\textbf {\bibinfo {volume} {101}},\ \bibinfo {eid} {042003}
+  (\bibinfo {year} {2020})},\ \Eprint {http://arxiv.org/abs/1911.09083}
+  {arXiv:1911.09083 [gr-qc]} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{Ormiston}}\ \emph {et~al.}(2020)\citenamefont
+  {{Ormiston}}, \citenamefont {{Nguyen}}, \citenamefont {{Coughlin}},
+  \citenamefont {{Adhikari}},\ and\ \citenamefont
+  {{Katsavounidis}}}]{OrmistonEtAl:2020}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {{Ormiston}}}, \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
+  {{Nguyen}}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {{Coughlin}}}, \bibinfo {author} {\bibfnamefont {R.~X.}\ \bibnamefont
+  {{Adhikari}}}, \ and\ \bibinfo {author} {\bibfnamefont {E.}~\bibnamefont
+  {{Katsavounidis}}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo
+  {journal} {arXiv e-prints}\ ,\ \bibinfo {eid} {arXiv:2005.06534}} (\bibinfo
+  {year} {2020})},\ \Eprint {http://arxiv.org/abs/2005.06534} {arXiv:2005.06534
+  [astro-ph.IM]} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Yamamoto}\ \emph {et~al.}(2023)\citenamefont
+  {Yamamoto}, \citenamefont {Kuroyanagi},\ and\ \citenamefont
+  {Liu}}]{Yamamoto2023}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.~S.}\ \bibnamefont
+  {Yamamoto}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Kuroyanagi}}, \ and\ \bibinfo {author} {\bibfnamefont {G.-C.}\ \bibnamefont
+  {Liu}},\ }\href {\doibase 10.1103/PhysRevD.107.044032} {\bibfield  {journal}
+  {\bibinfo  {journal} {Phys. Rev. D}\ }\textbf {\bibinfo {volume} {107}},\
+  \bibinfo {pages} {044032} (\bibinfo {year} {2023})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{Zhu}}\ \emph {et~al.}(2017)\citenamefont {{Zhu}},
+  \citenamefont {{Papa}},\ and\ \citenamefont {{Walsh}}}]{Zhu2017PhRvD}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.~J.}\ \bibnamefont
+  {{Zhu}}}, \bibinfo {author} {\bibfnamefont {M.~A.}\ \bibnamefont {{Papa}}}, \
+  and\ \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {{Walsh}}},\ }\href
+  {\doibase 10.1103/PhysRevD.96.124007} {\bibfield  {journal} {\bibinfo
+  {journal} {\prd}\ }\textbf {\bibinfo {volume} {96}},\ \bibinfo {eid} {124007}
+  (\bibinfo {year} {2017})},\ \Eprint {http://arxiv.org/abs/1707.05268}
+  {arXiv:1707.05268 [gr-qc]} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Jones}\ \emph {et~al.}(2022)\citenamefont {Jones},
+  \citenamefont {Sun}, \citenamefont {Carlin}, \citenamefont {Dunn},
+  \citenamefont {Millhouse}, \citenamefont {Middleton}, \citenamefont {Meyers},
+  \citenamefont {Clearwater}, \citenamefont {Beniwal}, \citenamefont {Strang},
+  \citenamefont {Vargas},\ and\ \citenamefont
+  {Melatos}}]{JonesPhysRevD.106.123011}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
+  {Jones}}, \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont {Sun}}, \bibinfo
+  {author} {\bibfnamefont {J.}~\bibnamefont {Carlin}}, \bibinfo {author}
+  {\bibfnamefont {L.}~\bibnamefont {Dunn}}, \bibinfo {author} {\bibfnamefont
+  {M.}~\bibnamefont {Millhouse}}, \bibinfo {author} {\bibfnamefont
+  {H.}~\bibnamefont {Middleton}}, \bibinfo {author} {\bibfnamefont
+  {P.}~\bibnamefont {Meyers}}, \bibinfo {author} {\bibfnamefont
+  {P.}~\bibnamefont {Clearwater}}, \bibinfo {author} {\bibfnamefont
+  {D.}~\bibnamefont {Beniwal}}, \bibinfo {author} {\bibfnamefont
+  {L.}~\bibnamefont {Strang}}, \bibinfo {author} {\bibfnamefont
+  {A.}~\bibnamefont {Vargas}}, \ and\ \bibinfo {author} {\bibfnamefont
+  {A.}~\bibnamefont {Melatos}},\ }\href {\doibase 10.1103/PhysRevD.106.123011}
+  {\bibfield  {journal} {\bibinfo  {journal} {Phys. Rev. D}\ }\textbf {\bibinfo
+  {volume} {106}},\ \bibinfo {pages} {123011} (\bibinfo {year}
+  {2022})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{Suvorova}}\ \emph {et~al.}(2016)\citenamefont
+  {{Suvorova}}, \citenamefont {{Sun}}, \citenamefont {{Melatos}}, \citenamefont
+  {{Moran}},\ and\ \citenamefont {{Evans}}}]{Suvorova2016PhRv}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {{Suvorova}}}, \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont {{Sun}}},
+  \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {{Melatos}}}, \bibinfo
+  {author} {\bibfnamefont {W.}~\bibnamefont {{Moran}}}, \ and\ \bibinfo
+  {author} {\bibfnamefont {R.~J.}\ \bibnamefont {{Evans}}},\ }\href {\doibase
+  10.1103/PhysRevD.93.123009} {\bibfield  {journal} {\bibinfo  {journal}
+  {\prd}\ }\textbf {\bibinfo {volume} {93}},\ \bibinfo {eid} {123009} (\bibinfo
+  {year} {2016})},\ \Eprint {http://arxiv.org/abs/1606.02412} {arXiv:1606.02412
+  [astro-ph.IM]} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{The LIGO Scientific Collaboration}}\ \emph
+  {et~al.}(2021)\citenamefont {{The LIGO Scientific Collaboration}},
+  \citenamefont {{the Virgo Collaboration}}, \citenamefont {{the KAGRA
+  Collaboration}}, \citenamefont {{Abbott}}, \citenamefont {{Abbott}},
+  \citenamefont {{Acernese}}, \citenamefont {{Ackley}}, \citenamefont
+  {{Adams}}, \citenamefont {{Adhikari}}, \citenamefont {{Adhikari}} \emph
+  {et~al.}}]{LIGO_O3}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {{The LIGO Scientific
+  Collaboration}}}, \bibinfo {author} {\bibnamefont {{the Virgo
+  Collaboration}}}, \bibinfo {author} {\bibnamefont {{the KAGRA
+  Collaboration}}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {{Abbott}}}, \bibinfo {author} {\bibfnamefont {T.~D.}\ \bibnamefont
+  {{Abbott}}}, \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {{Acernese}}}, \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
+  {{Ackley}}}, \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {{Adams}}},
+  \bibinfo {author} {\bibfnamefont {N.}~\bibnamefont {{Adhikari}}}, \bibinfo
+  {author} {\bibfnamefont {R.~X.}\ \bibnamefont {{Adhikari}}},  \emph
+  {et~al.},\ }\href {\doibase 10.48550/arXiv.2111.03606} {\bibfield  {journal}
+  {\bibinfo  {journal} {arXiv e-prints}\ ,\ \bibinfo {eid} {arXiv:2111.03606}}
+  (\bibinfo {year} {2021})},\ \Eprint {http://arxiv.org/abs/2111.03606}
+  {arXiv:2111.03606 [gr-qc]} \BibitemShut {NoStop}%
+\bibitem [{GWO()}]{GWOSC:online}%
+  \BibitemOpen
+  \href@noop {} {\enquote {\bibinfo {title} {{Gravitational Wave Open Science
+  Center}},}\ }\bibinfo {howpublished}
+  {\url{https://www.gw-openscience.org/}}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{Jaranowski}}\ \emph {et~al.}(1998)\citenamefont
+  {{Jaranowski}}, \citenamefont {{Kr{\'o}lak}},\ and\ \citenamefont
+  {{Schutz}}}]{Jaranowski1998}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
+  {{Jaranowski}}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {{Kr{\'o}lak}}}, \ and\ \bibinfo {author} {\bibfnamefont {B.~F.}\
+  \bibnamefont {{Schutz}}},\ }\href {\doibase 10.1103/PhysRevD.58.063001}
+  {\bibfield  {journal} {\bibinfo  {journal} {\prd}\ }\textbf {\bibinfo
+  {volume} {58}},\ \bibinfo {eid} {063001} (\bibinfo {year} {1998})},\ \Eprint
+  {http://arxiv.org/abs/gr-qc/9804014} {arXiv:gr-qc/9804014 [gr-qc]}
+  \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{Macleod}}\ \emph {et~al.}(2021)\citenamefont
+  {{Macleod}}, \citenamefont {{Areeda}}, \citenamefont {{Coughlin}},
+  \citenamefont {{Massinger}},\ and\ \citenamefont {{Urban}}}]{gwpy}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.~M.}\ \bibnamefont
+  {{Macleod}}}, \bibinfo {author} {\bibfnamefont {J.~S.}\ \bibnamefont
+  {{Areeda}}}, \bibinfo {author} {\bibfnamefont {S.~B.}\ \bibnamefont
+  {{Coughlin}}}, \bibinfo {author} {\bibfnamefont {T.~J.}\ \bibnamefont
+  {{Massinger}}}, \ and\ \bibinfo {author} {\bibfnamefont {A.~L.}\ \bibnamefont
+  {{Urban}}},\ }\href {\doibase 10.1016/j.softx.2021.100657} {\bibfield
+  {journal} {\bibinfo  {journal} {SoftwareX}\ }\textbf {\bibinfo {volume}
+  {13}},\ \bibinfo {pages} {100657} (\bibinfo {year} {2021})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Welch}(1967)}]{Welch1161901}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
+  {Welch}},\ }\href {\doibase 10.1109/TAU.1967.1161901} {\bibfield  {journal}
+  {\bibinfo  {journal} {IEEE Transactions on Audio and Electroacoustics}\
+  }\textbf {\bibinfo {volume} {15}},\ \bibinfo {pages} {70} (\bibinfo {year}
+  {1967})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Widrow}\ \emph {et~al.}(1975)\citenamefont {Widrow},
+  \citenamefont {Glover}, \citenamefont {McCool}, \citenamefont {Kaunitz},
+  \citenamefont {Williams}, \citenamefont {Hearn}, \citenamefont {Zeidler},
+  \citenamefont {Eugene~Dong},\ and\ \citenamefont {Goodlin}}]{Widrow1451965}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.}~\bibnamefont
+  {Widrow}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Glover}},
+  \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {McCool}}, \bibinfo
+  {author} {\bibfnamefont {J.}~\bibnamefont {Kaunitz}}, \bibinfo {author}
+  {\bibfnamefont {C.}~\bibnamefont {Williams}}, \bibinfo {author}
+  {\bibfnamefont {R.}~\bibnamefont {Hearn}}, \bibinfo {author} {\bibfnamefont
+  {J.}~\bibnamefont {Zeidler}}, \bibinfo {author} {\bibfnamefont
+  {J.}~\bibnamefont {Eugene~Dong}}, \ and\ \bibinfo {author} {\bibfnamefont
+  {R.}~\bibnamefont {Goodlin}},\ }\href {\doibase 10.1109/PROC.1975.10036}
+  {\bibfield  {journal} {\bibinfo  {journal} {Proceedings of the IEEE}\
+  }\textbf {\bibinfo {volume} {63}},\ \bibinfo {pages} {1692} (\bibinfo {year}
+  {1975})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Haykin}(2002)}]{HaykinAdaptiveFT:2002}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Haykin}},\ }\href@noop {} {\emph {\bibinfo {title} {Adaptive Filter
+  Theory}}},\ \bibinfo {edition} {4th}\ ed.\ (\bibinfo  {publisher} {Prentice
+  Hall},\ \bibinfo {address} {Upper Saddle River, New Jersey, 07458},\ \bibinfo
+  {year} {2002})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Hayes}(1996)}]{10.5555/547203}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.~H.}\ \bibnamefont
+  {Hayes}},\ }\href@noop {} {\emph {\bibinfo {title} {Statistical Digital
+  Signal Processing and Modeling}}},\ \bibinfo {edition} {1st}\ ed.\ (\bibinfo
+  {publisher} {John Wiley \& Sons, Inc.},\ \bibinfo {address} {USA},\ \bibinfo
+  {year} {1996})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Ifeachor}\ and\ \citenamefont
+  {Jervis}(2002)}]{10.5555/560138}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {E.~C.}\ \bibnamefont
+  {Ifeachor}}\ and\ \bibinfo {author} {\bibfnamefont {B.~W.}\ \bibnamefont
+  {Jervis}},\ }\href@noop {} {\emph {\bibinfo {title} {Digital Signal
+  Processing: A Practical Approach}}},\ \bibinfo {edition} {2nd}\ ed.\
+  (\bibinfo  {publisher} {Pearson Education},\ \bibinfo {year}
+  {2002})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Ljung}(1999)}]{ljung1999system}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
+  {Ljung}},\ }\href {https://books.google.com.au/books?id=nHFoQgAACAAJ} {\emph
+  {\bibinfo {title} {System Identification: Theory for the User}}},\ Prentice
+  Hall information and system sciences series\ (\bibinfo  {publisher} {Prentice
+  Hall PTR},\ \bibinfo {year} {1999})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {S{\"o}derstr{\"o}m}\ and\ \citenamefont
+  {Stoica}(1989)}]{1989system}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
+  {S{\"o}derstr{\"o}m}}\ and\ \bibinfo {author} {\bibfnamefont
+  {P.}~\bibnamefont {Stoica}},\ }\href
+  {https://books.google.com.au/books?id=X_xQAAAAMAAJ} {\emph {\bibinfo {title}
+  {System Identification}}},\ Prentice-Hall Software Series\ (\bibinfo
+  {publisher} {Prentice Hall},\ \bibinfo {year} {1989})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Viterbi}(1967)}]{Viterbi1}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Viterbi}},\ }\href {\doibase 10.1109/TIT.1967.1054010} {\bibfield  {journal}
+  {\bibinfo  {journal} {IEEE Transactions on Information Theory}\ }\textbf
+  {\bibinfo {volume} {13}},\ \bibinfo {pages} {260} (\bibinfo {year}
+  {1967})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Quinn}\ and\ \citenamefont
+  {Hannan}(2001)}]{viterbi2}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.~G.}\ \bibnamefont
+  {Quinn}}\ and\ \bibinfo {author} {\bibfnamefont {E.~J.}\ \bibnamefont
+  {Hannan}},\ }\href {\doibase 10.1017/CBO9780511609602} {\emph {\bibinfo
+  {title} {The Estimation and Tracking of Frequency}}},\ Cambridge Series in
+  Statistical and Probabilistic Mathematics\ (\bibinfo  {publisher} {Cambridge
+  University Press},\ \bibinfo {year} {2001})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Collaboration}\ and\ \citenamefont
+  {Collaboration}(2017)}]{LIGOMarkov17}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.~S.}\ \bibnamefont
+  {Collaboration}}\ and\ \bibinfo {author} {\bibfnamefont {V.}~\bibnamefont
+  {Collaboration}} (\bibinfo {collaboration} {LIGO Scientific Collaboration and
+  Virgo Collaboration}),\ }\href {\doibase 10.1103/PhysRevD.95.122003}
+  {\bibfield  {journal} {\bibinfo  {journal} {Phys. Rev. D}\ }\textbf {\bibinfo
+  {volume} {95}},\ \bibinfo {pages} {122003} (\bibinfo {year}
+  {2017})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Collaboration}\ and\ \citenamefont
+  {Collaboration}(2019)}]{LIGOMarkov19}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.~S.}\ \bibnamefont
+  {Collaboration}}\ and\ \bibinfo {author} {\bibfnamefont {V.}~\bibnamefont
+  {Collaboration}} (\bibinfo {collaboration} {LIGO Scientific Collaboration and
+  Virgo Collaboration}),\ }\href {\doibase 10.1103/PhysRevD.100.122002}
+  {\bibfield  {journal} {\bibinfo  {journal} {Phys. Rev. D}\ }\textbf {\bibinfo
+  {volume} {100}},\ \bibinfo {pages} {122002} (\bibinfo {year}
+  {2019})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Isi}\ \emph {et~al.}(2019)\citenamefont {Isi},
+  \citenamefont {Sun}, \citenamefont {Brito},\ and\ \citenamefont
+  {Melatos}}]{PhysRevD.99.084042}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Isi}}, \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont {Sun}}, \bibinfo
+  {author} {\bibfnamefont {R.}~\bibnamefont {Brito}}, \ and\ \bibinfo {author}
+  {\bibfnamefont {A.}~\bibnamefont {Melatos}},\ }\href {\doibase
+  10.1103/PhysRevD.99.084042} {\bibfield  {journal} {\bibinfo  {journal} {Phys.
+  Rev. D}\ }\textbf {\bibinfo {volume} {99}},\ \bibinfo {pages} {084042}
+  (\bibinfo {year} {2019})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{Sun}}\ \emph {et~al.}(2018)\citenamefont {{Sun}},
+  \citenamefont {{Melatos}}, \citenamefont {{Suvorova}}, \citenamefont
+  {{Moran}},\ and\ \citenamefont {{Evans}}}]{2018PhRvD..97d3013S}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
+  {{Sun}}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {{Melatos}}},
+  \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {{Suvorova}}}, \bibinfo
+  {author} {\bibfnamefont {W.}~\bibnamefont {{Moran}}}, \ and\ \bibinfo
+  {author} {\bibfnamefont {R.~J.}\ \bibnamefont {{Evans}}},\ }\href {\doibase
+  10.1103/PhysRevD.97.043013} {\bibfield  {journal} {\bibinfo  {journal}
+  {\prd}\ }\textbf {\bibinfo {volume} {97}},\ \bibinfo {eid} {043013} (\bibinfo
+  {year} {2018})},\ \Eprint {http://arxiv.org/abs/1710.00460} {arXiv:1710.00460
+  [astro-ph.IM]} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {LIGO Scientific~Collaboration}\ and\ \citenamefont
+  {Collaboration}(2022)}]{LIGOMarkov22}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {V.~C.}\ \bibnamefont
+  {LIGO Scientific~Collaboration}}\ and\ \bibinfo {author} {\bibfnamefont
+  {K.}~\bibnamefont {Collaboration}} (\bibinfo {collaboration} {LIGO Scientific
+  Collaboration, Virgo Collaboration, and KAGRA Collaboration}),\ }\href
+  {\doibase 10.1103/PhysRevD.106.062002} {\bibfield  {journal} {\bibinfo
+  {journal} {Phys. Rev. D}\ }\textbf {\bibinfo {volume} {106}},\ \bibinfo
+  {pages} {062002} (\bibinfo {year} {2022})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{Vargas}}\ and\ \citenamefont
+  {{Melatos}}(2023)}]{2023PhRvD.107f4062V}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.~F.}\ \bibnamefont
+  {{Vargas}}}\ and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {{Melatos}}},\ }\href {\doibase 10.1103/PhysRevD.107.064062} {\bibfield
+  {journal} {\bibinfo  {journal} {\prd}\ }\textbf {\bibinfo {volume} {107}},\
+  \bibinfo {eid} {064062} (\bibinfo {year} {2023})},\ \Eprint
+  {http://arxiv.org/abs/2208.03932} {arXiv:2208.03932 [gr-qc]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Cheer}\ \emph {et~al.}(2019)\citenamefont {Cheer},
+  \citenamefont {Patel},\ and\ \citenamefont {Fontana}}]{10.1121/1.5109394}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Cheer}}, \bibinfo {author} {\bibfnamefont {V.}~\bibnamefont {Patel}}, \ and\
+  \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Fontana}},\ }\href
+  {\doibase 10.1121/1.5109394} {\bibfield  {journal} {\bibinfo  {journal} {The
+  Journal of the Acoustical Society of America}\ }\textbf {\bibinfo {volume}
+  {145}},\ \bibinfo {pages} {3095} (\bibinfo {year} {2019})},\ \Eprint
+  {http://arxiv.org/abs/https://pubs.aip.org/asa/jasa/article-pdf/145/5/3095/15336560/3095\_1\_online.pdf}
+  {https://pubs.aip.org/asa/jasa/article-pdf/145/5/3095/15336560/3095\_1\_online.pdf}
+  \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Kuo}\ and\ \citenamefont
+  {Kunduru}(1996)}]{KUO1996669}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.~M.}\ \bibnamefont
+  {Kuo}}\ and\ \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Kunduru}},\
+  }\href {\doibase https://doi.org/10.1016/0016-0032(96)00045-2} {\bibfield
+  {journal} {\bibinfo  {journal} {Journal of the Franklin Institute}\ }\textbf
+  {\bibinfo {volume} {333}},\ \bibinfo {pages} {669} (\bibinfo {year}
+  {1996})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Kokkinakis}\ \emph {et~al.}(2012)\citenamefont
+  {Kokkinakis}, \citenamefont {Azimi}, \citenamefont {Hu},\ and\ \citenamefont
+  {Friedland}}]{doi:10.1177/1084713812456906}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
+  {Kokkinakis}}, \bibinfo {author} {\bibfnamefont {B.}~\bibnamefont {Azimi}},
+  \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont {Hu}}, \ and\ \bibinfo
+  {author} {\bibfnamefont {D.~R.}\ \bibnamefont {Friedland}},\ }\href {\doibase
+  10.1177/1084713812456906} {\bibfield  {journal} {\bibinfo  {journal} {Trends
+  in Amplification}\ }\textbf {\bibinfo {volume} {16}},\ \bibinfo {pages} {102}
+  (\bibinfo {year} {2012})},\ \bibinfo {note} {pMID: 22923425},\ \Eprint
+  {http://arxiv.org/abs/https://doi.org/10.1177/1084713812456906}
+  {https://doi.org/10.1177/1084713812456906} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Chowdhury}\ \emph {et~al.}(2018)\citenamefont
+  {Chowdhury}, \citenamefont {Hyder}, \citenamefont {Hafiz},\ and\
+  \citenamefont {Haque}}]{7755741}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.~S.}\ \bibnamefont
+  {Chowdhury}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Hyder}},
+  \bibinfo {author} {\bibfnamefont {M.~S.~B.}\ \bibnamefont {Hafiz}}, \ and\
+  \bibinfo {author} {\bibfnamefont {M.~A.}\ \bibnamefont {Haque}},\ }\href
+  {\doibase 10.1109/JBHI.2016.2632201} {\bibfield  {journal} {\bibinfo
+  {journal} {IEEE Journal of Biomedical and Health Informatics}\ }\textbf
+  {\bibinfo {volume} {22}},\ \bibinfo {pages} {450} (\bibinfo {year}
+  {2018})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Gong}\ and\ \citenamefont {Cowan}(2004)}]{1326385}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont
+  {Gong}}\ and\ \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {Cowan}},\
+  }in\ \href {\doibase 10.1109/ICASSP.2004.1326385} {\emph {\bibinfo
+  {booktitle} {2004 IEEE International Conference on Acoustics, Speech, and
+  Signal Processing}}},\ Vol.~\bibinfo {volume} {2}\ (\bibinfo {year} {2004})\
+  pp.\ \bibinfo {pages} {ii--825}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Kar}\ and\ \citenamefont {Swamy}(2017)}]{KAR2017422}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Kar}}\ and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Swamy}},\
+  }\href {\doibase https://doi.org/10.1016/j.sigpro.2016.09.003} {\bibfield
+  {journal} {\bibinfo  {journal} {Signal Processing}\ }\textbf {\bibinfo
+  {volume} {131}},\ \bibinfo {pages} {422} (\bibinfo {year}
+  {2017})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Kar}\ \emph {et~al.}(2020)\citenamefont {Kar},
+  \citenamefont {Anand},\ and\ \citenamefont {Swamy}}]{KAR2020107043}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Kar}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Anand}}, \ and\
+  \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Swamy}},\ }\href
+  {\doibase https://doi.org/10.1016/j.apacoust.2019.107043} {\bibfield
+  {journal} {\bibinfo  {journal} {Applied Acoustics}\ }\textbf {\bibinfo
+  {volume} {158}},\ \bibinfo {pages} {107043} (\bibinfo {year}
+  {2020})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Ciochina}\ \emph {et~al.}(2009)\citenamefont
+  {Ciochina}, \citenamefont {Paleologu}, \citenamefont {Benesty},\ and\
+  \citenamefont {Enescu}}]{Ciochina5206117}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Ciochina}}, \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {Paleologu}},
+  \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Benesty}}, \ and\
+  \bibinfo {author} {\bibfnamefont {A.~A.}\ \bibnamefont {Enescu}},\ }in\ \href
+  {\doibase 10.1109/ISSCS.2009.5206117} {\emph {\bibinfo {booktitle} {2009
+  International Symposium on Signals, Circuits and Systems}}}\ (\bibinfo {year}
+  {2009})\ pp.\ \bibinfo {pages} {1--4}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Mahadi}\ \emph {et~al.}(2022)\citenamefont {Mahadi},
+  \citenamefont {Ballal}, \citenamefont {Moinuddin},\ and\ \citenamefont
+  {Al-Saggaf}}]{app12042077}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Mahadi}}, \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont {Ballal}},
+  \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Moinuddin}}, \ and\
+  \bibinfo {author} {\bibfnamefont {U.~M.}\ \bibnamefont {Al-Saggaf}},\ }\href
+  {\doibase 10.3390/app12042077} {\bibfield  {journal} {\bibinfo  {journal}
+  {Applied Sciences}\ }\textbf {\bibinfo {volume} {12}} (\bibinfo {year}
+  {2022}),\ 10.3390/app12042077}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Leung}\ and\ \citenamefont {So}(2005)}]{1468506}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.-H.}\ \bibnamefont
+  {Leung}}\ and\ \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {So}},\
+  }\href {\doibase 10.1109/TSP.2005.851110} {\bibfield  {journal} {\bibinfo
+  {journal} {IEEE Transactions on Signal Processing}\ }\textbf {\bibinfo
+  {volume} {53}},\ \bibinfo {pages} {3141} (\bibinfo {year}
+  {2005})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Paleologu}\ \emph {et~al.}(2008)\citenamefont
+  {Paleologu}, \citenamefont {Benesty},\ and\ \citenamefont
+  {Ciochina}}]{4639569}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Paleologu}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Benesty}},
+  \ and\ \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Ciochina}},\
+  }\href {\doibase 10.1109/LSP.2008.2001559} {\bibfield  {journal} {\bibinfo
+  {journal} {IEEE Signal Processing Letters}\ }\textbf {\bibinfo {volume}
+  {15}},\ \bibinfo {pages} {597} (\bibinfo {year} {2008})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Van~Vaerenbergh}\ \emph {et~al.}(2012)\citenamefont
+  {Van~Vaerenbergh}, \citenamefont {Santamaría},\ and\ \citenamefont
+  {Lázaro-Gredilla}}]{6349749}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Van~Vaerenbergh}}, \bibinfo {author} {\bibfnamefont {I.}~\bibnamefont
+  {Santamaría}}, \ and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Lázaro-Gredilla}},\ }in\ \href {\doibase 10.1109/MLSP.2012.6349749} {\emph
+  {\bibinfo {booktitle} {2012 IEEE International Workshop on Machine Learning
+  for Signal Processing}}}\ (\bibinfo {year} {2012})\ pp.\ \bibinfo {pages}
+  {1--6}\BibitemShut {NoStop}%
+\end{thebibliography}%
